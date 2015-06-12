@@ -1,0 +1,394 @@
+\documentclass[a4paper]{exam}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage{color}
+\newif\ifprint
+\unframedsolutions
+\renewcommand{\solutiontitle}{\noindent\textbf{解: }\noindent}
+\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
+%\printfalse
+\usepackage{ulem}
+\newcommand{\blank}[2][1cm]{\uline{\makebox[#1][c]{%
+  \ifprint
+    \phantom{#2}%
+  \else
+    #2%
+  \fi}}}
+%\printanswers %答题答案去掉后隐藏
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+\section*{单项选择题}
+\begin{questions}
+\question 以下关于联合熵的命题\blank{C}恒为真
+    \begin{choices}
+        \choice $H({X_1}, \ldots ,{X_n}) = H({X_1}) + H({X_1}, \ldots ,{X_{n - 1}}|{X_1})$
+        \choice $H({X_1}, \ldots ,{X_n}) < H({X_1}) + H({X_1}, \ldots ,{X_{n - 1}}|{X_1})$
+        \choice $H({X_1}, \ldots ,{X_n}) > H({X_1}) + H({X_1}, \ldots ,{X_{n - 1}}|{X_1})$
+        \choice $H({X_1}, \ldots ,{X_n}) \ne H({X_1}) + H({X_1}, \ldots ,{X_{n - 1}}|{X_1})$\\
+    \end{choices}
+\question
+$F$是一个多对一的函数，则以下为真的是\blank{C}
+    \begin{choices}
+        \choice $H(F(X)) = H(X)$
+        \choice $H(F(X)) > H(X)$
+        \choice $H(F(X)) < H(X)$
+        \choice 都有可能\\
+    \end{choices}
+
+\question
+随机变量$X$和$Y$独立，有相同的概率分布，$H(X)$的对数底数为$\alpha$，则以下为真的是\blank{B}
+    \begin{choices}
+        \choice $P(X = Y) = {\alpha ^{ - H(X)}}$
+        \choice $P(X = Y) \le {\alpha ^{ - H(X)}}$
+        \choice $P(X = Y) \ge {\alpha ^{ - H(X)}}$
+        \choice 都有可能\\
+    \end{choices}
+
+\question 
+对不同的$i$，$\left( {{X_i},{Y_i}} \right)$之间是概率独立的离散型联合随机变量，概率分布为$P(X,Y)$,$P(X)$和$P(Y)$分别为各个$X_i$和$Y_i$的概率分布，$i = 1,2, \ldots ,n$.根据大数定律，当$n$趋于无穷大时，随机变量$\frac{1}{n}\log \frac{{P\left( {{X_1}, \ldots ,{X_n}} \right)P\left( {{Y_1}, \ldots ,{Y_n}} \right)}}{{P({X_1},{Y_1}, \ldots {X_n},{Y_n})}}$的极限是\blank{C}
+    \begin{choices}
+        \choice $H(X|Y) - H(Y|X)$
+        \choice $H(X|Y) + H(Y|X)$
+        \choice $I(X;Y)$
+        \choice $-I(X;Y)$\\
+    \end{choices}
+
+\question
+一个二元对称无记忆离散信道的容量为0.8比特，信道编码采用二进制形式，每个原始数据分组为12位，要使译码的差错概率能够任意地接近于0，信道码字的长度最短不能低于\blank{C}
+    \begin{choices}
+        \choice 8位
+        \choice 10位
+        \choice 16位
+        \choice 20位
+    \end{choices}
+\end{questions}
+
+\section*{分析题}
+\begin{questions}
+    \question 
+$X$,$Y$是随机变量，互信息量$I(X;Y)$在条件概率${P_{y|x}}$固定的情况下，$X$的概率分布${P_x}$是凸函数还是凹函数？
+    \begin{solution}
+    凹函数.\\
+   ${P_y} = \sum\limits_x {{P_x} \cdot {P_{y|x}}}$, ${\kern 1pt} {\kern 1pt} \frac{{\partial {P_y}}}{{\partial {P_x}}} = {P_{y|x}}$\\互信息量
+   \begin{equation*}
+ \begin{split}
+   I(X;Y) & = \sum\limits_{x,y} {P(x,y)\log {P_{y|x}}}  - \sum\limits_y {{P_y}\log {P_y}}\\
+      & = \sum\limits_{x,y} {{P_x} \cdot {P_{y|x}}\log {P_{y|x}}}  - \sum\limits_{x,y} {{P_x} \cdot {P_{y|x}}\log {P_y}} 
+   \end{split}
+   \end{equation*}
+   其Hessian矩阵$H$中每个元素为二阶导数$\frac{{{\partial ^2}I}}{{\partial {P_x}\partial {P_{x'}}}}$.\\
+   一阶导数：$\frac{{\partial I}}{{\partial {P_x}}} = \sum\limits_y {{P_{y|x}}\log {P_{y|x}}}  - \sum\limits_y {{P_{y|x}}\log {P_y}}  - \sum\limits_{x',y} {{P_{x'}} \cdot {P_{y|x'}}\frac{{{P_{y|x}}}}{{{P_y}}}} $\\
+   二阶导数：$\frac{{{\partial ^2}I}}{{\partial {P_x}\partial {P_{x'}}}} =  - \sum\limits_y {{P_{y|x'}}\frac{{{P_{y|x}}}}{{{P_y}}}} $\\
+   对于任意向量${\bf{u}} = {[{u_1},{u_2}, \ldots ,{u_n}]^T}$，${{\bf{u}}^T}H{\bf{u}}$的值为
+   \[\sum\limits_{x,x'} {{u_x}{u_{x'}}\frac{{{\partial ^2}I}}{{\partial {P_x}\partial {P_{x'}}}} =  - \sum\limits_y {\frac{1}{{{P_y}}}} } (\sum\limits_x {{P_{y|x}}{u_x}{)^2} \le 0} \]
+   所以其Hessian矩阵为半正定矩阵，$I(X;Y)$是关于变量$P_x$的凹函数.
+    \end{solution}
+    \vspace{1.5cm}
+    \question
+互信息量$I(X;Y)$总是非负的吗？
+    \begin{solution}
+    $I(X;Y) \ge 0$恒成立.\\
+    互信息量可以写作\[I(X;Y) = \sum\limits_{x,y} {p(x,y)log\frac{{p(x,y)}}{{p(x)p(y)}}} \]
+    $\because p(x,y) \ge p(x) \cdot p(y)$ 当且仅当$X$, $Y$概率独立时取等号.\\   $\therefore \frac{{p(x,y)}}{{p(x) \cdot p(y)}} \ge 1$, 即$log\frac{{p(x,y)}}{{p(x)p(y)}} \ge 0$\\
+    $\therefore I(X;Y) = \sum\limits_{x,y} {p(x,y)log\frac{{p(x,y)}}{{p(x)p(y)}}}  \ge 0$
+    \end{solution}
+    \vspace{1.5cm}
+    \question
+假设一个卫星转发系统的模型表达为一个Markov链$X \to Y \to Z$(其中$X \to Y$和$Y \to Z$分别为所谓的上行链路和下行链路），你可以得出$I(X;Z)$, $I(X;Y)$和$I(Y;Z)$的值之间有怎样的关系？陈述并予以证明.
+    \begin{solution}
+    数据处理不等式： $I(X;Y) \ge I(X;Z)$, $I(Y;Z) \ge I(X;Z)$.\\
+    $\because X \to Y \to Z$形成了Markov链,  $\therefore p(x,y,z) = p(x)p(y|x)p(z|y)$,\\
+    $\therefore p(x,z|y) = p(x,y,z)/p(y) = p(x|y)p(z|y)$ 在给定$Y$的条件下，$X$与$Z$互相独立\\
+    $\therefore I(X;Z|Y) = 0$\\
+    根据互信息量的链式法则：
+    \begin{equation*}
+        \begin{split}
+        I(X;Y,Z) &= I(X;Z) + I(X;Y|Z)\\
+        & = I(X;Y) + I(X;Z|Y)\\
+        & = I(X;Y)
+        \end{split}
+    \end{equation*}
+    由于互信息量始终非负 $ I(X;Y|Z) \ge 0$\\
+    \[ I(X;Y) = I(X;Z) + I(X;Y|Z) \ge I(X;Z)\]
+    Markov链具有对称性，故$I(Y;Z) \ge I(X;Z)$的证明与$I(X;Y) \ge I(X;Z)$的证明同理.
+    \end{solution}
+    \vspace{1.5cm}
+    \question
+  有人说，通过大幅度提升上行链路$X \to Y$的容量便有可能显著提升以上卫星信道的容量，该论断正确吗？
+    \begin{solution}
+    不正确.\\
+    通过上题的证明，$I(X;Y) \ge I(X;Z)$和$I(Y;Z) \ge I(X;Z)$同时成立，$I(X;Z)$上限不仅取决于$I(X;Y)$， 也取决于$I(Y;Z)$.因此仅仅依靠大幅提高$I(X;Y)$的最大值，即上行链路的信道容量，而不对下行链路进行优化，该信道的容量将无法突破下行链路的信道容量.
+    \end{solution}
+    \vspace{1.5cm}
+\end{questions}
+
+\section*{证明题}
+\begin{questions}
+    \question 
+    随机变量${X_1}, {X_2}, \ldots ,{X_n}$ 彼此概率独立具有相同的概率分布$P(X)$， 
+    ${Y_1},{Y_2}, \ldots,{Y_n}$彼此概率独立具有相同的概率$P(Y)$，$H$表达熵，对任何正整数$n$和正数$\varepsilon$定义集合
+    \begin{equation*}
+        \begin{split}
+ A_\varepsilon ^{(n)} = \{ ({x_1},{x_2}, \ldots ,{x_n};{y_1},{y_2}, \ldots ,{y_n}):&\left| { - \frac{1}{n}\log p({x_1},{x_2}, \ldots ,{x_n}) - H\left[ X \right]} \right| < \varepsilon ,\\
+        &\left| { - \frac{1}{n}\log p({x_1},{x_2}, \ldots ,{x_n};{y_1},{y_2}, \ldots ,{y_n}) - H\left[ {X,Y} \right]} \right| < \varepsilon \} 
+        \end{split}
+    \end{equation*}
+    和集合
+    \[B_\varepsilon ^{(n)} = \left\{ {({x_1},{x_2}, \ldots ,{x_n}):\left| {\frac{1}{n}({x_1} + {x_2} +  \cdots  + {x_n})} \right| < \varepsilon } \right\}\]
+    证明：$n$趋近于无穷大时有极限\[P\left[ {({x_1},{x_2}, \ldots ,{x_n};{y_1},{y_2}, \ldots ,{y_n}) \in A_\varepsilon ^{(n)}} \right] \to 1\]
+    \begin{solution}
+    \\弱大数定律：
+   \[ - \frac{1}{n}\log p({X^n}) \to  - E\left[ {\log p(X)} \right] = H(X) \qquad \text{依概率} \]
+   因此，给定$\varepsilon  > 0$，存在$n_1$，使得对于任意$n > {n_1}$，
+   \[\Pr \left( {\left| { - \frac{1}{n}\log p({X^n}) - H(X)} \right| \ge \varepsilon } \right) < \frac{\varepsilon }{2} \eqno{(1)}\]
+   同理，存在$n_2$，使得对于任意$n > {n_2}$，
+   \[\Pr \left( {\left| { - \frac{1}{n}\log p({X^n},{Y^n}) - H(X,Y)} \right| \ge \varepsilon } \right) < \frac{\varepsilon }{2} \eqno{(2)}\]
+   那么对于任意$n > \max ({n_1},{n_2})$, 将不等式(1),（2)的集合之并的概率也小于$\varepsilon$. 对于充分大的$n$，集合$A_\varepsilon ^{(n)}$的概率大于$1-\varepsilon$，则
+   \[\mathop {\lim }\limits_{n \to \infty } p\left[ {({x_n},{y_n}) \in A_\varepsilon ^{(n)}} \right] = 1\]
+    \end{solution}
+\vspace{1.5cm}
+\question
+请估计集合$A_\varepsilon ^{(n)}$的大小的上界，并给出你的证明（除大数定律外，其他环节要求给出推导）
+    \begin{solution}
+${2^{n(H(X,Y) + \varepsilon )}}$
+        \begin{equation*}
+            \begin{split}
+            1 &= \sum {p({x^n},{y^n})}  \\
+            &\ge \sum\nolimits_{A_\varepsilon ^{(n)}} {p({x^n},{y^n})}\\
+            & \ge \left| {A_\varepsilon ^{(n)}} \right|{2^{ - n(H(X,Y) + \varepsilon )}}
+            \end{split}
+        \end{equation*}
+        因此 \[\left| {A_\varepsilon ^{(n)}} \right| \le {2^{n(H(X,Y) + \varepsilon )}}\]
+    \end{solution}
+\vspace{1.7cm}
+\question
+随机变量${U_1},{U_2}, \ldots ,{U_n}$彼此概率独立且每一个与$X$有相同的概率分布$P(X)$, ${V_1},{V_2}, \ldots ,{V_n}$彼此概率独立且每一个与$Y$有相同的概率分布$P(Y)$，此外每个${u_i}$和${v_i}$也概率独立.${({x_1},{x_2}, \ldots ,{x_n};{y_1},{y_2}, \ldots ,{y_n})}$的集合$A_\varepsilon ^{(n)}$如上，请确定\[P\left[ {({u_1},{u_2}, \ldots ,{u_n};{v_1},{v_2}, \ldots ,{v_n}) \in A_\varepsilon ^{(n)}} \right]\]的上界并给出证明.
+\begin{solution}
+${2^{ - n(I(X;Y) - 3\varepsilon )}}$
+    \begin{equation*}
+        \begin{split}
+        \Pr (({U^n},{V^n}) \in A_\varepsilon ^{(n)}) & = \sum\limits_{({x^n},{y^n}) \in A_\varepsilon ^{(n)}} {p({x^n})p({y^n})}\\
+        & \le {2^{n(H(X,Y) + \varepsilon )}}{2^{ - n(H(X) - \varepsilon )}}{2^{ - n(H(Y) - \varepsilon )}}\\
+        & = {2^{ - n(I(X;Y) - 3\varepsilon )}}
+        \end{split}
+    \end{equation*}
+\end{solution}
+\vspace{1.8cm}
+\end{questions}
+
+\section*{计算题}
+\begin{questions}
+    \question 设二元对称离散无记忆信息的传输差错概率为$p$，记为$BSC(p)$，请计算其容量$C$
+    \begin{solution}
+    $1 - H(p)$
+    \begin{center}
+        \begin{picture}(100,70)(5,5)
+            \put(0,0){\vector(2,0){78}}
+            \put(0,0){\vector(4,3){78}}
+            \put(0,60){\vector(2,0){78}}
+            \put(0,60){\vector(4,-3){78}}
+            \put(-5,2){$1$}
+            \put(-5,58){$0$}
+            \put(83,2){$1$}
+            \put(83,58){$0$}
+            \put(30,3){$1-p$}
+            \put(30,65){$1-p$}
+            \put(60,40){$p$}
+            \put(60,20){$p$}
+        \end{picture}
+    \end{center}
+    \vspace{.5cm}
+    \begin{equation*}
+        \begin{split}
+        I(X;Y) &= H(Y) - H(Y|X)\\
+        & = H(Y) - \sum {p(x)H(Y|X = x)}\\
+        & = H(Y) - \sum {p(x)H(p)}\\
+        & \le 1 - H(q) \qquad \text{当且仅当输入分布是均匀分布时取等号}
+        \end{split}
+    \end{equation*}
+    这里的$H(q) =  - qlogq - (1 - q)log(1 - q)$.
+    \[C = \mathop {\max }\limits_{p(x)} I(X;Y) = 1 - H(q)\]
+    \end{solution}
+    \vspace{1.5cm}
+    \question 将$N$个$BSC(p)$信道串联，结果得到一个等效的BSC信道.计算其信道容量$C$(用$N$和$p$表示)
+    \begin{solution}
+    $1 - H(\frac{1}{2}(1 - {(1 - 2p)^N})$\\
+    \begin{center}
+        \begin{picture}(235,30)
+            \put(10,15){$X_0$}
+            \put(25,18){\vector(1,0){13}}
+            \put(40,15){\framebox{BSC}}
+            \put(70,18){\vector(1,0){13}}
+            \put(85,15){$X_1$}
+            \put(100,18){\vector(1,0){13}}
+            \put(115,15){$\cdots $}
+            \put(130,18){\vector(1,0){13}}
+            \put(145,15){$X_{N-1}$}
+            \put(170,18){\vector(1,0){13}}
+            \put(185,15){\framebox{BSC}}
+            \put(215,18){\vector(1,0){13}}
+            \put(230,15){$X_N$}
+        \end{picture}
+    \end{center}
+    每个信道的原始差错概率为$p$，那么整个串联信道的差错概率$p'$即：\\
+    \begin{center}
+        \begin{picture}(400,70)(10,0)
+            \put(0,0){\vector(2,0){78}}
+            \put(0,0){\vector(4,3){78}}
+            \put(0,60){\vector(2,0){78}}
+            \put(0,60){\vector(4,-3){78}}
+            \put(90,0){\vector(2,0){78}}
+            \put(90,0){\vector(4,3){78}}
+            \put(90,60){\vector(2,0){78}}
+            \put(90,60){\vector(4,-3){78}}
+            \put(205,0){\vector(2,0){78}}
+            \put(205,0){\vector(4,3){78}}
+            \put(205,60){\vector(2,0){78}}
+            \put(205,60){\vector(4,-3){78}}
+            \put(-10,0){$0^{(0)}$}
+            \put(-10,60){$1^{(0)}$}
+            \put(80,0){$0^{(1)}$}
+            \put(80,60){$1^{(1)}$}
+            \put(170,0){$0^{(2)}$}
+            \put(170,60){$1^{(2)}$}
+            \put(185,0){$\dots$}
+            \put(185,30){$\cdots$}
+            \put(185,60){$\cdots$}
+            \put(200,0){$0^{(N-1)}$}
+            \put(200,60){$1^{(N-1)}$}
+            \put(285,0){$0^{(N)}$}
+            \put(285,60){$1^{(N)}$}
+            \put(30,3){$1-p$}
+            \put(30,65){$1-p$}
+            \put(60,40){$p$}
+            \put(60,20){$p$}
+            \put(120,3){$1-p$}
+            \put(120,65){$1-p$}
+            \put(150,40){$p$}
+            \put(150,20){$p$}
+            \put(235,3){$1-p$}
+            \put(235,65){$1-p$}
+            \put(265,40){$p$}
+            \put(265,20){$p$}
+            \put(340,0){\vector(2,0){78}}
+            \put(340,0){\vector(4,3){78}}
+            \put(340,60){\vector(2,0){78}}
+            \put(340,60){\vector(4,-3){78}}
+            \put(330,0){$0^{(0)}$}
+            \put(330,60){$1^{(0)}$}
+            \put(420,0){$0^{(N)}$}
+            \put(420,60){$1^{(N)}$}
+            \put(370,3){$1-p'$}
+            \put(370,65){$1-p'$}
+            \put(400,40){$p'$}
+            \put(400,20){$p'$}
+            \thicklines
+            \put(295,30){\vector(1,0){35}}
+            \thicklines
+        \end{picture}
+    \end{center}
+    当$x=p$, $y=1-p$时，${(x + y)^N}$的二项展开的奇次项之和：
+    \[p' = \frac{1}{2}{(x + y)^N} - \frac{1}{2}{(y - x)^N} = \frac{1}{2}(1 - {(1 - 2p)^N})\]
+    该串联信道可等效为差错概率为$p'$的$BSC(p')$信道：
+    \[C = 1 - H(p') = 1 - H(\frac{1}{2}(1 - {(1 - 2p)^N}))\]
+    \end{solution}
+    \vspace{1.5cm}
+    \question 将$N$个$BSC(p)$信道串联且这N个信道相互独立（无串扰），结果得到一个输入和输出为N维的二进制向量的矢量信道，并请计算其容量$C$(用$N$和$p$表示）
+    \begin{solution}
+    $N(1 - H(p))$\\
+    \begin{center}
+        \begin{picture}(100,110)(0,-10)
+            \put(10,45){\oval(30,90)}
+            \put(90,45){\oval(30,90)}
+            \put(5,70){$X_1$}
+            \put(5,55){$X_2$}
+            \put(10,36){$ \vdots $}
+            \put(5,15){$X_N$}
+            \put(85,70){$Y_1$}
+            \put(85,55){$Y_2$}
+            \put(90,36){$ \vdots $}
+            \put(85,15){$Y_N$}
+            \put(22,72){\vector(1,0){60}}
+            \put(22,57){\vector(1,0){60}}
+            \put(22,17){\vector(1,0){60}}
+            \put(47,74){$C_1$}
+            \put(47,59){$C_2$}
+            \put(47,19){$C_N$}
+            \thicklines
+            \put(10,-9){\vector(1,0){80}}
+            \thicklines
+            \put(47,-20){$C$}
+        \end{picture}
+    \end{center}
+    信道间相互概率独立
+    \[p({y_1}, \ldots ,{y_N}|{x_1}, \ldots ,{x_N}) = \prod\limits_{i = 1}^N p ({y_i}|{x_1}, \ldots ,{x_N})\]
+    \[p({y_i}|{x_1}, \ldots ,{x_N}) = \frac{{p({x_1}, \ldots ,{x_N},{y_i})}}{{p({x_1}, \ldots ,{x_N})}} = \frac{{p({x_i},{y_i}){p_{n \ne i}}({x_1} \ldots ,{x_n}, \ldots ,{x_N})}}{{p({x_i}){p_{n \ne i}}({x_1} \ldots ,{x_n}, \ldots ,{x_N})}} = p({y_i}|{x_i})\]
+    联合条件熵满足
+    \begin{equation*}
+    \begin{split}
+    H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n}) & =  - \sum\limits_{x,y} {p(} {x_1}, \ldots ,{x_N},{y_1}, \ldots ,{y_N})\log p({y_1}, \ldots ,{y_N}|{x_1}, \ldots ,{x_N})\\
+    &  =  - \sum\limits_{i = 1}^N {\sum\limits_{x,y} {p(} {x_i},{y_i})\log p({y_i}|{x_i})}  \\
+    & = \sum\limits_{i = 1}^N {H({Y_i}|} {X_i})
+    \end{split}
+    \end{equation*}
+    整个信道的互信息量
+    \begin{equation*}
+    \begin{split}
+    I({X_1}, \ldots ,{X_n}|{Y_1}, \ldots ,{Y_N}) &= H({Y_1}, \ldots ,{Y_N}) - H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n})\\
+    & = H({Y_1}, \ldots ,{Y_N}) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_1}, \ldots ,{X_n})\\
+    &  \le \sum\limits_{i = 1}^N {H({Y_i}} ) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_i})\qquad \text{当且仅当所有的$Y$概率独立时取等号}\\
+    & = \sum\limits_{i = 1}^N {(H({Y_i}) - H({Y_i}|} {X_i}))\\
+    & = \sum\limits_{i = 1}^N {I({X_i},{Y_i})} 
+    \end{split}
+    \end{equation*}
+    信道容量
+    \begin{equation*}
+        \begin{split}
+        C &= \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_1}, \ldots ,{X_n}|{Y_1}, \ldots ,{Y_N})\\
+        & \le \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} \sum\limits_{i = 1}^N {I({X_i},{Y_i})} \\
+        & \le \sum\limits_{i = 1}^N {\mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_i},{Y_i})} \\
+        & = \sum\limits_{i = 1}^N {{C_i}}\\
+        & = N(1 - H(p))
+        \end{split}
+    \end{equation*}
+    \end{solution}
+    \vspace{1.5cm}
+    \question 将两个容量分别为$C_1$和$C_2$的BSC信道依概率组合.即码字$X$的以概率$\alpha$在信道1传输，或以概率$1-\alpha$在信道2传输，但两种传输不同时发生。请计算这种组合的最大容量$C$（用$C_1$和$C_2$表示）
+    \begin{solution}
+    $\log ({2^{{C_1}}} + {2^{{C_2}}})$
+\begin{equation*}
+    X=
+   \begin{cases}
+   {{X_1}} &\mbox{概率为}\alpha\\
+   {{X_2}} &\mbox{概率为}1-\alpha
+   \end{cases}
+  \end{equation*}
+  令
+  \begin{equation*}
+    \theta (X)=
+   \begin{cases}
+   1 &\mbox{当}X=X_1\\
+   2 &\mbox{当}X=X_2
+   \end{cases}
+  \end{equation*}
+  $\theta$是$Y$的函数，即$X \to Y \to \theta $是Markov链
+  \[I(X;Y,\theta ) = I(X;\theta ) + I(X;Y|\theta ) = I(X;Y) + I(X;\theta |Y) = I(X;Y)\]
+  \begin{equation*}
+  \begin{split}
+  I(X;Y) &= I(X;\theta ) + I(X;Y|\theta )\\
+  &= H(\alpha) + \alpha I({X_1};{Y_1}) + (1 - \alpha )I({X_2};{Y_2})
+  \end{split}
+  \end{equation*}
+  信道容量取决于关于$\alpha$的函数
+  \[f(\alpha ) = H(\alpha ) + \alpha {C_1} + (1 - \alpha ){C_2}\]
+  对函数求极值优化 \[\frac{{df}}{{d\alpha }} =  - \log \alpha  + \log (1 - \alpha ) + {C_1} - {C_2} = 0\]
+  当$\alpha  = {2^{{C_1}}}/({2^{{C_1}}} + {2^{{C_2}}})$时，取到极大值
+  \[C = \mathop {\max }\limits_\alpha  f(\alpha ) = \log ({2^{{C_1}}} + {2^{{C_2}}})\]
+    \end{solution}
+    
+\end{questions}
+\end{CJK*}
+\end{document}
