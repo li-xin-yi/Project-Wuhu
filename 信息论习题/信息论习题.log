@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  12 JUN 2015 23:16
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  13 JUN 2015 15:04
 entering extended mode
 **信息论习题.tex
-("C:\Users\_lxy\Downloads\信息论习题 (2)\信息论习题.tex"
+(E:\Project-Wuhu\信息论习题\信息论习题.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\exam\exam.cls
@@ -494,7 +494,7 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 Package: ulem 2011/03/18
 \ULdepth=\dimen117
 )
-("C:\Users\_lxy\Downloads\信息论习题 (2)\信息论习题.aux"
+(E:\Project-Wuhu\信息论习题\信息论习题.aux
 
 LaTeX Warning: Label `question@1' multiply defined.
 
@@ -687,20 +687,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
+[2]
+Overfull \hbox (15.49008pt too wide) in paragraph at lines 122--124
+\C70/gbsn/m/n/10/90  \C70/gbsn/m/n/10/8f � \C70/gbsn/m/n/10/4e 
+ \C70/gbsn/m/n/10/98 � \C70/gbsn/m/n/10/76 � \C70/gbsn/m/n/10/8b � \C70/gbsn/m/
+n/10/66  \C70/gbsn/m/n/10/ff $\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 (\OML/cmm/m/i
+t/10 X\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ; \OML/cmm
+/m/it/10 Z\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/10/54 �$\OML/cmm/m/it/10 I\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 Z\OT1/cmr/m/n/10 ) \
+OMS/cmsy/m/n/10  \OML/cmm/m/it/10 I\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr
+/m/n/10 ; \OML/cmm/m/it/10 Z\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/10/54  \C70/gbsn/m
+/n/10/65 � \C70/gbsn/m/n/10/62  \C70/gbsn/m/n/10/7a � \C70/gbsn/m/n/10/ff $\O
+ML/cmm/m/it/10 I\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ; \OML/cmm/m
+/it/10 Z\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/10/4e 
+ \C70/gbsn/m/n/10/96 P \C70/gbsn/m/n/10/4e  � \C70/gbsn/m/n/10/53 � \C70/gbsn/
+m/n/10/51 � \C70/gbsn/m/n/10/4e �$\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 X\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 )$\C70/gbsn/m/n/10/
+ff 
+ []
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143     \\�
-             ��大数定律：
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
+[3]
 Overfull \hbox (12.7011pt too wide) in paragraph at lines 168--168
 \C70/gbsn/m/n/10/72 � \C70/gbsn/m/n/10/7a � \C70/gbsn/m/n/10/4e  \C70/gbsn/m/n
 /10/6b � \C70/gbsn/m/n/10/4e   * $\OML/cmm/m/it/10 Y$\C70/gbsn/m/n/10/67 	 \C7
@@ -713,7 +720,7 @@ bsn/m/n/10/4e *$[]$\C70/gbsn/m/n/10/54 �$[]$\C70/gbsn/m/n/10/4e _ \C70/gbsn/m/n
 cmr/m/n/10 .$[]$\C70/gbsn/m/n/10/76 �
  []
 
-[2]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
@@ -728,70 +735,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
-[3]
+[5] [6] [7]
 This exam contains 16 questions with 0 parts, 0 subparts, and 0 subsubparts.
-("C:\Users\_lxy\Downloads\信息论习题 (2)\信息论习题.aux")
+(E:\Project-Wuhu\信息论习题\信息论习题.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5231 strings out of 495354
- 62081 string characters out of 3183860
- 135203 words of memory out of 3000000
- 8153 multiletter control sequences out of 15000+200000
+ 5235 strings out of 495354
+ 62079 string characters out of 3183860
+ 138203 words of memory out of 3000000
+ 8156 multiletter control sequences out of 15000+200000
  37837 words of font info for 137 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 30i,21n,29p,533b,1033s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gb
-snu/gbsnu30.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu4e.pfb><D:/CTEX/M
-iKTeX/fonts/type1/arphic/gbsnu/gbsnu4f.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/g
-bsnu/gbsnu50.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu51.pfb><D:/CTEX/
-MiKTeX/fonts/type1/arphic/gbsnu/gbsnu52.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/
-gbsnu/gbsnu53.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu54.pfb><D:/CTEX
-/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu56.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic
-/gbsnu/gbsnu57.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu59.pfb><D:/CTE
-X/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5b.pfb><D:/CTEX/MiKTeX/fonts/type1/arphi
-c/gbsnu/gbsnu5c.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5d.pfb><D:/CT
-EX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5e.pfb><D:/CTEX/MiKTeX/fonts/type1/arph
-ic/gbsnu/gbsnu5f.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu60.pfb><D:/C
-TEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu61.pfb><D:/CTEX/MiKTeX/fonts/type1/arp
-hic/gbsnu/gbsnu62.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu63.pfb><D:/
-CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu65.pfb><D:/CTEX/MiKTeX/fonts/type1/ar
-phic/gbsnu/gbsnu66.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu67.pfb><D:
-/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu68.pfb><D:/CTEX/MiKTeX/fonts/type1/a
-rphic/gbsnu/gbsnu69.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu6a.pfb><D
-:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu6b.pfb><D:/CTEX/MiKTeX/fonts/type1/
-arphic/gbsnu/gbsnu6c.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu71.pfb><
-D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu72.pfb><D:/CTEX/MiKTeX/fonts/type1
-/arphic/gbsnu/gbsnu73.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu75.pfb>
-<D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu76.pfb><D:/CTEX/MiKTeX/fonts/type
-1/arphic/gbsnu/gbsnu77.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu78.pfb
-><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu79.pfb><D:/CTEX/MiKTeX/fonts/typ
-e1/arphic/gbsnu/gbsnu7a.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu7b.pf
-b><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu7c.pfb><D:/CTEX/MiKTeX/fonts/ty
-pe1/arphic/gbsnu/gbsnu7e.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu7f.p
-fb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu80.pfb><D:/CTEX/MiKTeX/fonts/t
-ype1/arphic/gbsnu/gbsnu82.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu84.
-pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu88.pfb><D:/CTEX/MiKTeX/fonts/
-type1/arphic/gbsnu/gbsnu89.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu8b
-.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu8c.pfb><D:/CTEX/MiKTeX/fonts
-/type1/arphic/gbsnu/gbsnu8d.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu8
-f.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu90.pfb><D:/CTEX/MiKTeX/font
-s/type1/arphic/gbsnu/gbsnu91.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu
-94.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu95.pfb><D:/CTEX/MiKTeX/fon
-ts/type1/arphic/gbsnu/gbsnu96.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsn
-u97.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu98.pfb><D:/CTEX/MiKTeX/fo
-nts/type1/arphic/gbsnu/gbsnuff.pfb>
-Output written on 信息论习题.pdf (3 pages, 376069 bytes).
+ 30i,21n,29p,533b,1077s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu30.pfb><D:/CTEX/MiKTeX/fonts/type1
+/arphic/gbsnu/gbsnu4e.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu4f.pfb>
+<D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu50.pfb><D:/CTEX/MiKTeX/fonts/type
+1/arphic/gbsnu/gbsnu51.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu52.pfb
+><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu53.pfb><D:/CTEX/MiKTeX/fonts/typ
+e1/arphic/gbsnu/gbsnu54.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu56.pf
+b><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu57.pfb><D:/CTEX/MiKTeX/fonts/ty
+pe1/arphic/gbsnu/gbsnu59.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5b.p
+fb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5c.pfb><D:/CTEX/MiKTeX/fonts/t
+ype1/arphic/gbsnu/gbsnu5d.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5e.
+pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu5f.pfb><D:/CTEX/MiKTeX/fonts/
+type1/arphic/gbsnu/gbsnu60.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu61
+.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu62.pfb><D:/CTEX/MiKTeX/fonts
+/type1/arphic/gbsnu/gbsnu63.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu6
+5.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu66.pfb><D:/CTEX/MiKTeX/font
+s/type1/arphic/gbsnu/gbsnu67.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu
+68.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu69.pfb><D:/CTEX/MiKTeX/fon
+ts/type1/arphic/gbsnu/gbsnu6a.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsn
+u6b.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu6c.pfb><D:/CTEX/MiKTeX/fo
+nts/type1/arphic/gbsnu/gbsnu6e.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbs
+nu71.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu72.pfb><D:/CTEX/MiKTeX/f
+onts/type1/arphic/gbsnu/gbsnu73.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gb
+snu74.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu75.pfb><D:/CTEX/MiKTeX/
+fonts/type1/arphic/gbsnu/gbsnu76.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/g
+bsnu77.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu78.pfb><D:/CTEX/MiKTeX
+/fonts/type1/arphic/gbsnu/gbsnu79.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/
+gbsnu7a.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu7b.pfb><D:/CTEX/MiKTe
+X/fonts/type1/arphic/gbsnu/gbsnu7c.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu
+/gbsnu7d.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu7e.pfb><D:/CTEX/MiKT
+eX/fonts/type1/arphic/gbsnu/gbsnu7f.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsn
+u/gbsnu80.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu82.pfb><D:/CTEX/MiK
+TeX/fonts/type1/arphic/gbsnu/gbsnu84.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbs
+nu/gbsnu88.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu89.pfb><D:/CTEX/Mi
+KTeX/fonts/type1/arphic/gbsnu/gbsnu8b.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gb
+snu/gbsnu8c.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu8d.pfb><D:/CTEX/M
+iKTeX/fonts/type1/arphic/gbsnu/gbsnu8f.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/g
+bsnu/gbsnu90.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu91.pfb><D:/CTEX/
+MiKTeX/fonts/type1/arphic/gbsnu/gbsnu94.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/
+gbsnu/gbsnu95.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu96.pfb><D:/CTEX
+/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu97.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic
+/gbsnu/gbsnu98.pfb><D:/CTEX/MiKTeX/fonts/type1/arphic/gbsnu/gbsnu9a.pfb><D:/CTE
+X/MiKTeX/fonts/type1/arphic/gbsnu/gbsnuff.pfb><D:/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/latxfont/lcircle1.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/la
+txfont/line10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/latxfont/linew10.
+pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on 信息论习题.pdf (7 pages, 468040 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
+ 396 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 

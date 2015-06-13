@@ -6,8 +6,8 @@
 \newif\ifprint
 \unframedsolutions
 \renewcommand{\solutiontitle}{\noindent\textbf{解: }\noindent}
-\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
-%\printfalse
+%\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
+\printfalse
 \usepackage{ulem}
 \newcommand{\blank}[2][1cm]{\uline{\makebox[#1][c]{%
   \ifprint
@@ -15,7 +15,7 @@
   \else
     #2%
   \fi}}}
-%\printanswers %答题答案去掉后隐藏
+\printanswers %答题答案去掉后隐藏
 \begin{document}
 
 \begin{CJK*}{UTF8}{gbsn}
@@ -206,11 +206,11 @@ ${2^{ - n(I(X;Y) - 3\varepsilon )}}$
         I(X;Y) &= H(Y) - H(Y|X)\\
         & = H(Y) - \sum {p(x)H(Y|X = x)}\\
         & = H(Y) - \sum {p(x)H(p)}\\
-        & \le 1 - H(q) \qquad \text{当且仅当输入分布是均匀分布时取等号}
+        & \le 1 - H(p) \qquad \text{当且仅当输入分布是均匀分布时取等号}
         \end{split}
-    \end{equation*}
-    这里的$H(q) =  - qlogq - (1 - q)log(1 - q)$.
-    \[C = \mathop {\max }\limits_{p(x)} I(X;Y) = 1 - H(q)\]
+        \end{equation*}
+        这里的$H(p) =  - plogp - (1 - p)log(1 - p)$.
+        \[C = \mathop {\max }\limits_{p(x)} I(X;Y) = 1 - H(p)\]
     \end{solution}
     \vspace{1.5cm}
     \question 将$N$个$BSC(p)$信道串联，结果得到一个等效的BSC信道.计算其信道容量$C$(用$N$和$p$表示)
