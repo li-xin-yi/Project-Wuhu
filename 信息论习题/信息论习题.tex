@@ -337,7 +337,7 @@ ${2^{ - n(I(X;Y) - 3\varepsilon )}}$
     整个信道的互信息量
     \begin{equation*}
     \begin{split}
-    I({X_1}, \ldots ,{X_n}|{Y_1}, \ldots ,{Y_N}) &= H({Y_1}, \ldots ,{Y_N}) - H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n})\\
+    I({X_1}, \ldots ,{X_n};{Y_1}, \ldots ,{Y_N}) &= H({Y_1}, \ldots ,{Y_N}) - H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n})\\
     & = H({Y_1}, \ldots ,{Y_N}) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_1}, \ldots ,{X_n})\\
     &  \le \sum\limits_{i = 1}^N {H({Y_i}} ) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_i})\qquad \text{当且仅当所有的$Y$概率独立时取等号}\\
     & = \sum\limits_{i = 1}^N {(H({Y_i}) - H({Y_i}|} {X_i}))\\
@@ -347,9 +347,9 @@ ${2^{ - n(I(X;Y) - 3\varepsilon )}}$
     信道容量
     \begin{equation*}
         \begin{split}
-        C &= \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_1}, \ldots ,{X_n}|{Y_1}, \ldots ,{Y_N})\\
-        & \le \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} \sum\limits_{i = 1}^N {I({X_i},{Y_i})} \\
-        & \le \sum\limits_{i = 1}^N {\mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_i},{Y_i})} \\
+        C &= \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_1}, \ldots ,{X_n};{Y_1}, \ldots ,{Y_N})\\
+        & \le \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} \sum\limits_{i = 1}^N {I({X_i};{Y_i})} \\
+        & \le \sum\limits_{i = 1}^N {\mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_i};{Y_i})} \\
         & = \sum\limits_{i = 1}^N {{C_i}}\\
         & = N(1 - H(p))
         \end{split}
