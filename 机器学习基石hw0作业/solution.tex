@@ -1,0 +1,163 @@
+\documentclass[8pt,a4paper]{exam}
+\usepackage{indentfirst}
+\title{Solution to Homework\#0}
+\date{}
+\def\QEDclosed{\mbox{\rule[0pt]{1.3ex}{1.3ex}}} % 定义实心符
+\def\QEDopen{{\setlength{\fboxsep}{0pt}\setlength{\fboxrule}{0.2pt}\fbox{\rule[0pt]{0pt}{1.3ex}\rule[0pt]{1.3ex}{0pt}}}} %定义空心符
+\def\QED{\QEDopen} % 选填\QEDclosed得到实心
+\def\proof{\noindent{\bf Proof}: } 
+\def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}
+
+\begin{document}
+	\maketitle
+	\section{Probabity and Statistics}
+	  \subsection{(combinatorics)}
+	  \begin{proof}
+	  To prove the equation  $C_n^k = \frac{{n!}}{{k!(n - k)!}}$, \textbf{mathematical induction can be applied there.}
+	     \begin{quote}  
+	      S1 when $n=0$, k can only value as 0 or 1.  
+	        \begin{quote}
+	     	In those cases,$C_n^k = 1 = \frac{{n!}}{{k!(n - k)!}}$ holds
+	        \end{quote}
+	      S2 Assume that it holds when $n=t$, as $C_n^k = \frac{{n!}}{{k!(n - k)!}}$. \\
+          Then for $n=t+1$\\
+           \[C_{t + 1}^k = C_t^k + C_t^{k - 1} = \frac{{t!}}{{k!(t - k)}} + \frac{{t!}}{{(k - 1)!(t - k + 1)!}}{\rm{ = }}\frac{{t!}}{{k!(t - k{\rm{ + }}1}}(t - k + 1 + k) = \frac{{(t + 1)!}}{{k!(t + 1 - k)!}}\]
+           hence the equation holds when $n=t+1$  
+        \end{quote}
+     So\\ 
+     \[C_n^k = \frac{{n!}}{{k!(n - k)!}}\]for $n \ge 1$ and $0 \le k \le n$     
+      \end{proof}
+	  \subsection{(counting)}
+	   Let random variable $X$ represent the number of the heads, and $X\sim B(10,\frac{1}{2})$, then 
+       \[P(X = 4) = C_{10}^4{(\frac{1}{2})^4}{(\frac{1}{2})^6} = \frac{{105}}{{512}}\]
+       \\ \\
+       \indent Let event A be the event of getting a full house(XXXYY) from a deck of 52 cards, then
+       \[P(A) = \frac{{A_4^2 \cdot C_{13}^3 \cdot C_{13}^2}}{{C_{52}^5}} = \frac{{429}}{{4165}}\]
+
+	  \subsection{(conditional probability)}
+	  Let event A represent the event of all three tosses resulting in head, while event B represent the event of at least one of the tosses resulting in head. Then
+      \[P(A|B) = \frac{{P(AB)}}{{P(B)}} = \frac{{{{(\frac{1}{2})}^3}}}{{1 - {{(\frac{1}{2})}^3}}} = \frac{1}{7}\]
+	  
+	  \subsection{(Bayes theorem)}
+\[\begin{array}{l}
+P(X < 0) = \frac{{P(bit = 1,X =  - 1)}}{{P(bit = 0,X = 1) + P(bit = 1,X =  - 1)}}\\
+{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt}  {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt}  = \frac{{\frac{1}{2} \times \frac{1}{4}}}{{\frac{1}{2} \times \frac{1}{8}{\rm{ + }}\frac{1}{2} \times \frac{1}{4}}}{\rm{ = }}\frac{2}{3}
+\end{array}\]
+	  \subsection{(union/intersection)}
+	  \textit{As applications of the principle of Inclusion}-\textit{exclusion,}
+	  \[P(A \cap B) = P(A) + P(B) - P(A \cup B)\]
+	  \textit{and}
+	  \[P(A \cup B) = P(A) + P(B) - P(A \cap B)\]
+	  Hence
+      \[P{(A \cap B)_{\max }} = \min [P(A),P(B)] = P(A) = 0.3\]
+     \[P{(A \cap B)_{\min }} = \max [0,P(A) + P(B) - 1] = 0\]
+	 \[P{(A \cup B)_{\max }} = \min [P(A) + P(B),1] = 0.7\]
+	 \[P{(A \cup B)_{\min }} = \max [P(A),P(B)] = P(B) = 0.4\]
+ \section{Linear Algebra}
+ \subsection{(rank)}
+ \[r\left( {\begin{array}{*{20}{c}}
+ 	1&2&1\\
+ 	1&0&3\\
+ 	1&1&2
+ 	\end{array}} \right) = 2\]
+ \subsection{(inverse)}
+ \[{\left( {\begin{array}{cccccccccccccccccccc}
+ 		0&2&4\\
+ 		2&4&2\\
+ 		3&3&1
+ 		\end{array}} \right)^{ - 1}} = \left( {\begin{array}{*{20}{c}}
+ 		0&2&3\\
+ 		2&4&3\\
+ 		4&2&1
+ 		\end{array}} \right)\]
+ \subsection{(eigenvalue/eignevectors)}
+\begin{table}[htbp]
+\centering
+\caption{Eigenvalues and their respective eigenvectors}
+ \begin{tabular}{c|c}
+ 	\hline\\
+ 	${\alpha _1}{\rm{ = }}4$ & ${p_1} = {[\begin{array}{*{20}{c}}
+ 		{ - 1}&{ - 2}&1
+ 		\end{array}]^T}$\\
+ 	\hline\\
+ 	 ${\alpha _2}{\rm{ = }}2$ & ${p_2} = {[\begin{array}{*{20}{c}}
+ 	 		{ - 1}&0&1
+ 	 		\end{array}]^T}$\\
+ 	\hline\\
+ 	${\alpha _3}{\rm{ = }}2$ & ${p_3} = {[\begin{array}{*{20}{c}}
+ 		{ - 1}&1&0\end{array}]^T}$\\
+ 	\hline
+ \end{tabular}
+\end{table}
+\subsection{(singular value decomposition)}
+\paragraph{(a)}
+ 	  	For $\Sigma$ is a rectangular diagonal matrix, so is ${{\Sigma }}{^\dag }$
+ \[{{\Sigma }}{{{\Sigma }}^\dag }_{[i][j]} = \sum\limits_{k = 1}^m {{{{\Sigma }}_{[i][k]}} \cdot {{{\Sigma }}^\dag }_{[k][j]}} \]
+\indent  	Apparently, ${{\Sigma }}{{{\Sigma }}^\dag }$ will be an $n \times n$ identity matrix. Since $U$ and $V$ are both unitary matrix,
+ 	\[\left\{ {\begin{array}{*{20}{c}}
+ 		{U{U^T} = {U^T}U = I}\\
+ 		{V{V^T} = {V^T}V = I}
+ 		\end{array}} \right.\]
+ 	\[M{M^\dag }M = (U{{\Sigma }}{V^T})(V{{\Sigma }}{^\dag }{U^T})(U{{\Sigma }}{V^T})\]
+ 	\[ = U{{\Sigma }}{{\Sigma }}{^\dag }{{\Sigma }}{V^T}\]
+ 	\[ = U{{\Sigma }}{V^T}\]
+ 	\[ = M\]
+\paragraph{(b)}
+   \[M{M^\dag } = (U\Sigma {V^T})(V\Sigma {^\dag }{U^T}) = U\Sigma {\Sigma ^\dag }{U^T} = U{U^T} = I\]
+   Analogously,\[{M^\dag }M = I\]
+   So,
+   \[{M^{ - 1}} = {M^\dag }\]
+\subsection{(PD/PSD)}
+\paragraph{(a)}
+	\[{{\bf{x}}^T}Z{Z^T}{\bf{x}} = ({\bf{x}}Z){({\bf{x}}Z)^T} \ge 0\]
+\paragraph{}
+So $Z{Z^T}$ is a postive semi-defined matrix.
+\paragraph{(b)}
+Since $A$ is a real symmetric matrix, the eigenvectors of $A$ (presented as ${v_i}$, and their respectful eigenvalues are defined as ${\lambda _i}$) can be orthogonal and unitary.\\
+Let ${\bf{x}} = \sum {{k_i}{v_i}} $ and ${{\bf{x}}^T} = \sum {{k_i}v_i^T} $
+\[\begin{array}{l}
+{{\bf{x}}^T}A{\bf{x}} = (\sum {{k_i}v_i^T)A(} \sum {{k_i}{v_i}} )\\
+= (\sum {{k_i}v_i^T)(} \sum {{k_i}{\lambda _i}{v_i}} )\\
+= \sum {{\lambda _i}k_i^2}  > 0
+\end{array}\]
+\indent Hence, $A$ is postive-defined.
+\subsection{(inner product)}
+\noindent When $\bf{x}$ and $\bf{u}$ have the same direction, ${\bf{x}^T}\bf{u}$ reaches its maximum $\left\| \bf{x} \right\|$.\\
+When $\bf{x}$ and $\bf{u}$ have the opposite direction, ${\bf{x}^T}\bf{u}$ reaches its minimum $\left\| \bf{x} \right\|$.\\
+When $\bf{x}$ and $\bf{u}$ are orthogonal, $\left| {{{\bf{x}}^{\bf{T}}}{\bf{u}}} \right|$ reaches its minimun 0.\\
+\section{Calculus}
+\subsection{(differential and partial differential)}
+\[\frac{{df(x)}}{{dx}} = \frac{{ - 2}}{{{e^{2x}} + 1}}\]
+\[\frac{{\partial g(x,y)}}{{\partial x}} = 2{e^{2y}} + 6y{e^{3xy^2}}\]
+\subsection{(chain rule)}
+\[\frac{{\partial f}}{{\partial v}} =  - y\sin v - x\cos v\]
+\subsection{(gradient and Hessian)}
+When $u=1$ and $v=1$, the gradient of E
+\[\nabla E = -2({e^v} + 2v{e^{ - u}})(u{e^v} - 2v{e^{ - u}}){\bf{i}} + 2(u{e^v} - 2{e^{ - u}})(u{e^v} - 2v{e^{ - u}}){\bf{j}}\]
+\[ = 2(4{e^{ - 2}} - {e^2}){\bf{i}} + 2{(2{e^{ - 1}} - e)^2}{\bf{j}}\]
+\indent Meanwhile, its Hessian matrix ${\nabla ^2}E = $
+\[\left( {\begin{array}{*{20}{c}}
+	{2{e^2} - 12 + 16{e^{ - 2}}}&0\\
+	0&{4{e^2} - 12 + 8{e^{ - 2}}}
+	\end{array}} \right)\]
+\subsection{(Taylor's expansion)}
+\[\begin{array}{l}
+E = 2(4{e^{ - 2}} - {e^2})(u - 1) + 2{(2{e^{ - 1}} - e)^2}(v - 1)\\
+{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\rm{ + }}2{e^2} - 6 + 8{e^{ - 2}}){(u - 1)^2} + 4({e^2} - 3 + 4{e^{ - 2}}){(v - 1)^2}\\
+{\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\kern 1pt} {\rm{ + }}o
+\end{array}\]
+\subsection{(optiminzation)}
+From the inequality of arithmetic and geometric means
+\[A{e^\alpha } + B{e^{ - 2\alpha }} = \frac{1}{2}A{e^\alpha } + \frac{1}{2}A{e^\alpha } + B{e^{ - 2\alpha }} \ge 3\sqrt[3]{{\frac{A}{2}{e^\alpha } \cdot \frac{A}{2}{e^\alpha } \cdot B{e^{ - 2\alpha }}}}\]
+\[ \ge 3\sqrt[3]{{\frac{{{A^2}B}}{4}}}\]
+\indent with equality if and only if  $\frac{A}{2}{e^\alpha } = B{e^{ - 2\alpha }}$, at that time, $\alpha  = \frac{1}{3}(\ln 2B - {\mathop{\rm lnA}\nolimits} )$.
+\subsection{(vector calculus)}
+\[\frac{{dE}}{{d{\bf{w}}}} = \frac{1}{2}(A{\bf{w}} + A{\bf{w}}) + {\bf{b}} = A{\bf{w}} + {\bf{b}}\]
+Then,
+\[\nabla {\rm{E(}}{\bf{w}}{\rm{)  =  A}}{\bf{w}}{\rm{  +  b}}\]
+\[\frac{{{d^2}E}}{{d{{\bf{w}}^2}}} = A\]
+So,
+\[{\nabla ^2}{\rm{E(}}{\bf{w}}{\rm{)  =  A}}\]
+
+
+\end{document}
