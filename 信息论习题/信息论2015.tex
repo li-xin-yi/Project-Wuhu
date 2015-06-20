@@ -15,13 +15,13 @@
     #2%
   \fi}}}
 \printanswers %答题答案去掉后隐藏
-
+\pagestyle{empty} %去掉后脚标显示页数
 \begin{document}
 
 \begin{CJK*}{UTF8}{gbsn}
 \section*{选择题}
     \begin{questions}
-    \question 以下关于联合熵的命题\blank{}恒为真
+    \question 以下关于联合熵的命题\blank{C}恒为真
     \begin{choices}
         \choice $H({X_1}, \ldots ,{X_n}) = H({X_1}) +  \cdots  + H({X_n})$
         \choice $H({X_1}, \ldots ,{X_n}) \le H({X_1}) +  \cdots  + H({X_n})$
@@ -29,7 +29,7 @@
         \choice $H({X_1}, \ldots ,{X_n}) \ne H({X_1}) +  \cdots  + H({X_n})$\\
     \end{choices}
     
-    \question $F$是一个多对一的函数，则以下为真的是\blank{}
+    \question $F$是一个多对一的函数，则以下为真的是\blank{C}
     \begin{choices}
         \choice $H(F(X)) = H(X)$
         \choice $H(F(X)) > H(X)$
@@ -37,7 +37,7 @@
         \choice 都有可能\\
     \end{choices}
     
-    \question $X$和$Y$同分布且概率独立，则以下命题\blank{}恒为真
+    \question $X$和$Y$同分布且概率独立，则以下命题\blank{B}恒为真
     \begin{choices}
         \choice $H(X,Y,Z) - H(X,Y) = H(X,Z) - H(X)$
         \choice $H(X,Y,Z) - H(X,Y) \le H(X,Z) - H(X)$
@@ -45,7 +45,7 @@
         \choice $H(X,Y,Z) - H(X,Y) \ne H(X,Z) - H(X)$\\
     \end{choices}
     
-    \question 对不同的$i$，$\left( {{X_i},{Y_i}} \right)$之间是概率独立的离散型联合随机变量，概率分布为$P(X,Y)$,$P(X)$和$P(Y)$分别为各个$X_i$和$Y_i$的概率分布，$i = 1,2, \ldots ,n$.根据大数定律，当$n$趋于无穷大时，随机变量$\frac{1}{n}\log \frac{{P\left( {{X_1}, \ldots ,{X_n}} \right)P\left( {{Y_1}, \ldots ,{Y_n}} \right)}}{{P({X_1},{Y_1}, \ldots {X_n},{Y_n})}}$的极限是\blank{}
+    \question 对不同的$i$，$\left( {{X_i},{Y_i}} \right)$之间是概率独立的离散型联合随机变量，概率分布为$P(X,Y)$,$P(X)$和$P(Y)$分别为各个$X_i$和$Y_i$的概率分布，$i = 1,2, \ldots ,n$.根据大数定律，当$n$趋于无穷大时，随机变量$\frac{1}{n}\log \frac{{P\left( {{X_1}, \ldots ,{X_n}} \right)P\left( {{Y_1}, \ldots ,{Y_n}} \right)}}{{P({X_1},{Y_1}, \ldots {X_n},{Y_n})}}$的极限是\blank{C}
     \begin{choices}
         \choice $H(X|Y) - H(Y|X)$
         \choice $H(X|Y) + H(Y|X)$
@@ -53,7 +53,7 @@
         \choice $-I(X;Y)$\\
     \end{choices}
     
-    \question一个二元对称无记忆离散信道的容量为0.8比特，信道编码采用二进制形式，可以表达为16种序列，要使译码的差错概率能够任意地接近于0，信道码字的长度最短不能低于\blank{}
+    \question一个二元对称无记忆离散信道的容量为0.8比特，信道编码采用二进制形式，可以表达为16种序列，要使译码的差错概率能够任意地接近于0，信道码字的长度最短不能低于\blank{B}
     \begin{choices}
         \choice 4位
         \choice 5位
@@ -68,43 +68,151 @@
     以下出现的随机变量$X$、$Y$和$Z$都是离散随机变量
     \begin{questions}
     \question 请证明关于离散随机变量$X$的信息熵$H(X)$是凹函数
+    \begin{solution}
+    	\[H(X) = -\sum\limits_x {{p_x}} \log ({p_x})\]
+    	对于任意一个$x$， 一阶导数：\[\frac{{\partial H}}{{\partial {p_x}}} =  - \log ({p_x}) - 1\]
+    	二阶导数：
+    	\begin{equation*}
+    	\frac{{{\partial ^2}H}}{{\partial {p_x}\partial {p_{x'}}}} = 
+    	\begin{cases}
+    	  - \frac{1}{{{p_x}}}& x=x'\\
+    	 0& x \ne x'
+    	\end{cases}
+    	\end{equation*}
+    	$H(X)$的Hessian矩阵$\left[ {\frac{{{\partial ^2}H}}{{\partial {p_x}\partial {p_{x'}}}}} \right]$可以写作：
+\[\left[ {\begin{array}{*{20}{c}}
+	{ - \frac{1}{{{p_{{x_1}}}}}}&0& \cdots &0\\
+	0&{ - \frac{1}{{{p_{{x_2}}}}}}& \cdots &0\\
+	\vdots & \vdots & \ddots & \vdots \\
+	0&0& \cdots &{ - \frac{1}{{{p_{{x_n}}}}}}
+	\end{array}} \right]\]
+    	是主对角线元素全为负数的对角矩阵，显然是一个负定矩阵，所以$H(X)$是关于$p$的凹函数.
+    	\vspace{0.5cm}
+    \end{solution}
+    
     \question 陈述信息处理不等式
+    \begin{solution}
+    	\newline
+    	有Markov链: $$X \to Y \to Z$$则存在不等式关系：
+    	\[I(X;Y) \ge I(X;Z)\]
+    \end{solution}
+    
     \question 证明上述的信息处理不等式
-    \question 规定条件互信息量为$I(X;Y|Z)$, $I(X;Y|Z) = H(X|Z) - H(X|Y,Z)$, 请证明$I(X;Y|Z)$对于$X$和$Y$满足对称性，即$I(X;Y|Z)=I(Y;X|Z)$
+    \begin{solution}
+    \newline
+    Markov链$X \to Y \to Z$的联合概率分布为：
+    \[p(x,y,z) = p(x)p(y|x)p(z|y)\]
+    也就是在给定给定$Y$时，$X$和$Z$是条件独立的，即$I(X;Z|Y) = 0$，因为：
+    \[p(x,z|y) = p(x,y,z)/p(y) = p(x|y)p(z|y)\]
+    根据链式法则展开互信息量：
+        \begin{equation*}
+        \begin{split}
+        I(X;Y,Z) &= I(X;Z) + I(X;Y|Z)\\
+        & = I(X;Y) + I(X;Z|Y)\\
+        & = I(X;Y)
+        \end{split}
+        \end{equation*}
+        由于互信息量始终非负 $ I(X;Y|Z) \ge 0$\\
+        \[ I(X;Y) = I(X;Z) + I(X;Y|Z) \ge I(X;Z)\]
+    \vspace{0.5cm}	
+    \end{solution}
+    
+    \question 规定条件互信息量为$I(X;Y|Z)$:  $I(X;Y|Z) = H(X|Z) - H(X|Y,Z)$, 请证明$I(X;Y|Z)$对于$X$和$Y$满足对称性，即$I(X;Y|Z)=I(Y;X|Z)$
+    \begin{solution}
+    	\begin{equation*}
+    	\begin{split}
+    	I(X;Y|Z) &= H(X|Z)-H(X|Y,Z)\\
+    	& =  - \sum\limits_{x,z} {p(x,z)\log \frac{{p(x,z)}}{{p(z)}}}  + \sum\limits_{x,y,z} {p(x,y,z)\log \frac{{p(x,y,z)}}{{p(y,z)}}} \\
+    	& =  - \sum\limits_{x,y,z} {p(x,y,z)\log \frac{{p(x,z)p(y,z)}}{{p(z)p(x,y,z)}}} \\
+    	& =  - \sum\limits_{x,y,z} {p(x,y,z)\log \frac{{p(y|z)}}{{p(y|x,z)}}} \\
+    	& =  - \sum\limits_{y,z} {p(y,z){\mathop{\rm logp}\nolimits} (y|z)}  + \sum\limits_{x,y,z} {p(x,y,z)\log p(y|x,z)} \\
+    	& = H(Y|Z) - H(Y|X,Z)\\
+    	& = I(Y;X|Z)
+    	\end{split}
+    	\end{equation*}
+    	\vspace{0.5cm}
+    \end{solution}
+    
     \question 以上符号含义不变请证明$I(X;Z|Y)-I(Y;Z|X)=I(X;Z)-I(Y;Z)$
+    \begin{solution}
+    	\begin{equation*}
+    	\begin{split}
+    	I(X;Z|Y) - I(Y;Z|X) &= H(Z|Y) - H(Z|X,Y) - (H(Z|X) - H(Z|X,Y))\\
+    	& = H(Z|Y) - H(Z|X)\\
+    	& =  - (H(Z) - H(Z|Y)) + (H(Z) - H(Z|X))\\
+    	& = I(X;Z) - I(Y;Z)
+    	\end{split}
+    	\end{equation*}
+    \end{solution}
     \end{questions}
 
 \newpage
 
 \section*{计算题}
     \begin{questions}
-    \question 高斯信道$Y=hX+Z$，$h$为信号放大倍数（信号增益），输入信号$X$的功率为$P$，$Z$为均值为零方差为$a^2$的随机噪声，推导该高斯信道的容量
+    \question 推导高斯信道$Y=hX+Z$的信道容量表达式. $h$是已知的信号放大系数（信号增益），$X$是功率为$P$的输入信号，$Z$信号独立的为均值为零方差为$a^2$的高斯噪声.
     \begin{center}
+    	
+    	
     \begin{picture}(220,80)(-20,0)
-        \put(-20,10){\circle{20}}
+        %\put(-20,10){\circle{20}}
         \put(100,10){\circle{20}}
-        \put(180,10){\circle{20}}
-        \put(100,70){\circle{20}}
+        %\put(180,10){\circle{20}}
+        %\put(100,70){\circle{20}}
         \put(20,3){\framebox(40,14){$h$}}
         \put(60,10){\vector(1,0){30}}
         \put(-10,10){\vector(1,0){30}}
         \put(110,10){\vector(1,0){60}}
         \put(100,60){\vector(0,-1){40}}
-        \put(-25,7){$X$}
+        \put(-20,6){$X$}
         \put(96,7){$+$}
-        \put(176,7){$Y$}
-        \put(96,67){$Z$}
+        \put(173,6){$Y$}
+        \put(96,62){$Z$}
     \end{picture}
     \end{center}
+    \begin{solution}
+    	对于连续随机变量$X \sim {\cal N}(0,{\sigma ^2})$,即概率密度为表达为$p(x) = \frac{1}{{\sqrt {2\pi } \sigma }}{e^{\frac{{ - {x^2}}}{{2{\sigma ^2}}}}}$,微分熵为
+    	\begin{equation*}
+	    	\begin{split}
+	    	h(x) &=  - \int_{ - \infty }^\infty  {p(x)\ln p(x)} \\
+	    	& =  - \int_{ - \infty }^\infty  {p(x)( - \frac{{{x^2}}}{{2{\sigma ^2}}}}  - \ln \sqrt {2\pi } \sigma )\\
+	    	& = \frac{{E{X^2}}}{{2{\sigma ^2}}} + \frac{1}{2}\ln 2\pi {\sigma ^2}\\
+	    	&= \frac{1}{2} + \frac{1}{2}\ln 2\pi {\sigma ^2}\\
+	    	& = \frac{1}{2}\ln 2\pi e{\sigma ^2} \qquad \mbox{改变对数底数，写作}\frac{1}{2}\log 2\pi e{\sigma ^2}\\
+	    	\end{split}
+    	\end{equation*}
+    	将$I(X;Y)$展开，其中$X$和$Z$互相独立：
+    	\begin{equation*}
+    	\begin{split}
+    	I(X;Y) &= h(Y) - h(Y|X)\\
+    	& = h(Y) - h(hX + Z|X) \\
+    	&= h(Y) - h(Z|X)\\
+    	&=h(Y)-h(Z)
+    	\end{split}
+    	\end{equation*}
+    	此时，$h(Z) = \frac{1}{2}log2\pi e{a^2}$, $X$与$Z$互相独立，且$E(Z)=0$，所以：
+    	\[E{Y^2} = E{(hX + Z)^2} = {h^2}E{X^2} + 2hEX + E{Z^2} = {h^2}P + {a^2}\]
+    	在给定方差时，正态分布使熵达到最大，$Y$的上界为$\frac{1}{2}\log 2\pi e({h^2}P + {a^2})$,那么互信息量：
+    	\begin{equation*}
+	    	\begin{split}
+	    	I(X;Y) = h(Y) - h(Z) &\le \frac{1}{2}\log 2\pi e({h^2}P + {a^2}) - \frac{1}{2}log2\pi e{a^2}\\
+	    	&= \frac{1}{2}\log (1 + \frac{{{h^2}P}}{{{a^2}}})
+	    	\end{split}
+    	\end{equation*}
+    	因此，高斯信道的容量为：
+    	\[C = \mathop {\max }\limits_{p(x):E{X^2} \le P} I(X;Y) = \frac{1}{2}\log (1 + \frac{{{h^2}P}}{{{a^2}}})\]
+    	\vspace{0.5cm}
+    \end{solution}
+    
     \question 将两个高斯信道如图串联，第一级增益为$h_1$，第二级增益为$h_2$，两个信道的噪声$Z_1$和$Z_2$的方差分别为$a^2$和$b^2$，输入信号$X$的功率仍然是$P$，求信道容量
     \begin{center}
     	\begin{picture}(330,80)(-20,0)
-    	\put(-20,10){\circle{20}}
+    	%\put(-20,10){\circle{20}}
     	\put(100,10){\circle{20}}
     	\put(220,10){\circle{20}}
-    	\put(300,10){\circle{20}}
-    	\put(100,70){\circle{20}}
-    	\put(220,70){\circle{20}}
+    	%\put(300,10){\circle{20}}
+    	%\put(100,70){\circle{20}}
+    	%\put(220,70){\circle{20}}
     	\put(20,3){\framebox(40,14){$h_1$}}
     	\put(140,3){\framebox(40,14){$h_2$}}
     	\put(60,10){\vector(1,0){30}}
@@ -114,19 +222,30 @@
     	\put(230,10){\vector(1,0){60}}
     	\put(100,60){\vector(0,-1){40}}
     	\put(220,60){\vector(0,-1){40}}
-    	\put(-25,7){$X$}
+    	\put(-20,6){$X$}
     	\put(96,7){$+$}
     	\put(216,7){$+$}
-    	\put(94,67){$Z_1$}
-    	\put(214,67){$Z_2$}
-    	\put(296,7){$Y$}
+    	\put(94,62){$Z_1$}
+    	\put(214,62){$Z_2$}
+    	\put(292,6){$Y$}
     	\end{picture}
     \end{center}
+    \begin{solution}
+    	这个串联信道可以等效为\[Y = {h_2}({h_1}X + {Z_1}) + {Z_2} = {h_1}{h_2}X + ({h_2}{Z_1} + {Z_2})\]
+    	等效噪声$Z = {h_2}{Z_1} + {Z_2}$满足$Z \sim {\cal N}(0,{h_1}^2{a^2} + {b^2})$, 等效增益$h={h_1}{h_2}$, 所以信道容量
+    	\[C = \frac{1}{2}\log (1 + \frac{{{h^2}P}}{N}) = \frac{1}{2}\log (1 + \frac{{{h_1}^2{h_2}^2P}}{{{h_1}^2{a^2} + {b^2}}})\]
+    \end{solution}
+    
     \question 分别考虑两种情况下上题信道容量$C$的极限 (1)$h_2$固定，$h_1$趋于无穷大\\(2)$h_1$固定，$h_2$趋于无穷大
+    \begin{solution}
+    	\newline
+    	(1)\[\mathop {\lim }\limits_{{h_1} \to  + \infty } C = \mathop {\lim }\limits_{{h_1} \to  + \infty } \frac{1}{2}\log (1 + \frac{{{h_1}^2{h_2}^2P}}{{{h_1}^2{a^2} + {b^2}}}) = \frac{1}{2}\log (1 + \frac{{{h_2}^2P}}{{{a^2}}})\]
+    	(2)\[\mathop {\lim }\limits_{{h_2} \to  + \infty } C = \mathop {\lim }\limits_{{h_2} \to  + \infty } \frac{1}{2}\log (1 + \frac{{{h_1}^2{h_2}^2P}}{{{h_1}^2{a^2} + {b^2}}}) = \frac{1}{2}\log (1 + \frac{{{h_1}^2P\mathop {\lim }\limits_{{h_2} \to  + \infty } {h_2}^2}}{{{h_1}^2{a^2} + {b^2}}}) =  + \infty \]
+    \end{solution}
     \question 以上符号含义不变，求如图并联的高斯信道的信道容量
     \begin{center}
     \begin{picture}(320,200)
-	    \put(10,100){\circle{20}}
+	    %\put(10,100){\circle{20}}
 	    \put(20,100){\line(1,0){60}}
 	    \put(80,70){\line(0,1){60}}
 	    \put(80,70){\vector(1,0){30}}
@@ -136,24 +255,29 @@
 	    \put(150,70){\vector(1,0){30}}
 	    \put(150,130){\vector(1,0){30}}
 	    \put(190,70){\circle{20}}
-	    \put(190,10){\circle{20}}
+	    %\put(190,10){\circle{20}}
 	    \put(190,20){\vector(0,1){40}}
 	    \put(190,130){\circle{20}}
-	    \put(190,190){\circle{20}}
+	    %\put(190,190){\circle{20}}
 	    \put(190,180){\vector(0,-1){40}}
 	    \put(200,70){\line(1,0){30}}
 	    \put(200,130){\line(1,0){30}}
 	    \put(230,70){\line(0,1){60}}
 	    \put(230,100){\vector(1,0){60}}
-	    \put(300,100){\circle{20}}
-	    \put(6,97){$X$}
+	    %\put(300,100){\circle{20}}
+	    \put(6,96){$X$}
 	    \put(186,127){$+$}
 	    \put(186,67){$+$}
-	    \put(184,187){$Z_1$}
-	    \put(184,7){$Z_2$}
-	    \put(296,97){$Y$}
+	    \put(184,183){$Z_1$}
+	    \put(184,11){$Z_2$}
+	    \put(292,96){$Y$}
     \end{picture}
     \end{center}
+    \begin{solution}
+    	该并联信道可以等价高斯信道\[Y = {h_1}X + {Z_1} + {h_2}X + {Z_2} = ({h_1} + {h_2})X + ({Z_1} + {Z_2}) = h'X + Z'\]
+    	等效增益$h'={h_1}+{h_2}$，等效噪声$Z' = {Z_1} + {Z_2}$, $Z' \sim {\cal N}(0,{a^2} + {b^2})$
+    	\[C = \frac{1}{2}\log (1 + \frac{{h{'^2}P}}{{N'}}) = \frac{1}{2}\log (1 + \frac{{{{({h_1} + {h_2})}^2}P}}{{{a^2} + {b^2}}})\]
+    \end{solution}
     \end{questions}
 
 \newpage
@@ -161,8 +285,176 @@
 \section*{计算题}
     \begin{questions}
     \question 设二元对称离散无记忆信息的传输差错概率为$p$，记为$BSC(p)$，请计算其容量$C$
+        \begin{solution}
+        	\begin{center}
+        		\begin{picture}(100,60)(-5,0)
+        		\put(0,0){\vector(2,0){78}}
+        		\put(0,0){\vector(4,3){78}}
+        		\put(0,60){\vector(2,0){78}}
+        		\put(0,60){\vector(4,-3){78}}
+        		\put(-5,2){$1$}
+        		\put(-5,58){$0$}
+        		\put(83,2){$1$}
+        		\put(83,58){$0$}
+        		\put(30,3){$1-p$}
+        		\put(30,65){$1-p$}
+        		\put(60,40){$p$}
+        		\put(60,20){$p$}
+        		\end{picture}
+        	\end{center}
+        	\begin{equation*}
+        	\begin{split}
+        	I(X;Y) &= H(Y) - H(Y|X)\\
+        	& = H(Y) - \sum {p(x)H(Y|X = x)}\\
+        	& = H(Y) - \sum {p(x)H(p)}\\
+        	& \le 1 - H(p) \qquad \text{当且仅当输入分布是均匀分布时取等号}
+        	\end{split}
+        	\end{equation*}
+        	这里的$H(p) =  - plogp - (1 - p)log(1 - p)$.
+        	\[C = \mathop {\max }\limits_{p(x)} I(X;Y) = 1 - H(p)\]
+        	\vspace{0.5cm}
+        \end{solution}
+     
     \question 将$N$个$BSC(p)$信道串联，结果得到一个等效的BSC信道.计算其信道容量$C$(用$N$和$p$表示)
+        \begin{solution}
+        	\begin{center}
+        		\begin{picture}(235,30)
+        		\put(10,15){$X_0$}
+        		\put(25,18){\vector(1,0){13}}
+        		\put(40,15){\framebox{BSC}}
+        		\put(70,18){\vector(1,0){13}}
+        		\put(85,15){$X_1$}
+        		\put(100,18){\vector(1,0){13}}
+        		\put(115,15){$\cdots $}
+        		\put(130,18){\vector(1,0){13}}
+        		\put(145,15){$X_{N-1}$}
+        		\put(170,18){\vector(1,0){13}}
+        		\put(185,15){\framebox{BSC}}
+        		\put(215,18){\vector(1,0){13}}
+        		\put(230,15){$X_N$}
+        		\end{picture}
+        	\end{center}
+        	每个信道的原始差错概率为$p$，那么整个串联信道的差错概率$p'$即：\\
+        	\begin{center}
+        		\begin{picture}(400,70)(10,0)
+        		\put(0,0){\vector(2,0){78}}
+        		\put(0,0){\vector(4,3){78}}
+        		\put(0,60){\vector(2,0){78}}
+        		\put(0,60){\vector(4,-3){78}}
+        		\put(90,0){\vector(2,0){78}}
+        		\put(90,0){\vector(4,3){78}}
+        		\put(90,60){\vector(2,0){78}}
+        		\put(90,60){\vector(4,-3){78}}
+        		\put(205,0){\vector(2,0){78}}
+        		\put(205,0){\vector(4,3){78}}
+        		\put(205,60){\vector(2,0){78}}
+        		\put(205,60){\vector(4,-3){78}}
+        		\put(-10,0){$0^{(0)}$}
+        		\put(-10,60){$1^{(0)}$}
+        		\put(80,0){$0^{(1)}$}
+        		\put(80,60){$1^{(1)}$}
+        		\put(170,0){$0^{(2)}$}
+        		\put(170,60){$1^{(2)}$}
+        		\put(185,0){$\dots$}
+        		\put(185,30){$\cdots$}
+        		\put(185,60){$\cdots$}
+        		\put(200,0){$0^{(N-1)}$}
+        		\put(200,60){$1^{(N-1)}$}
+        		\put(285,0){$0^{(N)}$}
+        		\put(285,60){$1^{(N)}$}
+        		\put(30,3){$1-p$}
+        		\put(30,65){$1-p$}
+        		\put(60,40){$p$}
+        		\put(60,20){$p$}
+        		\put(120,3){$1-p$}
+        		\put(120,65){$1-p$}
+        		\put(150,40){$p$}
+        		\put(150,20){$p$}
+        		\put(235,3){$1-p$}
+        		\put(235,65){$1-p$}
+        		\put(265,40){$p$}
+        		\put(265,20){$p$}
+        		\put(340,0){\vector(2,0){78}}
+        		\put(340,0){\vector(4,3){78}}
+        		\put(340,60){\vector(2,0){78}}
+        		\put(340,60){\vector(4,-3){78}}
+        		\put(330,0){$0^{(0)}$}
+        		\put(330,60){$1^{(0)}$}
+        		\put(420,0){$0^{(N)}$}
+        		\put(420,60){$1^{(N)}$}
+        		\put(370,3){$1-p'$}
+        		\put(370,65){$1-p'$}
+        		\put(400,40){$p'$}
+        		\put(400,20){$p'$}
+        		\thicklines
+        		\put(295,30){\vector(1,0){35}}
+        		\thicklines
+        		\end{picture}
+        	\end{center}
+        	当$x=p$, $y=1-p$时，${(x + y)^N}$的二项展开的奇次项之和：
+        	\[p' = \frac{1}{2}{(x + y)^N} - \frac{1}{2}{(y - x)^N} = \frac{1}{2}(1 - {(1 - 2p)^N})\]
+        	该串联信道可等效为差错概率为$p'$的$BSC(p')$信道：
+        	\[C = 1 - H(p') = 1 - H(\frac{1}{2}(1 - {(1 - 2p)^N}))\]
+        	\vspace{0.5cm}
+        \end{solution}
     \question 将$N$个$BSC(p)$信道串联且这N个信道相互独立（无串扰），结果得到一个输入和输出为N维的二进制向量的矢量信道，并请计算其容量$C$(用$N$和$p$表示）
+        \begin{solution}
+        	\begin{center}
+        		\begin{picture}(100,110)(0,-10)
+        		\put(10,45){\oval(30,90)}
+        		\put(90,45){\oval(30,90)}
+        		\put(5,70){$X_1$}
+        		\put(5,55){$X_2$}
+        		\put(10,36){$ \vdots $}
+        		\put(5,15){$X_N$}
+        		\put(85,70){$Y_1$}
+        		\put(85,55){$Y_2$}
+        		\put(90,36){$ \vdots $}
+        		\put(85,15){$Y_N$}
+        		\put(22,72){\vector(1,0){60}}
+        		\put(22,57){\vector(1,0){60}}
+        		\put(22,17){\vector(1,0){60}}
+        		\put(47,74){$C_1$}
+        		\put(47,59){$C_2$}
+        		\put(47,19){$C_N$}
+        		\thicklines
+        		\put(10,-9){\vector(1,0){80}}
+        		\thicklines
+        		\put(47,-20){$C$}
+        		\end{picture}
+        	\end{center}
+        	信道间相互概率独立
+        	\[p({y_1}, \ldots ,{y_N}|{x_1}, \ldots ,{x_N}) = \prod\limits_{i = 1}^N p ({y_i}|{x_1}, \ldots ,{x_N})\]
+        	\[p({y_i}|{x_1}, \ldots ,{x_N}) = \frac{{p({x_1}, \ldots ,{x_N},{y_i})}}{{p({x_1}, \ldots ,{x_N})}} = \frac{{p({x_i},{y_i}){p_{n \ne i}}({x_1} \ldots ,{x_n}, \ldots ,{x_N})}}{{p({x_i}){p_{n \ne i}}({x_1} \ldots ,{x_n}, \ldots ,{x_N})}} = p({y_i}|{x_i})\]
+        	联合条件熵满足
+        	\begin{equation*}
+        	\begin{split}
+        	H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n}) & =  - \sum\limits_{x,y} {p(} {x_1}, \ldots ,{x_N},{y_1}, \ldots ,{y_N})\log p({y_1}, \ldots ,{y_N}|{x_1}, \ldots ,{x_N})\\
+        	&  =  - \sum\limits_{i = 1}^N {\sum\limits_{x,y} {p(} {x_i},{y_i})\log p({y_i}|{x_i})}  \\
+        	& = \sum\limits_{i = 1}^N {H({Y_i}|} {X_i})
+        	\end{split}
+        	\end{equation*}
+        	整个信道的互信息量
+        	\begin{equation*}
+        	\begin{split}
+        	I({X_1}, \ldots ,{X_n};{Y_1}, \ldots ,{Y_N}) &= H({Y_1}, \ldots ,{Y_N}) - H({Y_1}, \ldots ,{Y_N}|{X_1}, \ldots ,{X_n})\\
+        	& = H({Y_1}, \ldots ,{Y_N}) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_1}, \ldots ,{X_n})\\
+        	&  \le \sum\limits_{i = 1}^N {H({Y_i}} ) - \sum\limits_{i = 1}^N {H({Y_i}|} {X_i})\qquad \text{当且仅当所有的$Y$概率独立时取等号}\\
+        	& = \sum\limits_{i = 1}^N {(H({Y_i}) - H({Y_i}|} {X_i}))\\
+        	& = \sum\limits_{i = 1}^N {I({X_i},{Y_i})} 
+        	\end{split}
+        	\end{equation*}
+        	信道容量
+        	\begin{equation*}
+        	\begin{split}
+        	C &= \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_1}, \ldots ,{X_n};{Y_1}, \ldots ,{Y_N})\\
+        	& \le \mathop {\max }\limits_{p({x_1}, \ldots {x_N})} \sum\limits_{i = 1}^N {I({X_i};{Y_i})} \\
+        	& \le \sum\limits_{i = 1}^N {\mathop {\max }\limits_{p({x_1}, \ldots {x_N})} I({X_i};{Y_i})} \\
+        	& = \sum\limits_{i = 1}^N {{C_i}}\\
+        	& = N(1 - H(p))
+        	\end{split}
+        	\end{equation*}
+        \end{solution}
     \end{questions}
 \end{CJK*}
 \end{document}
