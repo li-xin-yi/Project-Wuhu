@@ -14,6 +14,7 @@
   \else
     #2%
   \fi}}}
+\renewcommand{\thepartno}{\arabic{partno}}
 \printanswers %答题答案去掉后隐藏
 \pagestyle{empty} %去掉后脚标显示页数
 \begin{document}
@@ -236,7 +237,11 @@
     	\[C = \frac{1}{2}\log (1 + \frac{{{h^2}P}}{N}) = \frac{1}{2}\log (1 + \frac{{{h_1}^2{h_2}^2P}}{{{h_1}^2{a^2} + {b^2}}})\]
     \end{solution}
     
-    \question 分别考虑两种情况下上题信道容量$C$的极限 (1)$h_2$固定，$h_1$趋于无穷大\\(2)$h_1$固定，$h_2$趋于无穷大
+    \question 分别考虑两种情况下上题信道容量$C$的极限 
+    \begin{parts}
+    \part$h_2$固定，$h_1$趋于无穷大
+    \part$h_1$固定，$h_2$趋于无穷大
+    \end{parts}
     \begin{solution}
     	\newline
     	(1)\[\mathop {\lim }\limits_{{h_1} \to  + \infty } C = \mathop {\lim }\limits_{{h_1} \to  + \infty } \frac{1}{2}\log (1 + \frac{{{h_1}^2{h_2}^2P}}{{{h_1}^2{a^2} + {b^2}}}) = \frac{1}{2}\log (1 + \frac{{{h_2}^2P}}{{{a^2}}})\]
