@@ -1,0 +1,482 @@
+\documentclass{exam}
+\usepackage{CJKutf8}
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage[colorlinks,linkcolor=red,urlcolor=cyan]{hyperref}
+\renewcommand{\solutiontitle}{\noindent\textbf{答:}\enspace}
+\printanswers %去掉后隐藏答案，只显示题目
+\unframedsolutions
+\author{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}}
+
+\newif\ifprint
+%\printtrue %题目答案位置/printfalse时打印，/printtrue时隐藏
+\printfalse
+\newcommand{\blank}[2][.5cm]{{\makebox[#1][c]{%
+			\ifprint
+			\phantom{#2}%
+			\else
+			#2%
+			\fi}}}
+\lhead{2015/6/22}
+\chead{系统分析与设计复习作业}
+\rhead{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}}
+\pagestyle{headandfoot}
+\cfoot{\thepage$/$\numpages}
+\headrule
+
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+
+\begin{questions}
+	\question 简述原型法的开发过程。\blank[1cm]{P20-21}
+	\begin{solution}
+		原型法是一种从基本需求分析，初始原型系统开发到原型系统完善需求，并最终完善原型系统的不断迭代的过程。
+		\begin{itemize}
+			\item 角色
+			\begin{description}
+				\item[用户/设计者] 应用系统的设计者，能从系统中寻求帮助
+				\item[系统/建造者] 往往由系统专业人员构成，是系统的建造者
+			\end{description}
+			\item 基本需求分析
+			\begin{itemize}
+				\item 使用原型法进行信息系统开发的第一步
+				\item \textbf{中心：} 用户/设计者和系统/建设者定义基本的信息需求
+				\item \textbf{讨论的焦点：}数据的提取和过程的模拟
+			\end{itemize}
+			\item 开发原始原型系统
+			\begin{itemize}
+				\item 在完成用户基本需求分析之后，开始进行初始原型系统的设计
+				\item \textbf{目的：} 建立一个能运行的交互式应用系统来满足用户/设计者的基本信息需求。
+			\end{itemize}
+			\item 用原型系统完善系统需求
+			\begin{itemize}
+				\item 用户/设计者操作前一步实现的原始原型系统，以便发现需求中存在的问题，获取更进一步的需求描述
+			\end{itemize}
+			\item 完善原型系统
+			\begin{itemize}
+				\item 最后，在新的需求基础上，由系统/建造者进一步改进原型系统，直至完成产品
+				\item \textbf{目的:} 修改原型以便纠正那些由用户/设计者指出的不需要的或错误的问题
+			\end{itemize}
+		\end{itemize}
+	\end{solution}
+	
+	\question 项目管理知识体系（PMBOK）把项目管理分为九个知识领域，列举不少于5个知识领域，并说明其内容包括哪些。\blank[1.5cm]{P216-218}
+	\begin{solution}
+		以下九个知识领域
+		\begin{enumerate}[ (1)]
+		   \item \textbf{项目范围管理}
+		   \begin{inparaenum}[(\itshape a\upshape)]
+			   	\item 项目启动
+			   	\item 项目计划
+			   	\item 范围定义
+			   	\item 范围确认
+			   	\item 范围变更控制
+		   \end{inparaenum}
+		   \item \textbf{项目时间管理}
+		   \begin{inparaenum}[(\itshape a\upshape)]
+			   	\item 活动定义
+			   	\item 活动排序
+			   	\item 活动时间估计
+			   	\item 制定时间表
+			   	\item 时间表控制
+		   \end{inparaenum}
+		   \item \textbf{项目成本管理}
+		   \begin{inparaenum}[(\itshape a\upshape)]
+			   	\item 资源计划
+			   	\item 成本估计
+			   	\item 成本预计
+			   	\item 成本控制
+	    	\end{inparaenum}
+	    	\item \textbf{项目质量管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 质量计划
+	    		\item 质量保证
+	    		\item 质量控制
+	    	\end{inparaenum}
+	    	\item \textbf{项目人力资源管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 组织的计划
+	    		\item 人员获得
+	    		\item 团队建设
+	    	\end{inparaenum}
+	    	\item \textbf{项目沟通管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 沟通计划
+	    		\item 信息发布
+	    		\item 绩效报告
+	    		\item 管理上的结束
+	    	\end{inparaenum}
+	    	\item \textbf{项目风险管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 风险识别
+	    		\item 风险定性分析
+	    		\item 风险量化分析
+	    		\item 风险响应计划
+	    		\item 风险监视和控制
+	    	\end{inparaenum}
+	    	\item \textbf{项目采购管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 采购计划
+	    		\item 征求货源计划
+	    		\item 征求货源
+	    		\item 来源选择
+	    		\item 合同管理
+	    		\item 合同结束
+	    	\end{inparaenum}
+	    	\item \textbf{项目集成管理}
+	    	\begin{inparaenum}[(\itshape a\upshape)]
+	    		\item 制定项目计划
+	    		\item 执行项目计划
+	    		\item 集成的变更控制
+	    	\end{inparaenum}	 
+		\end{enumerate}
+	\end{solution}
+	
+	\question 项目团队的组建一般包括的成员类型有哪些，列举不少于5种项目组成员类型，分别承担的责任有哪些 \blank[1.7cm]{P231-232}
+	
+	\begin{solution}
+		8种角色和他们的职责如下：
+		\begin{description}
+			\item[项目负责人] 管理项目的开发活动和开发方向
+			\item[系统分析员] 确定具体的业务需求，并正确地传达给系统设计员和其他开发人员
+			\item[系统设计员] 信息系统开发的总体设计和详细设计
+			\item[数据库系统管理员] 数据库系统的正常使用与管理
+			\item[系统管理员] 计算机系统的管理
+			\item[程序设计员] 进行程序设计
+			\item[文档管理员] 项目文档的书写和管理
+			\item[业务人员] 协助系统开发人员和系统使用人员的相互配合
+		\end{description}
+	\end{solution}
+	
+	\question 结构化设计的原则是什么？ \blank[1cm]{P28-29}
+	
+	\begin{solution}
+		\begin{inparaenum}[ (1)]
+			\item 模块化
+			\item 抽象
+			\item 信息隐藏和信息局部化
+			\item 一致性、完整性和确定性
+		\end{inparaenum}
+	\end{solution}
+	
+	\question 敏捷软件开发方法与传统软件开发方法相比不同之处有哪些？ \blank{P48}
+	
+	\begin{solution}
+		主要体现在以下四个方面：
+		\begin{center}
+		\begin{spacing}{1.8}
+	    \begin{tabular}{|c|c|c|}
+	    	\hline
+	    	    &     其他软件开发方法     &     敏捷开发方法     \\
+	        \hline
+	    	 人和编程的关系  &     强调过程和工具      &     重视以人为本     \\ 
+	    	\hline
+	    	   重点     &    强调相关的文档和资料    & 强调软件开发的产品是产品本身 \\
+	    	   \hline
+	    	客户和开发者的关系 &        合约        &       合作       \\ \hline
+	    	 对于变化的态度  & 着重在计划，没有意识到事物的变化 &   认为变化是不可避免的   \\ \hline
+	    \end{tabular}
+    	\end{spacing}
+	    \end{center}
+	\end{solution}
+	
+	\question 比较生命周期法与原型法的优劣？ \blank[1cm]{P21-22}
+	
+	\begin{solution}
+		生命周期法：
+		\begin{itemize}
+			\item 贯彻开发生命周期所需漫长的时间
+			\begin{itemize}
+				\item 随投入时间的增加，提交系统的成本也成比例上升
+			\end{itemize}
+			\item 用户需求随时间变化
+			\begin{itemize}
+				\item 需求和交付完成的系统漫长时间间隔内，用户需求不断演进
+				\item 由于漫长的开发周期，最终系统可能因为没有充分满足用户需求，受到指责
+				\item 系统一旦交付使用，要修改系统缺点为时已晚
+			\end{itemize}
+		\end{itemize}
+		原型化方法：
+		\begin{itemize}
+			\item 有效地缩短确定信息需求与交付可工作系统之间的时间
+			\item 更有可能得到良好的需求定义
+			\item 完全解决问题或机会之前，过早地形成了一个系统
+			\item 会导致一部分用户群接受，却不能够充分满足总体系统需求
+		\end{itemize}
+	\end{solution}
+	
+	\question 使用数据字典需要考虑的三个因素包括哪些？ \blank[1.5cm]{sys07-P85}
+	
+	\begin{solution}
+		应该考虑这三个因素：
+		\begin{enumerate}
+			\item 输出数据流中的所有基本元素都必须出现在产生该输出数据流过程的输入数据流中
+			\begin{itemize}
+				\item[--] 基本元素通过键盘输入，绝不应该由某个过程创建
+			\end{itemize}
+			\item 派生元素必须由过程创建
+			\begin{itemize}
+				\item[--] 至少应当由一个不是以该元素自身为输入的过程输出
+			\end{itemize}
+			\item 输入，或输出某个数据存储的数据流中的元素，必须包含在该数据存储中
+		\end{enumerate}
+    \end{solution}
+	
+	\question 什么是信息系统规划，其目标和作用是什么？ \blank[1cm]{P56-58}
+	
+	\begin{solution}
+		\begin{itemize}
+			\item[\textbf{信息系统规划:}] 关于信息系统长远发展的规划。
+			\begin{itemize}
+				\item 将组织目标、支持组织目标所必须的信息、提供这些必须信息的信息系统，
+				以及这些信息系统的实施等诸多要素集成的信息系统方案
+				\item 是面向组织中信息系统发展远景的系统开发计划
+				\item 可帮助组织充分利用信息系统及其潜能来规范组织内部管理
+			\end{itemize}
+			\item[\textbf{目标:}] 制定与组织发展战略的目标相一致的信息系统发展目标
+			\item[\textbf{作用:}] \hfill
+			\begin{enumerate}[(\itshape a\upshape)]
+				\item 使信息系统和用户建立较好的关系，做到资源的合理分配和利用，节省信息系统的投资
+				\item 促进信息系统应用的深化，为企业带来更多的经济效益
+				\item 作为一个考核标准，考核信息系统开发人员的工作，明确他们的努力方向
+				\item 迫使企业领导回顾过去，改进工作
+				\item 保证信息系统中信息的一致性
+			\end{enumerate}
+		\end{itemize}
+	\end{solution}
+	
+	\question 结构化设计中，模块间的7种偶合、7种内聚分别是什么？ \blank[2.3cm]{sys07-P106,110}
+	
+	\begin{solution}
+		\begin{center}
+			\begin{picture}(400,120)
+			\put(50,110){
+				$\mbox{(低耦合)} \left\{
+				\begin{array}{lr}
+				\mbox{无直接耦合}\\
+				 \mbox{数据耦合} &\\
+				\mbox{特征耦合} &
+				\end{array}
+				\right.$}
+			\put(54,80){$\mbox{(中耦合)}$}
+			\put(107,80){$\mbox{控制耦合}$}
+			\put(42,55){
+				$\mbox{(较强耦合)} \left\{
+				\begin{array}{lr}
+				\mbox{外部耦合}\\
+				\mbox{公共耦合} &
+				\end{array}
+				\right.$}
+			\put(54,32){$\mbox{(强耦合)}$}
+			\put(107,32){$\mbox{内容耦合}$}
+			\put(15,127){$\mbox{低}$}
+			\thicklines
+			\put(20,125){\vector(0,-1){95}}
+			\thicklines
+			\put(15,20){$\mbox{高}$}
+			\put(10,90){\footnotesize \mbox{耦}}
+			\put(10,80){\footnotesize\mbox{合}}
+			\put(10,70){\footnotesize\mbox{性}}
+			\put(175,127){$\mbox{强}$}
+			\thicklines
+			\put(180,30){\vector(0,1){95}}
+			\thicklines
+			\put(175,20){$\mbox{弱}$}
+			\put(190,100){\footnotesize \mbox{模}}
+			\put(190,90){\footnotesize \mbox{块}}
+			\put(190,80){\footnotesize\mbox{独}}
+			\put(190,70){\footnotesize\mbox{立}}
+			\put(190,60){\footnotesize\mbox{性}}
+			
+			\put(285,80){		$\begin{array}{lr}
+				\mbox{偶然内聚} & 0’\\
+				\mbox{逻辑内聚} & 1’\\
+				\mbox{时间内聚} & 3’\\
+				\mbox{过程内聚} & 5’\\
+				\mbox{通信内聚} & 7’\\
+				\mbox{顺序内聚} & 9’\\
+				\mbox{功能内聚} & 10’
+				\end{array}$}
+			\put(255,127){$\mbox{低}$}
+			\thicklines
+			\put(260,125){\vector(0,-1){85}}
+			\thicklines
+			\put(255,30){$\mbox{高}$}
+			\put(250,90){\footnotesize \mbox{内}}
+			\put(250,80){\footnotesize\mbox{聚}}
+			\put(250,70){\footnotesize\mbox{性}}
+			\put(380,127){$\mbox{强(功能分散)}$}
+			\thicklines
+			\put(390,40){\vector(0,1){85}}
+			\thicklines
+			\put(380,30){$\mbox{弱(功能单一)}$}
+			\put(400,100){\footnotesize \mbox{模}}
+			\put(400,90){\footnotesize \mbox{块}}
+			\put(400,80){\footnotesize\mbox{独}}
+			\put(400,70){\footnotesize\mbox{立}}
+			\put(400,60){\footnotesize\mbox{性}}
+			\end{picture}
+		\end{center}
+	\end{solution}
+	
+	\question 结构化分析方法与面向对象分析方法的区别是什么？ \blank{P79}
+	\begin{solution}
+	结构化分析方法面向\textbf{数据流}，而面向对象分析方法面向\textbf{对象}。
+	\begin{itemize}
+		\item 结构化分析是面向数据流进行需求分析的方法
+		\begin{itemize}
+			\item 主要采用数据流图DFD来描述边界和数据处理过程的关系
+			\item 使用数据流图、数据字典、结构化语言、判定表和判定树等工具
+			\item 建立一种新的、称为\textit{结构化说明书}的目标文档-需求说明
+		\end{itemize}
+		\item 面向对象分析(OOA)是面向对象的系统分析和设计的第一个环节
+		\begin{itemize}
+			\item 包括一套概念原则、过程步骤、表示方法、提交文档等规范要求
+			\item 把对问题论域和系统的认识理解正确地抽象为规范的对象(包括类、继承层次)和消息传递联系，并形成面向对象模型。
+			\item 为后续的面向对象设计和面向对象编程提供指导
+		\end{itemize}
+	\end{itemize}	
+	\end{solution}
+	
+	\question 应用软件的6个开发原则是什么？ \blank[1.5cm]{P122-123}
+	
+	\begin{solution}
+		\begin{inparaenum}[ (1)]
+			\item 自顶向下的原则
+			\item 版本划分的原则
+			\item 标准化原则
+			\item 程序设计通用化
+			\item 程序的易维护性
+			\item 程序的可靠性
+		\end{inparaenum}
+	\end{solution}
+	
+	\question 什么是MVC模型，三个核心部件是什么？ \blank[1.5cm]{sys08-P27}
+	
+	\begin{solution}
+		模型－视图－控制器（MVC）模型是一个框架模式，强制性地使应用程序的输入、处理和输出分开。\\
+		三个核心部件:\begin{inparaenum}[ (1)]
+			\item Model: 模型
+			\item View: 视图
+			\item Controller: 控制器
+			\end{inparaenum}
+	\end{solution}
+	
+	\question 软件生产中有三种级别的什么重用是？ \blank[1.5cm]{sys08-P29}
+	
+	\begin{solution}
+		软件生产中有三种级别的重用：
+		\begin{itemize}
+			\item 内部重用：
+			\begin{itemize}
+				\item 在同一应用中能公共使用的抽象块
+			\end{itemize}
+			\item 代码重用：
+			\begin{itemize}
+				\item 将通用模块组合成库或工具集
+				\item 以便在多个应用和领域都能使用
+			\end{itemize}
+			\item 应用框架的重用：
+			\begin{itemize}
+				\item为专用领域提供通用的或现成的基础结构
+				\item以获得最高级别的重用性
+			\end{itemize}
+		\end{itemize}
+	\end{solution}
+	
+	\question 提高软件可靠性的方法和技术包括三种要素，分别是哪些？\blank[0.7cm]{P168}
+	
+	\begin{solution}
+		\begin{enumerate}[ (1)]
+			\item 建立以可靠为核心的质量标准
+			\item 选择开发方法
+			\item 软件重用
+		\end{enumerate}
+	\end{solution}
+	
+	\question 系统实施的步骤是什么？ \blank[1.3cm]{sys15-P4}
+	
+	\begin{solution}
+		\begin{inparaenum}[ (1)]
+			\item 软硬件购置
+			\item 系统准备（人员、数据、设备安装）
+			\item 测试
+			\item 系统试运行与切换
+			\item 评价与维护
+		\end{inparaenum}
+	\end{solution}
+	
+	\question 设计基于Web的信息系统：
+	\begin{inparaenum}[ (1)]
+		\item 给出硬件平台构建方案
+		\item 给出软件平台构建方案
+	\end{inparaenum}
+	
+	\begin{solution}
+		软硬件平台的构建包括以下设备和软件：
+		\begin{enumerate}[ (1)]
+			\item 网络硬件包括各级服务器、工作站、路由器、交换机、集线器、网卡、网络线缆、光纤、收发器、无线收发设备等。
+			\item 网络软件有操作系统软件、网络管理软件、应用软件、工具软件、支撑软件等。
+		\end{enumerate}
+	\end{solution}
+	
+	\question 针对Web信息系统进行系统测试，需要考虑哪些测试内容(注：每项不少于3条测试内容)
+	\begin{inparaenum}[ (1)]
+		\item 功能测试
+		\item 性能测试
+		\item 可用性测试
+		\item 安全性测试
+		\item 其他测试
+	\end{inparaenum}\blank[1.7cm]{P151-155}
+	
+	\begin{solution}
+		所有测试内容如下： 
+		\begin{enumerate}[ (1)]
+			\item 功能测试: \\
+			\begin{inparaenum}[ (\itshape a\upshape)]
+				\item 链接测试
+				\item 表单测试
+				\item 数据校验
+				\item Cookies测试
+				\item 数据库测试
+			\end{inparaenum}
+			\item 性能测试: \\
+			\begin{inparaenum}[ (\itshape a\upshape)]
+				\item 压力测试
+				\item 连接速度测试
+				\item 负载测试
+			\end{inparaenum}
+			\item 可用性测试: \\
+			\begin{inparaenum}[ (\itshape a\upshape)]
+				\item 导航测试
+				\item 图形测试
+				\item 内容测试
+				\item 整体界面测试
+			\end{inparaenum}
+			\item 安全性测试: \\
+			\begin{inparaenum}[ (\itshape a\upshape)]
+				\item 目录设置测试
+				\item SSL测试
+				\item 登录验证测试
+				\item 日志文件测试
+				\item 脚本语言测试
+			\end{inparaenum}
+			\item 其他测试: \\
+			\begin{inparaenum}[ (\itshape a\upshape)]
+				\item 平台测试
+				\item 浏览器测试
+				\item 连接速率测试
+				\item 打印机测试
+				\item 接口测试
+			\end{inparaenum}
+		\end{enumerate}
+	\end{solution}
+	\newpage
+\end{questions}
+
+\end{CJK*}
+
+\end{document}
