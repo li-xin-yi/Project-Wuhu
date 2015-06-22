@@ -2,12 +2,13 @@
 \usepackage{CJKutf8}
 \usepackage{amsmath}
 \usepackage{amssymb} 
-\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks,linkcolor=red,urlcolor=SeaGreen]{hyperref}
 \newif\ifprint
 \unframedsolutions
 \renewcommand{\solutiontitle}{\noindent\textbf{解: }\noindent}
-%\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
-\printfalse
+\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
+%\printfalse
 \usepackage{ulem}
 \newcommand{\blank}[2][1cm]{\uline{\makebox[#1][c]{%
   \ifprint
@@ -15,7 +16,12 @@
   \else
     #2%
   \fi}}}
-\printanswers %答题答案去掉后隐藏
+%\printanswers %答题答案去掉后隐藏
+\pagestyle{headandfoot}
+\cfoot{\thepage$/$\numpages}
+\header{2015/6/13}{信息论习题}{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}}
+\headrule
+
 \begin{document}
 
 \begin{CJK*}{UTF8}{gbsn}
@@ -140,7 +146,7 @@ $X$,$Y$是随机变量，互信息量$I(X;Y)$在条件概率${P_{y|x}}$固定的
     \[B_\varepsilon ^{(n)} = \left\{ {({x_1},{x_2}, \ldots ,{x_n}):\left| {\frac{1}{n}({x_1} + {x_2} +  \cdots  + {x_n})} \right| < \varepsilon } \right\}\]
     证明：$n$趋近于无穷大时有极限\[P\left[ {({x_1},{x_2}, \ldots ,{x_n};{y_1},{y_2}, \ldots ,{y_n}) \in A_\varepsilon ^{(n)}} \right] \to 1\]
     \begin{solution}
-    \\弱大数定律：
+    弱大数定律：
    \[ - \frac{1}{n}\log p({X^n}) \to  - E\left[ {\log p(X)} \right] = H(X) \qquad \text{依概率} \]
    因此，给定$\varepsilon  > 0$，存在$n_1$，使得对于任意$n > {n_1}$，
    \[\Pr \left( {\left| { - \frac{1}{n}\log p({X^n}) - H(X)} \right| \ge \varepsilon } \right) < \frac{\varepsilon }{2} \eqno{(1)}\]
@@ -388,7 +394,7 @@ ${2^{ - n(I(X;Y) - 3\varepsilon )}}$
   当$\alpha  = {2^{{C_1}}}/({2^{{C_1}}} + {2^{{C_2}}})$时，取到极大值
   \[C = \mathop {\max }\limits_\alpha  f(\alpha ) = \log ({2^{{C_1}}} + {2^{{C_2}}})\]
     \end{solution}
-    
+    \newpage
 \end{questions}
 \end{CJK*}
 \end{document}

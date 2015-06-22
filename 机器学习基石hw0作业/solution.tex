@@ -1,5 +1,7 @@
-\documentclass[8pt,a4paper]{exam}
+\documentclass[a4paper]{exam}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{indentfirst}
+\usepackage[colorlinks,linkcolor=red,urlcolor=LimeGreen]{hyperref}
 \title{Solution to Homework\#0}
 \date{}
 \def\QEDclosed{\mbox{\rule[0pt]{1.3ex}{1.3ex}}} % 定义实心符
@@ -7,9 +9,13 @@
 \def\QED{\QEDopen} % 选填\QEDclosed得到实心
 \def\proof{\noindent{\bf Proof}: } 
 \def\endproof{\hspace*{\fill}~\QED\par\endtrivlist\unskip}
+\pagestyle{headandfoot}
+\cfoot{\thepage$/$\numpages}
+\header{2014/11/15}{Solution to Homework\#0}{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{Project-Wuhu}}
+\headrule
 
 \begin{document}
-	\maketitle
+	%maketitle
 	\section{Probabity and Statistics}
 	  \subsection{(combinatorics)}
 	  \begin{proof}
