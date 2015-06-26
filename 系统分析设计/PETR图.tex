@@ -1,0 +1,277 @@
+\documentclass[presentation]{beamer}
+\usepackage{CJKutf8}
+\usepackage{standalone}
+\usetheme{Madrid}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\begin{document}
+
+\begin{CJK*}{UTF8}{gbsn}
+	\title{使用PETR图寻找关键路径}
+	\author[\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}]{
+		301算法研究所 \\
+	   \color[rgb]{1,0.49,0}{
+		\href{http://weibo.com/301yangzhou}{@身经百战的扬州人形}}}
+	\institute[\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{Project-Wuhu}]{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划} \\ \url{https://github.com/Lixinyi-DUT/Project-Wuhu}}
+	\date[2015/6/25]{2015年6月25日}
+	\begin{frame}
+		\maketitle
+	\end{frame}
+\section{使用PETR图}
+\begin{frame}{作业时间}
+   \begin{center}
+   \begin{table}
+   \begin{tabular}{c|c|c}
+   	 \hline
+   	 作业$i$ & 作业$j$ & 所需天数 \\
+   	 \hline
+   	 1 & 2 & 4 \\
+   	 2 & 3 & 7 \\
+   	 2 & 4 & 6 \\
+   	 3 & 5 & 8 \\
+   	 3 & 6 & 5 \\
+   	 4 & 7 & 5 \\
+   	 5 & 8 & 7 \\
+   	 6 & 9 & 10 \\
+   	 7 & 9 & 12 \\
+   	 8 & 9 & 8 \\
+   	 9 & 10 & 8 \\
+   	 \hline
+   \end{tabular}
+   \caption[表1]{作业$i$到$j$需要的时间}
+   \end{table}
+   \end{center}
+\end{frame}
+
+\begin{frame}{使用PERT图}
+%	\setbeamercovered{invisible}
+	\begin{tikzpicture}
+	   \coordinate [label=center:1] (c1) at (0,0);
+	   \coordinate [label=center:2](c2) at (60pt,0);
+	   \coordinate [label=center:3](c3) at (120pt,0);
+	   \coordinate [label=center:6](c6) at (180pt,0);
+	   \coordinate [label=center:9](c9) at (240pt,0);
+	   \coordinate [label=center:10](c10) at (300pt,0);
+	   \coordinate [label=center:4](c4) at (125pt,-60pt);
+	   \coordinate [label=center:7](c7) at (185pt,-60pt);
+	   \coordinate [label=center:5](c5) at (160pt,60pt);
+	   \coordinate [label=center:8](c8) at (245pt,60pt);
+	   \coordinate (unitx) at (10pt,0);
+	   \coordinate (unity) at (0,10pt);
+	   \draw (c1)circle (10pt);
+	   \draw (c2) circle (10pt);
+	   \draw (c3) circle (10pt);
+	   \draw (c6) circle (10pt);
+	   \draw (c9) circle (10pt);
+	   \draw (c10) circle (10pt);
+	   \draw [->] (c1)+(unitx) -- ($(c2)-(unitx)$) node[pos=0.5,align=center, above]{4};
+	   \draw [->] (c2)+(unitx) -- ($(c3)-(unitx)$) node[pos=0.5,align=center, above]{7};
+	   \draw [->] (c3)+(unitx) -- ($(c6)-(unitx)$) node[pos=0.5,align=center, above]{5};
+	   \draw [->] (c6)+(unitx) -- ($(c9)-(unitx)$) node[pos=0.5,align=center, above]{10};
+	   \draw [->] (c9)+(unitx) -- ($(c10)-(unitx)$) node[pos=0.5,align=center, above]{8};
+	   \draw (c5) circle (10pt);
+	   \draw (c8) circle (10pt);
+	   \draw (c4) circle (10pt);
+	   \draw (c7) circle (10pt);
+	   \draw [->] (c4)+(unitx) -- ($(c7)-(unitx)$) node[pos=0.5,align=center, above]{5};
+	   \draw [->] (c5)+(unitx) -- ($(c8)-(unitx)$) node[pos=0.5,align=center, above]{7};
+	   \draw [->] ($(c2)-(unity)$) -- ($(c4)-(unitx)$) node[pos=0.5,align=center,above]{6};
+	   \draw [->] (c3)+(unity) -- ($(c5)-(unity)$) node[pos=0.5,align=center, above]{8};
+	   \draw [->] (c7)+(unity) -- ($(c9)-(unity)$) node[pos=0.5,align=center, above]{12};
+	   \draw [->] (c8)+(unitx) -- ($(c10)+(unity)$) node[pos=0.5,align=center, above]{8};
+	   \draw [->,dashed] ($(c6)-(unity)$) -- ($(c7)+(unity)$) node[pos=0.5,align=left,below]{0};
+	   \pause
+	   \coordinate [label=center:开始节点]() at (0,-20pt);
+	   \coordinate [label=center:终止节点]() at (300pt ,-20pt);
+	   \pause
+	   \draw [dashed,red](30pt,7pt) circle (12pt);
+	   \draw [dashed,red](140pt,35pt) circle (12pt);
+	   \draw [->,dashed,red] (36pt,20pt)--(70pt,80pt);
+	   \draw [->,dashed,red] (136pt,48pt)--(73pt,80pt);
+	   \coordinate [label=center:\textcolor{red}{活动完成所需时间}]() at (71pt,86pt);
+	   \pause
+	   \draw [dashed,red] (165pt,15pt) rectangle +(36pt,-90pt) node[align=left,below]{哑活动};
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{活动开始时间}
+	\begin{center}
+		\begin{tikzpicture}
+		\coordinate [label=center:1] (c1) at (0,0);
+		\coordinate [label=center:2](c2) at (60pt,0);
+		\coordinate [label=center:3](c3) at (120pt,0);
+		\coordinate [label=center:6](c6) at (180pt,0);
+		\coordinate [label=center:9](c9) at (240pt,0);
+		\coordinate [label=center:10](c10) at (300pt,0);
+		\coordinate [label=center:4](c4) at (125pt,-60pt);
+		\coordinate [label=center:7](c7) at (185pt,-60pt);
+		\coordinate [label=center:5](c5) at (160pt,60pt);
+		\coordinate [label=center:8](c8) at (245pt,60pt);
+		\coordinate (unitx) at (10pt,0);
+		\coordinate (unity) at (0,10pt);
+		\coordinate (u) at (16pt,-20pt);
+		\draw (c1)circle (10pt);
+		\draw (c2) circle (10pt);
+		\draw (c3) circle (10pt);
+		{\color<6>{red} \draw (c6) circle (10pt);}
+		\draw (c9) circle (10pt);
+		\draw (c10) circle (10pt);
+		{\color<3>{red}\draw [->] (c1)+(unitx) -- ($(c2)-(unitx)$) node[pos=0.5,align=center, above]{4};}
+		{\color<4>{red}\draw [->] (c2)+(unitx) -- ($(c3)-(unitx)$)
+		node[pos=0.5,align=center, above]{7};}
+		{\color<5>{red}\draw [->] (c3)+(unitx) -- ($(c6)-(unitx)$) node[pos=0.5,align=center, above]{5};}
+		{\color<7>{gray}\draw [->] (c6)+(unitx) -- ($(c9)-(unitx)$) node[pos=0.5,align=center, above]{10};}
+		{\color<8>{red}\draw [->] (c9)+(unitx) -- ($(c10)-(unitx)$) node[pos=0.5,align=center, above]{8};}
+		
+		\draw (c5) circle (10pt);
+		\draw (c8) circle (10pt);
+		\draw (c4) circle (10pt);
+		{\color<6>{red}\draw (c7) circle (10pt);}
+		
+		{\color<5>{red}\draw [->] (c4)+(unitx) -- ($(c7)-(unitx)$) node[pos=0.5,align=center, above]{5};}
+		{\color<7>{red}\draw [->] (c5)+(unitx) -- ($(c8)-(unitx)$)
+		node[pos=0.5,align=center, above]{7};}
+		{\color<4>{red}\draw [->] ($(c2)-(unity)$) -- ($(c4)-(unitx)$) node[pos=0.5,align=center, above]{4};}
+		{\color{red}node[pos=0.5,align=center, above]{6};}
+		{\color<5>{red}\draw [->] (c3)+(unity) -- ($(c5)-(unity)$) node[pos=0.5,align=center, above]{8};}
+		{\color<7>{red}\draw [->] (c7)+(unity) -- ($(c9)-(unity)$) node[pos=0.5,align=center, above]{12};}
+		{\color<8>{gray}\draw [->] (c8)+(unitx) -- ($(c10)+(unity)$) node[pos=0.5,align=center, above]{8};}
+		{\color<6>{red}\draw [->,dashed] ($(c6)-(unity)$) -- ($(c7)+(unity)$) node[pos=0.5,align=left,below]{0};}
+	%	\draw[opacity=0]($(c5)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{19};
+	%	\draw[opacity=0]($(c7)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{15};
+       \draw <2->($(c1)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{0};
+       \draw <3->($(c2)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{4};
+       \draw <4->($(c3)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{11};
+       \draw <4->($(c4)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{10};
+       {\uncover<5->{\draw ($(c5)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{19};}}
+       \draw <5->($(c6)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{16};
+       {\uncover<5>{\draw ($(c7)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{15};}}
+       \draw<6>[fill opacity=0.2, fill=red]($(c7)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center,opacity=1]{16};
+       \draw<7->($(c7)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{16};
+       \draw<7-> ($(c8)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{26};
+       \draw<7-> ($(c9)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{28};
+       \draw<8-> ($(c10)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{36};
+		\end{tikzpicture}
+	\end{center}
+\end{frame}
+\section{寻找PETR图}
+\begin{frame}{关键路径}
+	\begin{description}
+		\item[路径（path）] 从开始节点到终止节点沿箭头方向可以到达的路线
+		\item[路径长度（path length)] 路线上所有作业天数之和
+		\item[关键路径（critical path）]项目中\textcolor{red}{最长}的路径，是必须经过的路径，决定了整个项目的工期
+	\end{description}
+\end{frame}
+
+\begin{frame}{关键路径}
+		\begin{center}
+			\begin{tikzpicture}
+			\coordinate [label=center:1] (c1) at (0,0);
+			\coordinate [label=center:2](c2) at (60pt,0);
+			\coordinate [label=center:3](c3) at (120pt,0);
+			\coordinate [label=center:6](c6) at (180pt,0);
+			\coordinate [label=center:9](c9) at (240pt,0);
+			\coordinate [label=center:10](c10) at (300pt,0);
+			\coordinate [label=center:4](c4) at (125pt,-60pt);
+			\coordinate [label=center:7](c7) at (185pt,-60pt);
+			\coordinate [label=center:5](c5) at (160pt,60pt);
+			\coordinate [label=center:8](c8) at (245pt,60pt);
+			\coordinate (unitx) at (10pt,0);
+			\coordinate (unity) at (0,10pt);
+			{\uncover<1-9>{\coordinate [label=right:由活动结束日期向前推断]() at (0pt,80pt);
+			\coordinate [label=right:活动最晚开始时间]() at (0pt,65pt);}}
+            {\uncover<10->{\coordinate [label=right:得到最晚开始时间的路径是]() at (0pt,80pt);
+            \coordinate [label=right:的路径是\textcolor{red}{关键路径}]() at (0pt,65pt);}}
+			\draw (c1)circle (10pt);
+			\draw (c2) circle (10pt);
+			\draw (c3) circle (10pt);
+			\draw (c6) circle (10pt);
+			\draw (c9) circle (10pt);
+			\draw (c10) circle (10pt);
+			\draw (c5) circle (10pt);
+			\draw (c8) circle (10pt);
+			\draw (c4) circle (10pt);
+			\draw (c7) circle (10pt);
+			
+			\draw ($(c1)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{\color<10-11>{red}{0}};
+			\draw ($(c2)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{\color<10-11>{red}{4}};
+			\draw ($(c3)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{\color<10-11>{red}{11}};
+			\draw ($(c4)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{10};
+			\draw ($(c5)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{19};
+			\draw($(c6)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{\color<10-11>{red}{16}};
+			\draw ($(c7)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{\color<10-11>{red}{16}};
+			\draw ($(c8)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{26};
+			\draw ($(c9)-0.8*(unitx)+1.3*(unity)$) rectangle +(16pt,20pt) node[pos=0.5,align=center]{\color<10-11>{red}{28}};
+			\draw ($(c10)-0.8*(unitx)-1.3*(unity)$) rectangle +(16pt,-20pt) node[pos=0.5,align=center]{\color<10-11>{red}{36}};
+			
+			{\uncover<2->{\draw[fill opacity=0.2,fill=blue]($(c10)-0.8*(unitx)-1.3*(unity)+(16pt,-20pt)$) rectangle +(-16pt,-20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{{36}}};}}
+			{\uncover<3->{\draw[fill opacity=0.2,fill=blue]($(c9)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{28}};}}
+		    {\uncover<3->{\draw[fill opacity=0.2,fill=blue]($(c8)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{28};}}
+			{\uncover<4->{\draw[fill opacity=0.2,fill=blue]($(c7)-0.8*(unitx)-1.3*(unity)+(16pt,-20pt)$) rectangle +(-16pt,-20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{16}};}}
+			{\uncover<5->{\draw[fill opacity=0.2,fill=blue]($(c6)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{16}};}}
+			{\uncover<4->{\draw[fill opacity=0.2,fill=blue]($(c5)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{21};}}
+			{\uncover<6->{\draw[fill opacity=0.2,fill=blue]($(c4)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{11};}}
+			{\uncover<6->{\draw[fill opacity=0.2,fill=blue]($(c3)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{11}};}}
+			{\uncover<7->{\draw[fill opacity=0.2,fill=blue]($(c2)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{4}};}}
+			{\uncover<8->{\draw[fill opacity=0.2,fill=blue]($(c1)-0.8*(unitx)+1.3*(unity)+(16pt,20pt)$) rectangle +(-16pt,20pt) node[pos=0.5,align=center,opacity=1]{\color<10-11>{red}{0}};}}
+			
+				\draw<8> [<-,red] (c1)+(unitx) -- ($(c2)-(unitx)$) node[pos=0.5,align=center, above]{4};
+			{\color<11>{red}{	\draw<1-7,9-> [->] (c1)+(unitx) -- ($(c2)-(unitx)$) node[pos=0.5,align=center, above]{4};}}
+				\draw<7> [<-,red] (c2)+(unitx) -- ($(c3)-(unitx)$) node[pos=0.5,align=center, above]{7};
+			{\color<11>{red}{	\draw<1-6,8-> [->] (c2)+(unitx) -- ($(c3)-(unitx)$) node[pos=0.5,align=center, above]{7};}}
+		{\color<11>{red}{		\draw<1-5,7-> [->] (c3)+(unitx) -- ($(c6)-(unitx)$) node[pos=0.5,align=center, above]{5};}}
+				\draw<6> [<-,red] (c3)+(unitx) -- ($(c6)-(unitx)$) node[pos=0.5,align=center, above]{5};
+				\draw [->] (c6)+(unitx) -- ($(c9)-(unitx)$) node[pos=0.5,align=center, above]{10};
+				
+		\draw<3> [<-,red] (c9)+(unitx) -- ($(c10)-(unitx)$) node[pos=0.5,align=center, above]{8};
+		   	{\color<11>{red}{\draw<1-2,4-> [->] (c9)+(unitx) -- ($(c10)-(unitx)$) node[pos=0.5,align=center, above]{8};}}
+				
+				\draw<6> [<-,red] (c4)+(unitx) -- ($(c7)-(unitx)$) node[pos=0.5,align=center, above]{5};
+			\draw<1-5,7-> [->] (c4)+(unitx) -- ($(c7)-(unitx)$) node[pos=0.5,align=center, above]{5};
+				\draw<1-3,5-> [->] (c5)+(unitx) -- ($(c8)-(unitx)$)	node[pos=0.5,align=center, above]{7};
+				\draw<4> [<-,red] (c5)+(unitx) -- ($(c8)-(unitx)$)	node[pos=0.5,align=center, above]{7};
+				\draw [->] ($(c2)-(unity)$) -- ($(c4)-(unitx)$) node[pos=0.5,align=center, above]{4};
+			\draw [->] (c3)+(unity) -- ($(c5)-(unity)$) node[pos=0.5,align=center, above]{8};
+			\draw<4>[<-,red] (c7)+(unity) -- ($(c9)-(unity)$) node[pos=0.5,align=center, above]{12};
+			{\color<11>{red}{\draw<1-3,5->[->] (c7)+(unity) -- ($(c9)-(unity)$) node[pos=0.5,align=center, above]{12};}}
+			\draw<3> [<-,red] (c8)+(unitx) -- ($(c10)+(unity)$) node[pos=0.5,align=center, above]{8};
+			\draw<1-2,4-> [->] (c8)+(unitx) -- ($(c10)+(unity)$) node[pos=0.5,align=center, above]{8};
+			{\color<11>{red}{\draw<1-4,6-> [->,dashed] ($(c6)-(unity)$) -- ($(c7)+(unity)$) node[pos=0.5,align=left,below]{0};}}
+			\draw<5> [<-,dashed,red] ($(c6)-(unity)$) -- ($(c7)+(unity)$) node[pos=0.5,align=left,below]{0};
+			
+			\draw<11>[fill=red,fill opacity=0.2] (c1) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c2) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c3) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c6) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c7) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c9) circle (10pt);
+			\draw<11>[fill=red,fill opacity=0.2] (c10) circle (10pt);
+			\end{tikzpicture}
+		\end{center}
+\end{frame}
+
+\begin{frame}{最早开始时间与最晚开始时间}
+	\begin{center}
+		\begin{table}
+			\begin{tabular}{c|c|c}
+				\hline 
+				作业 & 最早开始时间 & 最晚开始时间 \\
+				\hline
+				1 & 0 & 0 \\
+				2 & 4 & 4 \\
+				3 & 11 & 11 \\
+				4 & 10 & 11 \\
+				5 & 19 & 21 \\
+				6 & 16 & 16 \\
+				7 & 16 & 16 \\
+				8 & 26 & 28 \\
+				9 & 28 & 28 \\
+				10 & 36 & 36 \\
+				\hline
+			\end{tabular}
+			\caption{活动开始时间}
+		\end{table}
+	\end{center}
+\end{frame}
+\end{CJK*}
+\end{document}
