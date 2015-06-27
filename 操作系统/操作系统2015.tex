@@ -1,0 +1,205 @@
+
+\documentclass{exam}
+\usepackage{CJKutf8}
+\usepackage{CJKnumb}
+\usepackage{paralist}
+\usepackage{subfigure}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks,linkcolor=red,urlcolor=Orchid]{hyperref}
+\renewcommand{\thepartno}{\arabic{partno}}
+\renewcommand\thesection{\CJKnumber{\arabic{section}}}
+\pointname{分}
+\newif\ifprint
+\unframedsolutions
+%\renewcommand{\solutiontitle}{\noindent\textbf{解: }\noindent}
+%\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
+\printfalse
+\usepackage{ulem}
+\newcommand{\blank}[2][1cm]{\uline{\makebox[#1][c]{%
+			\ifprint
+			\phantom{#2}%
+			\else
+			#2%
+			\fi}}}
+\pagestyle{headandfoot}
+\cfoot{\thepage$/$\numpages} 
+\header{2015/6/27}{操作系统2015}{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}}
+\headrule
+
+
+\begin{CJK*}{UTF8}{gbsn}
+\begin{document}
+\section{选择题（20分）}
+	\begin{questions}
+		\question[2]并发进程中访问相同变量的程序段，被称为\blank{}
+		\begin{choices}
+			\choice 临界区
+			\choice 临界资源
+			\choice 缓冲区
+			\choice 原语
+		\end{choices}
+		
+		\question[2]进程在执行期间发生了缺页中断，经操作系统处理后，应让其接着执行\blank{}
+		\begin{choices}
+			\choice 被中断的前一条
+			\choice 被中断的那一条
+			\choice 被中断的后一条
+			\choice 启动时的第一条
+		\end{choices}
+		
+		\question[2]在进程状态转换时，\blank{}转换是不可能的
+		\begin{choices}
+			\choice 就绪$\to$运行
+			\choice 运行$\to$就绪
+			\choice 运行$\to$阻塞
+			\choice 阻塞$\to$运行
+		\end{choices}
+		
+		\question[2]进程和程序的本质区别之一是\blank{}
+		\begin{choices}
+			\choice 前者分时使用CPU，后者独占CPU
+			\choice 前者存储在内存，后者存储在外存
+			\choice 前者在同一个文件中，后者在多个文件中
+			\choice 前者是动态的，后者是静态的
+		\end{choices}
+		
+		\question[2]动态定位是在\blank{}中进行的
+		\begin{choices}
+			\choice 编译过程
+			\choice 装入过程
+			\choice 修改过程
+			\choice 执行过程
+		\end{choices}
+		
+		\question[2]下面的\blank{}页面淘汰算法有时会产生Belady异象
+		\begin{choices}
+			\choice 先进先出(FIFO)
+			\choice 最近最少使用(LRU)
+			\choice 最不经常使用(LFU)
+			\choice 理想型(OPT)
+		\end{choices}
+		
+		\question[2]死锁的预防是通过破坏死锁产生的四个必要条件来实现的，下列方法中\blank{}破坏了"环路条件"
+		\begin{choices}
+			\choice 银行家算法
+			\choice 资源有序分配
+			\choice 一次性分配策略
+			\choice SPOOLING技术
+		\end{choices}
+		
+		\question[2]批量处理系统的主要目的是尽量提高系统的吞吐量，为此，应优选择\blank{}运行
+		\begin{choices}
+			\choice 使用户比较满意的作业
+			\choice 运算量大的作业
+			\choice 耗时较短的作业
+			\choice 优先级较高的作业
+		\end{choices}
+		
+		\question[2]有一磁盘，共10个柱面，每个柱面20个磁道，每个盘面分成16个扇区，采用位示图对其存储空间进行管理，如果字长是16个二进制位，那么示图共需\blank{}个字
+		\begin{choices}
+			\choice 200
+			\choice 128
+			\choice 256
+			\choice 100
+		\end{choices}
+		
+		\question[2]实现虚拟存储器的目的是\blank{}
+		\begin{choices}
+			\choice 扩充物理主存
+			\choice 逻辑上扩充主存
+			\choice 逻辑上扩充外存
+			\choice 以上都不对
+		\end{choices}
+	\end{questions}
+	
+\section{简答题（25分）}
+	\begin{questions}
+		\question[5] 请简述文件系统的分层组织结构
+		\vspace{1cm}
+		\question[5]请列举文件系统中目录的几种典型结构，并从文件命名、文件分组、效率等角度，阐述每种目录结构的优劣
+		\vspace{1.5cm}
+		\question[5]磁盘调度策略有哪几种，请简要说明各磁盘调度算法的原理
+		\vspace{1.2cm}
+		\question[5]请简要描述在虚存机制下页面异常处理的基本流程
+		\vspace{1.3cm}
+		\question[5]试从调度性、并发性、拥有资源及系统开销几个方面，对进程和线程进行比较
+		\vspace{1cm}
+	\end{questions}
+
+\section{计算题（55分）}
+    \begin{questions}
+    	
+	\question[10] 有五个进程A、B、C、D、E几乎同时到达（任务到达的先后顺序为C，D，B，E，A），估计的运行时间分别为2、4、6、8、10分钟，它们的优先数分别为1、2、3、4、5（1为最优先级）。对于下面每种调度算法，分别计算任务的平均周转时间：
+	\begin{inparaenum}[ (1)]
+		\item 最高优先级优先
+		\item 时间片轮转
+		\item FIFO
+		\item 短作业优先
+	\end{inparaenum}
+	\vspace{2.5cm}
+	
+	\question[10] 在一个页式系统中，页面的大小为1KB，地址寄存器的字长为20位，现有一长度为4KB的用户程序，有4个页面分别被分配在内存的页框号为10、14、15和18的物理页中。当程序中的访问地址分别为2058、4011、5890时，说明各自的地址转换结果。
+	
+	\vspace{2cm}
+	
+	\question[10]系统中有五个进程，分别为P1,P2,P3,P4,P5，四类资源分别为R1、R2、R3、R4。某一时刻系统资源向量$A=(1,2,3,0)$
+	\begin{parts}
+		\part 试用银行家算法判断系统当前状态是否安全
+		\part 当进程P3提出对R3的剩余请求时，是否能满足它？请详细说明理由。
+		\part 系统初始配置的各类资源分别是多少？
+	\end{parts}
+	\begin{table}[htb]
+			\begin{center}
+		    \subtable[最大需求表$Q$]{
+		    	\begin{tabular}{|c|c|c|c|c|}
+		    	\hline
+		    	& R1 & R2 & R3 & R4 \\
+		    	\hline
+		    	P1 & 1 & 2 & 1 & 2 \\
+		    	\hline
+		    	P2 & 1 & 7 & 5 & 0 \\
+		    	\hline
+		    	P3 & 2 & 3 & 5 & 6 \\
+		    	\hline
+		    	P4 & 0 & 8 & 5 & 2 \\
+		    	\hline
+		    	P5 & 0 & 6 & 3 & 6 \\
+		    	\hline
+		    \end{tabular}
+	    	}
+	    	\qquad \qquad
+	    	\subtable[已分配表格$U$]{
+		    \begin{tabular}{|c|c|c|c|c|}
+		    	\hline
+		    	& R1 & R2 & R3 & R4 \\
+		    	\hline
+		    	P1 & 0 & 0 & 1 & 2 \\
+		    	\hline
+		    	P2 & 1 & 0 & 0 & 0 \\
+		    	\hline
+		    	P3 & 1 & 1 & 4 & 4 \\
+		    	\hline
+		    	P4 & 0 & 6 & 2 & 2 \\
+		    	\hline
+		    	P5 & 0 & 0 & 1 & 4 \\
+		    	\hline
+		    \end{tabular}
+	    	}
+		    \end{center}
+	\end{table}
+	\newpage
+	\question[15]某工厂有两个生产车间和一个装配车间，两个生产车间分别生产A、B两种零件、装配车间的任务是把A、B两种零件组装成产品。两个车间每生产一个A零件和一个B零件，然后都要分别把它们送到装配车间的货架F1，F2上，F1存放零件A，F2存放零件B，F1、F2的容量均可以存放10个零件。装配工人每次从货架上取一个A零件和一个B零件，然后组装成产品。请用P、V操作对生产装配过程进行正确管理。
+	\vspace{6cm}
+	
+	\question[10]在页式虚拟存储系统中，某个进程被分配有4个物理页，进程刚开始时，物理页内容均为空。若该进程按如下序列访问程序中的页:\\
+	5,3,6,4,3,5,1,4,2,5,6,4,2,5,1\\
+	试计算采用如下页置换算法时的缺页次数，并给出各种情况下的具体页面置换情况图示。
+	\begin{inparaenum}[ (1)]
+		\item 采用FIFO算法
+		\item 采用LRU算法
+		\item 采用OPT算法
+	\end{inparaenum}
+	\clearpage
+\end{questions}
+\end{CJK*}
+\end{document}
