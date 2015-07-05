@@ -1,0 +1,7 @@
+\BOOKMARK [1][-]{section.1}{乌云漏洞整理}{}% 1
+\BOOKMARK [1][-]{section.2}{第一周}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{6/29 中国移动某IP依旧可心脏滴血（可泄露用户服务密码等信息）}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{6/30 TCL某站后台弱口令导致整站webshell部分VIP会员信息泄露}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{7/1 华融证劵某站补丁不及时导致getshell（可内网渗透）}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{7/2 趣分期撞库漏洞（成功98个）}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{7/3 上海虹桥火车站Wi-Fi认证设计不当导致绕过漏洞}{section.2}% 7

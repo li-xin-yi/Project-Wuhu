@@ -1,0 +1,90 @@
+
+\documentclass{leptc}
+\begin{document}
+\chap{乌云漏洞整理}
+整理者：\href{mailto:lxy_September@outlook.com}{李欣宜} \\
+文档源码地址：\url{https://github.com/Lixinyi-DUT/Project-Wuhu}\\
+整理自\href{http://www.wooyun.org/}{乌云漏洞平台}
+
+\chap{第一周}
+\begin{center}
+	\com{2015/6/29-2015/7/3}
+\end{center} 
+
+\chaps{6/29 中国移动某IP依旧可心脏滴血（可泄露用户服务密码等信息）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0122764}
+\end{center}
+\enl{提交时间} 2015/6/25 \\
+\enl{确认时间} 2015/6/29 \\
+\enl{漏洞hash} 183e27ad5344f8c03dfa1cb97a16be59 \\
+\enl{漏洞类型} 系统/服务补丁不及时 \\
+\enl{简要描述} 中国移动某IP存在OpenSSL漏洞-（可泄露用户服务密码等信息）\\
+\ent[ heartbleed bug]{心脏出血漏洞}是出现在加密库\ent{OpenSSL 1.0.1}\com{实现SSL与TLS协议}上的程序错误，可允许攻击者读取服务器的内存信息，客户端和服务器都可能因为这个漏洞受到攻击。该漏洞得名于\ent[\B Transport \B Layer \B Security]{TLS协议}和于\ent[\B Dategram \B Transport \B Layer \B Security]{DTLS协议}中已成为标准的机制\ent[heartbeat extension]{心跳扩展},它提供了一种测试和保持安全通信链路的方式，而无需每次都重新协商连接，但这种扩展没有进对输入行有效验证，即\ent[bounds check]{边界检查}，导致了\ent[buffer over-read]{缓冲区过读}，因此引发信息泄露。受影响的OpenSSL版本为1.0.1至1.0.1f（含），而较早的版本和较新的版本均没有受到影响。\\
+\enl{漏洞影响} 约有17\%通过认证机构认证的互联网安全网络服务器被认为容易受到攻击，导致服务器私钥和用户会话cookie及密码被盗。\\
+\enl{补救措施} OpenSSL版本1.0.1g增加了一些边界检查，以防止过度读取缓冲。例如，已添加了下列测试，以丢弃将引发心脏出血漏洞的心跳请求，阻止回复继续构建：\\
+	\verb|if (1 + 2 + payload + 16 > s->s3->rrec.length) return 0;|\\
+存在缺陷的服务器应及时升级系统和服务补丁，疑似受到攻击的这些应用服务的用户也被建议及时更换密码等信息，并获取系统的更新。一些网站推出了测试，检测给定的网站上是否存在心脏出血漏洞，比如\href{http://heartbleed.criticalwatch.com/}{Critical Watch免费在线心脏出血测试器}， \href{https://blog.lookout.com/blog/2014/04/09/heartbleed-detector/}{Lookout Mobile Security心脏出血探测器}\com{一个用于Android设备的应用程序，可确定设备使用的OpenSSL版本，并指出是否启用了有缺陷的心跳特性}和\href{https://www.ssllabs.com/ssltest/}{Qualys}\com{SSL实验室的SSL服务器测试，不仅能查找心脏出血漏洞，还能找到其他位于SSL/TLS实现中的错误}等。\\
+
+\chaps{6/30 TCL某站后台弱口令导致整站webshell部分VIP会员信息泄露}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2010-0123296}
+\end{center}
+\enl{提交时间} 2015/6/28\\
+\enl{漏洞类型} 后台弱口令 \\
+\enl{漏洞细节} 图片见该漏洞的\href{http://www.wooyun.org/bugs/wooyun-2010-0123296}{报告地址}，这里不再给出
+\begin{enumerate}
+	\item 进入网站\url{http://tvp.multimedia.tcl.com/sysadmin/login.aspx}
+	\item
+	使用弱口令 \verb|admin/toprand| 登录
+	\item
+	修改上传设置，在图片类型中增加asp和aspx类型
+	\item
+	将\href{http://tvp.multimedia.tcl.com/UploadFiles/Images/2015/6/20150628152911.aspx}{测试文件}上传Shell，可以得到服务器的安全信息
+	\item
+	删除后发现VIP用户信息泄露
+\end{enumerate}
+
+\enl{漏洞简述} \ent[weak password]{弱口令}通常是指容易被人猜测或者被破解工具破解的口令，一般仅包含简单的数字和字母。可以通过\ent[weak password dictionary]{弱口令字典}以一定概率扫描获得。口令强度可以用微软提供的\href{http://www.microsoft.com/zh-cn/security/pc-security/password-checker.aspx}{密码检查器}进行评估。\\
+\enl{补救措施} 修改弱口令，升级后台系统。\\
+
+\chaps{7/1 华融证劵某站补丁不及时导致getshell（可内网渗透）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0111837}
+\end{center}
+\enl{提交时间} 2015/5/12 \\
+\enl{公开时间} 2015/6/29 \\
+\enl{漏洞类型} 成功的入侵事件 \\
+\enl{漏洞细节} 站点：\url{http://oa.hrsec.com.cn/login/Login.jsp?logintype=1} \\
+使用泛微oa找到弱口令进入，上传测试文件后，直接getshell，获得了root权限。\\
+\enl{漏洞简述} 泛微oa系统存在着很大的缺陷，使用定制泛微oa的厂家的信息安全也因此受到了很大的威胁。不及时打补丁的使用厂家尤甚，\ent{SQL注入}和\ent{弱口令}都可能使没有合法权限的入侵者进入系统后台，由于\ent{任意文件上传}威胁的存在，攻击者可以上传制作好的测试脚本获得root权限。\\
+\ent{WebShell}是以asp、php、jsp或者cgi等网页文件形式存在的一种命令执行环境，也可以将其称做为一种网页后门。\\
+入侵者通常会将这些asp或php后门文件与网站服务器WEB目录下正常的网页文件混在一起，然后就可以使用浏览器来访问这些asp或者php后门，得到一个命令执行环境，以达到控制网站服务器的目的，这就是\ent{WebShell攻击}。\\
+这种攻击也可以通过\href{https://github.com/cfc4n/pecker}{Pecker Scanner工具}进行检测。\\
+\enl{补救措施} 及时更新系统补丁，遵循\ent{最低权限原则}。\\
+
+\chaps{7/2 趣分期撞库漏洞（成功98个）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0114565}
+\end{center}
+\enl{提交时间} 2015/5/18 \\
+\enl{公开时间} 2015/7/2 \\
+\enl{漏洞类型} 设计缺陷/逻辑错误 \\
+\enl{漏洞细节} 撞库接口：\url{http://www.qufenqi.com/login} 频繁测试受到限制时换IP列表继续测试\\
+\enl{漏洞简述} \ent{拖库攻击}指入侵有价值的网络站点，把注册用户的资料数据库全部盗走的行为。取得大量的用户数据之后，黑客会通过一系列的技术手段和黑色产业链将有价值的用户数据变现，这通常也被称作\ent{洗库}。最后黑客将得到的数据在其它网站上进行尝试登陆，叫做\ent{撞库}，因为很多用户喜欢使用统一的用户名密码。\\
+为了应对这种攻击，有时企业会在登录页面加上验证码，然而识别图像验证码的脚本并不难获得，所以收效甚微。与之类似，对于IP和输入密码错误次数限制也是出于同样的考虑，但还是难以防止有针对性的恶意攻击。\\
+\enl{补救措施} \N1 对于用户来说，尽量不要在不同的网站使用统一的用户名和密码，如果有使用，那么一旦发现其中某个网站的信息泄露，立即更换其他站点使用的密码。\N2 对于应用的运营商，除了增强数据库常规的安全手段，也可以从多维度入手防止撞库扫号，比如增加手机验证码验证，或者使用\ent{Flash Cookies}代替\ent{Cookies}。\\
+\fig[0.9]{process_1.jpg}\\
+
+\chaps{7/3 上海虹桥火车站Wi-Fi认证设计不当导致绕过漏洞}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0112807}
+\end{center}
+\enl{提交时间} 2015/5/8 \\
+\enl{公开时间} 2015/6/26 \\
+\enl{漏洞类型} 设计缺陷/逻辑错误 \\
+\enl{漏洞细节} 填手机号，发送验证码之后，抓包。可以看到返回信息中直接包含了验证码。这样也就绕开了短信接收验证码然后再输入验证的过程，无法进行身份验证。\\
+\fig[0.7]{packet.png}\\
+\enl{漏洞简述} \ent{Wi-Fi Portal认证}是开放WLAN中验证用户身份的一种方式，我校的无线网络DLUT也是使用的这种认证机制。在机场、火车站、咖啡厅等公共场所的WLAN一般应用\ent[Challenge-Response authentication]{挑战/应答认证}对接入者身份进行验证，比如短信接收验证码。这种认证中，用户填写的个人信息请求通过\ent[POST method]{POST方法}传给服务器，而这个\verb|POST|请求的数据包中就含有用户的个人信息，在Web条件下，可以通过IE或者Chrome自动的抓包工具获得，我曾经利用过这个方法写了一个\href{https://github.com/Lixinyi-DUT/WirelessHelper}{实现DLUT后台自动登录的应用}，也是利用了DLUT数据包明文传输的缺陷。\\
+\enl{补救措施} 数据包中的验证码加密，或者在认证中心建立可靠的数据库管理这些验证码，而避免验证信息在数据包中传递。
+\end{document}
