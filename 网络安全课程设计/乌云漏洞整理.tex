@@ -1,5 +1,7 @@
-
 \documentclass{leptc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,calc}
+\usepgflibrary{arrows}
 \begin{document}
 \chap{乌云漏洞整理}
 整理者：\href{mailto:lxy_September@outlook.com}{李欣宜} \\
@@ -74,7 +76,9 @@
 \enl{漏洞简述} \ent{拖库攻击}指入侵有价值的网络站点，把注册用户的资料数据库全部盗走的行为。取得大量的用户数据之后，黑客会通过一系列的技术手段和黑色产业链将有价值的用户数据变现，这通常也被称作\ent{洗库}。最后黑客将得到的数据在其它网站上进行尝试登陆，叫做\ent{撞库}，因为很多用户喜欢使用统一的用户名密码。\\
 为了应对这种攻击，有时企业会在登录页面加上验证码，然而识别图像验证码的脚本并不难获得，所以收效甚微。与之类似，对于IP和输入密码错误次数限制也是出于同样的考虑，但还是难以防止有针对性的恶意攻击。\\
 \enl{补救措施} \N1 对于用户来说，尽量不要在不同的网站使用统一的用户名和密码，如果有使用，那么一旦发现其中某个网站的信息泄露，立即更换其他站点使用的密码。\N2 对于应用的运营商，除了增强数据库常规的安全手段，也可以从多维度入手防止撞库扫号，比如增加手机验证码验证，或者使用\ent{Flash Cookies}代替\ent{Cookies}。\\
-\fig[0.9]{process_1.jpg}\\
+\begin{center}
+\input{pic.tikz}
+\end{center}
 
 \chaps{7/3 上海虹桥火车站Wi-Fi认证设计不当导致绕过漏洞}
 \begin{center}
@@ -84,7 +88,25 @@
 \enl{公开时间} 2015/6/26 \\
 \enl{漏洞类型} 设计缺陷/逻辑错误 \\
 \enl{漏洞细节} 填手机号，发送验证码之后，抓包。可以看到返回信息中直接包含了验证码。这样也就绕开了短信接收验证码然后再输入验证的过程，无法进行身份验证。\\
+\enl{漏洞简述} \ent{Wi-Fi Portal认证}是开放WLAN中验证用户身份的一种方式，我校的无线网络DLUT也是使用的这种认证机制。在机场、火车站、咖啡厅等公共场所的WLAN一般应用\ent[Challenge-Response authentication]{挑战/应答认证}对接入者身份进行验证，比如短信接收验证码。这种认证中，用户填写的个人信息请求通过\ent[POST method]{POST方法}传给服务器，而这个\verb|POST|请求的数据包中就含有用户的个人信息，在Web条件下，可以通过IE或者Chrome自带的抓包工具获得，我曾经利用过这个方法写了一个\href{https://github.com/Lixinyi-DUT/WirelessHelper}{实现DLUT后台自动登录的应用}，也是利用了DLUT数据包明文传输的缺陷。\\
 \fig[0.7]{packet.png}\\
-\enl{漏洞简述} \ent{Wi-Fi Portal认证}是开放WLAN中验证用户身份的一种方式，我校的无线网络DLUT也是使用的这种认证机制。在机场、火车站、咖啡厅等公共场所的WLAN一般应用\ent[Challenge-Response authentication]{挑战/应答认证}对接入者身份进行验证，比如短信接收验证码。这种认证中，用户填写的个人信息请求通过\ent[POST method]{POST方法}传给服务器，而这个\verb|POST|请求的数据包中就含有用户的个人信息，在Web条件下，可以通过IE或者Chrome自动的抓包工具获得，我曾经利用过这个方法写了一个\href{https://github.com/Lixinyi-DUT/WirelessHelper}{实现DLUT后台自动登录的应用}，也是利用了DLUT数据包明文传输的缺陷。\\
-\enl{补救措施} 数据包中的验证码加密，或者在认证中心建立可靠的数据库管理这些验证码，而避免验证信息在数据包中传递。
+\enl{补救措施} 数据包中的验证码加密，或者在认证中心建立可靠的数据库管理这些验证码，而避免验证信息在数据包中传递。\\
+
+\chap{第二周}
+\begin{center}
+	\com{2015/7/6-2015/7/10}
+\end{center}
+
+\chaps{7/6 联想手机VIBE UI部分版本设计缺陷绕过锁屏读所有联系人}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0105688}
+\end{center}
+
+\enl{提交时间} 2015/4/3 \\
+\enl{公开时间} 2015/7/6 \\
+\enl{漏洞类型} 设计错误/逻辑缺陷 \\
+\enl{漏洞细节} \N1 机型：\texttt{A355e} \N2 \texttt{VUBE UI}的版本：\verb|A355e_S020_20141229| \N3 向测试手机拨打电话，然后这个时候往上滑动，进入自定义短信回复界面 \N4 进入短信回复界面以后，在联系人框那里随便输入一个数字，比如一般手机号开头都是1，这样就可以读到所有联系人了。\\
+\enl{漏洞简述} \texttt{iOS7}也曾经出现过可以绕过锁屏的安全漏洞，而\texttt{Android}系统由于各个厂家的定制UI，对安全问题的重视程度不一，也经常存在同样的问题。\texttt{Android}应用\href{http://secretlisa.com/words-screen-lock/}{单词锁屏}也存在这个漏洞，下拉状态栏可以直接进入其他应用而绕过锁屏，强迫自己背单词不玩手机的目的也就无法达到。\\
+这种漏洞存在的原因很多，在\texttt{Android 4.3}中\code{com.android.settings.ChooseLockGeneric}是负责更改系统的解锁方式的类，再解锁确认后它的成员\code{mPasswordConfirmed}被设置为\code{True}，这个成员没有私有保护，从外部启动\code{ChooseLockGeneric}再设置这个参数，设定密码策略为\code{PASSWORD_QUALITY_UNSPECIFIED}\com{对密码没有要求}，系统就会自动清除锁屏密码，更多其他方法可以自行查阅。\\
+\enl{补救措施} \N1 把逻辑设置为自定义回复短信的时候需要输入解锁密码 \N2 学习华为的最新系统，把在通话界面实现自定义回复短信的功能用另外的模块实现，在这个模块中只有短信内容框别的什么都没有。 \N3 参考\texttt{Android}原生系统，对\code{mPasswordConfirmed}进行保护。\\
 \end{document}

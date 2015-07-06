@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  5 JUL 2015 20:20
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  6 JUL 2015 17:10
 entering extended mode
 **乌云漏洞整理.tex
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.tex
@@ -1106,31 +1106,348 @@ Requested font "ectt1000" scaled 1000
 \SOUL@ttwidth=\dimen262
 \SOUL@uldp=\dimen263
 \SOUL@ulht=\dimen264
-))) (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
- (D:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
+)))
+(D:\CTEX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks45
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box51
+
+(D:\CTEX\MiKTeX\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks46
+\pgfkeys@temptoks=\toks47
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks48
+))
+\pgf@x=\dimen265
+\pgf@y=\dimen266
+\pgf@xa=\dimen267
+\pgf@ya=\dimen268
+\pgf@xb=\dimen269
+\pgf@yb=\dimen270
+\pgf@xc=\dimen271
+\pgf@yc=\dimen272
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count331
+\c@pgf@countb=\count332
+\c@pgf@countc=\count333
+\c@pgf@countd=\count334
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-xetex.def on input line 900.
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-xetex.def
+File: pgfsys-xetex.def 2010/02/16  (rcs-revision 1.3)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf-via-dvi.def
+File: pgfsys-common-pdf-via-dvi.def 2008/05/19  (rcs-revision 1.7)
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count335
+\pgfsyssoftpath@bigbuffer@items=\count336
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen273
+\pgfmath@count=\count337
+\pgfmath@box=\box52
+\pgfmath@toks=\toks49
+\pgfmath@stack@operand=\toks50
+\pgfmath@stack@operation=\toks51
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count338
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen274
+\pgf@picmaxx=\dimen275
+\pgf@picminy=\dimen276
+\pgf@picmaxy=\dimen277
+\pgf@pathminx=\dimen278
+\pgf@pathmaxx=\dimen279
+\pgf@pathminy=\dimen280
+\pgf@pathmaxy=\dimen281
+\pgf@xx=\dimen282
+\pgf@xy=\dimen283
+\pgf@yx=\dimen284
+\pgf@yy=\dimen285
+\pgf@zx=\dimen286
+\pgf@zy=\dimen287
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen288
+\pgf@path@lasty=\dimen289
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen290
+\pgf@shorten@start@additional=\dimen291
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
+\pgf@picture@serial@count=\count339
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen292
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen293
+\pgf@pt@y=\dimen294
+\pgf@pt@temp=\dimen295
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count340
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box56
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box57
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(D:\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+)
+(D:\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks52
+\pgffor@toks=\toks53
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count341
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikzleveldistance=\dimen306
+\tikzsiblingdistance=\dimen307
+\tikz@figbox=\box58
+\tikz@tempbox=\box59
+\tikztreelevel=\count342
+\tikznumberofchildren=\count343
+\tikznumberofcurrentchild=\count344
+\tikz@fig@count=\count345
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count346
+\pgfmatrixcurrentcolumn=\count347
+\pgf@matrix@numberofcolumns=\count348
+)
+\tikz@expandcount=\count349
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
+.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.cod
+e.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.symbols.code.
+tex
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.arrows.code.t
+ex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+callouts.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.callouts.code
+.tex))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.multipart.cod
+e.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box60
+\pgfnodeparttwobox=\box61
+\pgfnodepartthreebox=\box62
+\pgfnodepartfourbox=\box63
+\pgfnodeparttwentybox=\box64
+\pgfnodepartnineteenbox=\box65
+\pgfnodeparteighteenbox=\box66
+\pgfnodepartseventeenbox=\box67
+\pgfnodepartsixteenbox=\box68
+\pgfnodepartfifteenbox=\box69
+\pgfnodepartfourteenbox=\box70
+\pgfnodepartthirteenbox=\box71
+\pgfnodeparttwelvebox=\box72
+\pgfnodepartelevenbox=\box73
+\pgfnodeparttenbox=\box74
+\pgfnodepartninebox=\box75
+\pgfnodeparteightbox=\box76
+\pgfnodepartsevenbox=\box77
+\pgfnodepartsixbox=\box78
+\pgfnodepartfivebox=\box79
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshadows
+.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v2.10 (rcs-revision 1.3)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings
+.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v2.10 (rcs-revision 1.2)
+ (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v2.10 (rcs-revision 1.3)
+
+
+Package pgf Warning: Your graphic driver pgfsys-xetex.def does not support fadi
+ngs. This warning is given only once on input line 31.
+
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.co
+de.tex
+File: tikzlibrarycalc.code.tex 2009/09/04 v2.10 (rcs-revision 1.6)
+) (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen308
+)
+(E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 5.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 5.
+
+(D:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 Requested font "ecrm1200" at 12.0pt
  -> ecrm1200
 
@@ -1172,37 +1489,38 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count331
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring ON on input line 3.
+\c@lstlisting=\count350
+\AtBeginShipoutBox=\box80
+Package hyperref Info: Link coloring ON on input line 5.
 (D:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
 
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.out)
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.out)
-\@outlinefile=\write3
+\@outlinefile=\write4
+
+ABD: EveryShipout initializing macros
+
+Package xcolor Warning: Incompatible color definition on input line 6.
 
 
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-
-Overfull \hbox (2.49213pt too wide) in paragraph at lines 4--4
+Overfull \hbox (2.49213pt too wide) in paragraph at lines 6--6
 []|[] 
  []
 
 Requested font "ecrm1440" at 14.4pt
  -> ecrm1440
 
-Package xcolor Warning: Incompatible color definition on input line 4.
+Package xcolor Warning: Incompatible color definition on input line 6.
 
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK" at 14.4pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
@@ -1213,7 +1531,7 @@ Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU" at 14.4pt
 . 
 . Font 方正准圆_GBK does not contain any OpenType `Script' information.
 .................................................
-\g_fontspec_family_方正准圆_GBK_int=\count333
+\g_fontspec_family_方正准圆_GBK_int=\count352
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU" at 14.4pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU" at 14.4pt
@@ -1259,7 +1577,7 @@ Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 14.4pt
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 14.4pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
 
-Package xcolor Warning: Incompatible color definition on input line 4.
+Package xcolor Warning: Incompatible color definition on input line 6.
 
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\se-ascii-print.def
 File: se-ascii-print.def 2010/03/01 v1.8 stringenc: Printable ASCII characters
@@ -1310,7 +1628,7 @@ Requested font "vect8" at 8.0pt
  -> vect8
 Requested font "vect6" at 6.0pt
  -> vect6
-LaTeX Font Info:    Try loading font information for U+wasy on input line 4.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 6.
 
 (D:\CTEX\MiKTeX\tex\latex\wasysym\uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1321,7 +1639,7 @@ Requested font "wasy8" at 8.0pt
  -> wasy8
 Requested font "wasy6" at 6.0pt
  -> wasy6
-LaTeX Font Info:    Try loading font information for U+esint on input line 4.
+LaTeX Font Info:    Try loading font information for U+esint on input line 6.
 
 (D:\CTEX\MiKTeX\tex\latex\esint\uesint.fd
 File: uesint.fd 
@@ -1336,7 +1654,7 @@ Requested font "Adobe Fangsong Std" at 12.0pt
  -> C:/WINDOWS/Fonts/AdobeFangsongStd-Regular.otf
 Requested font "Adobe Fangsong Std/ICU" at 12.0pt
  -> C:/WINDOWS/Fonts/AdobeFangsongStd-Regular.otf
-\g_fontspec_family_Adobe Fangsong Std_int=\count334
+\g_fontspec_family_Adobe Fangsong Std_int=\count353
 Requested font "Adobe Fangsong Std/ICU" at 12.0pt
  -> C:/WINDOWS/Fonts/AdobeFangsongStd-Regular.otf
 Requested font "Adobe Fangsong Std/ICU" at 12.0pt
@@ -1384,9 +1702,9 @@ Requested font "Adobe Fangsong Std/ICU:script=latn;language=DFLT;" at 12.0pt
 
 
 Package xeCJK Warning: Unknown CJK family `tt' is ignored.
-Use \setCJKfamilyfont to define a CJK family. on input line 6.
+Use \setCJKfamilyfont to define a CJK family. on input line 8.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 6.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 8.
 (D:\CTEX\MiKTeX\tex\latex\lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1394,33 +1712,33 @@ Requested font "ec-lmtt12" at 12.0pt
  -> ec-lmtt12
 
 
-Package xcolor Warning: Incompatible color definition on input line 9.
+Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Overfull \hbox (2.49213pt too wide) in paragraph at lines 9--9
+Overfull \hbox (2.49213pt too wide) in paragraph at lines 11--11
 []|[] 
  []
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
 
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 13.
 
 
-Package xcolor Warning: Incompatible color definition on input line 14.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 18.
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+
+Package xcolor Warning: Incompatible color definition on input line 20.
 
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK" at 12.0pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
@@ -1444,18 +1762,6 @@ Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 12.0pt
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 12.0pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
 
-Package xcolor Warning: Incompatible color definition on input line 18.
-
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-
-Package xcolor Warning: Incompatible color definition on input line 20.
-
-
 Package xcolor Warning: Incompatible color definition on input line 20.
 
 
@@ -1477,18 +1783,30 @@ Package xcolor Warning: Incompatible color definition on input line 23.
 Package xcolor Warning: Incompatible color definition on input line 23.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 Requested font "ecrm0800" at 8.0pt
  -> ecrm0800
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 Requested font "Verdana" at 8.39996pt
  -> C:/WINDOWS/Fonts/verdana.ttf
 Requested font "Verdana/ICU" at 8.39996pt
  -> C:/WINDOWS/Fonts/verdana.ttf
-\g_fontspec_family_Verdana_int=\count335
+\g_fontspec_family_Verdana_int=\count354
 Requested font "Verdana/B/ICU" at 8.39996pt
  -> C:/WINDOWS/Fonts/verdanab.ttf
 Requested font "Verdana/B/B/ICU" at 8.39996pt
@@ -1556,16 +1874,16 @@ Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 8.39996pt
 Requested font "æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK/ICU:" at 8.39996pt
  -> C:/WINDOWS/Fonts/æ^^96¹æ­£å^^87^^86å^^9c^^86_GBK.TTF
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 .................................................
 . fontspec info: "defining-font"
@@ -1575,19 +1893,19 @@ Package xcolor Warning: Incompatible color definition on input line 23.
 . This font family consists of the following shapes:
 .................................................
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 .................................................
 . fontspec info: "defining-font"
@@ -1599,86 +1917,7 @@ Package xcolor Warning: Incompatible color definition on input line 23.
 Requested font "Verdana/B/ICU:script=latn;language=DFLT;" at 8.39996pt
  -> C:/WINDOWS/Fonts/verdanab.ttf
 
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 24.
-
-
-Package xcolor Warning: Incompatible color definition on input line 24.
+Package xcolor Warning: Incompatible color definition on input line 25.
 
 
 Package xcolor Warning: Incompatible color definition on input line 25.
@@ -1687,82 +1926,142 @@ Package xcolor Warning: Incompatible color definition on input line 25.
 Package xcolor Warning: Incompatible color definition on input line 25.
 
 
-Package xcolor Warning: Incompatible color definition on input line 27.
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 26.
+
+
+Package xcolor Warning: Incompatible color definition on input line 26.
 
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--28
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--30
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 29.
+Package xcolor Warning: Incompatible color definition on input line 31.
 
 
-Package xcolor Warning: Incompatible color definition on input line 29.
+Package xcolor Warning: Incompatible color definition on input line 31.
 
 
-Package xcolor Warning: Incompatible color definition on input line 29.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 33.
-
-
-Package xcolor Warning: Incompatible color definition on input line 34.
-
-
-Package xcolor Warning: Incompatible color definition on input line 34.
+Package xcolor Warning: Incompatible color definition on input line 31.
 
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
 
 Package xcolor Warning: Incompatible color definition on input line 35.
+
+
+Package xcolor Warning: Incompatible color definition on input line 36.
+
+
+Package xcolor Warning: Incompatible color definition on input line 36.
+
+
+Package xcolor Warning: Incompatible color definition on input line 37.
+
+
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 [1
 
 ]
 
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 48.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 48.
-
-
-Package xcolor Warning: Incompatible color definition on input line 48.
-
-
-Package xcolor Warning: Incompatible color definition on input line 48.
-
-
-Package xcolor Warning: Incompatible color definition on input line 48.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 .................................................
 . fontspec info: "defining-font"
@@ -1772,36 +2071,43 @@ Package xcolor Warning: Incompatible color definition on input line 48.
 . This font family consists of the following shapes:
 .................................................
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Package xcolor Warning: Incompatible color definition on input line 49.
+Package xcolor Warning: Incompatible color definition on input line 50.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 51.
+
+
+Package xcolor Warning: Incompatible color definition on input line 51.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 51.
+Package xcolor Warning: Incompatible color definition on input line 53.
 
 
-Package xcolor Warning: Incompatible color definition on input line 51.
+Package xcolor Warning: Incompatible color definition on input line 53.
 
 
-Package xcolor Warning: Incompatible color definition on input line 51.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
-
-Package xcolor Warning: Incompatible color definition on input line 56.
-
-
-Package xcolor Warning: Incompatible color definition on input line 56.
+Package xcolor Warning: Incompatible color definition on input line 53.
 
 
 Package xcolor Warning: Incompatible color definition on input line 57.
@@ -1816,7 +2122,10 @@ Package xcolor Warning: Incompatible color definition on input line 58.
 Package xcolor Warning: Incompatible color definition on input line 58.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+
+Package xcolor Warning: Incompatible color definition on input line 59.
 
 
 Package xcolor Warning: Incompatible color definition on input line 60.
@@ -1825,70 +2134,22 @@ Package xcolor Warning: Incompatible color definition on input line 60.
 Package xcolor Warning: Incompatible color definition on input line 60.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-
-Package xcolor Warning: Incompatible color definition on input line 60.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
-
-
-Package xcolor Warning: Incompatible color definition on input line 61.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 .................................................
 . fontspec info: "defining-font"
@@ -1917,11 +2178,43 @@ Package xcolor Warning: Incompatible color definition on input line 62.
 . This font family consists of the following shapes:
 .................................................
 
-Package xcolor Warning: Incompatible color definition on input line 64.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
 
-Package xcolor Warning: Incompatible color definition on input line 64.
+Package xcolor Warning: Incompatible color definition on input line 62.
 
+
+Package xcolor Warning: Incompatible color definition on input line 62.
+
+
+Package xcolor Warning: Incompatible color definition on input line 62.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
 
 Package xcolor Warning: Incompatible color definition on input line 64.
 
@@ -1942,30 +2235,43 @@ Package xcolor Warning: Incompatible color definition on input line 64.
 . This font family consists of the following shapes:
 .................................................
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--65
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+
+Package xcolor Warning: Incompatible color definition on input line 66.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--67
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 68.
 
 
-Package xcolor Warning: Incompatible color definition on input line 66.
+Package xcolor Warning: Incompatible color definition on input line 68.
 
 
-Package xcolor Warning: Incompatible color definition on input line 66.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-
-Package xcolor Warning: Incompatible color definition on input line 71.
-
-
-Package xcolor Warning: Incompatible color definition on input line 71.
+Package xcolor Warning: Incompatible color definition on input line 68.
 
 
 Package xcolor Warning: Incompatible color definition on input line 72.
@@ -1986,54 +2292,28 @@ Package xcolor Warning: Incompatible color definition on input line 74.
 Package xcolor Warning: Incompatible color definition on input line 74.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 75.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 75.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
-
-
-Package xcolor Warning: Incompatible color definition on input line 74.
-
-
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 76.
 
 .................................................
 . fontspec info: "defining-font"
@@ -2050,13 +2330,51 @@ Package xcolor Warning: Incompatible color definition on input line 76.
 
 
 Package xcolor Warning: Incompatible color definition on input line 76.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+
+Package xcolor Warning: Incompatible color definition on input line 76.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 LaTeX Font Info:    Try loading font information for OMS+TimesNewRoman(0) on in
-put line 76.
-LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 76.
+put line 78.
+LaTeX Font Info:    No file OMSTimesNewRoman(0).fd. on input line 78.
 
 LaTeX Font Warning: Font shape `OMS/TimesNewRoman(0)/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 76.
+(Font)              using `OMS/cmsy/m/n' instead on input line 78.
 
 Requested font "cmbx12" at 12.0pt
  -> cmbx12
@@ -2065,19 +2383,38 @@ Requested font "cmbx8" at 8.0pt
 Requested font "cmbx6" at 6.0pt
  -> cmbx6
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
+
+
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 .................................................
 . fontspec info: "defining-font"
@@ -2087,39 +2424,14 @@ Package xcolor Warning: Incompatible color definition on input line 76.
 . This font family consists of the following shapes:
 .................................................
 
-Package xcolor Warning: Incompatible color definition on input line 76.
-
-
-Package xcolor Warning: Incompatible color definition on input line 76.
-
-
-Package xcolor Warning: Incompatible color definition on input line 76.
-
-
-Package xcolor Warning: Incompatible color definition on input line 76.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-File: process_1.jpg Graphic file (type QTm)
-<use  "process_1.jpg" >
-Underfull \hbox (badness 10000) in paragraph at lines 70--78
+Underfull \hbox (badness 10000) in paragraph at lines 72--79
 
  []
 
-[2]
-
-Package xcolor Warning: Incompatible color definition on input line 79.
-
-
-Package xcolor Warning: Incompatible color definition on input line 79.
-
-
-Package xcolor Warning: Incompatible color definition on input line 79.
+[2] (E:\Project-Wuhu\网络安全课程设计\pic.tikz)
+Overfull \hbox (28.74002pt too wide) in paragraph at lines 63--81
+ [] 
+ []
 
 
 Package xcolor Warning: Incompatible color definition on input line 83.
@@ -2128,112 +2440,260 @@ Package xcolor Warning: Incompatible color definition on input line 83.
 Package xcolor Warning: Incompatible color definition on input line 83.
 
 
-Package xcolor Warning: Incompatible color definition on input line 84.
+Package xcolor Warning: Incompatible color definition on input line 83.
 
 
-Package xcolor Warning: Incompatible color definition on input line 84.
+Package xcolor Warning: Incompatible color definition on input line 87.
 
 
-Package xcolor Warning: Incompatible color definition on input line 85.
+Package xcolor Warning: Incompatible color definition on input line 87.
 
 
-Package xcolor Warning: Incompatible color definition on input line 85.
+Package xcolor Warning: Incompatible color definition on input line 88.
 
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 88.
 
 
-Package xcolor Warning: Incompatible color definition on input line 86.
+Package xcolor Warning: Incompatible color definition on input line 89.
 
+
+Package xcolor Warning: Incompatible color definition on input line 89.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 90.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+
+Package xcolor Warning: Incompatible color definition on input line 91.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
 File: packet.png Graphic file (type QTm)
 <use  "packet.png" >
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 93.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 93.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Underfull \hbox (badness 10000) in paragraph at lines 87--94
+
+ []
+
+[3]
+
+Package xcolor Warning: Incompatible color definition on input line 95.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Overfull \hbox (2.49213pt too wide) in paragraph at lines 95--95
+[]|[] 
+ []
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 95.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 95.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 97.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 100.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 100.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 100.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
+Package xcolor Warning: Incompatible color definition on input line 105.
 
 
-Package xcolor Warning: Incompatible color definition on input line 88.
-
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'Verdana(0)' created for font 'Verdana' with options [].
-. 
-. This font family consists of the following shapes:
-.................................................
-
-Package xcolor Warning: Incompatible color definition on input line 89.
+Package xcolor Warning: Incompatible color definition on input line 105.
 
 
-Package xcolor Warning: Incompatible color definition on input line 89.
+Package xcolor Warning: Incompatible color definition on input line 106.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
-[3] [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+
+Package xcolor Warning: Incompatible color definition on input line 106.
+
+
+Package xcolor Warning: Incompatible color definition on input line 107.
+
+
+Package xcolor Warning: Incompatible color definition on input line 107.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 108.
+
+
+Package xcolor Warning: Incompatible color definition on input line 109.
+
+
+Package xcolor Warning: Incompatible color definition on input line 109.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 110.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+
+Overfull \hbox (29.96712pt too wide) in paragraph at lines 105--112
+\xeCJK@rm/m/n/12 有 保 护，| 从 外 部 启 动[][][][][][]再 设 置 这
+ 个 参 数，| 设 定 密 码 策 略 为[][][][][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--112
+
+ []
+
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 112.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 25421 strings out of 430478
- 457275 string characters out of 3191502
- 536577 words of memory out of 3000000
- 28169 multiletter control sequences out of 15000+200000
+ 35474 strings out of 430478
+ 675657 string characters out of 3191502
+ 799048 words of memory out of 3000000
+ 37989 multiletter control sequences out of 15000+200000
  20247 words of font info for 95 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,12n,54p,931b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,69p,932b,967s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on 乌云漏洞整理.pdf (4 pages).
