@@ -1,7 +1,7 @@
 \documentclass{leptc}
 \usepackage{tikz}
 \usetikzlibrary{shapes,shadows,calc}
-\usepgflibrary{arrows}
+\usetikzlibrary{arrows,decorations.markings}
 \begin{document}
 \chap{乌云漏洞整理}
 整理者：\href{mailto:lxy_September@outlook.com}{李欣宜} \\
@@ -109,4 +109,14 @@
 \enl{漏洞简述} \texttt{iOS7}也曾经出现过可以绕过锁屏的安全漏洞，而\texttt{Android}系统由于各个厂家的定制UI，对安全问题的重视程度不一，也经常存在同样的问题。\texttt{Android}应用\href{http://secretlisa.com/words-screen-lock/}{单词锁屏}也存在这个漏洞，下拉状态栏可以直接进入其他应用而绕过锁屏，强迫自己背单词不玩手机的目的也就无法达到。\\
 这种漏洞存在的原因很多，在\texttt{Android 4.3}中\code{com.android.settings.ChooseLockGeneric}是负责更改系统的解锁方式的类，再解锁确认后它的成员\code{mPasswordConfirmed}被设置为\code{True}，这个成员没有私有保护，从外部启动\code{ChooseLockGeneric}再设置这个参数，设定密码策略为\code{PASSWORD_QUALITY_UNSPECIFIED}\com{对密码没有要求}，系统就会自动清除锁屏密码，更多其他方法可以自行查阅。\\
 \enl{补救措施} \N1 把逻辑设置为自定义回复短信的时候需要输入解锁密码 \N2 学习华为的最新系统，把在通话界面实现自定义回复短信的功能用另外的模块实现，在这个模块中只有短信内容框别的什么都没有。 \N3 参考\texttt{Android}原生系统，对\code{mPasswordConfirmed}进行保护。\\
+
+\chaps{7/7 墨迹天气可以重置任意用户密码}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0115443}
+\end{center}
+\enl{提交时间} 2015/5/22 \\
+\enl{公开时间} 2015/7/6 \\
+\enl{漏洞类型} 网络设计缺陷/逻辑错误 \\
+\enl{漏洞细节} \N1 找回密码页面\url{http://uc.mojichina.com/findpwd/byphone#}填写手机号和验证码，点下一步 \N2 网页自动跳转到页面\url{http://uc.mojichina.com/findpwd/verifysms} \N3在同一个浏览器中再打开网页\url{http://uc.mojichina.com/findpwd/resetpwdbyphone#}，就直接进入重置密码界面了，不需要短信验证码的确认。\\
+\enl{漏洞简述} 这是程序设计的严重缺陷，致使边界绕过，也类似\ent[URL redirection]{URL重定向跳转}漏洞。在一个页面认证完成之前就可以通过重定向跳转到本应该完成认证后出现的页面，这是认证设计上完全可以避免的漏洞。
 \end{document}
