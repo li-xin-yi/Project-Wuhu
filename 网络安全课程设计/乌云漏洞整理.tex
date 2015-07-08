@@ -118,5 +118,30 @@
 \enl{公开时间} 2015/7/6 \\
 \enl{漏洞类型} 网络设计缺陷/逻辑错误 \\
 \enl{漏洞细节} \N1 找回密码页面\url{http://uc.mojichina.com/findpwd/byphone#}填写手机号和验证码，点下一步 \N2 网页自动跳转到页面\url{http://uc.mojichina.com/findpwd/verifysms} \N3在同一个浏览器中再打开网页\url{http://uc.mojichina.com/findpwd/resetpwdbyphone#}，就直接进入重置密码界面了，不需要短信验证码的确认。\\
-\enl{漏洞简述} 这是程序设计的严重缺陷，致使边界绕过，也类似\ent[URL redirection]{URL重定向跳转}漏洞。在一个页面认证完成之前就可以通过重定向跳转到本应该完成认证后出现的页面，这是认证设计上完全可以避免的漏洞。
+\enl{漏洞简述} 这是程序设计的严重缺陷，致使边界绕过，也类似\ent[URL redirection]{URL重定向跳转}漏洞。在一个页面认证完成之前就可以通过重定向跳转到本应该完成认证后出现的页面，这是认证设计上完全可以避免的漏洞。\\
+
+\chaps{7/8 苏宁易购服务器支持EXP密码套件可SSL FREAK攻击解密通信流量（含poc）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0106650}
+\end{center}
+	\enl{提交时间} 2015/4/8 \\
+	\enl{公开时间} 2015/7/8 \\
+	\enl{漏洞类型} 默认配置不当 \\
+	\enl{漏洞细节} 苏宁易购服务器因支持EXP密码套件，遭受SSL FREAK攻击，中间人可在线解密通信流量（获取到登陆凭证等敏感信息）
+    \begin{itemize}
+    	\item 服务器会接受\texttt{EXP-DES-CBC-SHA(SSLv3、TLSv1)}、\texttt{EXP-RC2-CBC-MD5(SSLv3、TLSv1)}、\texttt{EXP-RC4-MD5(SSLv3、TLSv1)}这三种\ent[export-grade cipher suite]{出口级密码套件}\com{EXP密码}。
+    	\item 以登陆页面\url{https://passport.suning.com/ids/login}为例，\ent[man in the middle]{中间人}在受此漏洞影响的客户端（如还未打补丁的IE、Chrome、Safari、Opera on Mac OS等）访问页面时，如果有中间人发起FREAK攻击，将\texttt{client hello}消息中的密码套件改为EXP类别，那么服务器会选择使用EXP级别的密码套件进行通信，发送512bit\ent[\B Rivest-\B Shamir-\B Adleman public key]{RSA公钥}给客户端。
+    	\item 客户端用这个512bit的公钥加密\ent[pre-master secret]{预主密钥}，服务器收到后用私钥解密出预主密钥，两方依据此秘密信息同时计算出后续通信的密钥。
+    	\item 而对于中间人来说，如果其可以分解服务器发送的512bit的公钥，那么即可计算出私钥，从而也同样可以得到预主密钥，进而算出通信的密钥，解密客户端和服务器的通信内容。 
+    	\item
+    	对于\url{suning.com}服务器来说，目前支持EXP密码套件的主机有18台，每台有一个固定的512bit的公钥，那么对于攻击者来说，只要分解其中的一个公钥，不管每次客户端DNS查询到的是哪台主机，中间人都可以连接到已分解公钥的那台主机进行通信获取发送给客户端的必要信息，从而成功建立与客户端和服务器的通信。
+    \end{itemize}
+    \enl{漏洞简述} 这个漏洞编号为\texttt{CVE-2015-0204}，人们把它命名为\ent[\B Factoring \B Attack on \B RSA-\B EXPORT \B Keys]{FREAK}。攻击者可以拦截服务器与易受攻击的客户端间的\texttt{HTTP}连接，并迫使他们使用\ent[weaken encryption]{弱加密}。这里有一个比较八卦的说法：90年代美国政府要求出口货物使用弱加密的“出口级”加密方式，这种加密方式可以便于情报机构和特殊机构破解利用，而美国本土的产品使用更加强的加密方式。后来这一出于这一政治需求的间谍手段被废弃，但这种弱加密的出口级加密方式依然存在并且被攻击者作为了FREAK漏洞。常见的流程类似于本案例中的攻击，修改存在缺陷的客户端发出的\texttt{Hello}消息把要求标准RSA加密改为请求“出口级的RSA加密”，出于\ent{OpenSSL/Secure传输}的漏洞，客户端会接受服务器发来的512比特的弱加密的RSA公钥，由于较90年代来说，计算机的计算性能大大提高，得到弱加密的RSA公钥以后可以计算出私钥并对客户端发出的信息进行修改。\\
+    \enl{补救措施} 服务器停止支持EXP级别的密码套件，如果一定要支持，那么在通信时实时生成512bit的公钥，或者提前生成一批密钥，在使用过一段时间后更换。总之，要保证密钥使用的周期不超过512bit密钥分解需要的时间。\\
+    \enl{参考资料} \N1 The FREAK bug in TLS/SSL - what you need to know: \url{https://nakedsecurity.sophos.com/2015/03/04/the-freak-bug-in-tlsssl-what-you-need-to-know/} \\
+    \N2 “历史遗留”漏洞：浅析新型SSL/TLS漏洞FREAK: \url{http://sec.chinabyte.com/216/13280716.shtml}\\
+    \N3 Tracking the FREAK Attack： \url{https://freakattack.com/} \com{可以在线测试浏览器是否受到FREAK威胁} \\
+    \N4 'FREAK' — New SSL/TLS Vulnerability Explained：\url{http://thehackernews.com/2015/03/freak-openssl-vulnerability.html}
+    
+
 \end{document}
