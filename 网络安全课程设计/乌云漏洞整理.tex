@@ -141,7 +141,21 @@
     \enl{参考资料} \N1 The FREAK bug in TLS/SSL - what you need to know: \url{https://nakedsecurity.sophos.com/2015/03/04/the-freak-bug-in-tlsssl-what-you-need-to-know/} \\
     \N2 “历史遗留”漏洞：浅析新型SSL/TLS漏洞FREAK: \url{http://sec.chinabyte.com/216/13280716.shtml}\\
     \N3 Tracking the FREAK Attack： \url{https://freakattack.com/} \com{可以在线测试浏览器是否受到FREAK威胁} \\
-    \N4 'FREAK' — New SSL/TLS Vulnerability Explained：\url{http://thehackernews.com/2015/03/freak-openssl-vulnerability.html}
+    \N4 'FREAK' — New SSL/TLS Vulnerability Explained：\url{http://thehackernews.com/2015/03/freak-openssl-vulnerability.html}\\
     
-
+    \chaps{7/9 w3cschool.cc菜鸟教程任意代码执行}
+    \begin{center}
+    	\url{http://www.wooyun.org/bugs/wooyun-2015-0112029}
+    \end{center}
+    \enl{提交时间} 2015/5/25 \\
+    \enl{公开时间} 2015/7/9 \\
+    \enl{漏洞类型} 命令执行\\
+    \enl{漏洞细节} 漏洞出在在线执行代码工具\url{http://tool.w3cschool.cc/languages/online.php?language=python},可以执行任意代码，比如\texttt{os.system()}函数。这里的语言仅测试python，由于对敏感函数没有过滤直接执行，可以写一个脚本在这个在线编译平台上获取shell权限。\\
+    \enl{漏洞简述} 根据这个报告，我们来看一下其他几个我比较熟悉的在线编译平台的表现（依然仅限python）\\
+    \N1 \href{http://codepad.org/8wOAh1mZ}{Codepad}在线编译器，执行结果:\code{Disallowed system call: SYS_fork}，显然对敏感操作进行了保护。\\
+    \N2 \href{https://www.getdatajoy.com/}{DataJoy}旨在建立方便数据科学研究的在线编译、分享平台，支持python和R语言，执行结果：\code{0}，由于该网站主题是利用python语言解决数据分析问题，所以对\texttt{os}模块进行了保护。 \\
+    \N3 \href{http://www.codeskulptor.org/#user40_5ruLoi0n0D_0.py}{CodeSkulptor}莱斯大学(Rice University)为课程python交互设计导论用js制作的在线编译平台\com{需翻墙}，内置自制的特色交互模块\texttt{SimpleGUI Module}，由于课程性质的缘故，阉割了很多无关模块，包括\texttt{os}，所以并没有受到影响。\\
+    \enl{补救措施} 对敏感函数进行过滤 \\
+    
+    
 \end{document}

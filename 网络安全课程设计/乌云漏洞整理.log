@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  8 JUL 2015 18:41
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  9 JUL 2015 16:53
 entering extended mode
 **乌云漏洞整理.tex
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.tex
@@ -3020,25 +3020,104 @@ Roman(0)/m/n/12 New SS-L/TL-S Vul-ner-a-bil-i-ty Ex-plained\xeCJK@rm/m/n/12 ：
 nssl-[]vulnerability .
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--145
+
+ []
+
 [5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
+
+Package xcolor Warning: Incompatible color definition on input line 146.
+
+
+Package xcolor Warning: Incompatible color definition on input line 146.
+
+
+Package xcolor Warning: Incompatible color definition on input line 146.
+
+
+Package xcolor Warning: Incompatible color definition on input line 150.
+
+
+Package xcolor Warning: Incompatible color definition on input line 150.
+
+
+Package xcolor Warning: Incompatible color definition on input line 151.
+
+
+Package xcolor Warning: Incompatible color definition on input line 151.
+
+
+Package xcolor Warning: Incompatible color definition on input line 152.
+
+
+Package xcolor Warning: Incompatible color definition on input line 152.
+
+
+Package xcolor Warning: Incompatible color definition on input line 153.
+
+
+Package xcolor Warning: Incompatible color definition on input line 153.
+
+
+Package xcolor Warning: Incompatible color definition on input line 154.
+
+
+Package xcolor Warning: Incompatible color definition on input line 154.
+
+
+Package xcolor Warning: Incompatible color definition on input line 155.
+
+
+Package xcolor Warning: Incompatible color definition on input line 155.
+
+
+Package xcolor Warning: Incompatible color definition on input line 155.
+
+
+Package xcolor Warning: Incompatible color definition on input line 156.
+
+
+Package xcolor Warning: Incompatible color definition on input line 156.
+
+
+Package xcolor Warning: Incompatible color definition on input line 156.
+
+
+Package xcolor Warning: Incompatible color definition on input line 157.
+
+
+Package xcolor Warning: Incompatible color definition on input line 157.
+
+
+Package xcolor Warning: Incompatible color definition on input line 158.
+
+
+Package xcolor Warning: Incompatible color definition on input line 158.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--159
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
  (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 161.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 161.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36008 strings out of 430478
- 691268 string characters out of 3191502
- 818755 words of memory out of 3000000
- 38508 multiletter control sequences out of 15000+200000
+ 36009 strings out of 430478
+ 691296 string characters out of 3191502
+ 818816 words of memory out of 3000000
+ 38509 multiletter control sequences out of 15000+200000
  20247 words of font info for 95 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,69p,932b,967s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,69p,932b,973s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on 乌云漏洞整理.pdf (6 pages).
