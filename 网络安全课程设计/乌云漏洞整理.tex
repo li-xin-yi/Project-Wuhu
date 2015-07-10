@@ -157,5 +157,14 @@
     \N3 \href{http://www.codeskulptor.org/#user40_5ruLoi0n0D_0.py}{CodeSkulptor}莱斯大学(Rice University)为课程python交互设计导论用js制作的在线编译平台\com{需翻墙}，内置自制的特色交互模块\texttt{SimpleGUI Module}，由于课程性质的缘故，阉割了很多无关模块，包括\texttt{os}，所以并没有受到影响。\\
     \enl{补救措施} 对敏感函数进行过滤 \\
     
-    
+    \chaps{7/10 人人投某漏洞可刷无限瓶饮料过夏天}
+    \begin{center}
+    	\url{http://www.wooyun.org/bugs/wooyun-2015-0116144}
+    \end{center}
+    \enl{提交时间} 2015/5/25 \\
+    \enl{公开时间} 2015/7/9 \\
+    \enl{漏洞类型} 设计缺陷/逻辑错误 \\
+    \enl{漏洞细节} 只要注册成功，就送饮料。\url{http://wap.renrentou.com/friendgodeuser/success?dns=534230}，因为没有对dns进行过滤，所以这个参数\code{dns=}后面可以任意修改，获得不同的兑换码，然后去自动贩卖机兑换。\\
+    \enl{漏洞简述} 厂家虽然已经表示忽略，但是页面已经打不开了，不能继续利用这个漏洞了。嘴上说着不要，实际早已傲娇地修复了漏洞。类似的漏洞还存在于软院的旧学院网，以及新学院网的部分功能\href{http://ssdut.dlut.edu.cn/info/1116/3946.htm}{http://ssdut.dlut.edu.cn/info/1116/\textcolor{red}{3946}.htm} \textcolor{red}{这个参数}也是可以任意篡改实现任意跳转的，所幸我院对安全的要求不高，没有从验证从指定入口进入的限制，否则这也是十分危险的。\\
+    \enl{补救措施} 执行dns参数过滤，对url重定向进行认证。\\
 \end{document}
