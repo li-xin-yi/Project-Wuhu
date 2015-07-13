@@ -1,5 +1,6 @@
 \documentclass{leptc}
 \usepackage{tikz}
+\usepackage{moreverb}
 \usetikzlibrary{shapes,shadows,calc}
 \usetikzlibrary{arrows,decorations.markings}
 \begin{document}
@@ -167,4 +168,31 @@
     \enl{漏洞细节} 只要注册成功，就送饮料。\url{http://wap.renrentou.com/friendgodeuser/success?dns=534230}，因为没有对dns进行过滤，所以这个参数\code{dns=}后面可以任意修改，获得不同的兑换码，然后去自动贩卖机兑换。\\
     \enl{漏洞简述} 厂家虽然已经表示忽略，但是页面已经打不开了，不能继续利用这个漏洞了。嘴上说着不要，实际早已傲娇地修复了漏洞。类似的漏洞还存在于软院的旧学院网，以及新学院网的部分功能\href{http://ssdut.dlut.edu.cn/info/1116/3946.htm}{http://ssdut.dlut.edu.cn/info/1116/\textcolor{red}{3946}.htm} \textcolor{red}{这个参数}也是可以任意篡改实现任意跳转的，所幸我院对安全的要求不高，没有从验证从指定入口进入的限制，否则这也是十分危险的。\\
     \enl{补救措施} 执行dns参数过滤，对url重定向进行认证。\\
+    
+\chap{第三周}
+\begin{center}
+	\com{2015/7/13-2015/7/18}
+\end{center}
+\chaps{7/13 QQ邮箱Android客户端存在存储型跨站脚本攻击漏洞}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0107526}
+\end{center}
+\enl{提交时间} 2015/4/22\\
+\enl{确认时间} 2014/7/12\\
+\enl{漏洞类型} 远程代码执行 \\
+\enl{漏洞细节} \N1 我们首先自己搭建一个原始的服务器，存在很多XSS漏洞的邮件服务器。对QQ手机邮箱进行XSS测试，发现QQ邮箱进行测试后发现存在XSS漏洞。测试后发现QQ邮箱客户端对script,img，iframe等危险标记没有过滤，导致XSS漏洞。\N2 先用自己的邮件服务器发一个所有其他测试邮箱都能收到的邮件。邮件中插入恶意代码
+\begin{verbatimtab}
+		<script>alert(/3/)</script>
+		<img src=1 onerror=alert(888) >
+\end{verbatimtab}
+发送我们的邮件到自己的邮箱、qq邮箱、163邮箱、搜狐邮箱、新浪邮箱等。\N3 把我们各种邮箱在QQ邮箱客户上绑定。\N4 测试发现，QQ邮箱测试不能执行XSS代码，可能QQ的邮件在自己的邮件服务器上做了过滤，导致不能执行。其余邮箱都能执行。
+\fig[0.6]{xss1.png}\\
+\enl{漏洞简述} \ent[\B Cross-\B Site \B Scripting]{XSS}又称\ent{跨站脚本}，通常存在于Web应用，攻击者可以在Web页面注入\ent[Client-side scripting]{客户端脚本}\com{HTML代码}，通常用于绕过获得控制权限，比如利用\ent[same-origin policy]{同源政策}，浏览器允许包含第一个页面的脚本进入第二个页面。恶意用户在公共区域提交恶意表单，其他用户访问时嵌入Web页面的恶意脚本将执行，获取用户的个人信息。\\
+\enl{威胁缓解} \N1 根据语境输出输入的编码和转义
+\N2 对不受信任的HTML输入慎重认证
+\N3 注意Cookie安全
+\N4 禁用脚本
+\N5 紧急防御技术，包括内容安全政策、js沙盒和自动转义模板
+\N6 扫描服务 \\
+\enl{相关内容} \ent[\B Brower \B Exploitation \B Framework]{BeEF}是个开源的渗透测试工具，可用于模拟XSS攻击。\url{http://beefproject.com/}\\
 \end{document}
