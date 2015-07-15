@@ -7,8 +7,8 @@
 \chap{乌云漏洞整理}
 整理者：\href{mailto:lxy_September@outlook.com}{李欣宜} \\
 文档源码地址：\url{https://github.com/Lixinyi-DUT/Project-Wuhu}\\
-整理自\href{http://www.wooyun.org/}{乌云漏洞平台}
-
+整理自\href{http://www.wooyun.org/}{乌云漏洞平台}\\
+%\tableofcontents
 \chap{第一周}
 \begin{center}
 	\com{2015/6/29-2015/7/3}
@@ -209,4 +209,15 @@
 \end{verbatimtab}
 即可直接将admin用户密码修改为admin123，无视密码提示问题。\\
 \enl{补救措施} 加校验，不信任任何用户提交的数据 \\
+
+\chaps{7/15 搜狐焦点旗下搜狐家居可劫持任意账号（flash劫持案例）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0116384}
+\end{center}
+\enl{提交时间} 2015/5/26 \\
+\enl{公开时间} 2015/7/15 \\
+\enl{漏洞类型} CSRF \\
+\enl{漏洞细节} \N1\url{http://mpsohu.com/web/personal/get} 上传身份证处未过滤，且文件上传到了itc信任域下，查看源码得到flash链接：\url{http://sucimg.itc.cn/avatarimg/b9242b2cbe19450a9347accbc8dcc639_1432645407636} \N2接下来构造POC进行操作，这里用修改资料证明，得到请求包和POC \N3用flash跨域理论上是可以模拟出用户的任何操作的，即使是在某些有token的情况下 \\
+\enl{漏洞简述} 很多上传文件的后端逻辑在实现时，仅仅验证了文件后缀名和Content-Type，没有对上传文件的内容进行验证。object标签在包含flash文件时没有对嵌入的文件后缀进行判断。也就是说，只要文件内容包含了正常的flash文件代码，就能够被object标签成功加载并执行。而ActionScript中又提供了多种API能够让Flash发送网络请求。\ent{flash跨域数据劫持}正是利用了目标网站的文件上传逻辑没有验证文件内容、上传的文件没有做域隔离处理、服务端没有强制设置Content-Disposition响应头，以及访问上传的文件没有session限制，构造一个poc swf文件能够对外发送http请求，将之前写好的swf文件后缀修改为jpg并上传，服务端没有检查文件内容，文件上传成功。通过之前构造的html页面，使用object包含上面的链接，swf文件能够被正常的执行，当其他用户访问该页面，会以该用户的身份打开指定的页面，造成跨域数据劫持，此时Anti-CSRF已经形同虚设，可以获取CSRF Token，访问特权页面，进行特权操作。\\
+\enl{补救措施} \N1涉及用户操作的请勿在crossdomain里配置 \N2上传文件到信任域时验证文件内容\\
 \end{document}
