@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  16 JUL 2015 09:59
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  17 JUL 2015 15:36
 entering extended mode
 **乌云漏洞整理.tex
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.tex
@@ -3581,27 +3581,82 @@ Package xcolor Warning: Incompatible color definition on input line 234.
 
 Package xcolor Warning: Incompatible color definition on input line 234.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
 
 Underfull \hbox (badness 10000) in paragraph at lines 229--235
 
  []
 
-[8] [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+[8]
+
+Package xcolor Warning: Incompatible color definition on input line 236.
+
+
+Package xcolor Warning: Incompatible color definition on input line 236.
+
+
+Package xcolor Warning: Incompatible color definition on input line 236.
+
+
+Package xcolor Warning: Incompatible color definition on input line 240.
+
+
+Package xcolor Warning: Incompatible color definition on input line 240.
+
+
+Package xcolor Warning: Incompatible color definition on input line 241.
+
+
+Package xcolor Warning: Incompatible color definition on input line 241.
+
+
+Package xcolor Warning: Incompatible color definition on input line 242.
+
+
+Package xcolor Warning: Incompatible color definition on input line 242.
+
+
+Package xcolor Warning: Incompatible color definition on input line 243.
+
+
+Package xcolor Warning: Incompatible color definition on input line 243.
+
+File: pay1.png Graphic file (type QTm)
+<use  "pay1.png" >
+File: pay2.png Graphic file (type QTm)
+ <use  "pay2.png" >
+
+Package xcolor Warning: Incompatible color definition on input line 247.
+
+
+Package xcolor Warning: Incompatible color definition on input line 247.
+
+
+Package xcolor Warning: Incompatible color definition on input line 248.
+
+
+Package xcolor Warning: Incompatible color definition on input line 248.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
+
+ []
+
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
  (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 249.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 249.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36084 strings out of 430478
- 692402 string characters out of 3191502
- 821794 words of memory out of 3000000
- 38578 multiletter control sequences out of 15000+200000
+ 36089 strings out of 430478
+ 692468 string characters out of 3191502
+ 821861 words of memory out of 3000000
+ 38581 multiletter control sequences out of 15000+200000
  20247 words of font info for 95 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  56i,12n,69p,932b,973s stack positions out of 5000i,500n,10000p,200000b,50000s
