@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  20 JUL 2015 15:59
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2015.1.29)  23 JUL 2015 23:19
 entering extended mode
 **乌云漏洞整理.tex
 (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.tex
@@ -3713,29 +3713,149 @@ Package xcolor Warning: Incompatible color definition on input line 263.
 
 Package xcolor Warning: Incompatible color definition on input line 263.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
 
 Underfull \hbox (badness 10000) in paragraph at lines 258--264
 
  []
 
-[10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+
+Package xcolor Warning: Incompatible color definition on input line 265.
+
+
+Package xcolor Warning: Incompatible color definition on input line 265.
+
+
+Package xcolor Warning: Incompatible color definition on input line 265.
+
+
+Package xcolor Warning: Incompatible color definition on input line 269.
+
+
+Package xcolor Warning: Incompatible color definition on input line 269.
+
+
+Package xcolor Warning: Incompatible color definition on input line 270.
+
+
+Package xcolor Warning: Incompatible color definition on input line 270.
+
+
+Package xcolor Warning: Incompatible color definition on input line 271.
+
+
+Package xcolor Warning: Incompatible color definition on input line 271.
+
+
+Package xcolor Warning: Incompatible color definition on input line 272.
+
+
+Package xcolor Warning: Incompatible color definition on input line 272.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+
+Package xcolor Warning: Incompatible color definition on input line 273.
+
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Verdana(0)' created for font 'Verdana' with options [].
+. 
+. This font family consists of the following shapes:
+.................................................
+
+Package xcolor Warning: Incompatible color definition on input line 275.
+
+
+Package xcolor Warning: Incompatible color definition on input line 275.
+
+
+Package xcolor Warning: Incompatible color definition on input line 285.
+
+
+Package xcolor Warning: Incompatible color definition on input line 285.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 287.
+
+
+Package xcolor Warning: Incompatible color definition on input line 287.
+
+
+Package xcolor Warning: Incompatible color definition on input line 287.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 291.
+
+
+Package xcolor Warning: Incompatible color definition on input line 292.
+
+
+Package xcolor Warning: Incompatible color definition on input line 292.
+
+
+Package xcolor Warning: Incompatible color definition on input line 293.
+
+
+Package xcolor Warning: Incompatible color definition on input line 293.
+
+
+Package xcolor Warning: Incompatible color definition on input line 294.
+
+
+Package xcolor Warning: Incompatible color definition on input line 294.
+
+
+Package xcolor Warning: Incompatible color definition on input line 294.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+
+Package xcolor Warning: Incompatible color definition on input line 295.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
+[10] [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
  (E:\Project-Wuhu\网络安全课程设计\乌云漏洞整理.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 264.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 264.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 296.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 296.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 36092 strings out of 430478
- 692524 string characters out of 3191502
- 821989 words of memory out of 3000000
- 38584 multiletter control sequences out of 15000+200000
+ 36106 strings out of 430478
+ 692818 string characters out of 3191502
+ 821111 words of memory out of 3000000
+ 38598 multiletter control sequences out of 15000+200000
  20247 words of font info for 95 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,12n,69p,932b,973s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,12n,69p,932b,1072s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 乌云漏洞整理.pdf (10 pages).
+Output written on 乌云漏洞整理.pdf (11 pages).

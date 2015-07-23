@@ -261,4 +261,36 @@
 \enl{漏洞细节} 修改自己的收货地址\url{http://q1.sto.cn/orderaddress/update?id=xxx}，其中\code{id=}后面的数字可以任意修改，进入其他用户的修改收货地址页面。\\
 \enl{漏洞简述} 这个漏洞与之前的\link{7/10 人人投某漏洞可刷无限瓶饮料过夏天}类似，对边界管理不慎，出现了越权操作，没有进行有效的管理身份验证而实现了任意跳转。\\
 \enl{补救措施} 增加权限验证 \\
+
+\chaps{7/21 顺丰某处DNS域传送漏洞}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0118286}
+\end{center}
+\enl{提交日期} 2015/6/4 \\
+\enl{公开日期} 2015/7/20 \\
+\enl{漏洞类型} 系统/服务运维配置不当 \\
+\enl{漏洞细节} 日本的区域DNS配置不当，造成一些域名泄露；恶意用户可以通过dns域传送获取被攻击域下所有的子域名。会导致一些非公开域名（测试域名、内部域名）泄露。而泄露的类似内部域名，其安全性相对较低，更容易遭受攻击者的攻击，比较典型的譬如内部的测试机往往就会缺乏必要的安全设置。该配置不当的DNS Server为：\verb|ns1.sf-express.jp|\\
+\enl{漏洞简述} \ent[DNS zone transfer]{DNS区域传送}指的是一台备用服务器使用来自主服务器的数据刷新自己的域数据库，一般来说，DNS区域传送操作只在网络里真的有备用域名DNS服务器时才有必要用到，但许多DNS服务器却被错误地配置成只要有client发出请求，就会向对方提供一个zone数据库的详细信息。常见的利用方法有：
+\begin{itemize}
+	\item 使用BT5工具来获取DNS信息 \code{dnsenum.pl --enum domain.com}得到域名和主机名
+	\item 使用手工的方法，打开cmd输入命令行：
+	\begin{verbatimtab}
+		>nslookup
+		>set type=ns
+		>domain.com
+		>server nsXXXXX.com（据nameserver）
+		>ls  domain.com
+	\end{verbatimtab}
+\end{itemize}
+\enl{补救措施} 使用IP或者Key设置allow-transfer的ACL，禁止不受信任的因特网用户执行DNS区域传送操作\\
+
+\chaps{7/22 北京一路热点信息(16WiFi)某配置不当导致源代码泄漏}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0118838}
+\end{center}
+\enl{提交时间} 2015/6/7 \\
+\enl{公开时间} 2015/7/22 \\
+\enl{漏洞类型} 敏感信息泄露 \\
+\enl{漏洞细节} 16Wi-Fi APP代码放到了Github上面，导致整个源代码泄漏 \url{https://github.com/HZJegg/16wifi/blob/master/e-RoadWiFi/e-RoadWiFi-Info.plist}\com{包括微信的密码}
+\enl{补救措施} 敏感代码慎重放到这些开源代码托管应用上，如果是为了协作方便，可以考虑用github的付费private repository发布然后限定访问权限，也可以使用\href{https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx}{Visual Studio Online}\com{免费，且全面对接VS的IDE环境，可以自定义访问和协作权限}
 \end{document}

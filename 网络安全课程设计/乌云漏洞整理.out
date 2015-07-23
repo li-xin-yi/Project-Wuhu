@@ -19,3 +19,5 @@
 \BOOKMARK [2][-]{subsection.4.5}{7/17 顺丰海购丰运运费支付支付方式代码漏洞（可获取特殊折扣）}{section.4}% 19
 \BOOKMARK [1][-]{section.5}{第四周}{}% 20
 \BOOKMARK [2][-]{subsection.5.1}{7/20 申通快递权限设计不当可获取修改全站用户收货地址（大量敏感信息泄漏）}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.2}{7/21 顺丰某处DNS域传送漏洞}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.3}{7/22 北京一路热点信息\(16WiFi\)某配置不当导致源代码泄漏}{section.5}% 23
