@@ -81,7 +81,6 @@
 \input{pic.tikz}
 \end{center}
 
-\label{attention}
 \chaps{7/3 上海虹桥火车站Wi-Fi认证设计不当导致绕过漏洞}
 \begin{center}
 	\url{http://www.wooyun.org/bugs/wooyun-2015-0112807}
@@ -292,5 +291,45 @@
 \enl{公开时间} 2015/7/22 \\
 \enl{漏洞类型} 敏感信息泄露 \\
 \enl{漏洞细节} 16Wi-Fi APP代码放到了Github上面，导致整个源代码泄漏 \url{https://github.com/HZJegg/16wifi/blob/master/e-RoadWiFi/e-RoadWiFi-Info.plist}\com{包括微信的密码}
-\enl{补救措施} 敏感代码慎重放到这些开源代码托管应用上，如果是为了协作方便，可以考虑用github的付费private repository发布然后限定访问权限，也可以使用\href{https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx}{Visual Studio Online}\com{免费，且全面对接VS的IDE环境，可以自定义访问和协作权限}
+\enl{补救措施} 敏感代码慎重放到这些开源代码托管应用上，如果是为了协作方便，可以考虑用github的付费private repository发布然后限定访问权限，也可以使用\href{https://www.visualstudio.com/en-us/products/what-is-visual-studio-online-vs.aspx}{Visual Studio Online}\com{免费，且全面对接VS的IDE环境，可以自定义访问和协作权限}\\
+
+\chaps{7/23 民生银行某交易可能导致用户资金被盗}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0128199}
+\end{center}
+\enl{提交时间} 2015/7/21 \\
+\enl{公开时间} 2015/7/23 \\
+\enl{漏洞类型} 设计缺陷/逻辑错误 \\
+\enl{漏洞细节} \N1 民生的网银存在如下功能，在京东、亚马逊等平台进行B2C支付的时候，可通过网银进行支付，选择后出现左侧扫一扫功能 \N2 登陆民生手机银行扫描后，输入手机验证码即可完成支付 \N3 在点击获取验证码后，通过软件截取交互，可发现修改在response中的手机号，就直接把验证码发到任意手机上了\N4 另外可以看到response中包含全量的客户信息，后面各种家庭住址，单位、电话。\\
+\enl{漏洞简述} 通过拖库和撞库得到其他用户银行账户后，可以利用这个漏洞将验证码发到自己的手机上，就可以消费了。\\
+\enl{补救措施} 数据不要使用客户端回传的，另外外扣款卡号需要验证。\\
+
+\chaps{7/24 腾讯移动端某功能SSRF可探/漫游内网（cloudeye神器案例）}
+\begin{center}
+	\url{http://www.wooyun.org/bugs/wooyun-2015-0119017}
+\end{center}
+\enl{提交时间} 2015/6/8 \\
+\enl{公开时间} 2015/7/23 \\
+\enl{漏洞类型} 设计缺陷/逻辑错误 \\
+\enl{漏洞细节} \N1 暴力扫描子域名，发现了：\code{img.cms.tencent.com           	10.187.10.218, 10.187.10.217} \N2 漏洞利用了一号店的一个任意url跳转:
+\begin{verbatimtab}
+	http://3pl.yihaodian.com/system/login_login.action?redirect:http://10.187.10.218
+	http://3pl.yihaodian.com/system/login_login.action?redirect:http://10.187.10.217
+\end{verbatimtab}
+\N3然后使用CloudEye检查了发起DNS请求的IP:
+\begin{verbatimtab}
+	http://tms2.yihaodian.com/system/login_login.action?redirect:http://xxx.xxxx.dnslog.info
+	
+	[08/Jun/2015:14:57:40 +0800] 119.147.3.188 - - xxx.xxxx.dnslog.info GET / HTTP/1.0 200 "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"
+	
+	IP地址: 119.147.3.188广东省深圳市 电信
+\end{verbatimtab}
+\N4 测试是否是内网：
+\begin{verbatimtab}
+	http://tms2.yihaodian.com/system/login_login.action?redirect:http://admin.soso.com
+	http://tms2.yihaodian.com/system/login_login.action?redirect:http://10.130.14.94
+\end{verbatimtab}
+的tomcat都成功了\\
+\enl{漏洞简述} \ent[\B Server-\B side \B Request \B Forgery]{服务器端请求伪造}是指用你的网络应用向在该设备运行的其它应用发出请求，或者向同一局域网内或远程网络的服务器发送请求。因为请求是利用你的服务器发出，目标服务器可能降低防护等级，因此允许了这种相对信任的请求。\href{http://www.wooyun.org/market/260}{CloudEye}记录dns与apache访问日志并进行统一筛选过滤管理，提供日志输出API，可配合其他工具使用。\\
+\enl{补救措施} 加强生成 “网页概要” 的功能过滤 \\
 \end{document}

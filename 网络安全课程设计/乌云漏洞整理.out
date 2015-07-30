@@ -21,3 +21,5 @@
 \BOOKMARK [2][-]{subsection.5.1}{7/20 申通快递权限设计不当可获取修改全站用户收货地址（大量敏感信息泄漏）}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.2}{7/21 顺丰某处DNS域传送漏洞}{section.5}% 22
 \BOOKMARK [2][-]{subsection.5.3}{7/22 北京一路热点信息\(16WiFi\)某配置不当导致源代码泄漏}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.4}{7/23 民生银行某交易可能导致用户资金被盗}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.5}{7/24 腾讯移动端某功能SSRF可探/漫游内网（cloudeye神器案例）}{section.5}% 25
