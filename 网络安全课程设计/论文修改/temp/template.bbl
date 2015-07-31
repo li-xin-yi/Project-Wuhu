@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{urner2011access}
+R.~Urner, S.~Shalev-Shwartz, and S.~Ben-David, ``Access to unlabeled data can
+  speed up prediction time,'' in {\em Proceedings of the 28th International
+  Conference on Machine Learning (ICML-11)}, pp.~641--648, 2011.
+
+\bibitem{zhou2010semi}
+Z.-H. Zhou and M.~Li, ``Semi-supervised learning by disagreement,'' {\em
+  Knowledge and Information Systems}, vol.~24, no.~3, pp.~415--439, 2010.
+
+\bibitem{zhu2009introduction}
+X.~Zhu and A.~B. Goldberg, ``Introduction to semi-supervised learning,'' {\em
+  Synthesis lectures on artificial intelligence and machine learning}, vol.~3,
+  no.~1, pp.~1--130, 2009.
+
+\end{thebibliography}
