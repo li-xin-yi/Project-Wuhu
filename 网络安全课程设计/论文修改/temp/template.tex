@@ -27,6 +27,7 @@
 \smartqed  % flush right qed marks, e.g. at end of proof
 %
 \usepackage{graphicx}
+\usepackage{enumerate}
 %
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
@@ -76,7 +77,7 @@
 \maketitle
 
 \begin{abstract}
-Assuming that misclassification cost among different categories equals to each other, traditional graph based semi-supervised classification algorithms pursuit high classification accuracy. However, in many practical problems, misclassifying one category as another always leads to higher (or lower) cost than that in turn, such that, higher classification accuracy generally not means lower cost, which is more important in these problems. Cost-sensitive classification methods enable classifiers to pay more attention to data samples with higher cost, and then attempt to get lower cost by ensuring higher classification accuracy of the category with higher cost. In this paper, we bring cost sensitivity to local and global consistency (LGC) classifiers, and propose the CS-LGC (cost-sensitive LGC) methods, which can make better use of semi-supervised classification algorithms, and ensure high classification accuracy on the basis of reducing overall cost. At the same time, since the improved algorithm may bring some problems due to unbalanced data account, we introduce a SMOTE algorithm for further optimization. Experimental results of bank loan and diagnosis problems verify the effectiveness of CS-LGC.
+Assuming that misclassification costs among different categories are equal, traditional graph based semi-supervised classification algorithms pursuit high classification accuracy. However, in many practical problems, misclassifying one category as another always leads to higher (or lower) cost than that in turn, such that, higher classification accuracy generally not means lower cost, which is more important in these problems. Cost-sensitive classification methods enable classifiers to pay more attention to data samples with higher cost, and then attempt to get lower cost by ensuring higher classification accuracy of the category with higher cost. In this paper, we bring cost sensitivity to local and global consistency (LGC) classifiers, and propose the CS-LGC (cost-sensitive LGC) methods, which can make better use of semi-supervised classification algorithms, and ensure high classification accuracy on the basis of reducing overall cost. At the same time, since the improved algorithm may bring some problems due to unbalanced data account, we introduce a SMOTE algorithm for further optimization. Experimental results of bank loan and diagnosis problems verify the effectiveness of CS-LGC.
 \keywords{Graph based semi-supervised classification \and Cost-sensitive \and Rescale \and SMOTE}
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
@@ -89,18 +90,39 @@ Recently, machine learning classification algorithms have achieved sound develop
 
 High classification accuracy is the target of GSSC algorithm, which assumes that the cost of misclassification among different categories is the same. However, in many practical problems,  the costs of category classifications is different, especially in the fields of medical service, finance and network security and so on.
 
-For example, in the bank loan problem, banks decide whether to approve the loan based on the loan applicants' personal information, which can be viewed as a binary classification problem. In the process of approving a bank loan, the cost of approving an applicant who is unable to repay the loan is much greater than that of approving an applicant who can repay the loan. Similarly, in the disease diagnosis, the cost of misdiagnose unhealthy patients as healthy is much greater than that of misdiagnose healthy patients as unhealthy. 
-\section{Section title}
-\label{sec:1}
-Text with citations  and %\cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction}
-\subsection{Subsection title}
-\label{sec:2}
-as required. Don't forget to give each section
-and subsection a unique label (see Sect.~\ref{sec:1}).
-\paragraph{Paragraph headings} Use paragraph headings as needed.
-\begin{equation}
-a^2+b^2=c^2
-\end{equation}
+For example, in the bank loan problem, banks decide whether to approve the loan based on the loan applicants' personal information, which can be viewed as a binary classification problem. In the process of approving a bank loan, the cost of approving an applicant who is unable to repay the loan is much greater than that of approving an applicant who can repay the loan. Similarly, in the disease diagnosis, the cost of misdiagnose unhealthy patients as healthy is much greater than that of misdiagnose healthy patients as unhealthy. When the cost differences are inconsistent among different categories, a classifier paying more attention to the accuracy of higher cost classification problem is more practical than those treat all categories equally.
+%Text with citations  and \cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction} \cite{budvytis2010label} \cite{zhu2003semi} \cite{zhou2004learning} \cite{gao2011active} \cite{elkan2001foundations} \cite{zhou2010multi} \cite{domingos1999metacost} \cite{khoshgoftaar2011comparing} \cite{fan1999adacost} \cite{jin2010multi} \cite{qin2008cost} \cite{liu2006influence} \cite{seiffert2008comparative} \cite{bache2013uci} \cite{germandata}
+
+Cost-sensitive learning method \cite{gao2011active,elkan2001foundations,zhou2010multi,domingos1999metacost,fan1999adacost} takes the inconsistencies of cost among categories into account to lower the overall cost for the target. This method defines the static cost matrix to make classifiers pay more concern to the sample data with higher cost, and improves classification accuracy of higher-cost category. In the semi-supervised classification problems, labels account for a small portion of the data and most data are unlabeled. Actually, the traditional semi-supervised classification treats all categories equally, which cannot guarantee a lower overall cost. Meanwhile, cost-sensitive learning may arise less fit due to limited data set of tags, which could lead to lower classifier accuracy and weaker generalization ability. Besides, in the semi-supervised learning, we often encounter the situation called uneven data problem, in which different types of samples have different numbers of label data.
+
+In summary, researches on cost-sensitive semi-supervised classification algorithms for unbalanced datasets are of great significance to the development of finance, medical fields, network security and many other areas.
+
+\section{Related Work}
+The effectiveness of semi-supervised learning algorithm depends on the three assumptions: manifold hypothesis\cite{urner2011access,zhou2010semi}, mlustering hypothesis and smoothness hypothesis. GSSC based on manifold hypothesis builds a figure to describe the data, as well as the relationship between the data. In this figure, nodes represent the data samples while edges with weight represent the relationships between samples. At the same time, the larger the weight is, the higher the similarity of the samples have. The process that GSSC classifiers assign labels to unlabeled data is the process of label propagation in the figure. Label Propagation Algorithm Budyytis et al. proposed in \cite{budvytis2010label}  can calculate the probability of transfer among tag data by the topology and the similarity between the samples in figure, and make a label transfer by combining node out-degree. A method of Gaussian fields and harmonic functions proposed by Zhu et al. in \cite{zhu2003semi} that make discrete prediction function slack to become continuous prediction function considers the transfer probability samples fully and have a label transfer in $k$-connection diagram. Local and global consistency, LGC proposed by Zhou et al. in the \cite{zhou2004learning} introduced clustering hypothesis and had a label transfer by using local and global consistency. LGC algorithm gives a rigorous mathematical logic derivation and proves the convergence. However, these related works never consider the problem of inconsistent classification cost.
+
+Cost-sensitive learning method is an effective way to solve the problem of the inconsistency of costs. Cost-sensitive learning method introduces cost matrix to describe the inconsistency of costs among categories and get global minimum cost. The cost-sensitive classification methods can be divided into two categories: Rescale and Reweight, depending on the representations of cost. In the method of Rescale, differences in cost are described as differences among the numbers of samples, such as Cost-sensitive sampling\cite{gao2011active}, Rebalance\cite{elkan2001foundations} and Rescale new\cite{zhou2010multi} etc. This method constructs different sample data sets according to the difference in costs which make classifiers' decision face prefer samples with more costly category. Reweight method describes differences in costs by differences in weight among samples of different types. In the method of Reweight, samples with costly category have a higher weight, which make a greater impact to classifier. MetaCost\cite{domingos1999metacost} is a typical representative of such Reweight methods. MetaCost based on Bayesian risk theory adds the cost of the sensitive nature for Non-cost-sensitive classification algorithm by using bagging\cite{khoshgoftaar2011comparing}.
+
+AdaBoost algorithm was proposed in\cite{jin2010multi} which offers the possibility for multiple weak classifiers aggregating into a global strong classifier. AdaCost method\cite{fan1999adacost} was proposed as a cost-sensitive classification algorithm based on AdaBoost. AdaCost is based on the Reweight at the same time, and introduces cost performance function for classifiers by heuristic strategy. AdaCost forces classifier to pay more attention to costly samples, hence it shows some advantages in cost-sensitive classification problems. However, cost performance function introduced in the theoretical analysis have not been verified and damages the most important characteristics of Boosting,  which makes the algorithm not converge to the Bayesian decision. Qin etc. in \cite{qin2008cost} did try to combine semi-supervised classification algorithms with cost-sensitive learning methods, and improved classical EM algorithm by introducing misclassification cost in the process of probability assessment.
+
+In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC method—CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
+\begin{enumerate}[(1)]
+  \item Introduce cost-sensitive nature for LGC algorithm, and propose cost-sensitive LGC algorithm;
+  \item Propose CSS-LGC algorithm. We take the impact caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithm—CSS-LGC algorithm.
+  \item Analyze the experimental threshold, and verify the rationality of the threshold. 
+  \item Demonstrate the effectiveness of the algorithm by experiment on German Credit Data Set and Breast Cancer Data Set.
+\end{enumerate}
+% \section{Section title}
+% \label{sec:1}
+%Text with citations  and %\cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction} \cite{budvytis2010label} \cite{zhu2003semi} \cite{zhou2004learning} \cite{gao2011active} \cite{elkan2001foundations} \cite{zhou2010multi} \cite{domingos1999metacost} \cite{khoshgoftaar2011comparing} \cite{fan1999adacost} \cite{jin2010multi} \cite{qin2008cost} \cite{liu2006influence} \cite{seiffert2008comparative} \cite{bache2013uci} \cite{germandata}
+
+% \subsection{Subsection title}
+% \label{sec:2}
+% as required. Don't forget to give each section
+% and subsection a unique label (see Sect.~\ref{sec:1}).
+% \paragraph{Paragraph headings} Use paragraph headings as needed.
+% \begin{equation}
+% a^2+b^2=c^2
+% \end{equation}
 
 %
 
