@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  1 AUG 2015 21:53
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  2 AUG 2015 23:09
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -167,9 +167,9 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-[3] (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl)
-[4] (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux) )
- 
+[3] (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
+[4]) [5]
+(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux) ) 
 Here is how much of TeX's memory you used:
  1872 strings out of 495354
  27002 string characters out of 3183860
@@ -177,16 +177,19 @@ Here is how much of TeX's memory you used:
  5059 multiletter control sequences out of 15000+200000
  11891 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,7n,20p,1582b,227s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/CT
-EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on template.pdf (4 pages, 125173 bytes).
+ 27i,7n,20p,1582b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmbx9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on template.pdf (5 pages, 154380 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
+ 62 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
