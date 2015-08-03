@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  2 AUG 2015 23:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  3 AUG 2015 23:40
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -113,6 +113,73 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks17
 )
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen116
+))
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen117
+)
+(D:\CTEX\MiKTeX\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen118
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip10
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks19
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks20
+\eqnshift@=\dimen119
+\alignsep@=\dimen120
+\tagshift@=\dimen121
+\tagwidth@=\dimen122
+\totwidth@=\dimen123
+\lineht@=\dimen124
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+) (D:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
@@ -133,32 +200,30 @@ Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen116
-\scratchbox=\box29
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen117
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count118
+\scratchdimen=\dimen125
+\scratchbox=\box31
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen126
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks24
 )
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.5> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.64996> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.75> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 77.
+
+LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <9.5> not available
+(Font)              size <9> substituted on input line 77.
+
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9.5> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 77.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6.64996> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 77.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <4.75> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 77.
 [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
@@ -167,29 +232,41 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-[3] (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[4]) [5]
-(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux) ) 
+[3] [4]
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+
+(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
+[5]) [6]
+(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1872 strings out of 495354
- 27002 string characters out of 3183860
- 77141 words of memory out of 3000000
- 5059 multiletter control sequences out of 15000+200000
- 11891 words of font info for 41 fonts, out of 3000000 for 9000
+ 2499 strings out of 495354
+ 33962 string characters out of 3183860
+ 87491 words of memory out of 3000000
+ 5660 multiletter control sequences out of 15000+200000
+ 13883 words of font info for 53 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,7n,20p,1582b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
-><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on template.pdf (5 pages, 154380 bytes).
+ 27i,12n,20p,1582b,310s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmbx9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex9.pfb
+><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/CTEX/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb
+><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmti8.pfb>
+Output written on template.pdf (6 pages, 196018 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
