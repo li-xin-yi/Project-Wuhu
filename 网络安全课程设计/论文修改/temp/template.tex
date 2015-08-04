@@ -33,6 +33,10 @@
 %
 % insert here the call for the packages your document requires
 \usepackage{latexsym}
+%\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\usepackage{algpseudocode}
 % etc.
 %
 % please place your own definitions here and don't use \def but
@@ -41,6 +45,9 @@
 % Insert the name of "your journal" with
 % \journalname{myjournal}
 %
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
 \begin{document}
 
 \title{Cost-sensitive Algorithm
@@ -104,10 +111,10 @@ Cost-sensitive learning method is an effective way to solve the problem of the i
 
 AdaBoost algorithm was proposed in\cite{jin2010multi} which offers the possibility for multiple weak classifiers aggregating into a global strong classifier. AdaCost method\cite{fan1999adacost} was proposed as a cost-sensitive classification algorithm based on AdaBoost. AdaCost is based on the Reweight at the same time, and introduces cost performance function for classifiers by heuristic strategy. AdaCost forces classifier to pay more attention to costly samples, hence it shows some advantages in cost-sensitive classification problems. However, cost performance function introduced in the theoretical analysis have not been verified and damages the most important characteristics of Boosting,  which makes the algorithm not converge to the Bayesian decision. Qin etc. in \cite{qin2008cost} did try to combine semi-supervised classification algorithms with cost-sensitive learning methods, and improved classical EM algorithm by introducing misclassification cost in the process of probability assessment.
 
-In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC method—CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
+In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC methodâ€”CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
 \begin{enumerate}[(1)]
   \item Introduce cost-sensitive nature for LGC algorithm, and propose cost-sensitive LGC algorithm;
-  \item Propose CSS-LGC algorithm. We take the impact caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithm—CSS-LGC algorithm.
+  \item Propose CSS-LGC algorithm. We take the impact caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithmâ€”CSS-LGC algorithm.
   \item Analyze the experimental threshold, and verify the rationality of the threshold. 
   \item Demonstrate the effectiveness of the algorithm by experiment on German Credit Data Set and Breast Cancer Data Set.
 \end{enumerate}
@@ -155,7 +162,7 @@ where ${T_{t + 1}}$ represents the updated cost matrix, and
      {{e^{{\alpha_t}}}} & \text{if } {{y_{i,{h_t}\left( {{x_i}} \right)}} = 0}   
   \end{cases}
 \end{equation}
-where ${\alpha _t}$ represents the weight of classifier $h_t$��� in the final global classification at time $t$, and can be calculated by
+where ${\alpha _t}$ represents the weight of classifier $h_t$í±¡ in the final global classification at time $t$, and can be calculated by
 \begin{equation}
   {\alpha _t} = \ln \left( {\frac{{1 - {\varepsilon _t}}}{{{\varepsilon _t}}}} \right)
 \end{equation}
@@ -165,7 +172,86 @@ impact of data set scale on the results, the calculation of global cost in our m
 \begin{equation} \label{formula7}
   PEC=\frac{{\# {f_{pos}} + \# {f_{neg}} \cdot {C_{ -  + }}}}{{\# {t_{pos}} + \# {t_{neg}} + \# {f_{pos}} + \# {f_{neg}}}}
 \end{equation}
-where $PEC$ denotes the average cost of classifiers, ${\# {t_{pos}}}$ and ${\# {f_{pos}}}$  denote the number of positive class samples classified correctly and classified incorrectly respectively. ${\# {t_{neg}}}$ and ${\# {f_{neg}}}$ represent the corresponding information of negative class. The global cost we refer to here that is indeed the average cost. From Formula \ref{formula7} we can see that the correct classified samples does not increase the global cost.
+where $PEC$ denotes the average cost of classifiers, ${\# {t_{pos}}}$ and ${\# {f_{pos}}}$  denote the number of positive class samples classified correctly and classified incorrectly respectively. ${\# {t_{neg}}}$ and ${\# {f_{neg}}}$ represent the corresponding information of negative class. The global cost we refer to here that is indeed the average cost. From Formula \ref{formula7} we can see that the correct classified samples does not increase the global cost. 
+
+Next, we update the label matrix $YN$ according to Rescale Method. Specifically, when the cost of $x_i$ increases, means there is a wrong classification. Then a certain number of data that have the highest similarity with $x_i$ are chosen from unlabeled data set and added into labeled data set. The class and cost information of the newly added data are the same with $x_i$. On the contrary, when sample data $x_i$'s cost decreases, and the decreasing range is larger than the threshold $ts$, then we will remove $x_i$ and its label information from the labeled data set.
+
+After then, we train the classifier of the next time according to updated label matrix and repeat the process until the global cost difference between two training time step is less than a certain
+threshold. Finally, a global classifier can be obtained by the way of weighted voting.
+\begin{equation}
+  {Y_{final}}\left( {{x_i}} \right) = sign\left( {\mathop \sum \limits_{j = 1}^M {\alpha _j}{h_j}\left( {{x_i}} \right)} \right)
+\end{equation}
+Here $M$ denote the number of classifier when the iteration ends. 
+
+In summary, the process of CS-LGC method is shown in Algorithm \ref{algo:cs-lgc}:
+\begin{algorithm}[h] 
+  \begin{algorithmic}[1]
+    \REQUIRE{data set $X$, the initial label matrix $Y$}
+    \STATE{add cost information for the initial label matrix according to Formula \ref{formula1}}
+    \WHILE{$\Delta PEC \ge threshold$}
+      \STATE{train LGC semi-supervised classifier}
+      \STATE{update the cost matrix by Formal \ref{formula4} according to the result}
+      \STATE{update label data set applying Rescale Method}
+      \STATE{update the initial label matrix according to Formula \ref{formula1}}
+    \ENDWHILE
+    \ENSURE{${{\rm{Y}}_{final}}({x_i}) = sign(\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} )$
+  , $  PEC=\frac{{\# {f_{pos}} + \# {f_{neg}} \cdot {C_{ -  + }}}}{{\# {t_{pos}} + \# {t_{neg}} + \# {f_{pos}} + \# {f_{neg}}}}$ }
+  \end{algorithmic}
+  \caption{CS-LGC}
+  \label{algo:cs-lgc}
+\end{algorithm} 
+
+\subsection{The convergence of the algorithm}
+\begin{proof}
+ The convergence of the CS-LGC algorithm depends on the convergence of the LGC, and whether the cost of the sample data by wrong classification has an upper limit. For ease of reading, we use $c_i$($\frac{1}{{{N_ + }}}$ or $\frac{{{C_{ -  + }}}}{{{N_ - }}}$ or $0$) to denote the cost of sample $i$, and $y_i$(-1 or +1) to denote the real label of sample $i$.
+
+Zhou gives the evaluation function based on FIG of the semi-supervised classification algorithm in \cite{zhou2004learning}, which is usual composed of smooth function and loss function. According to
+extremum condition acquired by evaluation function as well as recursion formula of LGC algorithm, Zhou deduces the convergence formula(Formula \ref{formula9}) of LGC algorithm, then proves the convergence of LGC algorithm.
+\begin{equation}\label{formula9}
+  F = {(I - \beta S)^{ - 1}}Y
+\end{equation}
+Here $F$ is the final classification function, $\beta  \in \left( {0,1} \right)$, $S$ is a symmetric matrix, and
+\begin{equation}
+  {\text{S}} = {D^{ - 1/2}}W{D^{ - 1/2}}
+\end{equation}
+where D is a diagonal matrix, whose diagonal elements is the sums of elements of corresponding row vectors in the weight matrix $W$.
+
+For the cost matrix of CS-LGC algorithm, Formula \ref{formula4} can be rewrited as
+\begin{equation}
+  \begin{aligned}
+    {T_{t + 1}}(i) &= {T_t}(i)\frac{{{e^{ - {\alpha _t}{y_i}{h_t}({x_i})}}}}{{{Z_t}}}\\
+    &= {T_1}(i)\frac{{{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}}}{{\prod\limits_{j = 1}^S {{Z_j}} }}
+  \end{aligned}
+\end{equation}
+Because of $\sum\limits_{i = 1}^N {{T_{t + 1}}(i)}  = 1$, we have
+\begin{equation}
+  \begin{aligned}
+    \prod\limits_{j = 1}^M {{Z_j}} =& \frac{1}{{{N_ + }}}\sum\limits_{i = 1}^{{N_ + }} {{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}} \\
+    &+ \frac{{{C_{ -  + }}}}{{{N_ - }}}\sum\limits_{k = 1}^{{N_ - }} {{e^{ - {y_{\text{k}}}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_k})} }}}
+  \end{aligned}
+\end{equation}
+where $x_i$ denotes the positive class sample, and $x_k$ denotes the negative class sample.
+
+In the binary classification problem, the label of data is either -1 or +1, and when ${y_i} \ne {Y_{final}}({x_i})$, ${y_i}{Y_{final}}({x_i}) \le 0$ holds, then we have ${e^{ - {y_i}{Y_{final}}({x_i})}} \ge 1$. The global cost of the classification can be calculated by Formal \ref{formula13},
+\begin{equation} \label{formula13}
+  \begin{aligned}
+  E &= \sum\limits_{j = 1}^N {c_j}
+  \begin{cases}
+  1 & \mbox{if } {y_j} \ne {Y_{final}}({x_j}) \\
+  0 &  \mbox{else }
+  \end{cases} \\
+  &\le \sum\limits_{j = 1}^N {{c_j}{e^{ - {y_j}{Y_{final}}({x_j})}}}  \\
+  &= \sum\limits_{j = 1}^N {{c_j}\prod\limits_{i = 1}^M {{Z_i}} \frac{{{T_M}({x_j})}}{{{T_0}({x_j})}}} \\
+  &= d\prod\limits_{i = 1}^M {{Z_i}} 
+  \end{aligned}
+\end{equation}
+there $d$ denotes the sum of all the data samples' cost initially. 
+
+In conclusion, when the cost matrix is decided, LGC algorithm will converge to Formal \ref{formula9}, and the upper bound of cost matrix does exist (Formal \ref{formula13}), thus CS-LGC algorithm can converge.
+\qed
+
+
+\end{proof}
 % \section{Section title}
 % \label{sec:1}
 %Text with citations  and %\cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction} \cite{budvytis2010label} \cite{zhu2003semi} \cite{zhou2004learning} \cite{gao2011active} \cite{elkan2001foundations} \cite{zhou2010multi} \cite{domingos1999metacost} \cite{khoshgoftaar2011comparing} \cite{fan1999adacost} \cite{jin2010multi} \cite{qin2008cost} \cite{liu2006influence} \cite{seiffert2008comparative} \cite{bache2013uci} \cite{germandata}
