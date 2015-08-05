@@ -28,6 +28,7 @@
 %
 \usepackage{graphicx}
 \usepackage{enumerate}
+\usepackage{paralist} 
 \usepackage{amsmath}
 % \usepackage{mathptmx}      % use Times fonts if available on your TeX system
 %
@@ -92,6 +93,8 @@ Assuming that misclassification costs among different categories are equal, trad
 
 \section{Introduction}
 \label{intro}
+
+%Text with citations  and \cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction} \cite{budvytis2010label} \cite{zhu2003semi} \cite{zhou2004learning} \cite{gao2011active} \cite{elkan2001foundations} \cite{zhou2010multi} \cite{domingos1999metacost} \cite{khoshgoftaar2011comparing} \cite{fan1999adacost} \cite{jin2010multi} \cite{qin2008cost} \cite{liu2006influence} \cite{seiffert2008comparative} \cite{bache2013uci} \cite{germandata} \cite{mangasarian1990pattern}
 
 Recently, machine learning classification algorithms have achieved sound development in multimedia identification, health care, finance, and many other applications. Among them, Graph-based Semi-Supervised Classification based on perfect graph theory, which is relatively straightforward and easy to understand, has become one of the hotest research focuses. This method can make better use of the information from label data and a great deal of data distribution information mined from unlabeled data, then solves the problem of the less labeled data and the huge labeling costs.
 
@@ -249,9 +252,72 @@ there $d$ denotes the sum of all the data samples' cost initially.
 
 In conclusion, when the cost matrix is decided, LGC algorithm will converge to Formal \ref{formula9}, and the upper bound of cost matrix does exist (Formal \ref{formula13}), thus CS-LGC algorithm can converge.
 \qed
-
-
 \end{proof}
+
+\subsection{CSS-LGC Algorithm}
+ According to the updated cost matrix, $Q$ data need selecting from the label data to join the negative class. However, it turns out that the number of the unlabeled data is smaller than $Q$  after calculating the average similarly. The average similarity is more close to either positive class or negative class. That is the problem we often encounter with unbalanced data sets, at this time this situation may come: classification precision appears fluctuant, leading to unstable performance. In response to this problem of unbalanced data sets, we introduce in SMOTE algorithm, i.e. using the method of synthetic artificial virtual data to solve the serious problem of unbalanced data sets, so as to solve the problem of unstable performance of the classifier.
+
+ SMOTE algorithm generates virtual data through a synthetic way. For each minority category sample, the method looks for its $k$ samples with the highest similarity. Then Upward sampling method is applied. If the amount of upward sampling samples is set as $N$, it randomly selects $N$ samples from all $k$ samples, which can be represented as ${x_i}\left( {i = 1,2, \ldots ,N} \right)$, then conducts the linear interpolation between minority class $x$ and $x_i$. Next, it constructs new minority samples ${p_1},{p_2},...,{p_N}$ and 
+ \begin{equation}
+  {p_i} = x + rand(0,1)*({x_i} - x), \quad i = 1,2,\ldots,N
+ \end{equation}
+
+ The process of CSS-LGC algorithms is roughly same with CS-LGC, except the difference when CSS-LGC
+algorithm uses Rescale to update label data sets. 
+
+In the CSS-LGC algorithm, after updating the cost matrix, Rescale is applied to update label matrix, then, it adds SMOTE method and optimizes the overall process of updating the label matrix. The
+specific implementation process is as follows:
+\begin{enumerate}[1)]
+  \item According to the change of cost matrix before and after the update, we determine the amount of required unlabeled data chosen in each category.
+  \item First of all, we get average similarity respectively for samples that have been marked as positive class from the remaining unlabeled data. Then we get the average similarity between the samples of each unlabeled and all samples that have been marked as positive class, denote them as ${p_1},{p_2},\ldots ,{p_u}$, where $u$ represents the number of unlabeled samples. In the same way,  we use all unlabeled data to get an average similarity for the samples that has been marked as negative class, which denoted as $p_1^\prime ,p_2^\prime , \ldots ,p_u^\prime $. Here ${p_1},{p_2},\ldots ,{p_u}$ and $p_1^\prime ,p_2^\prime , \ldots ,p_u^\prime $ are respectively calculated by Formula \ref{formula15} and Formula \ref{formula16},
+  \begin{equation} \label{formula15}
+    {p_j} = (\mathop \sum \limits_{i = 1,{{\text{Y}}_{i1}}{\text{ =   + }}1}^l {w_{\left( {l + j} \right)i}})/{N_ + },\quad j = 1,2,\ldots,u.
+  \end{equation}
+  \begin{equation} \label{formula16}
+  p_j^\prime  = (\mathop \sum \limits_{i = 1,{{\text{Y}}_{i1}}{\text{ =   - }}1}^l {w_{\left( {l + j} \right)i}})/{N_ - },\quad j = 1,2,\ldots,u.
+  \end{equation}
+  where $N_+$ and $N_-$, respectively denote the number of the positive and negative samples in the data that have been marked, $Y$ is the label matrix, and $W$ is the weight matrix.
+  \item According to select unlabeled data, two conditions need meeting: first, the average similarity
+of unlabeled data must be closer to the class which will be marked as; Second, data with average similarity closer to this category unlabeled data should be chosen in accordance with descending order of average similarity and the number of unlabeled data to select calculated in the first step. At this time, it will have two cases:
+\begin{enumerate}[a)]
+ \item The number of average similarity of unlabeled data closer to this class which will be marked as is enough, that is to say, we can find out enough samples from unlabeled data for this class.
+ \item There are few samples with average similarity closer to the class in the unlabeled data, namely, the number of unlabeled data with similarity to be marked in this class is  littler than the other class, or only a small portion of data are more similar to this class.
+\end{enumerate}
+If this is the first case, after completing marking the selected unlabeled data, we can simply exit the Rescale process, then update the initial label matrix In line with formula \ref{formula1} and go on with the following study. Otherwise, as the second case occurs, we jump to the fourth step to process. \label{step3}
+
+\item After making some artificial virtual data using SMOTE method, we jump to the second step, and continue conduct, until the number of artificially manufactured unlabeled data is more closer to
+the number that this class need to be marked, and when the number the number is abundant, jump to the process of the first case in step \ref{step3}.
+
+\end{enumerate}
+
+In the process of above, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before  to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to choose $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples.
+
+Through improving Rescale process of the CS-LGC algorithm, we solve the defection of classification errors, which may accumulate in the unbalanced dataset and enhance the stability of classifiers' performance.
+
+\subsection{Analysis of Time Complexity}
+The increased time complexity by introducing cost sensitive feature to semi-supervised classification algorithm based on graph is mainly reflected in the process of boosting and updating cost matrix.
+
+The aim of updating the cost matrix is to update the label data set, including adding new label data and deleting existing label data. The adding operation has a relatively higher time complexity, which reaches $O(l \cdot n\lg n) < O({n^2}) $, where $l$ is the number of label data. Besides, choosing the unlabeled data with high similarity, which can be seen as a sorting, has the time complexity of $O(n\lg n)$. The time complexity of boosting process is $O(M \cdot {n^3})$ ,  the time complexity of base-classifier LGC algorithm reaching $O({n^3})$ included and $M$ represents the number of base-classifiers. The time complexity of CS-LGC algorithm depends on the number of base-classifiers denoted as $M$. From the following experiments, we can know, in the problem of bank loan, disease diagnosis etc., the number of convergences in CS-LGC is not sufficient to make the classifier time complexity increased by one order of magnitude.
+
+\section{Experimental Results and Analysis}
+\subsection{Data Introduction and Preprocessing}
+We choose bank loans and disease diagnosis, whose misclassification costs are inconsistent, to
+test our CS-LGC and CSS-LGC algorithm. Since the fact that CS-LGC is the improvement of LGC, we will verify whether CS-LGC’s global cost will be reduced and whether its accuracy will be lowered compared with LGC. In addition, CS-LGC is a cost-sensitive classification method, so we will compare it with a traditional cost-sensitive algorithm, AdaCost algorithm, to see the performance difference between two algorithms.
+
+Cost-sensitive learning focuses more on sample data of high cost, so in this paper, we implement three experiments to verity the properties of CS-LGC and CSS-LGC:
+\begin{inparaenum}[(1)]
+  \item the classification accuracy of high cost category changes with the label data;
+  \item the global classification accuracy changes with the label data;
+  \item the global cost changes with label data.
+\end{inparaenum}
+
+German Credit Data Set\cite{germandata}, which describes the information of bank loan applicants and whether the information of the relevant loan application is approved, was provided by Professor Hans Hofmann Et al. The data set collected 1000 loan applicants' information, including current deposit, borrowing time, fixed asset, working condition as well as whether they have guarantee and so on. There are 20 characteristic attributes in all. Finally, the applications of 700 person were approved while the other 300 applications weren't. We define the people who got the approvals as positive class, and those who did not as the negative class, then set ${C_{ +  - }} = 1$, ${C_{ -  + }} = 5$, and initialize the cost of CS-LGC after standardizing process. Different features will represent in different value ranges, such as applicants' genders only have 0 and 1, two small value, while borrowing time could reach 48 (months) or even much larger. To eliminate this difference, feature values  of characteristics for the applicants should be linear normalized as Formula \ref{formula17}.
+\begin{equation} \label{formula17}
+  {x_{ij}}' = \frac{{{x_{ij}} - {x_{i\min }}}}{{{x_{i\max }} - {x_{i\min }}}}
+\end{equation}
+${x_{ij}}'$ denotes the results of the $j$-th attribute value of the $i$-th applicant after normalization, ${{x_{i\max }}}$ and ${{x_{i\min }}}$ respectively denote the maximum and minimum value in all attribute values of applicant $i$.
+
+Breast Cancer Data Set\cite{Mangasarian90} was provided by the Professor Mangasarian and Wolberg of University of Wisconsin. It offers the feature information of breast cancer patients in the University of Wisconsin and the diagnosis of their disease (benign or malignant). This data set collected 10 attributes of 699 patients, such as the uniformity of patients' cell size. There are 458 cases diagnosed as benign, the other 241 cases as malignant. We treat benign patients as positive class, and malignant as negative class. Since the data set does not show information on the cost of misclassification, the ratio of the numbers of two classes whose samples are normalized will be defined as cost, which can be written as ${C_{ +  - }} = 1$ and ${C_{ -  + }} = 1.9$. We remove the attributes which have little things to do with the diagnosis, such as ID number, all other attributes range from 1 to 10, without the necessity of normalization. However, 16 records have some missing attributes, including 13 positive samples and 3 negative samples. After removing those invalid records , the ratio of positive class to negative is $445:328$.
 % \section{Section title}
 % \label{sec:1}
 %Text with citations  and %\cite{urner2011access} \cite{zhou2010semi} \cite{zhu2009introduction} \cite{budvytis2010label} \cite{zhu2003semi} \cite{zhou2004learning} \cite{gao2011active} \cite{elkan2001foundations} \cite{zhou2010multi} \cite{domingos1999metacost} \cite{khoshgoftaar2011comparing} \cite{fan1999adacost} \cite{jin2010multi} \cite{qin2008cost} \cite{liu2006influence} \cite{seiffert2008comparative} \cite{bache2013uci} \cite{germandata}

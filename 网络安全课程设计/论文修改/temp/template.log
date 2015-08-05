@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  4 AUG 2015 21:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  5 AUG 2015 23:18
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -113,9 +113,17 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks17
 )
+(D:\CTEX\MiKTeX\tex\latex\paralist\paralist.sty
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip43
+\plpartopsep=\skip44
+\plitemsep=\skip45
+\plparsep=\skip46
+\pl@lab=\toks18
+)
 (D:\CTEX\MiKTeX\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip47
 
 For additional information on amsmath, use the `?' option.
 (D:\CTEX\MiKTeX\tex\latex\amsmath\amstext.sty
@@ -123,7 +131,7 @@ Package: amstext 2000/06/29 v2.01
 
 (D:\CTEX\MiKTeX\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
+\@emptytoks=\toks19
 \ex@=\dimen116
 ))
 (D:\CTEX\MiKTeX\tex\latex\amsmath\amsbsy.sty
@@ -157,21 +165,21 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \dotsspace@=\muskip10
 \c@parentequation=\count113
 \dspbrk@lvl=\count114
-\tag@help=\toks19
+\tag@help=\toks20
 \row@=\count115
 \column@=\count116
 \maxfields@=\count117
-\andhelp@=\toks20
+\andhelp@=\toks21
 \eqnshift@=\dimen119
 \alignsep@=\dimen120
 \tagshift@=\dimen121
 \tagwidth@=\dimen122
 \totwidth@=\dimen123
 \lineht@=\dimen124
-\@envbody=\toks21
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks22
+\@envbody=\toks22
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (D:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
@@ -187,15 +195,15 @@ nment
 (D:\CTEX\MiKTeX\tex\latex\float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count118
-\float@exts=\toks23
+\float@exts=\toks24
 \float@box=\box31
-\@float@everytoks=\toks24
+\@float@everytoks=\toks25
 \@floatcapt=\box32
 )
 (D:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks25
+\@float@every@algorithm=\toks26
 \c@algorithm=\count119
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
@@ -204,24 +212,24 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@line=\count121
 \c@ALC@rem=\count122
 \c@ALC@depth=\count123
-\ALC@tlm=\skip46
-\algorithmicindent=\skip47
+\ALC@tlm=\skip50
+\algorithmicindent=\skip51
 )
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
@@ -232,25 +240,25 @@ Unknown journal: specify \journalname{<name of your journal>} in preambel
 \scratchbox=\box33
 \nofMPsegments=\count125
 \nofMParguments=\count126
-\everyMPshowfont=\toks26
+\everyMPshowfont=\toks27
 \MPscratchCnt=\count127
 \MPscratchDim=\dimen126
 \MPnumerator=\count128
 \makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks27
+\everyMPtoPDFconversion=\toks28
 )
 SVJour3 warning: Missing \journalname
-LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 84.
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 85.
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 84.
+(Font)              size <9> substituted on input line 85.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9.5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 84.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6.64996> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 84.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <4.75> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 84.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
 [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
@@ -276,9 +284,21 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
- [5] [6]
+ [5] [6] [7] [8]
+Overfull \hbox (13.14572pt too wide) in paragraph at lines 298--299
+\OT1/cmr/m/n/9.5 The in-creased time com-plex-i-ty by in-tro-duc-ing cost sen-s
+i-tive fea-ture to semi-supervised
+ []
+
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+
+Underfull \vbox (badness 2213) has occurred while \output is active []
+
+ [9]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[7]) [8]
+[10]) [11]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -286,10 +306,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 2786 strings out of 495354
- 37334 string characters out of 3183860
- 92867 words of memory out of 3000000
- 5931 multiletter control sequences out of 15000+200000
+ 2915 strings out of 495354
+ 39086 string characters out of 3183860
+ 94919 words of memory out of 3000000
+ 6056 multiletter control sequences out of 15000+200000
  14537 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  27i,14n,20p,1582b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -309,9 +329,9 @@ s/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/CTE
 X/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (8 pages, 274623 bytes).
+Output written on template.pdf (11 pages, 291862 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 122 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

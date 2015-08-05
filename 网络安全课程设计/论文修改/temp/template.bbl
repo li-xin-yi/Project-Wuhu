@@ -87,4 +87,8 @@ K.~Bache and M.~Lichman, ``Uci machine learning repository,'' 2013.
 \bibitem{germandata}
 H.~Hofmann, ``German credit data,'' 2000.
 
+\bibitem{Mangasarian90}
+O.~L. Mangasarian and W.~H. Wolberg, ``Cancer diagnosis via linear
+  programming,'' {\em SIAM News}, vol.~23, pp.~1--18, sep 1990.
+
 \end{thebibliography}
