@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  5 AUG 2015 23:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  6 AUG 2015 23:23
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -298,7 +298,7 @@ Underfull \vbox (badness 2213) has occurred while \output is active []
 
  [9]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[10]) [11]
+[10] [11]) [12]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -329,9 +329,9 @@ s/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/CTE
 X/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (11 pages, 291862 bytes).
+Output written on template.pdf (12 pages, 293579 bytes).
 PDF statistics:
- 122 PDF objects out of 1000 (max. 8388607)
+ 125 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
