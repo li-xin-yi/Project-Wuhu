@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  8 AUG 2015 22:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  9 AUG 2015 20:31
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -190,6 +190,26 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box32
 )
+(D:\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen125
+\lightrulewidth=\dimen126
+\cmidrulewidth=\dimen127
+\belowrulesep=\dimen128
+\belowbottomsep=\dimen129
+\aboverulesep=\dimen130
+\abovetopsep=\dimen131
+\cmidrulesep=\dimen132
+\cmidrulekern=\dimen133
+\defaultaddspace=\dimen134
+\@cmidla=\count119
+\@cmidlb=\count120
+\@aboverulesep=\dimen135
+\@belowrulesep=\dimen136
+\@thisruleclass=\count121
+\@lastruleclass=\count122
+\@thisrulewidth=\dimen137
+)
 (D:\CTEX\MiKTeX\tex\latex\base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
@@ -204,70 +224,65 @@ nment
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks26
-\c@algorithm=\count119
+\c@algorithm=\count123
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count120
-\c@ALC@line=\count121
-\c@ALC@rem=\count122
-\c@ALC@depth=\count123
+\c@ALC@unique=\count124
+\c@ALC@line=\count125
+\c@ALC@rem=\count126
+\c@ALC@depth=\count127
 \ALC@tlm=\skip50
 \algorithmicindent=\skip51
 )
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen125
+\scratchcounter=\count128
+\scratchdimen=\dimen138
 \scratchbox=\box33
-\nofMPsegments=\count125
-\nofMParguments=\count126
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen126
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen139
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks28
 )
 SVJour3 warning: Missing \journalname
-LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 86.
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 85.
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 86.
+(Font)              size <9> substituted on input line 85.
 
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9.5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 86.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6.64996> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 86.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <4.75> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 86.
-[1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
@@ -277,7 +292,19 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-[3] [4]
+Underfull \vbox (badness 7869) has occurred while \output is active []
+
+ [3]
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+Missing character: There is no � in font cmr9!
+
+[4]
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
@@ -285,7 +312,7 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
  [5] [6] [7] [8]
-Overfull \hbox (13.14572pt too wide) in paragraph at lines 299--300
+Overfull \hbox (13.14572pt too wide) in paragraph at lines 293--294
 \OT1/cmr/m/n/9.5 The in-creased time com-plex-i-ty by in-tro-duc-ing cost sen-s
 i-tive fea-ture to semi-supervised
  []
@@ -294,50 +321,50 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-Underfull \vbox (badness 2213) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
 [10] <plot/fig1.pdf, id=53, 578.16pt x 397.485pt>
 File: plot/fig1.pdf Graphic file (type pdf)
  <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 330.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [11 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig1.pdf>
-]
-<plot/fig2.pdf, id=59, 578.16pt x 397.485pt>
+Package pdftex.def Info: plot/fig1.pdf used on input line 325.
+(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
+
+<plot/fig2.pdf, id=54, 578.16pt x 397.485pt>
 File: plot/fig2.pdf Graphic file (type pdf)
  <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 337.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
+Package pdftex.def Info: plot/fig2.pdf used on input line 329.
+(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig3.pdf, id=60, 578.16pt x 397.485pt>
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 324--332
+[][] [] 
+ []
+
+[11 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig1.pdf> 
+<E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig2.pdf>]
+<plot/fig3.pdf, id=62, 578.16pt x 397.485pt>
 File: plot/fig3.pdf Graphic file (type pdf)
  <use plot/fig3.pdf>
 Package pdftex.def Info: plot/fig3.pdf used on input line 343.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [12 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig2.pdf>
+ [12 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig3.pdf>
 ]
-<plot/fig4.pdf, id=66, 578.16pt x 397.485pt>
+<plot/fig4.pdf, id=68, 578.16pt x 397.485pt>
 File: plot/fig4.pdf Graphic file (type pdf)
  <use plot/fig4.pdf>
 Package pdftex.def Info: plot/fig4.pdf used on input line 354.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-Underfull \vbox (badness 1845) has occurred while \output is active []
-
- [13 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig3.pdf>
-]
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-<plot/fig5.pdf, id=73, 578.16pt x 397.485pt>
+<plot/fig5.pdf, id=69, 578.16pt x 397.485pt>
 File: plot/fig5.pdf Graphic file (type pdf)
  <use plot/fig5.pdf>
 Package pdftex.def Info: plot/fig5.pdf used on input line 362.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig6.pdf, id=74, 578.16pt x 397.485pt>
+<plot/fig6.pdf, id=70, 578.16pt x 397.485pt>
 File: plot/fig6.pdf Graphic file (type pdf)
  <use plot/fig6.pdf>
 Package pdftex.def Info: plot/fig6.pdf used on input line 366.
@@ -347,16 +374,18 @@ Overfull \hbox (1.88892pt too wide) in paragraph at lines 361--369
 [][] [] 
  []
 
-[14 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig4.pdf> 
-<E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig5.pdf> <E:/
-Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig6.pdf>]
-<plot/fig7.pdf, id=84, 578.16pt x 397.485pt>
+
+Underfull \vbox (badness 3735) has occurred while \output is active []
+
+ [13 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig4.pdf>
+]
+<plot/fig7.pdf, id=77, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
 Package pdftex.def Info: plot/fig7.pdf used on input line 383.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig8.pdf, id=85, 578.16pt x 397.485pt>
+<plot/fig8.pdf, id=78, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
 Package pdftex.def Info: plot/fig8.pdf used on input line 387.
@@ -372,34 +401,39 @@ Overfull \hbox (1.88892pt too wide) in paragraph at lines 382--390
 [][] [] 
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig5.pdf>
+ <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig6.pdf>]
 <plot/fig9.pdf, id=86, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
 Package pdftex.def Info: plot/fig9.pdf used on input line 395.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ [15 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig7.pdf>
+ <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig8.pdf> <E:
+/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig9.pdf>] [16]
+Overfull \hbox (25.67128pt too wide) in paragraph at lines 450--466
+ [][] 
+ []
 
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[15 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig7.pdf> 
-<E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig8.pdf>]
-[16 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig9.pdf>]
-) [17] (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux
-)
+[17]) [18]
+(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 2971 strings out of 495354
- 39852 string characters out of 3183860
- 94992 words of memory out of 3000000
- 6102 multiletter control sequences out of 15000+200000
+ 3034 strings out of 495354
+ 40634 string characters out of 3183860
+ 95771 words of memory out of 3000000
+ 6161 multiletter control sequences out of 15000+200000
  14537 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,14n,20p,1582b,409s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,14n,20p,1805b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/
@@ -416,9 +450,9 @@ s/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/CTE
 X/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (17 pages, 338607 bytes).
+Output written on template.pdf (18 pages, 341751 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
