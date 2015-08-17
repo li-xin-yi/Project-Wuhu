@@ -202,56 +202,58 @@ In summary, the process of CS-LGC method is shown in Algorithm \ref{algo:cs-lgc}
   \label{algo:cs-lgc}
 \end{algorithm} 
 
-\subsection{The convergence of the algorithm}
-\begin{proof}
- The convergence of the CS-LGC algorithm depends on the convergence of the LGC, and whether the cost of the sample data by wrong classification has an upper limit. For ease of reading, we use $c_i$ ($\frac{1}{{{N_ + }}}$ or $\frac{{{C_{ -  + }}}}{{{N_ - }}}$ or $0$) to denote the cost of sample $i$, and $y_i$(-1 or +1) to denote the real label of sample $i$.
+% \subsection{The convergence of the algorithm}
+% \begin{proof}
+%  The convergence of the CS-LGC algorithm depends on the convergence of the LGC, and whether the cost of the sample data by wrong classification has an upper limit. For ease of reading, we use $c_i$ ($\frac{1}{{{N_ + }}}$ or $\frac{{{C_{ -  + }}}}{{{N_ - }}}$ or $0$) to denote the cost of sample $i$, and $y_i$(-1 or +1) to denote the real label of sample $i$.
 
-Zhou gives the evaluation function based on FIG of the semi-supervised classification algorithm in \cite{zhou2004learning}, which is usual composed of smooth function and loss function. According to
-extremum condition acquired by evaluation function as well as recursion formula of LGC algorithm, Zhou deduces the convergence formula (Formula \ref{formula9}) of LGC algorithm, then proves the convergence of LGC algorithm.
-\begin{equation}\label{formula9}
-  F = {(I - \beta S)^{ - 1}}Y
-\end{equation}
-Here $F$ is the final classification function, $\beta  \in \left( {0,1} \right)$, $S$ is a symmetric matrix, and
-\begin{equation}
-  {\text{S}} = {D^{ - 1/2}}W{D^{ - 1/2}}
-\end{equation}
-where D is a diagonal matrix, whose diagonal elements is the sums of elements of corresponding row vectors in the weight matrix $W$.
+% Zhou gives the evaluation function based on FIG of the semi-supervised classification algorithm in \cite{zhou2004learning}, which is usual composed of smooth function and loss function. According to
+% extremum condition acquired by evaluation function as well as recursion formula of LGC algorithm, Zhou deduces the convergence formula (Formula \ref{formula9}) of LGC algorithm, then proves the convergence of LGC algorithm.
+% \begin{equation}\label{formula9}
+%   F = {(I - \beta S)^{ - 1}}Y
+% \end{equation}
+% Here $F$ is the final classification function, $\beta  \in \left( {0,1} \right)$, $S$ is a symmetric matrix, and
+% \begin{equation}
+%   {\text{S}} = {D^{ - 1/2}}W{D^{ - 1/2}}
+% \end{equation}
+% where D is a diagonal matrix, whose diagonal elements is the sums of elements of corresponding row vectors in the weight matrix $W$.
 
-For the cost matrix of CS-LGC algorithm, Formula \ref{formula4} can be rewritten as
-\begin{equation}
-  \begin{aligned}
-    {T_{t + 1}}(i) &= {T_t}(i)\frac{{{e^{ - {\alpha _t}{y_i}{h_t}({x_i})}}}}{{{Z_t}}}\\
-    &= {T_1}(i)\frac{{{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}}}{{\prod\limits_{j = 1}^S {{Z_j}} }}
-  \end{aligned}
-\end{equation}
-Because of $\sum\limits_{i = 1}^N {{T_{t + 1}}(i)}  = 1$, we have
-\begin{equation}
-    \prod\limits_{j = 1}^M {{Z_j}}  = \frac{1}{{{N_ + }}}\sum\limits_{i = 1}^{{N_ + }} {{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}}  + \frac{{{C_{ -  + }}}}{{{N_ - }}}\sum\limits_{k = 1}^{{N_ - }} {{e^{ - {y_{\text{k}}}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_k})} }}} 
-\end{equation}
-where $x_i$ denotes the positive class sample, and $x_k$ denotes the negative class sample.
+% For the cost matrix of CS-LGC algorithm, Formula \ref{formula4} can be rewritten as
+% \begin{equation}
+%   \begin{aligned}
+%     {T_{t + 1}}(i) &= {T_t}(i)\frac{{{e^{ - {\alpha _t}{y_i}{h_t}({x_i})}}}}{{{Z_t}}}\\
+%     &= {T_1}(i)\frac{{{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}}}{{\prod\limits_{j = 1}^S {{Z_j}} }}
+%   \end{aligned}
+% \end{equation}
+% Because of $\sum\limits_{i = 1}^N {{T_{t + 1}}(i)}  = 1$, we have
+% \begin{equation}
+%     \prod\limits_{j = 1}^M {{Z_j}}  = \frac{1}{{{N_ + }}}\sum\limits_{i = 1}^{{N_ + }} {{e^{ - {y_i}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} }}}  + \frac{{{C_{ -  + }}}}{{{N_ - }}}\sum\limits_{k = 1}^{{N_ - }} {{e^{ - {y_{\text{k}}}\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_k})} }}} 
+% \end{equation}
+% where $x_i$ denotes the positive class sample, and $x_k$ denotes the negative class sample.
 
-In the binary classification problem, the label of data is either -1 or +1, and when ${y_i} \ne {Y_{final}}({x_i})$, ${y_i}{Y_{final}}({x_i}) \le 0$ holds, then we have ${e^{ - {y_i}{Y_{final}}({x_i})}} \ge 1$. The global cost of the classification can be calculated by Formal \ref{formula13},
-\begin{equation} \label{formula13}
-  \begin{aligned}
-  E &= \sum\limits_{j = 1}^N {c_j}
-  \begin{cases}
-  1 & \mbox{if } {y_j} \ne {Y_{final}}({x_j}) \\
-  0 &  \mbox{else }
-  \end{cases} \\
-  &\le \sum\limits_{j = 1}^N {{c_j}{e^{ - {y_j}{Y_{final}}({x_j})}}}  \\
-  &= \sum\limits_{j = 1}^N {{c_j}\prod\limits_{i = 1}^M {{Z_i}} \frac{{{T_M}({x_j})}}{{{T_0}({x_j})}}} \\
-  &= d\prod\limits_{i = 1}^M {{Z_i}} 
-  \end{aligned}
-\end{equation}
-there $d$ denotes the sum of all the data samples' costs initially. 
+% In the binary classification problem, the label of data is either -1 or +1, and when ${y_i} \ne {Y_{final}}({x_i})$, ${y_i}{Y_{final}}({x_i}) \le 0$ holds, then we have ${e^{ - {y_i}{Y_{final}}({x_i})}} \ge 1$. The global cost of the classification can be calculated by Formal \ref{formula13},
+% \begin{equation} \label{formula13}
+%   \begin{aligned}
+%   E &= \sum\limits_{j = 1}^N {c_j}
+%   \begin{cases}
+%   1 & \mbox{if } {y_j} \ne {Y_{final}}({x_j}) \\
+%   0 &  \mbox{else }
+%   \end{cases} \\
+%   &\le \sum\limits_{j = 1}^N {{c_j}{e^{ - {y_j}{Y_{final}}({x_j})}}}  \\
+%   &= \sum\limits_{j = 1}^N {{c_j}\prod\limits_{i = 1}^M {{Z_i}} \frac{{{T_M}({x_j})}}{{{T_0}({x_j})}}} \\
+%   &= d\prod\limits_{i = 1}^M {{Z_i}} 
+%   \end{aligned}
+% \end{equation}
+% there $d$ denotes the sum of all the data samples' costs initially. 
 
-In conclusion, when the cost matrix is decided, LGC algorithm will converge to Formal \ref{formula9}, and the upper bound of cost matrix does exist (Formal \ref{formula13}), thus CS-LGC algorithm can converge.
-\qed
-\end{proof}
+% In conclusion, when the cost matrix is decided, LGC algorithm will converge to Formal \ref{formula9}, and the upper bound of cost matrix does exist (Formal \ref{formula13}), thus CS-LGC algorithm can converge.
+% \qed
+% \end{proof}
 
-\subsection{CSS-LGC Algorithm}
+\section{Improved CS-LGC Algorithm: CSS-LGC}
+\subsection{Defect Analysis of CS-LGC Algorithm}
  According to the updated cost matrix, $Q$ data need selecting from the labeled data to join the negative class. However, it turns out that the number of the unlabeled data is smaller than $Q$  after calculating the average similarly. The average similarity is more close to either positive class or negative class. That is the problem we often encounter with unbalanced data sets, at this time this situation may come: classification precision appears fluctuant, leading to unstable performance. In response to this problem of unbalanced data sets, we introduce in SMOTE algorithm, i.e. using the method of synthetic artificial virtual data to solve the serious problem of unbalanced data sets, so as to solve the problem of unstable performance of the classifier.
 
+\subsection{CSS-LGC Algorithm Process}
  SMOTE algorithm generates virtual data through a synthetic way. For each minority category sample, the method looks for its $k$ samples with the highest similarity. Then Upward sampling method is applied. If the amount of upward sampling samples is set as $N$, it randomly selects $N$ samples from all $k$ samples, which can be represented as ${x_i}\left( {i = 1,2, \ldots ,N} \right)$, then conducts the linear interpolation between minority class $x$ and $x_i$. Next, it constructs new minority samples ${p_1},{p_2},...,{p_N}$ and 
  \begin{equation}
   {p_i} = x + rand(0,1)*({x_i} - x), \quad i = 1,2,\ldots,N
@@ -289,7 +291,7 @@ In the process of above, when synthesizing artificially data by using SMOTE algo
 
 Through improving Rescale process of the CS-LGC algorithm, we solve the defection of classification errors, which may accumulate in the unbalanced dataset and enhance the stability of classifiers' performance.
 
-\subsection{Analysis of Time Complexity}
+\subsection{Performance Analysis of CSS-LGC Algorithm}
 The increased time complexity by introducing cost sensitive feature to semi-supervised classification algorithm based on graph is mainly reflected in the process of boosting and updating cost matrix.
 
 The aim of updating the cost matrix is to update the labeled data set, including adding new labeled data and deleting existing labeled data. The adding operation has a relatively higher time complexity, which reaches $O(l \cdot n\lg n) < O({n^2}) $, where $l$ is the number of labeled data. Besides, choosing the unlabeled data with high similarity, which can be seen as a sorting, has the time complexity of $O(n\lg n)$. The time complexity of boosting process is $O(M \cdot {n^3})$ ,  the time complexity of base-classifier LGC algorithm reaching $O({n^3})$ included and $M$ represents the number of base-classifiers. The time complexity of CS-LGC algorithm depends on the number of base-classifiers denoted as $M$. From the following experiments, we can know, in the problem of bank loan, disease diagnosis etc., the number of convergences in CS-LGC is not sufficient to make the classifier time complexity increased by one order of magnitude.
@@ -316,6 +318,74 @@ Breast Cancer Data Set\cite{Mangasarian90} was provided by the Professor Mangasa
 
 \subsection{Experimental Setting}
 The labeled data in this experiment are randomly selected from the data set. In order to observe the influence of the number of labeled data on classification results, We choose $10\%, 20\% \ldots 90\%$ ( increased by 10\% at one time) data from the whole data set as the labeled. Then we design and run the experiments on Matlab R2010a. When updating the labeled data set following Rescale method, the cost of samples decrease by more than 50\%, those samples will be removed from the labeled data set, that is to say, we set $ts = 50\% $. The termination criterion for the iteration of CS-LGC method is that the difference of global costs between the latest two iteration, which is the value of $threshold$, reaches 10\% or less. The experimental settings of LGC method, Adacost algorithm and CS-LGC algorithm are the same as the CSS-LGC method. All the experimental data shown following are the average results of 50 times repeated experiments.
+
+\subsection{Threshold Discussion}
+These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
+
+$threshold$ is set as 10\% of the initial global cost.we verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
+
+\subsubsection{$ts$}
+From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
+\ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
+
+ % Table generated by Excel2LaTeX from sheet 'Sheet1'
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{c c c c}
+    \toprule
+    $ts$  & Negative classification accuracy  &  Global classification accuracy & Global cost \\
+    \midrule
+    0.05  & 0.546 & 0.7985 & 0.82205 \\
+    0.1   & 0.6876 & 0.8035 & 0.60615 \\
+    0.15  & 0.7946 & 0.8274 & 0.42896 \\
+    0.2   & 0.8546 & 0.8293 & 0.33755 \\
+    0.25  & 0.8937 & 0.8305 & 0.27675 \\
+    0.3   & 0.9254 & 0.8327 & 0.22906 \\
+    0.35  & 0.9348 & 0.8346 & 0.21394 \\
+    0.4   & 0.9365 & 0.8348 & 0.21102 \\
+    0.45  & 0.9367 & 0.8349 & 0.21052 \\
+    0.5   & 0.946 & 0.835 & 0.1965 \\
+    0.55  & 0.9463 & 0.8352 & 0.19591 \\
+    0.6   & 0.9464 & 0.8352 & 0.19576 \\
+    0.65  & 0.9465 & 0.8353 & 0.19554 \\
+    0.7   & 0.9465 & 0.8353 & 0.19554 \\
+    0.75  & 0.9465 & 0.8353 & 0.19554 \\
+    0.8   & 0.9465 & 0.8353 & 0.19554 \\
+    0.85  & 0.9465 & 0.8353 & 0.19554 \\
+    0.9   & 0.9465 & 0.8353 & 0.19554 \\
+    0.95  & 0.9465 & 0.8353 & 0.19554 \\
+    1     & 0.9465 & 0.8353 & 0.19554 \\
+    \bottomrule
+    \end{tabular}%
+  \caption{Impact and Analysis Table with $ts$} \label{tab:ts}%
+\end{table}%
+
+\subsubsection{$threshold$}
+In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
+precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
+
+
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{cccc}
+    \toprule
+    $threshold$ & Negative class classification accuracy & Global classification accuracy & Global cost \\
+    \midrule
+    6     & 0.9546 & 0.85  & 0.1731 \\
+    7     & 0.95186 & 0.845 & 0.18071 \\
+    8     & 0.9486 & 0.8425 & 0.18735 \\
+    9     & 0.947 & 0.839 & 0.1922 \\
+    10    & 0.942 & 0.835 & 0.2025 \\
+    11    & 0.935 & 0.83  & 0.2165 \\
+    12    & 0.923 & 0.82752 & 0.23624 \\
+    13    & 0.908 & 0.8247 & 0.26071 \\
+    14    & 0.8967 & 0.8189 & 0.28172 \\
+    15    & 0.8886 & 0.8135 & 0.29765 \\
+    \bottomrule
+    \end{tabular}
+    \caption{Impact and Analysis Table with $threshold$}
+  \label{tab:threshold}
+\end{table}
 
 \subsection{German Credit Data Set}\label{subsec:exp1}
 
@@ -399,73 +469,6 @@ Fig. \ref{fig7} and Fig. \ref{fig8} show the four algorithms - LGC, CS-LGC, AdaC
 From Fig. \ref{fig7}, Fig. \ref{fig8} and Fig. \ref{fig9}, we can see, in the initial stage of data set training, there is little difference between CSS-LGC and CS-LGC algorithm. That is because in the beginning, the little amount of minority class samples do not work in the data set. At this time, there are enough unlabeled data for minority class can be chosen. But with the proceeding of the training, the number of unlabeled data is declining. Then the weakness of minority class data will be evident for the selection of unlabeled data using CS-LGC algorithm, which does not take the number of minority class samples into account.That will cause error accumulation, and undermine performance of
 CS-LGC algorithm. However, when the unlabeled data of minority class is trained by CSS-LGC algorithm, SMOTE algorithm introduced in works. And with the method of synthesizing, some virtual unlabeled data of weak minority are created. Then unlabeled data of minority class are continuously generated until conditions are met by comparison, which can be accepted by CS-LGC algorithm.
 
-\subsection{Threshold Discussion}
-These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
-
-$threshold$ is set as 10\% of the initial global cost.we verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
-
-\subsubsection{$ts$}
-From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
-\ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
-
- % Table generated by Excel2LaTeX from sheet 'Sheet1'
-\begin{table}[htbp]
-  \centering
-    \begin{tabular}{c c c c}
-    \toprule
-    $ts$  & Negative classification accuracy  &  Global classification accuracy & Global cost \\
-    \midrule
-    0.05  & 0.546 & 0.7985 & 0.82205 \\
-    0.1   & 0.6876 & 0.8035 & 0.60615 \\
-    0.15  & 0.7946 & 0.8274 & 0.42896 \\
-    0.2   & 0.8546 & 0.8293 & 0.33755 \\
-    0.25  & 0.8937 & 0.8305 & 0.27675 \\
-    0.3   & 0.9254 & 0.8327 & 0.22906 \\
-    0.35  & 0.9348 & 0.8346 & 0.21394 \\
-    0.4   & 0.9365 & 0.8348 & 0.21102 \\
-    0.45  & 0.9367 & 0.8349 & 0.21052 \\
-    0.5   & 0.946 & 0.835 & 0.1965 \\
-    0.55  & 0.9463 & 0.8352 & 0.19591 \\
-    0.6   & 0.9464 & 0.8352 & 0.19576 \\
-    0.65  & 0.9465 & 0.8353 & 0.19554 \\
-    0.7   & 0.9465 & 0.8353 & 0.19554 \\
-    0.75  & 0.9465 & 0.8353 & 0.19554 \\
-    0.8   & 0.9465 & 0.8353 & 0.19554 \\
-    0.85  & 0.9465 & 0.8353 & 0.19554 \\
-    0.9   & 0.9465 & 0.8353 & 0.19554 \\
-    0.95  & 0.9465 & 0.8353 & 0.19554 \\
-    1     & 0.9465 & 0.8353 & 0.19554 \\
-    \bottomrule
-    \end{tabular}%
-  \caption{Impact and Analysis Table with $ts$} \label{tab:ts}%
-\end{table}%
-
-\subsubsection{$threshold$}
-In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
-precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
-
-
-\begin{table}[htbp]
-  \centering
-    \begin{tabular}{cccc}
-    \toprule
-    $threshold$ & Negative class classification accuracy & Global classification accuracy & Global cost \\
-    \midrule
-    6     & 0.9546 & 0.85  & 0.1731 \\
-    7     & 0.95186 & 0.845 & 0.18071 \\
-    8     & 0.9486 & 0.8425 & 0.18735 \\
-    9     & 0.947 & 0.839 & 0.1922 \\
-    10    & 0.942 & 0.835 & 0.2025 \\
-    11    & 0.935 & 0.83  & 0.2165 \\
-    12    & 0.923 & 0.82752 & 0.23624 \\
-    13    & 0.908 & 0.8247 & 0.26071 \\
-    14    & 0.8967 & 0.8189 & 0.28172 \\
-    15    & 0.8886 & 0.8135 & 0.29765 \\
-    \bottomrule
-    \end{tabular}
-    \caption{Impact and Analysis Table with $threshold$}
-  \label{tab:threshold}
-\end{table}
 
 \section{Conclusions}
 

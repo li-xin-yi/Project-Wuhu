@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  9 AUG 2015 20:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  17 AUG 2015 23:03
 entering extended mode
 **template
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
@@ -311,8 +311,8 @@ Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
- [5] [6] [7] [8]
-Overfull \hbox (13.14572pt too wide) in paragraph at lines 293--294
+ [5] [6] [7]
+Overfull \hbox (13.14572pt too wide) in paragraph at lines 295--296
 \OT1/cmr/m/n/9.5 The in-creased time com-plex-i-ty by in-tro-duc-ing cost sen-s
 i-tive fea-ture to semi-supervised
  []
@@ -320,84 +320,84 @@ i-tive fea-ture to semi-supervised
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
+[8] [9]
+Overfull \hbox (25.67128pt too wide) in paragraph at lines 370--386
+ [][] 
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
-[10] <plot/fig1.pdf, id=53, 578.16pt x 397.485pt>
+[10] <plot/fig1.pdf, id=52, 578.16pt x 397.485pt>
 File: plot/fig1.pdf Graphic file (type pdf)
  <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 325.
+Package pdftex.def Info: plot/fig1.pdf used on input line 395.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig2.pdf, id=54, 578.16pt x 397.485pt>
+<plot/fig2.pdf, id=53, 578.16pt x 397.485pt>
 File: plot/fig2.pdf Graphic file (type pdf)
  <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 329.
+Package pdftex.def Info: plot/fig2.pdf used on input line 399.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 324--332
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 394--402
 [][] [] 
  []
 
 [11 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig1.pdf> 
 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig2.pdf>]
-<plot/fig3.pdf, id=62, 578.16pt x 397.485pt>
+<plot/fig3.pdf, id=61, 578.16pt x 397.485pt>
 File: plot/fig3.pdf Graphic file (type pdf)
  <use plot/fig3.pdf>
-Package pdftex.def Info: plot/fig3.pdf used on input line 343.
+Package pdftex.def Info: plot/fig3.pdf used on input line 413.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
+
+Underfull \vbox (badness 1527) has occurred while \output is active []
+
  [12 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig3.pdf>
 ]
-<plot/fig4.pdf, id=68, 578.16pt x 397.485pt>
+<plot/fig4.pdf, id=67, 578.16pt x 397.485pt>
 File: plot/fig4.pdf Graphic file (type pdf)
  <use plot/fig4.pdf>
-Package pdftex.def Info: plot/fig4.pdf used on input line 354.
+Package pdftex.def Info: plot/fig4.pdf used on input line 424.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 Missing character: There is no � in font cmr9!
 
-<plot/fig5.pdf, id=69, 578.16pt x 397.485pt>
+<plot/fig5.pdf, id=68, 578.16pt x 397.485pt>
 File: plot/fig5.pdf Graphic file (type pdf)
  <use plot/fig5.pdf>
-Package pdftex.def Info: plot/fig5.pdf used on input line 362.
+Package pdftex.def Info: plot/fig5.pdf used on input line 432.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig6.pdf, id=70, 578.16pt x 397.485pt>
+<plot/fig6.pdf, id=69, 578.16pt x 397.485pt>
 File: plot/fig6.pdf Graphic file (type pdf)
  <use plot/fig6.pdf>
-Package pdftex.def Info: plot/fig6.pdf used on input line 366.
+Package pdftex.def Info: plot/fig6.pdf used on input line 436.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 361--369
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 431--439
 [][] [] 
  []
 
-
-Underfull \vbox (badness 3735) has occurred while \output is active []
-
- [13 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig4.pdf>
-]
-<plot/fig7.pdf, id=77, 578.16pt x 397.485pt>
+[13 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig4.pdf>]
+<plot/fig7.pdf, id=76, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 383.
+Package pdftex.def Info: plot/fig7.pdf used on input line 453.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig8.pdf, id=78, 578.16pt x 397.485pt>
+<plot/fig8.pdf, id=77, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 387.
+Package pdftex.def Info: plot/fig8.pdf used on input line 457.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 1194) in paragraph at lines 388--388
+Underfull \hbox (badness 1194) in paragraph at lines 458--458
 []\OT1/cmr/bx/n/8 Fig. 8|\OT1/cmr/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-ra-
 cy
  []
 
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 382--390
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 452--460
 [][] [] 
  []
 
@@ -406,20 +406,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig5.pdf>
  <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig6.pdf>]
-<plot/fig9.pdf, id=86, 578.16pt x 397.485pt>
+<plot/fig9.pdf, id=85, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 395.
+Package pdftex.def Info: plot/fig9.pdf used on input line 465.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
  [15 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig7.pdf>
  <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig8.pdf> <E:
-/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig9.pdf>] [16]
-Overfull \hbox (25.67128pt too wide) in paragraph at lines 450--466
- [][] 
- []
-
+/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig9.pdf>]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[17]) [18]
+[16]) [17]
 (E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -427,32 +423,31 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 3034 strings out of 495354
- 40634 string characters out of 3183860
- 95771 words of memory out of 3000000
- 6161 multiletter control sequences out of 15000+200000
+ 3032 strings out of 495354
+ 40613 string characters out of 3183860
+ 95754 words of memory out of 3000000
+ 6159 multiletter control sequences out of 15000+200000
  14537 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,14n,20p,1805b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,12n,20p,1805b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmbx8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><D:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cmextra/cmex9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pf
-b><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pf
-b><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><D:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (18 pages, 341751 bytes).
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts
+/type1/public/amsfonts/cmextra/cmex9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:
+/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on template.pdf (17 pages, 324051 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
