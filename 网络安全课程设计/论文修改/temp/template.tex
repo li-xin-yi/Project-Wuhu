@@ -68,7 +68,7 @@
 \institute{W. Sun \at
               School of Software, Dalian University of Technology \\
               DaLian, 116620 - China \\
-              \email{}           %  \\
+              \email{wfsun@dlut.edu.cn}           %  \\
 %             \emph{Present address:} of F. Author  %  if needed
            \and
            J. Sun \at
@@ -84,8 +84,8 @@
 
 \maketitle
 \begin{abstract}
-Assuming that misclassification costs among different categories are equal, traditional graph based semi-supervised classification algorithms pursuit high classification accuracy. However, in many practical problems, misclassifying one category as another always leads to higher (or lower) cost than that in turn, such that, higher classification accuracy generally not means lower cost, which is more important in these problems. Cost-sensitive classification methods enable classifiers to pay more attention to data samples with higher cost, and then attempt to get lower cost by ensuring higher classification accuracy of the category with higher cost. In this paper, we bring cost sensitivity to local and global consistency (LGC) classifiers, and propose the CS-LGC (cost-sensitive LGC) methods, which can make better use of semi-supervised classification algorithms, and ensure high classification accuracy on the basis of reducing overall cost. At the same time, since the improved algorithm may bring some problems due to unbalanced data, we introduce a SMOTE algorithm for further optimization. Experimental results of bank loan and diagnosis problems verify the effectiveness of CS-LGC.
-\keywords{Graph based semi-supervised classification \and Cost-sensitive \and Rescale \and SMOTE}
+Assuming that misclassification costs among different categories are equal, traditional graph based semi-supervised classification algorithms pursuit high classification accuracy. However, in many practical problems, misclassifying one category as another always leads to higher (or lower) cost than that in turn, such that, higher classification accuracy generally not means lower cost, which is more important in these problems. Cost-sensitive classification methods enable classifiers to pay more attention to data samples with higher cost, and then attempt to get lower cost by ensuring higher classification accuracy of the category with higher cost. In this paper, we bring cost sensitivity to local and global consistency (LGC) classifiers, and propose the CS-LGC (cost-sensitive LGC) methods, which can make better use of semi-supervised classification algorithms, and ensure high classification accuracy on the basis of reducing overall cost. At the same time, since the improved algorithm may bring some problems due to unbalanced data, we introduce the SMOTE algorithm for further optimization. Experimental results of bank loan and diagnosis problems verify the effectiveness of CS-LGC.
+\keywords{Graph based semi-supervised classification \and Cost-sensitive \and CS-LGC and CSS-LGC \and SMOTE}
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
 \end{abstract}
@@ -113,9 +113,12 @@ Cost-sensitive learning method is an effective way to solve the problem of the i
 
 AdaBoost algorithm was proposed in\cite{jin2010multi} which offers the possibility for multiple weak classifiers aggregating into a global strong classifier. AdaCost method\cite{fan1999adacost} was proposed as a cost-sensitive classification algorithm based on AdaBoost. AdaCost is based on the Reweight at the same time, and introduces cost performance function for classifiers by heuristic strategy. AdaCost forces classifier to pay more attention to costly samples, hence it shows some advantages in cost-sensitive classification problems. However, cost performance function introduced in the theoretical analysis have not been verified and damages the most important characteristics of Boosting,  which makes the algorithm not converge to the Bayesian decision. Qin etc. in \cite{qin2008cost} did try to combine semi-supervised classification algorithms with cost-sensitive learning methods, and improved classical EM algorithm by introducing misclassification cost in the process of probability assessment.
 
-In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC methodâ€”CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
+In this paper, we introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm and propose a cost-sensitive LGC method (CS-LGC)
+
+%In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC method, CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
 \begin{enumerate}[(1)]
-  \item Introduce cost-sensitive nature for LGC algorithm, and propose cost-sensitive LGC algorithm;
+%  \item Introduce cost-sensitive nature for LGC algorithm, and propose cost-sensitive LGC algorithm;
+  \item Advantages of many unlabeled data are fully taken
   \item Propose CSS-LGC algorithm. We take the impact caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithmâ€”CSS-LGC algorithm.
   \item Analyze the experimental threshold, and verify the rationality of the threshold. 
   \item Demonstrate the effectiveness of the algorithm by experiment on German Credit Data Set and Breast Cancer Data Set.

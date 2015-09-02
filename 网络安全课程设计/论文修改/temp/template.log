@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  17 AUG 2015 23:03
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  2 SEP 2015 23:57
 entering extended mode
 **template
 (E:\Project-Wuhu\ÁΩëÁªúÂÆâÂÖ®ËØæÁ®ãËÆæËÆ°\ËÆ∫Êñá‰øÆÊîπ\temp\template.tex
@@ -291,28 +291,16 @@ Missing character: There is no ¨ in font cmr9!
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ù in font cmr9!
-
-Underfull \vbox (badness 7869) has occurred while \output is active []
-
- [3]
-Missing character: There is no √ in font cmr9!
-Missing character: There is no ¢ in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ç in font cmr9!
-Missing character: There is no ¨ in font cmr9!
-Missing character: There is no ‚ in font cmr9!
-Missing character: There is no Ä in font cmr9!
-Missing character: There is no ù in font cmr9!
-
-[4]
+ [3] [4]
 Missing character: There is no √ in font cmr9!
 Missing character: There is no ≠ in font cmr9!
 Missing character: There is no ¬ in font cmr9!
 Missing character: There is no ± in font cmr9!
 Missing character: There is no ¬ in font cmr9!
 Missing character: There is no ° in font cmr9!
- [5] [6] [7]
-Overfull \hbox (13.14572pt too wide) in paragraph at lines 295--296
+
+[5] [6] [7]
+Overfull \hbox (13.14572pt too wide) in paragraph at lines 298--299
 \OT1/cmr/m/n/9.5 The in-creased time com-plex-i-ty by in-tro-duc-ing cost sen-s
 i-tive fea-ture to semi-supervised
  []
@@ -321,23 +309,23 @@ Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
 Missing character: There is no ô in font cmr9!
 [8] [9]
-Overfull \hbox (25.67128pt too wide) in paragraph at lines 370--386
+Overfull \hbox (25.67128pt too wide) in paragraph at lines 373--389
  [][] 
  []
 
 [10] <plot/fig1.pdf, id=52, 578.16pt x 397.485pt>
 File: plot/fig1.pdf Graphic file (type pdf)
  <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 395.
+Package pdftex.def Info: plot/fig1.pdf used on input line 398.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
 <plot/fig2.pdf, id=53, 578.16pt x 397.485pt>
 File: plot/fig2.pdf Graphic file (type pdf)
  <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 399.
+Package pdftex.def Info: plot/fig2.pdf used on input line 402.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 394--402
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 397--405
 [][] [] 
  []
 
@@ -346,7 +334,7 @@ Overfull \hbox (1.88892pt too wide) in paragraph at lines 394--402
 <plot/fig3.pdf, id=61, 578.16pt x 397.485pt>
 File: plot/fig3.pdf Graphic file (type pdf)
  <use plot/fig3.pdf>
-Package pdftex.def Info: plot/fig3.pdf used on input line 413.
+Package pdftex.def Info: plot/fig3.pdf used on input line 416.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 Underfull \vbox (badness 1527) has occurred while \output is active []
@@ -356,7 +344,7 @@ Underfull \vbox (badness 1527) has occurred while \output is active []
 <plot/fig4.pdf, id=67, 578.16pt x 397.485pt>
 File: plot/fig4.pdf Graphic file (type pdf)
  <use plot/fig4.pdf>
-Package pdftex.def Info: plot/fig4.pdf used on input line 424.
+Package pdftex.def Info: plot/fig4.pdf used on input line 427.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 Missing character: There is no ‚ in font cmr9!
 Missing character: There is no Ä in font cmr9!
@@ -365,16 +353,16 @@ Missing character: There is no ô in font cmr9!
 <plot/fig5.pdf, id=68, 578.16pt x 397.485pt>
 File: plot/fig5.pdf Graphic file (type pdf)
  <use plot/fig5.pdf>
-Package pdftex.def Info: plot/fig5.pdf used on input line 432.
+Package pdftex.def Info: plot/fig5.pdf used on input line 435.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
 <plot/fig6.pdf, id=69, 578.16pt x 397.485pt>
 File: plot/fig6.pdf Graphic file (type pdf)
  <use plot/fig6.pdf>
-Package pdftex.def Info: plot/fig6.pdf used on input line 436.
+Package pdftex.def Info: plot/fig6.pdf used on input line 439.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 431--439
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 434--442
 [][] [] 
  []
 
@@ -382,22 +370,22 @@ Overfull \hbox (1.88892pt too wide) in paragraph at lines 431--439
 <plot/fig7.pdf, id=76, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 453.
+Package pdftex.def Info: plot/fig7.pdf used on input line 456.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
 <plot/fig8.pdf, id=77, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 457.
+Package pdftex.def Info: plot/fig8.pdf used on input line 460.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 1194) in paragraph at lines 458--458
+Underfull \hbox (badness 1194) in paragraph at lines 461--461
 []\OT1/cmr/bx/n/8 Fig. 8|\OT1/cmr/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-ra-
 cy
  []
 
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 452--460
+Overfull \hbox (1.88892pt too wide) in paragraph at lines 455--463
 [][] [] 
  []
 
@@ -409,7 +397,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <plot/fig9.pdf, id=85, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 465.
+Package pdftex.def Info: plot/fig9.pdf used on input line 468.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
  [15 <E:/Project-Wuhu/ÁΩëÁªúÂÆâÂÖ®ËØæÁ®ãËÆæËÆ°/ËÆ∫Êñá‰øÆÊîπ/temp/plot/fig7.pdf>
  <E:/Project-Wuhu/ÁΩëÁªúÂÆâÂÖ®ËØæÁ®ãËÆæËÆ°/ËÆ∫Êñá‰øÆÊîπ/temp/plot/fig8.pdf> <E:
@@ -425,7 +413,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  3032 strings out of 495354
  40613 string characters out of 3183860
- 95754 words of memory out of 3000000
+ 96756 words of memory out of 3000000
  6159 multiletter control sequences out of 15000+200000
  14537 words of font info for 55 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -445,7 +433,7 @@ sfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:
 e1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (17 pages, 324051 bytes).
+Output written on template.pdf (17 pages, 323883 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
