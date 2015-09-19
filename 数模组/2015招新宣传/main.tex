@@ -1,18 +1,17 @@
-\documentclass[presentation]{beamer}
+\documentclass[xcolor={usenames,dvipsnames}]{beamer}
 \logo{\includegraphics[height=.75cm]{logo.jpg}}
-\usepackage{CJKutf8}
+\usepackage{ctex}
+\usepackage{beamerthemesplit} 
+\usepackage{fontawesome}
 \usetheme{Madrid}
 \usepackage{graphicx}
-
-	
+%\newfontfamily{\FA}{FontAwesome}
 \begin{document}
-\begin{CJK*}{UTF8}{gbsn}
-
 \setbeamertemplate{footline}{%
 	\leavevmode%
 	\hbox{%
 		\begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-			\usebeamerfont{section in head/foot}\insertsectionnavigationhorizontal{.45\textwidth}{}{}
+			\usebeamerfont{section in head/foot}{自助阅读}{}{}
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.22\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
 			\usebeamerfont{title in head/foot}\insertshorttitle
@@ -23,7 +22,7 @@
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
-
+%\newfontfamily{\FA}{FontAwesome Regular}
 \title[数模组(MCM)]{\textbf{2015创新实践中心数模组招新}} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author[C103]{教学楼C区103} % Your name
@@ -35,21 +34,21 @@
 SSDUT CIPPUS
 }
 \date{\today} % Date, can be changed to a custom date
-
 \section{自助阅读：}
 \section{请使用$\leftarrow$和$\to$键查看前后页}
+\linespread{1}
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
 
 \begin{frame}{\textbf{数模是什么？}}
 \begin{exampleblock}{}
-数学建模就是通过计算得到的结果来解释\textbf{实际问题}，并接受实际的检验，来建立\textbf{数学模型}的全过程。当需要从\textbf{定量}的角度分析和研究一个实际问题时，人们就要在深入调查研究、了解对象信息、作出简化假设、分析内在规律等工作的基础上，用数学的符号和语言作表述来建立数学模型。
+数学建模就是通过计算得到的结果来解释\textbf{实际问题}，并接受实际的检验，来建立\textbf{数学模型}的全过程。当需要从\textbf{定量}的角度分析和研究一个实际问题时，人们就要在深入调查研究、了解对象信息、作出简化假设、分析内在规律等工作的基础上，用数学的符号和语言作表述来建立数学模型。 
 \end{exampleblock}
 \vspace{.5cm}
 \begin{alertblock}{}
 可以说，即使是完成数学试卷上一道小小的应用题，也是这样建立数学模型并求解的过程。
-\end{alertblock}
+\end{alertblock} 
 \end{frame}
 
 \begin{frame}{\textbf{举个简单的例子}}
@@ -165,7 +164,7 @@ SSDUT CIPPUS
 	\end{alertblock}
 	
 	\begin{block}{\textbf{微信报名}}
-		微信关注cippus\_ssdut，回复“姓名+学号+数模组+生日”报名
+		微信关注cippus\_ssdut，回复“姓名+学号+数模组+生日”报名 %\FA{}
 	\end{block}
 	
 \end{frame}
@@ -324,11 +323,11 @@ C语言和工科数学分析，面试可能涉及以下问题：
  \item \url{https://en.wikibooks.org/wiki/Calculus}
  \item \href{http://open.163.com/special/sp/singlevariablecalculus.html}{麻省理工学院公开课：单变量微积分}
  \item \href{https://www.coursera.org/learn/calculus1}{微积分基础：俄亥俄州立大学} 
- 
+
  \end{itemize}
 \end{description}
 \end{frame}
-\end{CJK*}
+
 
 
 
