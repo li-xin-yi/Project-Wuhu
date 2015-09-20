@@ -11,21 +11,22 @@
 	\leavevmode%
 	\hbox{%
 		\begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-			\usebeamerfont{section in head/foot}{自助阅读}{}{}
+			\usebeamerfont{section in head/foot}{自助阅读：请使用\faArrowCircleLeft 和\faArrowCircleRight 键查看前后页}{}{}
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.22\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
 			\usebeamerfont{title in head/foot}\insertshorttitle
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.3333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-			\usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+			\usebeamerfont{date in head/foot}\faCalendar{ } \insertshortdate{}\hspace*{2em}
 			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
 %\newfontfamily{\FA}{FontAwesome Regular}
-\title[数模组(MCM)]{\textbf{2015创新实践中心数模组招新}} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[数模组(MCM)]{2015创新实践中心数模组招新} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author[C103]{教学楼C区103} % Your name
+\author[C103]{\faWeibo \href{http://weibo.com/301yangzhou}{ \faAt{身经百战的扬州人形}}\\
+	\faGithub  \url{ https://github.com/Lixinyi-DUT/Project-Wuhu}} % Your name
 \institute[DLUT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 大连理工大学软件学院 创新实践中心 \\ % Your institution for the title page
@@ -34,16 +35,15 @@
 SSDUT CIPPUS
 }
 \date{\today} % Date, can be changed to a custom date
-\section{自助阅读：}
-\section{请使用$\leftarrow$和$\to$键查看前后页}
 \linespread{1}
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
 
-\begin{frame}{\textbf{数模是什么？}}
+\section{数模是什么？}
+\begin{frame}{数模是什么？}
 \begin{exampleblock}{}
-数学建模就是通过计算得到的结果来解释\textbf{实际问题}，并接受实际的检验，来建立\textbf{数学模型}的全过程。当需要从\textbf{定量}的角度分析和研究一个实际问题时，人们就要在深入调查研究、了解对象信息、作出简化假设、分析内在规律等工作的基础上，用数学的符号和语言作表述来建立数学模型。 
+数学建模就是通过计算得到的结果来解释实际问题，并接受实际的检验，来建立数学模型的全过程。当需要从定量的角度分析和研究一个实际问题时，人们就要在深入调查研究、了解对象信息、作出简化假设、分析内在规律等工作的基础上，用数学的符号和语言作表述来建立数学模型。 
 \end{exampleblock}
 \vspace{.5cm}
 \begin{alertblock}{}
@@ -51,7 +51,7 @@ SSDUT CIPPUS
 \end{alertblock} 
 \end{frame}
 
-\begin{frame}{\textbf{举个简单的例子}}
+\begin{frame}{举个简单的例子}
 \begin{exampleblock}{来解决一个简单的应用题}
 一个细菌培养过程在初始时刻的细菌数量为$P_0$，在$t=1h$时，测得细菌数量为$1.5P_0$。如果在$t$时刻的增长与此刻细菌数量$P(t)$成正比，求细菌数量增加至原来的3倍所需要的时间。
 \end{exampleblock}
@@ -96,7 +96,7 @@ SSDUT CIPPUS
 \end{columns}
 \end{frame}
 
-\begin{frame}{\textbf{数模能做什么？}}
+\begin{frame}{数模能做什么？}
 	\framesubtitle{在获得数据等信息后，通过数学建模，解决一些有趣的实际问题}
 	\begin{itemize}
 		\item 根据用户的浏览购买记录智能推荐商品
@@ -114,7 +114,7 @@ SSDUT CIPPUS
 	
 \end{frame}
 
-\begin{frame}{\textbf{做数模需要学习什么}}\label{content}
+\begin{frame}{做数模需要学习什么}\label{content}
 	\begin{itemize}
 	\item 模型/算法思想 
 	
@@ -146,30 +146,32 @@ SSDUT CIPPUS
 	
 \end{frame}
 
-\begin{frame}{\textbf{报名方式}}\label{signin}
-	\begin{exampleblock}{\textbf{这里没人？}}
+\section{数模组}
+\subsection{报名}
+\begin{frame}{报名方式}\label{signin}
+	\begin{exampleblock}{这里没人？}
 		如果学长学姐不在C103，他们可能是在宣讲会现场，或者忙其他事情
 	\end{exampleblock}
 	
-	\begin{alertblock}{\textbf{那怎么报名？}}
+	\begin{alertblock}{那怎么报名？}
 		\begin{itemize}
-			\item 自取桌上的\textbf{创新中心宣传册}
-			\item 撕下最后一页\textbf{报名表}， \textcolor{red}{*然后宣传册的其他部分可以带回去}
-			\item 仔细填写
-			\item 写完放在桌上就好了
-			\item 坐等短信\textbf{面试通知}
+			\item 自取桌上的创新中心宣传册 \faClone
+			\item 撕下最后一页报名表\faTable ， \textcolor{red}{*然后宣传册的其他部分可以带回去}
+			\item 仔细填写\faPencil
+			\item 写完放在桌上就好了\faPaperclip
+			\item 坐等短信面试通知\faPaperPlaneO
 		\end{itemize}
 		\textcolor{red}{*如果来不及填写也可以带回去填完再抽空把报名表页交到C103} \\
-		也可以在\textcolor{blue}{\hyperlink{qun}{数模组2015}}群里和我们谈笑风生！
+		也可以在\textcolor{blue}{\hyperlink{qun}{\faQq 数模组~2015}}群里和我们谈笑风生！
 	\end{alertblock}
 	
-	\begin{block}{\textbf{微信报名}}
-		微信关注cippus\_ssdut，回复“姓名+学号+数模组+生日”报名 %\FA{}
+	\begin{block}{微信报名}
+		微信关注\faWechat{ } cippus\_ssdut，回复“姓名+学号+数模组+生日”报名 %\FA{}
 	\end{block}
 	
 \end{frame}
 
-\begin{frame}{\textbf{C103提供免费高速Wi-Fi}}
+\begin{frame}{C103提供免费高速Wi-Fi\faWifi}
 \begin{columns}
 \column{0.6\textwidth}
 {\LARGE 
@@ -181,29 +183,31 @@ SSDUT CIPPUS
 \end{columns}
 \end{frame}
 
-\begin{frame}{\textbf{欢迎新生加入2015数模新生群}}
-\framesubtitle{群号：178722688}
+\begin{frame}{欢迎新生加入2015数模新生群}
+\framesubtitle{\faQq 群号：178722688}
 	\begin{figure}
+		
 		\includegraphics[width=.45\textwidth]{qq.jpg}
 		\label{qun}
 	\end{figure}
 
 \end{frame}
 
-\begin{frame}{\textbf{常见问题解答}}
-\begin{alertblock}{\textbf{怎样加入数模组？}}
+\section{F\&Q}
+\begin{frame}{\faQuestionCircle 常见问题解答}
+\begin{alertblock}{怎样加入数模组？}
 报名方式\textcolor{red}{\hyperlink{signin}{点这里}}，成功报名后通过后续的面试/笔试的同学可以正式加入数模组大家庭。
 \end{alertblock}
 
-\begin{block}{\textbf{面试/笔试难吗？}}
-我们不会刻意为难任何一位有志加入数模组的同学！但是我们当然希望大家能够不断提升自我，并且希望确保成员们保持对数模的热情，所以面试会问一些较为基础的编程知识和数学知识，以及一系列职业规划问题。如果对这些基础知识有所准备（也就是我们通常所说的\textcolor{blue}{预习}），对自己的人生规划有所思考，回答这些问题一定是轻而易举的。
+\begin{block}{面试/笔试难吗？}
+我们不会刻意为难任何一位有志加入数模组的同学！但是我们当然希望大家能够不断提升自我，并且希望确保成员们保持对数模的热情，所以面试会问一些较为基础的编程知识和数学知识，以及一系列职业规划问题。如果对这些基础知识有所准备（也就是我们通常所说的\textcolor{blue}{\hyperlink{sec:preview}{预习}}），对自己的人生规划有所思考，回答这些问题一定是轻而易举的。
 
 \end{block}
 
 \end{frame}
 
 \begin{frame}
-\begin{alertblock}{\textbf{需要预习哪些内容？}}
+\begin{alertblock}{需要预习哪些内容？}
 C语言和工科数学分析，面试可能涉及以下问题：
 \begin{itemize}
     \item C语言：了解变量类型，3种基本程序结构的理解，基本的程序逻辑
@@ -212,7 +216,7 @@ C语言和工科数学分析，面试可能涉及以下问题：
 预习这种事在保证质量的情况下，当然是多多益善的，有能力的同学大可突破这个范围要求，多学习对自身的帮助很大，我们也很喜欢学习态度认真的同学，即便不加入数模组。
 \end{alertblock}
 
-\begin{block}{\textbf{还没有加入数模组，能来C103参观/借书/找学长谈人生吗？}}
+\begin{block}{还没有加入数模组，能来C103参观/借书/找学长谈人生吗？}
 \textbf{没有问题，随时欢迎。}\\
 学长学姐十分乐意为大家服务，能够向同学们介绍数模组我们也很高兴，有问题欢迎咨询。借书请报出具体书目，如果是教材可以直接找学长学姐们借，如果是书架上的其他文献，请向在场的学长学姐咨询相关事宜并留下纸质的借阅记录。如果学长学姐不在场，除了按\textcolor{blue}{\hyperlink{signin}{报名方法}}的指导填写报名表以外，请不要随意动他们桌上的任何东西。
 
@@ -220,16 +224,16 @@ C语言和工科数学分析，面试可能涉及以下问题：
 \end{frame}
 
 \begin{frame}
-\begin{block}{\textbf{我高中的时候数学就很差，也能加入数模组？}}
+\begin{block}{我高中的时候数学就很差，也能加入数模组？}
 做这个幻灯片的学姐在高中时代的数学一直在班级里吊车尾，常年不及格，一见数学题就害怕。高中数学和数学有很大的差别，高中时期数学差也可能和自己的心理状态、学习方法、教师水平甚至教育体制有很大关系，不妨在大学时期更加深入了解一下自己对数学的真正感情是什么。着手学习数模是一个很好的机会，数模也可以很大的改变自己的数学观，给自己一个机会，或许做多了你会发现对数学就并没有那么讨厌和害怕。
 \end{block}
-\begin{alertblock}{\textbf{我是调剂来的，对编程没兴趣想转专业，也能加入数模组？}}
+\begin{alertblock}{我是调剂来的，对编程没兴趣想转专业，也能加入数模组？}
 当然可以。举个例子，数模组有一位09级的学姐，大一结束后转到了本部的数学专业，最后申请到了CMU的Master，但她一直是我们的一员，甚至曾从本部专程过来给新生讲例会。重要的是我们彼此对数模组的认同而不是身在何处。另外，一开始想转专业的同学，很多在一年的学习中对编程产生了兴趣，所以没有必要一开始就下非转专业不可的结论。
 \end{alertblock}
 \end{frame}
 
 \begin{frame}
-    \begin{exampleblock}{\textbf{与Oureda以及学生会、自强等组织社如何取舍？}}
+    \begin{exampleblock}{与Oureda以及学生会、自强等组织社如何取舍？}
     数模组并不排斥组员加入创新中心以外的任何其他组织，而且鼓励学生全面多元发展。我们支持组员在力所能及的情况下多参加其他组织及活动 ，但是毕竟每个人的精力有限，所以不鼓励逞强。比如挂名很多组织但在每个组织中的发展有限，最后疲惫不堪，这种情况我们也不希望看到。
     
     Oureda是朱明老师带领的一个十分优秀的实验室，目前发展蒸蒸日上，而且方向多元，经验丰富，设备充足，非常适合技术型人才的培养，更多细节见Oureda的宣传海报或者直接咨询朱明老师。而创新中心同样在发展中积累了得天独厚的经验和优势，从组织上来说，中心几乎是个纯学生组织，新生与前辈的交流更加顺畅且自由，更容易得到贴合入学新生视角的信息。当然以上叙述也是我主观的一家之言，仅供参考，对于迷茫的新生来说，多咨询这些组织相关和无关人员，以及亲自查看，自行判断，谨慎考虑。
@@ -239,7 +243,7 @@ C语言和工科数学分析，面试可能涉及以下问题：
 \end{frame}
 
 \begin{frame}
-\begin{alertblock}{\textbf{我也好喜欢ACM组，应该选哪个？}}
+\begin{alertblock}{我也好喜欢ACM组，应该选哪个？}
 因为照顾到每个人的精力有限，原则上不允许同时报这两个组。
 
 这个问题可以首先试着了解一个ACM和MCM这两种有很大和区别的比赛，ACM对于算法的掌握、运用和实现有很高的要求，对于编程的帮助很大；而数模（MCM) 更侧重对模型和算法的创新和应用，有助于计算机科学的研究。当然它们的益处很大程度也是互通的，除此之外，ACM对于编程的训练要求更高一些，压力也相对更大。
@@ -247,13 +251,13 @@ C语言和工科数学分析，面试可能涉及以下问题：
 在中心发展的早期和中期，这两个组从规模上来讲都是十分重要的大组，也是最频繁刷奖的两个组。这两个组的关系并不敌对，而是友好地合作互利共赢，ACM组的成员经常参加各类数模比赛，数模组成员也很热衷于参加ACM比赛，因为各组学习的内容对于这两种比赛都很实用。
 \end{alertblock}
 
-\begin{block}{\textbf{参加数模组会影响课内成绩么？}}
+\begin{block}{参加数模组会影响课内成绩么？}
 当然会，至于是正面的影响还是负面的影响取决于你的态度。优秀的学长学姐的辅导交流也是宝贵的资源，这里的学长学姐几乎都是拿过学习类奖学金的，每届都至少有一两个成绩是全专业前三的，学习氛围自然不错。数模固然重要而且有趣，但为此放弃学业还是不鼓励的。
 \end{block}
 \end{frame}
 
 \begin{frame}
-\begin{block}{\textbf{进入数模组是一种怎样的体验？（数模组的日常？）}}
+\begin{block}{进入数模组是一种怎样的体验？（数模组的日常？）}
 \begin{itemize}
    \item 学长学姐每周组织一次例会，教同学们一些\hyperlink{content}{数模知识和技巧}（有时也有英语学习之类的彩蛋）
    \item 每个新生可以得到一位指定的学长学姐负责，带领新生完成大一一年的过渡
@@ -266,16 +270,18 @@ C语言和工科数学分析，面试可能涉及以下问题：
 \end{block}
 \end{frame}
 
-\begin{frame}{\textbf{我们新生应该怎样预习？}}
+\section{预习指南}\label{sec:preview}
+\subsection{C语言}
+\begin{frame}{我们新生应该怎样预习？}
   \framesubtitle{C语言}
   \begin{block}{}
   多跟着书上敲代码很重要，同时多看书理解每行代码的意义，关注结构，养成良好的coding习惯，不要浮躁。
   \end{block}
   \begin{description}
-    \item[教材] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2010028166}{《C程序设计快速进阶大学教程》}
-    \item[参考书籍\footnote{为避免不必要的困扰，请\textbf{不要}从谭浩强的书入手}] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2007039426}{《C语言教程:programming in C》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2003046536}{《C程序设计语言》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2008007312}{《C和指针》} 
-    \item[推荐顺序] 遵从教材第5-13章的顺序 
-    \item[编译器] 
+    \item[教材\faGraduationCap] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2010028166}{《C程序设计快速进阶大学教程》}
+    \item[参考书籍\footnote{为避免不必要的困扰，请\textbf{不要}从谭浩强的书入手}\faBook] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2007039426}{《C语言教程:programming in C》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2003046536}{《C程序设计语言》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2008007312}{《C和指针》} 
+    \item[推荐顺序\faSortNumericAsc] 遵从教材第5-13章的顺序 
+    \item[编译器\faEdit] 
     \begin{itemize}
      \item Visual C++/Visual Studio: VC是上机用的编译器，语法和VS相同，但win7以上可能安装会遇到问题，所有为了模拟上机可以安装VS，VS是十分强大的IDE
      \item CodeBlocks\textcolor{red}{+MinGW}:ACM钦定的优秀的轻量编译器
@@ -284,43 +290,44 @@ C语言和工科数学分析，面试可能涉及以下问题：
   \end{description}
 \end{frame}
 
-\begin{frame}{\textbf{我们新生应该怎样预习？}}
+\begin{frame}{我们新生应该怎样预习？}
 \framesubtitle{C语言}
 \begin{description}
-    \item[debug建议]
+    \item[debug建议\faCommentingO]
     \begin{itemize}
     \item 尽量使用英文路径，编译完成后双击错误信息可直接跳转到有问题的代码
     \item 复制错误信息，用百度或者谷歌搜索
     \end{itemize}
-    \item[在线资源] \begin{itemize}
-    \item \url{http://codepad.org/}、\url{http://tool.runoob.com/index.php/Home/Index/compile/language/c}：在线编译器，可在任意终端的浏览器使用，在手机上也能编程，分享代码便捷
-    \item \url{http://www.runoob.com/cprogramming/c-tutorial.html}:C语言在线教程
+    \item[在线资源\faExternalLink] \begin{itemize}
+    \item \faLink\url{http://codepad.org/}、\faLink\url{http://tool.runoob.com/index.php/Home/Index/compile/language/c}：在线编译器，可在任意终端的浏览器使用，在手机上也能编程，分享代码便捷
+    \item \faLink\url{http://www.runoob.com/cprogramming/c-tutorial.html}:C语言在线教程
     \item \href{https://www.coursera.org/learn/jisuanji-biancheng}{《计算导论与C语言基础》}和\href{https://www.coursera.org/learn/c-chengxu-sheji}{《C程序设计进阶》}: Coursera平台上的在线课程，由北京大学提供，有配套的作业、练习和讨论平台\footnote{Android和iOS都有Coursera的客户端}
-    \item \url{https://en.wikibooks.org/wiki/C_Programming}
+    \item \faLink\url{https://en.wikibooks.org/wiki/C_Programming}
     \end{itemize}
 \end{description}
 \end{frame}
 
-\begin{frame}{\textbf{我们新生应该怎样预习？}}
+\subsection{工数}
+\begin{frame}{我们新生应该怎样预习？}
 \framesubtitle{工科数学分析}
 \begin{block}{}
 工数和本部其他专业学的微积分、高等数学两门课程同气连枝，在某些章节略有不同，上学期只涉及一元函数的极限、微分、积分等内容，大概在期中阶段学习可能会遇到瓶颈，吃透习题有助于加深理解突破障碍，习题以近年教辅为主，吉米多维奇的数分如果实在想做挑些精选的做，不用全做。
 \end{block}
 \begin{description}
-    \item[教材] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2008000575}{《工科数学分析》}
-    \item[官方教辅] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2010052839}{《工科数学分析同步辅导》}、历年期末考题和模拟题\textcolor{red}{（大红本）}
-    \item[参考书籍] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2007023436}{《高等数学（上册）》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2009018280}{《微积分（上册）》}、\href{http://www.cengagebrain.com/content/stewart97815_0538497815_01.01_toc.pdf}{\textit{Calculus}}\footnote{这本书在市面上也有\href{http://item.jd.com/10075433.html}{中文版}，但本书作为经典教材，文字和内容都浅显易懂，适合基础薄弱者参考，也适合作为原版教材的入门读物。}
-    \item[推荐顺序] 根据教材顺序预习1-4.3
+    \item[教材\faGraduationCap] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2008000575}{《工科数学分析》}
+    \item[官方教辅\faPencil] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2010052839}{《工科数学分析同步辅导》}、历年期末考题和模拟题\textcolor{red}{（大红本）}
+    \item[参考书籍\faBook] \href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2007023436}{《高等数学（上册）》}、\href{http://opac.lib.dlut.edu.cn/opac/item.php?marc_no=2009018280}{《微积分（上册）》}、\href{http://www.cengagebrain.com/content/stewart97815_0538497815_01.01_toc.pdf}{\textit{Calculus}}\footnote{这本书在市面上也有\href{http://item.jd.com/10075433.html}{中文版}，但本书作为经典教材，文字和内容都浅显易懂，适合基础薄弱者参考，也适合作为原版教材的入门读物。}
+    \item[推荐顺序\faSortNumericAsc] 根据教材顺序预习1-4.3
     
 \end{description}
 \end{frame}
 
-\begin{frame}{\textbf{我们新生应该怎样预习？}}
+\begin{frame}{我们新生应该怎样预习？}
 \framesubtitle{工科数学分析}
 \begin{description}
- \item[工具] \href{http://www.wolframalpha.com/}{Wolfram Alpha}\footnote{Android、iOS、WP上均有客户端，可以随时随地用来解题}： 强大的数学搜索引擎，可以通过搜索直接得到题目的答案和题解，也能用来制作简易的绘图，搜索概念、定义和数据。
- \item[在线资源] \begin{itemize}
- \item \url{https://en.wikibooks.org/wiki/Calculus}
+ \item[工具\faWrench] \href{http://www.wolframalpha.com/}{Wolfram Alpha}\footnote{\href{https://play.google.com/store/apps/details?id=com.wolfram.android.alpha}{Android}、iOS、WP上均有客户端，可以随时随地用来解题}： 强大的数学搜索引擎，可以通过搜索直接得到题目的答案和题解，也能用来制作简易的绘图，搜索概念、定义和数据。
+ \item[在线资源\faExternalLink] \begin{itemize}
+ \item \faLink\url{https://en.wikibooks.org/wiki/Calculus}
  \item \href{http://open.163.com/special/sp/singlevariablecalculus.html}{麻省理工学院公开课：单变量微积分}
  \item \href{https://www.coursera.org/learn/calculus1}{微积分基础：俄亥俄州立大学} 
 

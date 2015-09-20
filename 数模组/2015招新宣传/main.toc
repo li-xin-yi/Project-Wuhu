@@ -1,3 +1,8 @@
-\beamer@endinputifotherversion {3.14pt}
-\beamer@sectionintoc {1}{自助阅读：}{1}{0}{1}
-\beamer@sectionintoc {2}{请使用$\leftarrow $和$\to $键查看前后页}{1}{0}{2}
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{数模是什么？}{2}{0}{1}
+\beamer@sectionintoc {2}{数模组}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{报名}{6}{0}{2}
+\beamer@sectionintoc {3}{F\&Q}{9}{0}{3}
+\beamer@sectionintoc {4}{预习指南}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{C语言}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{工数}{17}{0}{4}
