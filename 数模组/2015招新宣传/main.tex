@@ -1,12 +1,12 @@
-\documentclass[xcolor={usenames,dvipsnames}]{beamer}
+%\documentclass[xcolor={usenames,dvipsnames}]{beamer}
+\documentclass{beamer}
 \logo{\includegraphics[height=.75cm]{logo.jpg}}
 \usepackage{ctex}
 \usepackage{beamerthemesplit} 
 \usepackage{fontawesome}
-\usetheme{Madrid}
 \usepackage{graphicx}
-%\newfontfamily{\FA}{FontAwesome}
-\begin{document}
+\usepackage[framemethod=tikz]{mdframed}
+\usetheme{Madrid}
 \setbeamertemplate{footline}{%
 	\leavevmode%
 	\hbox{%
@@ -22,23 +22,36 @@
 		\end{beamercolorbox}}%
 		\vskip0pt%
 	}
+
 %\newfontfamily{\FA}{FontAwesome Regular}
 \title[数模组(MCM)]{2015创新实践中心数模组招新} % The short title appears at the bottom of every slide, the full title is only on the title page
-
-\author[C103]{\faWeibo \href{http://weibo.com/301yangzhou}{ \faAt{身经百战的扬州人形}}\\
-	\faGithub  \url{ https://github.com/Lixinyi-DUT/Project-Wuhu}} % Your name
+\subtitle{选择优秀,选择数模组。}
+\author[C103]{\faWeibo \href{http://weibo.com/301yangzhou}{ \faAt{身经百战的扬州人形}}\\} % Your name
 \institute[DLUT] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-大连理工大学软件学院 创新实践中心 \\ % Your institution for the title page
+\faInstitution 大连理工大学软件学院 \faMapMarker 教学楼C区103 \\ % Your institution for the title page
 %\medskip\textbf{}
-%\textit{john@smith.com} % Your email address
-SSDUT CIPPUS
+\faEnvelope{ } \href{mailto:cippusmcm@163.com}{\textit{cippusmcm@163.com}}
+\faRenren{} \href{http://www.renren.com/344749467/}{数模组} % Your email address
 }
+\newmdenv[tikzsetting={draw=black,fill=white,fill opacity=0.7, line width=3pt},
+backgroundcolor=none,leftmargin=0,rightmargin=40,innertopmargin=3pt]
+{titleBox}
 \date{\today} % Date, can be changed to a custom date
+\begin{document}
 \linespread{1}
-\begin{frame}
-\titlepage % Print the title page as the first slide
-\end{frame}
+{
+	\usebackgroundtemplate{\includegraphics[width=1.4\paperwidth]{background.jpg}}
+	\begin{frame}[plain]
+		  \vspace{13em}
+		  			\begin{titleBox}
+		  				{\centering{\LARGE \inserttitle\\ {{\large \insertsubtitle}}}\\
+		  					
+		  				}
+		  				\insertinstitute \faCalendarCheckO{ }\insertdate
+		  			\end{titleBox}
+	\end{frame}
+}
 
 \section{数模是什么？}
 \begin{frame}{数模是什么？}
@@ -335,7 +348,53 @@ C语言和工科数学分析，面试可能涉及以下问题：
 \end{description}
 \end{frame}
 
+\section{后记}
+\begin{frame}{后记}
+	\begin{alertblock}{为什么要做这个？}
+		统一解答新生对于数模组的常见疑问，而且这些疑问每届新生问的都不少。希望这里的介绍和解答能对你有所帮助。
+	\end{alertblock}
+	\begin{block}{我感觉你们吹的好浮夸，我还是想安安静静自己写代码去。}
+		一派胡言。我们不黑不吹，坚持理性客观强硬，前面说的句句属实，数据方面若有问题欢迎查证。
+		
+		以上建议和参考资料确为一家之言仅供参考，接到消息本身也需要自己判断，学长学姐的话也需要按照自己的实际情况选择性地接受。
+		
+		数模组甚至整个创新实践中心都是个几乎全由学生管理的学生组织，最早也是对知识和技术的追求将软院这些学生聚集起来，“独学而无友，则孤陋而寡闻。”通过交流和督促，学习的效率会更高，而闭门造车遇到难以突破的瓶颈的可能性更大。数模组是个非盈利组织，我们十几年来没有一分钱个人财产，而加入创新中心本身对于奖学金或其他评比没有任何帮助，我们也不是传销组织，能够坚持下来的原因仅仅是兴趣。
+	\end{block}
+\end{frame}
 
+\begin{frame}{后记}
+\begin{alertblock}{为什么选择数模组就是选择优秀？}
+	没有因果关系，选择数模组是成为优秀学生的既不充分也不必要条件。但是统计意义上的相关性还是存在的，因为数模组的资源/氛围的关系可以督促你在各方面更好的发展，正如进了重点中学也不一定保证每个人都能上大学，但并不代表重点中学没有意义。
+	
+	对于那些因为面试/笔试/考核表现不佳而与数模组擦肩而过的学生，我们依旧欢迎你们来旁听我们的例会，与我们交流。只要保持认真的求知态度，不断完善自己，无论身在何处，都是优秀的学生。
+	
+	对于进入数模组的同学，也需要时刻不忘提醒自己学无止境，充分利用资源实现效率的最大化。
+\end{alertblock}
 
+\begin{block}{除了上面的问题，我还有其他疑问怎么办？}
+	可以在\hyperlink{qun}{数模组2015}群里随时提问，我们鼓励创造性的问题，也可以找这个幻灯片的作者的联系方式，和我联系，我尽力回答能力范围内的所有问题。
+\end{block}
+\end{frame}
 
+\begin{frame}{后记：这个幻灯片为什么那么难看？}
+	首先，这个幻灯片的作者是色盲，有些颜色她认不出来，其次她审美能力和技术水平确实不过关。
+	
+	\vspace{0.5cm}
+	最早是希望这个幻灯片在中心统一招新时放在公用电脑上供参观者自行翻阅的，现在因为收集问题周期太久变成了分发给同学们的宣传册。考虑到新生不允许到电脑，以及PowerPoint本身的兼容问题，这份幻灯片式的数模组新生手册被做成了pdf格式。
+	
+	\vspace{0.5cm}
+	出于速度考虑，我没有用PowerPoint，而是用了有现成模板的Beamer，这样省去了很多复杂的操作。另外，这份幻灯片也完全由\TeX 代码编写，为了向大家展示编程可以做到什么，不仅仅是一个HelloWorld的黑窗口，不要觉得编程是个很遥远，高不可及的事。加入数模组后，我们也会向大家传授\LaTeX 知识，教大家用代码快速写出漂亮规范的文档。这份幻灯片的源代码可以在作者的github中找到。
+\end{frame}
+
+\begin{frame}{关于作者}
+	\framesubtitle{联系方式}
+	有任何问题，欢迎随时咨询：
+	\begin{itemize}
+		\item[-] \faInstitution 大连理工大学软件学院 \faMapMarker 教学楼C区103
+		\item[-] \faWeibo{}  \faAt\href{http://weibo.com/301yangzhou}{身经百战的扬州人形}
+		\item[-] \faGithub{} \href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划} \textcolor{gray}{(文档源代码)}
+		\item[-] \faEnvelopeO{} z67798tianning@gmail.com
+		\item[-] \faQq 2583433490
+	\end{itemize}
+\end{frame}
 \end{document}

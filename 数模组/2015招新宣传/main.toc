@@ -6,3 +6,4 @@
 \beamer@sectionintoc {4}{预习指南}{15}{0}{4}
 \beamer@subsectionintoc {4}{1}{C语言}{15}{0}{4}
 \beamer@subsectionintoc {4}{2}{工数}{17}{0}{4}
+\beamer@sectionintoc {5}{后记}{19}{0}{5}
