@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.8.9)  12 SEP 2015 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  29 SEP 2015 21:09
 entering extended mode
 **template
-(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for loaded.
+(template.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 (D:\CTEX\MiKTeX\tex\latex\base\fix-cm.sty
-Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
+Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
 
 (D:\CTEX\MiKTeX\tex\latex\base\ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
@@ -78,14 +78,14 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \bibindent=\dimen113
 \@tempcntc=\count104
 ) (D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (D:\CTEX\MiKTeX\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 (D:\CTEX\MiKTeX\tex\latex\graphics\graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (D:\CTEX\MiKTeX\tex\latex\graphics\trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -93,16 +93,16 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 (D:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count105
 ))
@@ -110,11 +110,11 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen115
 )
 (D:\CTEX\MiKTeX\tex\latex\tools\enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
 \@enLab=\toks17
 )
 (D:\CTEX\MiKTeX\tex\latex\paralist\paralist.sty
-Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+Package: paralist 2013/06/09 v2.4 Extended list environments
 \pltopsep=\skip43
 \plpartopsep=\skip44
 \plitemsep=\skip45
@@ -214,14 +214,14 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
 (D:\CTEX\MiKTeX\tex\latex\base\ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks26
 \c@algorithm=\count123
@@ -235,208 +235,515 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \ALC@tlm=\skip50
 \algorithmicindent=\skip51
 )
-(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+(D:\CTEX\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
 
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box33
+
+(D:\CTEX\MiKTeX\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(D:\CTEX\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count128
+\c@pgf@countb=\count129
+\c@pgf@countc=\count130
+\c@pgf@countd=\count131
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count132
+\pgfsyssoftpath@bigbuffer@items=\count133
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(D:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen148
+\pgfmath@count=\count134
+\pgfmath@box=\box34
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.t
+ex))) (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count135
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen149
+\pgf@picmaxx=\dimen150
+\pgf@picminy=\dimen151
+\pgf@picmaxy=\dimen152
+\pgf@pathminx=\dimen153
+\pgf@pathmaxx=\dimen154
+\pgf@pathminy=\dimen155
+\pgf@pathmaxy=\dimen156
+\pgf@xx=\dimen157
+\pgf@xy=\dimen158
+\pgf@yx=\dimen159
+\pgf@yy=\dimen160
+\pgf@zx=\dimen161
+\pgf@zy=\dimen162
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen163
+\pgf@path@lasty=\dimen164
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen165
+\pgf@shorten@start@additional=\dimen166
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box35
+\pgf@hbox=\box36
+\pgf@layerbox@main=\box37
+\pgf@picture@serial@count=\count136
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen167
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen168
+\pgf@pt@y=\dimen169
+\pgf@pt@temp=\dimen170
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen171
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen172
+\pgf@sys@shading@range@num=\count137
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box38
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box39
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(D:\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen173
+\pgf@nodesepend=\dimen174
+)
+(D:\CTEX\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+(D:\CTEX\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(D:\CTEX\MiKTeX\tex\latex\pgf\math\pgfmath.sty
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex))
+(D:\CTEX\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex)
+\pgffor@iter=\dimen175
+\pgffor@skip=\dimen176
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count138
+\pgfplotmarksize=\dimen177
+)
+\tikz@lastx=\dimen178
+\tikz@lasty=\dimen179
+\tikz@lastxsaved=\dimen180
+\tikz@lastysaved=\dimen181
+\tikzleveldistance=\dimen182
+\tikzsiblingdistance=\dimen183
+\tikz@figbox=\box40
+\tikz@figbox@bg=\box41
+\tikz@tempbox=\box42
+\tikz@tempbox@bg=\box43
+\tikztreelevel=\count139
+\tikznumberofchildren=\count140
+\tikznumberofcurrentchild=\count141
+\tikz@fig@count=\count142
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count143
+\pgfmatrixcurrentcolumn=\count144
+\pgf@matrix@numberofcolumns=\count145
+)
+\tikz@expandcount=\count146
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
+.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (D:\CTEX\MiKTeX\tex\latex\psnfss\mathpazo.sty
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup5
+)
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.
+geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.cod
+e.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.
+code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+ (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen184
+))
+(template.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 56.
+ (D:\CTEX\MiKTeX\tex\latex\psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
-\scratchdimen=\dimen138
-\scratchbox=\box33
-\nofMPsegments=\count129
-\nofMParguments=\count130
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count131
-\MPscratchDim=\dimen139
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
-\everyMPtoPDFconversion=\toks28
-)
+\scratchcounter=\count147
+\scratchdimen=\dimen185
+\scratchbox=\box44
+\nofMPsegments=\count148
+\nofMParguments=\count149
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count150
+\MPscratchDim=\dimen186
+\MPnumerator=\count151
+\makeMPintoPDFobject=\count152
+\everyMPtoPDFconversion=\toks40
+) ABD: EveryShipout initializing macros
 SVJour3 warning: Missing \journalname
-LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 85.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <13> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
+LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 87.
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 87.
 
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <9.5> not available
-(Font)              size <9> substituted on input line 85.
+(D:\CTEX\MiKTeX\tex\latex\psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 87.
 
+
+(D:\CTEX\MiKTeX\tex\latex\psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 87.
+
+
+(D:\CTEX\MiKTeX\tex\latex\psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9.5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6.64996> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <4.75> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 85.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7.21994> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5.70006> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 87.
+
+
+(D:\CTEX\MiKTeX\tex\latex\psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Overfull \hbox (3.6401pt too wide) in paragraph at lines 89--90
+[]\OT1/ppl/m/n/9.5 Assuming that mis-clas-si-fi-ca-tion costs among dif-fer-ent
+ cat-e-gories are equal,
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
- [3] [4]
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
 
-[5] [6] [7]
-Overfull \hbox (13.14572pt too wide) in paragraph at lines 300--301
-\OT1/cmr/m/n/9.5 The in-creased time com-plex-i-ty by in-tro-duc-ing cost sen-s
-i-tive fea-ture to semi-supervised
+Overfull \hbox (28.56705pt too wide) in paragraph at lines 124--125
+\OT1/ppl/m/n/9.5 into ac-count for CS-LGC al-go-rithm, and we pro-pose op-ti-mi
+zed CS-LGC algorithmCSS-
  []
 
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
+
+Overfull \hbox (0.6947pt too wide) in paragraph at lines 126--127
+[]\OT1/ppl/m/n/9.5 Demonstrate the ef-fec-tive-ness of the al-go-rithm by ex-pe
+r-i-ment on Ger-man Credit
+ []
+
+
+Underfull \vbox (badness 1275) has occurred while \output is active []
+
+ [3]
+[4]
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+ [5]
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 195.
+ [6] (pic.tikz [7])
+Overfull \hbox (12.50366pt too wide) in paragraph at lines 303--304
+\OT1/ppl/m/n/9.5 The in-creased time com-plex-ity by in-tro-duc-ing cost sen-si
+-tive fea-ture to semi-supervised
+ []
+
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
 [8] [9]
-Overfull \hbox (25.67128pt too wide) in paragraph at lines 375--391
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 378--394
  [][] 
  []
 
-<plot/fig1.pdf, id=48, 578.16pt x 397.485pt>
+<plot/fig1.pdf, id=43, 578.16pt x 397.485pt>
 File: plot/fig1.pdf Graphic file (type pdf)
  <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 400.
+Package pdftex.def Info: plot/fig1.pdf used on input line 403.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig2.pdf, id=49, 578.16pt x 397.485pt>
+<plot/fig2.pdf, id=44, 578.16pt x 397.485pt>
 File: plot/fig2.pdf Graphic file (type pdf)
  <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 404.
+Package pdftex.def Info: plot/fig2.pdf used on input line 407.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 399--407
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 402--410
 [][] [] 
  []
 
-[10] [11 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig1.
-pdf> <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig2.pdf>
-] <plot/fig3.pdf, id=61, 578.16pt x 397.485pt>
+[10]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./plot/fig1.pdf> <./plot/fig2.pdf>] <plot/fig3.pdf, id=55, 578.16pt x 397
+.485pt>
 File: plot/fig3.pdf Graphic file (type pdf)
- <use plot/fig3.pdf>
-Package pdftex.def Info: plot/fig3.pdf used on input line 418.
+
+<use plot/fig3.pdf>
+Package pdftex.def Info: plot/fig3.pdf used on input line 421.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [12 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig3.pdf>
-]
-<plot/fig4.pdf, id=67, 578.16pt x 397.485pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./plot/fig3.pdf>] <plot/fig4.pdf, id=61, 578.16pt x 397.485pt>
 File: plot/fig4.pdf Graphic file (type pdf)
  <use plot/fig4.pdf>
-Package pdftex.def Info: plot/fig4.pdf used on input line 429.
+Package pdftex.def Info: plot/fig4.pdf used on input line 432.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
+Missing character: There is no � in font pplr7t!
 
-<plot/fig5.pdf, id=68, 578.16pt x 397.485pt>
+[13 <./plot/fig4.pdf>] <plot/fig5.pdf, id=68, 578.16pt x 397.485pt>
 File: plot/fig5.pdf Graphic file (type pdf)
- <use plot/fig5.pdf>
-Package pdftex.def Info: plot/fig5.pdf used on input line 437.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig6.pdf, id=69, 578.16pt x 397.485pt>
+<use plot/fig5.pdf>
+Package pdftex.def Info: plot/fig5.pdf used on input line 440.
+(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
+ <plot/fig6.pdf, id=69, 578.16pt x 397.485pt>
 File: plot/fig6.pdf Graphic file (type pdf)
- <use plot/fig6.pdf>
-Package pdftex.def Info: plot/fig6.pdf used on input line 441.
+
+<use plot/fig6.pdf>
+Package pdftex.def Info: plot/fig6.pdf used on input line 444.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 436--444
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 439--447
 [][] [] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig4.pdf>
-]
-<plot/fig7.pdf, id=76, 578.16pt x 397.485pt>
+<plot/fig7.pdf, id=70, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 458.
+Package pdftex.def Info: plot/fig7.pdf used on input line 461.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-<plot/fig8.pdf, id=77, 578.16pt x 397.485pt>
-File: plot/fig8.pdf Graphic file (type pdf)
- <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 462.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-Underfull \hbox (badness 1194) in paragraph at lines 463--463
-[]\OT1/cmr/bx/n/8 Fig. 8|\OT1/cmr/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-ra-
-cy
+Underfull \hbox (badness 2073) in paragraph at lines 462--462
+[]\OT1/ppl/b/n/8 Fig. 7|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
+ of
  []
 
+<plot/fig8.pdf, id=71, 578.16pt x 397.485pt>
+File: plot/fig8.pdf Graphic file (type pdf)
+ <use plot/fig8.pdf>
+Package pdftex.def Info: plot/fig8.pdf used on input line 465.
+(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.88892pt too wide) in paragraph at lines 457--465
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 460--468
 [][] [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig5.pdf>
- <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig6.pdf>]
-<plot/fig9.pdf, id=85, 578.16pt x 397.485pt>
+ [14 <./plot/fig5.pdf> <./plot/fig6.pdf>] <plot/fig9.pdf, id=79, 578.16pt x 397
+.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
- <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 470.
+
+<use plot/fig9.pdf>
+Package pdftex.def Info: plot/fig9.pdf used on input line 473.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [15 <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig7.pdf>
- <E:/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig8.pdf> <E:
-/Project-Wuhu/网络安全课程设计/论文修改/temp/plot/fig9.pdf>]
-(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.bbl
-[16]) [17]
-(E:\Project-Wuhu\网络安全课程设计\论文修改\temp\template.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
-
- ) 
+ [15 <./plot/fig7.pdf> <./plot/fig8.pdf> <./plot/fig9.pdf>]
+(template.bbl [16]) [17] (template.aux) ) 
 Here is how much of TeX's memory you used:
- 3032 strings out of 495354
- 40613 string characters out of 3183860
- 96757 words of memory out of 3000000
- 6159 multiletter control sequences out of 15000+200000
- 14537 words of font info for 55 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 27i,12n,20p,1806b,411s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><D:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cmextra/cmex9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr5.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:
-/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/CTEX/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy9.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><D:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on template.pdf (17 pages, 323154 bytes).
+ 14213 strings out of 493673
+ 279835 string characters out of 3149326
+ 318445 words of memory out of 3000000
+ 17238 multiletter control sequences out of 15000+200000
+ 42517 words of font info for 120 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 55i,12n,56p,1806b,680s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontna
+me/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/
+fonts/type1/public/mathpazo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpa
+zo/fplmri.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKT
+eX/fonts/type1/urw/palatino/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino
+/uplri8a.pfb>
+Output written on template.pdf (17 pages, 194353 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

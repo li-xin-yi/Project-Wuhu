@@ -39,6 +39,8 @@
 %\usepackage{hyperref}
 \usepackage{algorithm}
 \usepackage{algorithmic}
+\usepackage{tikz,mathpazo}
+\usetikzlibrary{shapes.geometric, arrows}
 %\usepackage{algpseudocode}
 % etc.
 %
@@ -296,6 +298,7 @@ In the process of above, when synthesizing artificially data by using SMOTE algo
 
 Through improving Rescale process of the CS-LGC algorithm, we solve the defection of classification errors, which may accumulate in the unbalanced dataset and enhance the stability of classifiers' performance.
 
+\input{pic.tikz}
 \subsection{Performance Analysis of CSS-LGC Algorithm}
 The increased time complexity by introducing cost sensitive feature to semi-supervised classification algorithm based on graph is mainly reflected in the process of boosting and updating cost matrix.
 
