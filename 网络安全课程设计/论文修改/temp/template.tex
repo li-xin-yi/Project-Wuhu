@@ -287,18 +287,21 @@ of unlabeled data must be closer to the class which will be marked as; Second, d
  \item The number of average similarity of unlabeled data closer to this class which will be marked as is enough, that is to say, we can find out enough samples from unlabeled data for this class.
  \item There are few samples with average similarity closer to the class in the unlabeled data, namely, the number of unlabeled data with similarity to be marked in this class is  littler than the other class, or only a small portion of data are more similar to this class.
 \end{enumerate}
-If this is the first case, after completing marking the selected unlabeled data, we can simply exit the Rescale process, then update the initial label matrix In line with formula \ref{formula1} and go on with the following study. Otherwise, as the second case occurs, we jump to the fourth step to process. \label{step3}
+If this is the first case, after completing marking the selected unlabeled data, we can simply exit the Rescale process, then update the initial label matrix in line with formula \ref{formula1} and go on with the following study. Otherwise, as the second case occurs, we jump to the fourth step to process. \label{step3}
 
 \item After making some artificial virtual data using SMOTE method, we jump to the second step, and continue conduct, until the number of artificially manufactured unlabeled data is more closer to
 the number that this class need to be marked, and when the number the number is abundant, jump to the process of the first case in step \ref{step3}.
 
 \end{enumerate}
 
-In the process of above, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before  to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to choose $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples.
+In the process of above, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before  to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to choose $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples. The Fig \ref{fig:flowchart} demonstrates the process of updating label matrix using the combination of Rescale method and SMOTE method in detail.
 
 Through improving Rescale process of the CS-LGC algorithm, we solve the defection of classification errors, which may accumulate in the unbalanced dataset and enhance the stability of classifiers' performance.
-
+\begin{figure}[ht]
 \input{pic.tikz}
+\caption{The flowchart of updating label matrix using Rescale method in CSS-LGC algorithm}
+\end{figure}
+\label{fig:flowchart}
 \subsection{Performance Analysis of CSS-LGC Algorithm}
 The increased time complexity by introducing cost sensitive feature to semi-supervised classification algorithm based on graph is mainly reflected in the process of boosting and updating cost matrix.
 

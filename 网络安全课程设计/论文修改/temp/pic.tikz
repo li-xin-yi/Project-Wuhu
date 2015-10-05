@@ -2,22 +2,23 @@
 {\small
 	\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm, text width=10em, text centered, draw=black]
 	\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=10em, draw=black]
-	\tikzstyle{decision} = [diamond, aspect=2, minimum width=.5cm, minimum height=.5cm, text centered, text width=5em, draw=black]
+	\tikzstyle{decision} = [diamond, aspect=2, minimum width=.5cm, minimum height=.5cm, text centered, text width=8em, draw=black]
 	\tikzstyle{arrow} = [thick,->,>=stealth]
 
 	\node (start) [startstop] {According to the updated cost matrix, calculate the amount and class of unlabeled data};
 	\node (pro1) [process, below of=start] {Calculate the average similarity by Formula \ref{formula15} and Formula \ref{formula16}};
-	\node (dec1) [decision, below of=pro1, yshift=-1.5cm] {Are there enough qualified unlabeled data in the data set? };
-	\node (pro2a) [process, below of=dec1, yshift=-1.5cm] {Mark corresponding unlabeled data as this class};
-	\node (pro2b) [process, right of=dec1, xshift=3cm] {Process 2b};
-	\node (pro3b) [process, above of=pro2b, right of=pro1] {Process 3b};
-	\node (stop) [startstop, below of=pro2b] {Stop};
+	\node (dec1) [decision, below of=pro1, yshift=-1cm] {Are there enough qualified unlabeled data? };
+	\node (pro2a) [process, below of=dec1, yshift=-1cm] {Mark corresponding unlabeled data as this class};
+	\node (pro2b) [process, right of=dec1, xshift=3cm] {Create artificial virtual data using SMOTE method};
+	%\node (pro3b) [process, above of=pro2b] {Process 3b};
+	\node (stop) [startstop, below of=pro2a] {Exit the Rescale method and carry on the following processes};
 	\draw [arrow](start) -- (pro1);
 	\draw [arrow](pro1) -- (dec1);
 	\draw [arrow](dec1) -- (pro2a);
 	\draw [arrow](dec1) -- (pro2b);
-	\draw [arrow](dec1) -- node[anchor=east] {yes} (pro2a);
-	\draw [arrow](dec1) -- node[anchor=south] {no} (pro2b);
+	\draw [arrow](dec1) -- node[anchor=east] {Yes} (pro2a);
+	\draw [arrow](dec1) -- node[anchor=south] {No} (pro2b);
+	\draw [arrow](pro2a) -- (stop);
 	\draw [arrow](pro2b) |- (pro1);
 	}
 \end{tikzpicture}
