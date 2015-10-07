@@ -262,13 +262,28 @@ Cost matrix will be updated every time after classifiers finishing training, whi
 
 \subsection{CSS-LGC Algorithm Process}
  SMOTE algorithm generates virtual data through a synthetic way. For each minority category sample, the method looks for its $k$ samples with the highest similarity. Then Upward sampling method is applied. If the amount of upward sampling samples is set as $N$, it randomly selects $N$ samples from all $k$ samples, which can be represented as ${x_i}\left( {i = 1,2, \ldots ,N} \right)$, then conducts the linear interpolation between minority class $x$ and $x_i$. Next, it constructs new minority samples ${p_1},{p_2},...,{p_N}$ and 
- \begin{equation}
+ \begin{equation}\label{formula:init}
   {p_i} = x + rand(0,1)*({x_i} - x), \quad i = 1,2,\ldots,N
  \end{equation}
 
  The process of CSS-LGC algorithms is roughly same with CS-LGC, except the difference when CSS-LGC
 algorithm uses Rescale to update labeled data sets. 
-
+\begin{algorithm}[h] 
+  \begin{algorithmic}[1]
+    \REQUIRE{data set $X$, the initial label matrix $Y$}
+    \STATE{add cost information for the initial label matrix according to Formula \ref{formula:init}}
+    \WHILE{$\Delta PEC \ge threshold$}
+      \STATE{train LGC semi-supervised classifier}
+      \STATE{update the cost matrix by Formal \ref{formula4} according to the result}
+      \STATE{update labeled data set applying Rescale Method}
+      \STATE{update the initial label matrix according to Formula \ref{formula1}}
+    \ENDWHILE
+    \ENSURE{${{\rm{Y}}_{final}}({x_i}) = sign(\sum\limits_{j = 1}^M {{\alpha _j}{h_j}({x_i})} )$
+  , $  PEC=\frac{{\# {f_{pos}} + \# {f_{neg}} \cdot {C_{ -  + }}}}{{\# {t_{pos}} + \# {t_{neg}} + \# {f_{pos}} + \# {f_{neg}}}}$ }
+  \end{algorithmic}
+  \caption{CCS-LGC}
+  \label{algo:ccs-lgc}
+\end{algorithm} 
 In the CSS-LGC algorithm, after updating the cost matrix, Rescale is applied to update label matrix, then, it adds SMOTE method and optimizes the overall process of updating the label matrix. The
 specific implementation process is as follows:
 \begin{enumerate}[1)]

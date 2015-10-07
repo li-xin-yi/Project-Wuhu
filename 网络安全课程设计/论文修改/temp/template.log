@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  5 OCT 2015 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  7 OCT 2015 23:14
 entering extended mode
 **template
 (template.tex
@@ -622,51 +622,54 @@ Missing character: There is no ¡ in font pplr7t!
  [5]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 195.
- [6] [7] (pic.tikz)
-Overfull \hbox (12.50366pt too wide) in paragraph at lines 306--307
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6] [7] (pic.tikz)
+Overfull \hbox (12.50366pt too wide) in paragraph at lines 321--322
 \OT1/ppl/m/n/9.5 The in-creased time com-plex-ity by in-tro-duc-ing cost sen-si
 -tive fea-ture to semi-supervised
  []
 
-[8]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
- [9] [10]
-Overfull \hbox (7.59644pt too wide) in paragraph at lines 381--397
+[8] [9] [10]
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 396--412
  [][] 
  []
 
 <plot/fig1.pdf, id=46, 578.16pt x 397.485pt>
 File: plot/fig1.pdf Graphic file (type pdf)
  <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 406.
+Package pdftex.def Info: plot/fig1.pdf used on input line 421.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
 <plot/fig2.pdf, id=47, 578.16pt x 397.485pt>
 File: plot/fig2.pdf Graphic file (type pdf)
  <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 410.
+Package pdftex.def Info: plot/fig2.pdf used on input line 425.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 405--413
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 420--428
 [][] [] 
  []
 
 [11] <plot/fig3.pdf, id=51, 578.16pt x 397.485pt>
 File: plot/fig3.pdf Graphic file (type pdf)
  <use plot/fig3.pdf>
-Package pdftex.def Info: plot/fig3.pdf used on input line 424.
+Package pdftex.def Info: plot/fig3.pdf used on input line 439.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2384) has occurred while \output is active []
 
  [12 <./plot/fig1.pdf> <./plot/fig2.pdf>] <plot/fig4.pdf, id=59, 578.16pt x 397
 .485pt>
 File: plot/fig4.pdf Graphic file (type pdf)
 
 <use plot/fig4.pdf>
-Package pdftex.def Info: plot/fig4.pdf used on input line 435.
+Package pdftex.def Info: plot/fig4.pdf used on input line 450.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 Underfull \vbox (badness 4013) has occurred while \output is active []
@@ -678,16 +681,16 @@ Missing character: There is no ™ in font pplr7t!
  <plot/fig5.pdf, id=66, 578.16pt x 397.485pt>
 File: plot/fig5.pdf Graphic file (type pdf)
  <use plot/fig5.pdf>
-Package pdftex.def Info: plot/fig5.pdf used on input line 443.
+Package pdftex.def Info: plot/fig5.pdf used on input line 458.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
 <plot/fig6.pdf, id=67, 578.16pt x 397.485pt>
 File: plot/fig6.pdf Graphic file (type pdf)
  <use plot/fig6.pdf>
-Package pdftex.def Info: plot/fig6.pdf used on input line 447.
+Package pdftex.def Info: plot/fig6.pdf used on input line 462.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 442--450
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 457--465
 [][] [] 
  []
 
@@ -695,10 +698,10 @@ Overfull \hbox (1.52002pt too wide) in paragraph at lines 442--450
 <plot/fig7.pdf, id=77, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 464.
+Package pdftex.def Info: plot/fig7.pdf used on input line 479.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 465--465
+Underfull \hbox (badness 2073) in paragraph at lines 480--480
 []\OT1/ppl/b/n/8 Fig. 8|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
  of
  []
@@ -706,17 +709,17 @@ Underfull \hbox (badness 2073) in paragraph at lines 465--465
 <plot/fig8.pdf, id=78, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 468.
+Package pdftex.def Info: plot/fig8.pdf used on input line 483.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 463--471
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 478--486
 [][] [] 
  []
 
 <plot/fig9.pdf, id=79, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 476.
+Package pdftex.def Info: plot/fig9.pdf used on input line 491.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 
@@ -725,10 +728,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [15 <./plot/fig7.pdf> <./plot/fig8.pdf>] (template.bbl [16 <./plot/fig9.pdf>])
 [17] (template.aux) ) 
 Here is how much of TeX's memory you used:
- 14208 strings out of 493673
- 279760 string characters out of 3149326
- 316453 words of memory out of 3000000
- 17233 multiletter control sequences out of 15000+200000
+ 14210 strings out of 493673
+ 279788 string characters out of 3149326
+ 316470 words of memory out of 3000000
+ 17235 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,56p,1806b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -740,7 +743,7 @@ blic/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
 athpazo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/p
 alatino/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (17 pages, 194759 bytes).
+Output written on template.pdf (17 pages, 195798 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
