@@ -268,7 +268,7 @@ Cost matrix will be updated every time after classifiers finishing training, whi
 
  The process of CSS-LGC algorithms is roughly same with CS-LGC, except the difference when CSS-LGC
 algorithm uses Rescale to update labeled data sets. 
-\begin{algorithm}[h] 
+\begin{algorithm}[ht] 
   \begin{algorithmic}[1]
     \REQUIRE{data set $X$, the initial label matrix $Y$}
     \STATE{add cost information for the initial label matrix according to Formula \ref{formula:init}}
@@ -340,21 +340,12 @@ German Credit Data Set\cite{germandata}, which describes the information of bank
 \end{equation}
 ${x_{ij}}'$ denotes the results of the $j$-th attribute value of the $i$-th applicant after normalization, ${{x_{i\max }}}$ and ${{x_{i\min }}}$ respectively denote the maximum and minimum value in all attribute values of applicant $i$.
 
-Breast Cancer Data Set\cite{Mangasarian90} was provided by the Professor Mangasarian and Wolberg of University of Wisconsin. It offers the feature information of breast cancer patients in the University of Wisconsin and the diagnosis of their disease (benign or malignant). This data set collected 10 attributes of 699 patients, such as the uniformity of patients' cell size. There are 458 cases diagnosed as benign, the other 241 cases as malignant. We treat benign patients as positive class, and malignant as negative class. Since the data set does not show information on the cost of misclassification, the ratio of the numbers of two classes whose samples are normalized will be defined as cost, which can be written as ${C_{ +  - }} = 1$ and ${C_{ -  + }} = 1.9$. We remove the attributes which have little things to do with the diagnosis, such as ID number, all other attributes range from 1 to 10, without the necessity of normalization. However, 16 records have some missing attributes, including 13 positive samples and 3 negative samples. After removing those invalid records , the ratio of positive class to negative is $445:328$.
-
-\subsection{Experimental Setting}
-The labeled data in this experiment are randomly selected from the data set. In order to observe the influence of the number of labeled data on classification results, We choose $10\%, 20\% \ldots 90\%$ ( increased by 10\% at one time) data from the whole data set as the labeled. Then we design and run the experiments on Matlab R2010a. When updating the labeled data set following Rescale method, the cost of samples decrease by more than 50\%, those samples will be removed from the labeled data set, that is to say, we set $ts = 50\% $. The termination criterion for the iteration of CS-LGC method is that the difference of global costs between the latest two iteration, which is the value of $threshold$, reaches 10\% or less. The experimental settings of LGC method, Adacost algorithm and CS-LGC algorithm are the same as the CSS-LGC method. All the experimental data shown following are the average results of 50 times repeated experiments.
-
-\subsection{Threshold Discussion}
+\subsection{Threshold Discussion in CSS-LGC}
+%Breast Cancer Data Set\cite{Mangasarian90} was provided by the Professor Mangasarian and Wolberg of University of Wisconsin. It offers the feature information of breast cancer patients in the University of Wisconsin and the diagnosis of their disease (benign or malignant). This data set collected 10 attributes of 699 patients, such as the uniformity of patients' cell size. There are 458 cases diagnosed as benign, the other 241 cases as malignant. We treat benign patients as positive class, and malignant as negative class. Since the data set does not show information on the cost of misclassification, the ratio of the numbers of two classes whose samples are normalized will be defined as cost, which can be written as ${C_{ +  - }} = 1$ and ${C_{ -  + }} = 1.9$. We remove the attributes which have little things to do with the diagnosis, such as ID number, all other attributes range from 1 to 10, without the necessity of normalization. However, 16 records have some missing attributes, including 13 positive samples and 3 negative samples. After removing those invalid records , the ratio of positive class to negative is $445:328$.
 These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
 
 $threshold$ is set as 10\% of the initial global cost.we verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
 
-\subsubsection{$ts$}
-From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
-\ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
-
- % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
   \centering
     \begin{tabular}{c c c c}
@@ -412,6 +403,77 @@ precision and the global cost are still within an acceptable range; On the other
     \caption{Impact and Analysis Table with $threshold$}
   \label{tab:threshold}
 \end{table}
+
+\subsection{Experimental Setting}
+The labeled data in this experiment are randomly selected from the data set. In order to observe the influence of the number of labeled data on classification results, We choose $10\%, 20\% \ldots 90\%$ ( increased by 10\% at one time) data from the whole data set as the labeled. Then we design and run the experiments on Matlab R2010a. When updating the labeled data set following Rescale method, the cost of samples decrease by more than 50\%, those samples will be removed from the labeled data set, that is to say, we set $ts = 50\% $. The termination criterion for the iteration of CS-LGC method is that the difference of global costs between the latest two iteration, which is the value of $threshold$, reaches 10\% or less. The experimental settings of LGC method, Adacost algorithm and CS-LGC algorithm are the same as the CSS-LGC method. All the experimental data shown following are the average results of 50 times repeated experiments.
+
+% \subsection{Threshold Discussion}
+% These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
+
+% $threshold$ is set as 10\% of the initial global cost.we verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
+
+% \subsubsection{$ts$}
+% From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
+% \ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
+
+%  % Table generated by Excel2LaTeX from sheet 'Sheet1'
+% \begin{table}[htbp]
+%   \centering
+%     \begin{tabular}{c c c c}
+%     \toprule
+%     $ts$  & Negative classification accuracy  &  Global classification accuracy & Global cost \\
+%     \midrule
+%     0.05  & 0.546 & 0.7985 & 0.82205 \\
+%     0.1   & 0.6876 & 0.8035 & 0.60615 \\
+%     0.15  & 0.7946 & 0.8274 & 0.42896 \\
+%     0.2   & 0.8546 & 0.8293 & 0.33755 \\
+%     0.25  & 0.8937 & 0.8305 & 0.27675 \\
+%     0.3   & 0.9254 & 0.8327 & 0.22906 \\
+%     0.35  & 0.9348 & 0.8346 & 0.21394 \\
+%     0.4   & 0.9365 & 0.8348 & 0.21102 \\
+%     0.45  & 0.9367 & 0.8349 & 0.21052 \\
+%     0.5   & 0.946 & 0.835 & 0.1965 \\
+%     0.55  & 0.9463 & 0.8352 & 0.19591 \\
+%     0.6   & 0.9464 & 0.8352 & 0.19576 \\
+%     0.65  & 0.9465 & 0.8353 & 0.19554 \\
+%     0.7   & 0.9465 & 0.8353 & 0.19554 \\
+%     0.75  & 0.9465 & 0.8353 & 0.19554 \\
+%     0.8   & 0.9465 & 0.8353 & 0.19554 \\
+%     0.85  & 0.9465 & 0.8353 & 0.19554 \\
+%     0.9   & 0.9465 & 0.8353 & 0.19554 \\
+%     0.95  & 0.9465 & 0.8353 & 0.19554 \\
+%     1     & 0.9465 & 0.8353 & 0.19554 \\
+%     \bottomrule
+%     \end{tabular}%
+%   \caption{Impact and Analysis Table with $ts$} \label{tab:ts}%
+% \end{table}%
+
+% \subsubsection{$threshold$}
+% In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
+% precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
+
+
+% \begin{table}[htbp]
+%   \centering
+%     \begin{tabular}{cccc}
+%     \toprule
+%     $threshold$ & Negative class classification accuracy & Global classification accuracy & Global cost \\
+%     \midrule
+%     6     & 0.9546 & 0.85  & 0.1731 \\
+%     7     & 0.95186 & 0.845 & 0.18071 \\
+%     8     & 0.9486 & 0.8425 & 0.18735 \\
+%     9     & 0.947 & 0.839 & 0.1922 \\
+%     10    & 0.942 & 0.835 & 0.2025 \\
+%     11    & 0.935 & 0.83  & 0.2165 \\
+%     12    & 0.923 & 0.82752 & 0.23624 \\
+%     13    & 0.908 & 0.8247 & 0.26071 \\
+%     14    & 0.8967 & 0.8189 & 0.28172 \\
+%     15    & 0.8886 & 0.8135 & 0.29765 \\
+%     \bottomrule
+%     \end{tabular}
+%     \caption{Impact and Analysis Table with $threshold$}
+%   \label{tab:threshold}
+% \end{table}
 
 \subsection{German Credit Data Set}\label{subsec:exp1}
 
