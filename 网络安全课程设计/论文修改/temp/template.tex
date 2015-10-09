@@ -475,66 +475,67 @@ The labeled data in this experiment are randomly selected from the data set. In 
 %   \label{tab:threshold}
 % \end{table}
 
-\subsection{German Credit Data Set}\label{subsec:exp1}
+%\subsection{German Credit Data Set}\label{subsec:exp1}
 
-In the loan application problem, approving the applicants that should not have been approved will result in higher cost, so we set those who cannot get approved as high-cost class (negative class). Fig. \ref{fig1} to Fig. \ref{fig3} show the high-cost class classification accuracy, global classification accuracy and global cost variation curves of the three algorithms (LGC, CS-LGC and AdaCost algorithms) when the data scale increase from only 10\% to 90\% of the total data volume respectively.
-\begin{figure}[H]
-\begin{minipage}[t]{.5\textwidth}
-\includegraphics[width=\textwidth]{plot/fig1.pdf}
-\caption{Classification Accuracy of High-cost Class Samples} \label{fig1}
-\end{minipage}
-\begin{minipage}[t]{.5\textwidth}
-\includegraphics[width=\textwidth]{plot/fig2.pdf}
-\caption{Global Classification Accuracy} \label{fig2}
-\end{minipage}
-\end{figure}
-
-From Fig. \ref{fig1}, we can see, when the data size increases, the classification accuracies of three algorithm's high-cost data samples increase as well. However, CS-LGC and AdaCost can always achieve high level of accuracy and their average accuracies reach 92\%, which appears 7\% higher compared with LGC algorithm. This implies that CS-LGC and AdaCost pay more attention to the sample data of high-cost class, which shows their cost-sensitive feature. Nevertheless, when the percentage of the labeled data is lower than 50\%, AdaCost's accuracy fluctuates because of introduction of cost performance function, resulting in Boosting algorithm failing to converge to Bayesian decision. In addition, in Fig. \ref{fig1}, when the percentage of labeled data increases to 70\%, the classification accuracy of CS-LGC algorithm appears a slight decline, which is mainly attributed to the decrease of labeled data volume caused by cost update.
-
+\subsection{Experiment Results and Analysis}
+% In the loan application problem, approving the applicants that should not have been approved will result in higher cost, so we set those who cannot get approved as high-cost class (negative class). Fig. \ref{fig1} to Fig. \ref{fig3} show the high-cost class classification accuracy, global classification accuracy and global cost variation curves of the three algorithms (LGC, CS-LGC and AdaCost algorithms) when the data scale increase from only 10\% to 90\% of the total data volume respectively.
 % \begin{figure}[H]
+% \begin{minipage}[t]{.5\textwidth}
+% \includegraphics[width=\textwidth]{plot/fig1.pdf}
+% \caption{Classification Accuracy of High-cost Class Samples} \label{fig1}
+% \end{minipage}
+% \begin{minipage}[t]{.5\textwidth}
 % \includegraphics[width=\textwidth]{plot/fig2.pdf}
 % \caption{Global Classification Accuracy} \label{fig2}
+% \end{minipage}
 % \end{figure}
-Fig. \ref{fig2} shows the curve of the global classification accuracy changing with the size of labeled data. In the figure, the average classification accuracy of LGC algorithm is about 90\%, 10\% higher than that of CS-LGC and AdaCost. It indicates that, cost-sensitive classification algorithm pays more attention on high cost class samples. Because the number of low-cost class samples is larger, the global classification accuracy of CS-LGC is lower than LGC. But the classification accuracy can still stay at an acceptable range, and with the increase of labeled data, the global classification accuracy goes up obviously. When the percentage of the labeled data is up to 90\%, the global classification accuracy of all three algorithm reach a higher level over 90\%. The global classification accuracy of CS-LGC is higher than AdaCost algorithm by about 2\% on average.
 
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{plot/fig3.pdf}
-\caption{The Global Cost} \label{fig3}
-\end{figure}
-Fig. \ref{fig3} shows the global cost changing with the size of labeled data. In Fig. \ref{fig3}, the global costs of CS-LGC and AdaCost are obviously lower than LGC, by about 0.2 on average. We can know from both Fig. \ref{fig2} and Fig. \ref{fig3}, cost-sensitive classification sacrifices some classification accuracy, in exchange for a lower global cost, and CS-LGC performs best among the three.Besides, CS-LGC algorithm converges faster when the labeled data size increases, and the iteration time decreases, whose average value is between 10 and 20. 
+% From Fig. \ref{fig1}, we can see, when the data size increases, the classification accuracies of three algorithm's high-cost data samples increase as well. However, CS-LGC and AdaCost can always achieve high level of accuracy and their average accuracies reach 92\%, which appears 7\% higher compared with LGC algorithm. This implies that CS-LGC and AdaCost pay more attention to the sample data of high-cost class, which shows their cost-sensitive feature. Nevertheless, when the percentage of the labeled data is lower than 50\%, AdaCost's accuracy fluctuates because of introduction of cost performance function, resulting in Boosting algorithm failing to converge to Bayesian decision. In addition, in Fig. \ref{fig1}, when the percentage of labeled data increases to 70\%, the classification accuracy of CS-LGC algorithm appears a slight decline, which is mainly attributed to the decrease of labeled data volume caused by cost update.
 
-In Summary, in the loan application problem, cost-sensitive classification algorithm pays more attention on high-cost class samples. By ensuring the low classification accuracy of high-cost class, it achieves the aim of reducing the global cost, and maintain global classification accuracy in the acceptable range.In conclusion, our CS-LGC algorithm performs best comprehensively.
+% % \begin{figure}[H]
+% % \includegraphics[width=\textwidth]{plot/fig2.pdf}
+% % \caption{Global Classification Accuracy} \label{fig2}
+% % \end{figure}
+% Fig. \ref{fig2} shows the curve of the global classification accuracy changing with the size of labeled data. In the figure, the average classification accuracy of LGC algorithm is about 90\%, 10\% higher than that of CS-LGC and AdaCost. It indicates that, cost-sensitive classification algorithm pays more attention on high cost class samples. Because the number of low-cost class samples is larger, the global classification accuracy of CS-LGC is lower than LGC. But the classification accuracy can still stay at an acceptable range, and with the increase of labeled data, the global classification accuracy goes up obviously. When the percentage of the labeled data is up to 90\%, the global classification accuracy of all three algorithm reach a higher level over 90\%. The global classification accuracy of CS-LGC is higher than AdaCost algorithm by about 2\% on average.
 
-\subsection{Breast Cancer Data Set}\label{subsec:exp2}
-In the disease diagnosis problem, there is a higher cost for diagnosing patients with diseases as healthy, therefore, we denote the malignants as high-cost class (negative class). Fig. 4 through Fig.6 describe the LGC, CS-LGC, and AdaCost three methods' classification accuracy of high cost class. The global classification accuracy and global cost, which all vary with the number of labeled data in the figures.
+% \begin{figure}[H]
+% \includegraphics[width=\textwidth]{plot/fig3.pdf}
+% \caption{The Global Cost} \label{fig3}
+% \end{figure}
+% Fig. \ref{fig3} shows the global cost changing with the size of labeled data. In Fig. \ref{fig3}, the global costs of CS-LGC and AdaCost are obviously lower than LGC, by about 0.2 on average. We can know from both Fig. \ref{fig2} and Fig. \ref{fig3}, cost-sensitive classification sacrifices some classification accuracy, in exchange for a lower global cost, and CS-LGC performs best among the three.Besides, CS-LGC algorithm converges faster when the labeled data size increases, and the iteration time decreases, whose average value is between 10 and 20. 
 
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{plot/fig4.pdf}
-\caption{High-cost Class Classification Accuracy} \label{fig4}
-\end{figure}
+% In Summary, in the loan application problem, cost-sensitive classification algorithm pays more attention on high-cost class samples. By ensuring the low classification accuracy of high-cost class, it achieves the aim of reducing the global cost, and maintain global classification accuracy in the acceptable range.In conclusion, our CS-LGC algorithm performs best comprehensively.
 
-From Fig. \ref{fig4} we can see, the high-cost class classification accuracy of LGC algorithm is obviously lower than CS-LGC and AdaCost’s. Compared with the other two methods, It has the average accuracy lower by 10\%, yet still keeps above 70\%. It can be seen, CS-LGC and AdaCost pay more attention to high-cost class, but the high-cost class classification accuracy of CS-LGC algorithm is slightly higher than that of AdaCost algorithm.
+% \subsection{Breast Cancer Data Set}\label{subsec:exp2}
+% In the disease diagnosis problem, there is a higher cost for diagnosing patients with diseases as healthy, therefore, we denote the malignants as high-cost class (negative class). Fig. 4 through Fig.6 describe the LGC, CS-LGC, and AdaCost three methods' classification accuracy of high cost class. The global classification accuracy and global cost, which all vary with the number of labeled data in the figures.
 
-\begin{figure}[H]
-\begin{minipage}[t]{0.5\linewidth}
-\includegraphics[width=\textwidth]{plot/fig5.pdf}
-\caption{The Global Classification Accuracy} \label{fig5}
-\end{minipage}
-\begin{minipage}[t]{0.5\linewidth}
-\includegraphics[width=\textwidth]{plot/fig6.pdf}
-\caption{Average Cost of the Classifier} \label{fig6}
-\end{minipage}
-\end{figure}
+% \begin{figure}[H]
+% \includegraphics[width=\textwidth]{plot/fig4.pdf}
+% \caption{High-cost Class Classification Accuracy} \label{fig4}
+% \end{figure}
 
-Fig. \ref{fig5} shows that, with the increase of labeled data, the global classification accuracy of these three algorithms all increase accordingly, of which LGC algorithm has achieved a higher global classification accuracy by 9\% than the others on average. The global classification accuracy of CS-LGC and AdaCost increases faster with the increasing number of labeled data. When the percentage of the labeled data reaches about 70\%, the classification accuracy of these three algorithm reach the almost same level. The classification accuracy of CS-LGC is 2\% higher that of AdaCost on average.
+% From Fig. \ref{fig4} we can see, the high-cost class classification accuracy of LGC algorithm is obviously lower than CS-LGC and AdaCost’s. Compared with the other two methods, It has the average accuracy lower by 10\%, yet still keeps above 70\%. It can be seen, CS-LGC and AdaCost pay more attention to high-cost class, but the high-cost class classification accuracy of CS-LGC algorithm is slightly higher than that of AdaCost algorithm.
 
-And as it can be seen from Fig. \ref{fig6}, the global costs of this three algorithm show little difference, but the global cost of the CS-LGC algorithm is slightly better than the other two. Meanwhile, the global cost of LGC is higher than the other two algorithms by 5\% on average. Similarly, using this data set, CS-LGC can achieve convergence after only 10 times iteration on average.
+% \begin{figure}[H]
+% \begin{minipage}[t]{0.5\linewidth}
+% \includegraphics[width=\textwidth]{plot/fig5.pdf}
+% \caption{The Global Classification Accuracy} \label{fig5}
+% \end{minipage}
+% \begin{minipage}[t]{0.5\linewidth}
+% \includegraphics[width=\textwidth]{plot/fig6.pdf}
+% \caption{Average Cost of the Classifier} \label{fig6}
+% \end{minipage}
+% \end{figure}
 
-As we can see from Fig. \ref{fig1}, Fig. \ref{fig2}, Fig. \ref{fig4} and
-Fig. \ref{fig5}, when the portion of labeled data is little (less than 50\% in general), semi-supervision classification algorithm can reach a relatively high classification accuracy.
+% Fig. \ref{fig5} shows that, with the increase of labeled data, the global classification accuracy of these three algorithms all increase accordingly, of which LGC algorithm has achieved a higher global classification accuracy by 9\% than the others on average. The global classification accuracy of CS-LGC and AdaCost increases faster with the increasing number of labeled data. When the percentage of the labeled data reaches about 70\%, the classification accuracy of these three algorithm reach the almost same level. The classification accuracy of CS-LGC is 2\% higher that of AdaCost on average.
 
-\subsection{The Analysis of CSS-LGC Algorithm Experiment}
-We set three experiments to verify the performance of CSS-LGC method using the German Credit Data Set.
+% And as it can be seen from Fig. \ref{fig6}, the global costs of this three algorithm show little difference, but the global cost of the CS-LGC algorithm is slightly better than the other two. Meanwhile, the global cost of LGC is higher than the other two algorithms by 5\% on average. Similarly, using this data set, CS-LGC can achieve convergence after only 10 times iteration on average.
+
+% As we can see from Fig. \ref{fig1}, Fig. \ref{fig2}, Fig. \ref{fig4} and
+% Fig. \ref{fig5}, when the portion of labeled data is little (less than 50\% in general), semi-supervision classification algorithm can reach a relatively high classification accuracy.
+
+% \subsection{The Analysis of CSS-LGC Algorithm Experiment}
+% We set three experiments to verify the performance of CSS-LGC method using the German Credit Data Set.
 
 \begin{figure}[H]
 \begin{minipage}[t]{0.5\linewidth}

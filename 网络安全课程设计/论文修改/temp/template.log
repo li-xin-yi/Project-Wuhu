@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  8 OCT 2015 21:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  9 OCT 2015 22:23
 entering extended mode
 **template
 (template.tex
@@ -636,116 +636,54 @@ Overfull \hbox (7.59644pt too wide) in paragraph at lines 387--403
  [][] 
  []
 
-[10] <plot/fig1.pdf, id=46, 578.16pt x 397.485pt>
-File: plot/fig1.pdf Graphic file (type pdf)
- <use plot/fig1.pdf>
-Package pdftex.def Info: plot/fig1.pdf used on input line 483.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-<plot/fig2.pdf, id=47, 578.16pt x 397.485pt>
-File: plot/fig2.pdf Graphic file (type pdf)
- <use plot/fig2.pdf>
-Package pdftex.def Info: plot/fig2.pdf used on input line 487.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 482--490
-[][] [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-<plot/fig3.pdf, id=51, 578.16pt x 397.485pt>
-File: plot/fig3.pdf Graphic file (type pdf)
- <use plot/fig3.pdf>
-Package pdftex.def Info: plot/fig3.pdf used on input line 501.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./plot/fig1.pdf> <./plot/fig2.pdf>] <plot/fig4.pdf, id=59, 578.16pt x 397
-.485pt>
-File: plot/fig4.pdf Graphic file (type pdf)
-
-<use plot/fig4.pdf>
-Package pdftex.def Info: plot/fig4.pdf used on input line 512.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-Underfull \vbox (badness 4013) has occurred while \output is active []
-
- [13 <./plot/fig3.pdf>]
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
- <plot/fig5.pdf, id=66, 578.16pt x 397.485pt>
-File: plot/fig5.pdf Graphic file (type pdf)
- <use plot/fig5.pdf>
-Package pdftex.def Info: plot/fig5.pdf used on input line 520.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-<plot/fig6.pdf, id=67, 578.16pt x 397.485pt>
-File: plot/fig6.pdf Graphic file (type pdf)
- <use plot/fig6.pdf>
-Package pdftex.def Info: plot/fig6.pdf used on input line 524.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 519--527
-[][] [] 
- []
-
-[14 <./plot/fig4.pdf> <./plot/fig5.pdf> <./plot/fig6.pdf>]
-<plot/fig7.pdf, id=77, 578.16pt x 397.485pt>
+[10] <plot/fig7.pdf, id=46, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 541.
+Package pdftex.def Info: plot/fig7.pdf used on input line 542.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 542--542
-[]\OT1/ppl/b/n/8 Fig. 8|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
+Underfull \hbox (badness 2073) in paragraph at lines 543--543
+[]\OT1/ppl/b/n/8 Fig. 2|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
  of
  []
 
-<plot/fig8.pdf, id=78, 578.16pt x 397.485pt>
+<plot/fig8.pdf, id=47, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 545.
+Package pdftex.def Info: plot/fig8.pdf used on input line 546.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 540--548
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 541--549
 [][] [] 
  []
 
-<plot/fig9.pdf, id=79, 578.16pt x 397.485pt>
+<plot/fig9.pdf, id=48, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 553.
+Package pdftex.def Info: plot/fig9.pdf used on input line 554.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[15 <./plot/fig7.pdf> <./plot/fig8.pdf>] (template.bbl [16 <./plot/fig9.pdf>])
-[17] (template.aux) ) 
+ [11 <./plot/fig7.pdf> <./plot/fig8.pdf>] [12 <./plot/fig9.pdf>] (template.bbl)
+ [13]
+(template.aux) ) 
 Here is how much of TeX's memory you used:
- 14210 strings out of 493673
- 279788 string characters out of 3149326
- 317470 words of memory out of 3000000
- 17235 multiletter control sequences out of 15000+200000
+ 14172 strings out of 493673
+ 279252 string characters out of 3149326
+ 317393 words of memory out of 3000000
+ 17203 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,56p,1806b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/m
-athpazo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CT
-EX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/p
-alatino/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (17 pages, 194727 bytes).
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpa
+zo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/Mi
+KTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palati
+no/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (13 pages, 168272 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 98 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
