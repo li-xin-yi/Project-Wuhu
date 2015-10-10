@@ -76,11 +76,10 @@ C.~Seiffert, T.~M. Khoshgoftaar, J.~V. Hulse, and A.~Napolitano, ``A
   Data Mining Workshops, 2008. ICDMW'08. IEEE International Conference on},
   pp.~46--52, IEEE, 2008.
 
+\bibitem{Lichman:2013}
+M.~Lichman, ``{UCI} machine learning repository,'' 2013.
+
 \bibitem{germandata}
 H.~Hofmann, ``German credit data,'' 2000.
-
-\bibitem{Mangasarian90}
-O.~L. Mangasarian and W.~H. Wolberg, ``Cancer diagnosis via linear
-  programming,'' {\em SIAM News}, vol.~23, pp.~1--18, sep 1990.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  9 OCT 2015 22:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  10 OCT 2015 21:15
 entering extended mode
 **template
 (template.tex
@@ -632,17 +632,17 @@ Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 [8] [9]
-Overfull \hbox (7.59644pt too wide) in paragraph at lines 387--403
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 398--414
  [][] 
  []
 
 [10] <plot/fig7.pdf, id=46, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 542.
+Package pdftex.def Info: plot/fig7.pdf used on input line 553.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 543--543
+Underfull \hbox (badness 2073) in paragraph at lines 554--554
 []\OT1/ppl/b/n/8 Fig. 2|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
  of
  []
@@ -650,25 +650,32 @@ Underfull \hbox (badness 2073) in paragraph at lines 543--543
 <plot/fig8.pdf, id=47, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 546.
+Package pdftex.def Info: plot/fig8.pdf used on input line 557.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 541--549
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 552--560
 [][] [] 
  []
 
-<plot/fig9.pdf, id=48, 578.16pt x 397.485pt>
+
+Underfull \vbox (badness 4156) has occurred while \output is active []
+
+ [11]
+<plot/fig9.pdf, id=51, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 554.
+Package pdftex.def Info: plot/fig9.pdf used on input line 565.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [11 <./plot/fig7.pdf> <./plot/fig8.pdf>] [12 <./plot/fig9.pdf>] (template.bbl)
- [13]
+
+Underfull \vbox (badness 8000) has occurred while \output is active []
+
+ [12 <./plot/fig7.pdf> <./plot/fig8.pdf> <./plot/fig9.pdf>] (template.bbl [13])
+ [14]
 (template.aux) ) 
 Here is how much of TeX's memory you used:
  14172 strings out of 493673
- 279252 string characters out of 3149326
- 317393 words of memory out of 3000000
+ 279251 string characters out of 3149326
+ 318394 words of memory out of 3000000
  17203 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -681,9 +688,9 @@ s/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpa
 zo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/Mi
 KTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palati
 no/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (13 pages, 168272 bytes).
+Output written on template.pdf (14 pages, 169473 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

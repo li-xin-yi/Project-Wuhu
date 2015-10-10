@@ -324,7 +324,7 @@ The aim of updating the cost matrix is to update the labeled data set, including
 
 \section{Experimental Results and Analysis}
 \subsection{Data Introduction and Preprocessing}
-We choose bank loans and disease diagnosis, whose misclassification costs are inconsistent, to
+We choose bank loans and disease diagnosis, whose misclassification costs are inconsistent, from professional database UCI\cite{Lichman:2013}, to
 test our CS-LGC and CSS-LGC algorithm. Since the fact that CS-LGC is the improvement of LGC, we will verify whether CS-LGC’s global cost will be reduced and whether its accuracy will be lowered compared with LGC. In addition, CS-LGC is a cost-sensitive classification method, so we will compare it with a traditional cost-sensitive algorithm, AdaCost algorithm, to see the performance difference between two algorithms.
 
 Cost-sensitive learning focuses more on sample data of high cost, so in this paper, we implement three experiments to verity the properties of CS-LGC and CSS-LGC:
@@ -342,9 +342,20 @@ ${x_{ij}}'$ denotes the results of the $j$-th attribute value of the $i$-th appl
 
 \subsection{Threshold Discussion in CSS-LGC}
 %Breast Cancer Data Set\cite{Mangasarian90} was provided by the Professor Mangasarian and Wolberg of University of Wisconsin. It offers the feature information of breast cancer patients in the University of Wisconsin and the diagnosis of their disease (benign or malignant). This data set collected 10 attributes of 699 patients, such as the uniformity of patients' cell size. There are 458 cases diagnosed as benign, the other 241 cases as malignant. We treat benign patients as positive class, and malignant as negative class. Since the data set does not show information on the cost of misclassification, the ratio of the numbers of two classes whose samples are normalized will be defined as cost, which can be written as ${C_{ +  - }} = 1$ and ${C_{ -  + }} = 1.9$. We remove the attributes which have little things to do with the diagnosis, such as ID number, all other attributes range from 1 to 10, without the necessity of normalization. However, 16 records have some missing attributes, including 13 positive samples and 3 negative samples. After removing those invalid records , the ratio of positive class to negative is $445:328$.
+Since we are to verify the advantages of CSS-LGC Algorithm on German Credit Data Set, the experiments to analyze the choice of two critical parameters' thresholds in CSS-LGC are implemented on this data set.
+
 These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
 
-$threshold$ is set as 10\% of the initial global cost.we verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
+$threshold$ is set as 10\% of the initial global cost. We verify the selection of the two thresholds of CSS-LGC using German Credit Data Set.
+
+\subsubsection{$ts$}
+
+According to Fig. \ref{fig7}, Fig. \ref{fig8} and Fig. \ref{fig9}, we choose 50\% data from this data set as labeled data for that when the percentage of labeled data reaches 50\%, the global classification accuracy and global cost can hardly change, which is benefit to analyzing the choice of threshold $ts$.
+
+From Table. \ref{tab:ts} we can see that the negative classification accuracy and the global classification accuracy both continuously increase when $ts$ increases. Because with the percentage of labeled data fixed and $ts$ set as a little number, i.e. the cost of the sample data decreases just a little, the sample gets rid of from labeled data, which reduces the amount of labeled data, the negative classification accuracy and the global classification.
+
+% From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
+% \ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
 
 \begin{table}[htbp]
   \centering
