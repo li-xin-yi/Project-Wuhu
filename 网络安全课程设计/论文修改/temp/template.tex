@@ -352,8 +352,12 @@ $threshold$ is set as 10\% of the initial global cost. We verify the selection o
 
 According to Fig. \ref{fig7}, Fig. \ref{fig8} and Fig. \ref{fig9}, we choose 50\% data from this data set as labeled data for that when the percentage of labeled data reaches 50\%, the global classification accuracy and global cost can hardly change, which is benefit to analyzing the choice of threshold $ts$.
 
-From Table. \ref{tab:ts} we can see that the negative classification accuracy and the global classification accuracy both continuously increase when $ts$ increases. Because with the percentage of labeled data fixed and $ts$ set as a little number, i.e. the cost of the sample data decreases just a little, the sample gets rid of from labeled data, which reduces the amount of labeled data, the negative classification accuracy and the global classification.
+From Table \ref{tab:ts} we can see that the negative classification accuracy and the global classification accuracy both continuously increase when $ts$ increases. Because with the percentage of labeled data fixed and $ts$ set as a little number, i.e. the cost of the sample data decreases just a little, the sample gets rid of from labeled data, which reduces the amount of labeled data, the negative classification accuracy and the global classification. When $ts$ grows over 50\%, the negative classification accuracy and the global classification accuracy of CSS-LGC show little change and almost stable. It means that samples with over 50\% range of take up just a little portion in the data set, where the choice of $ts$ make little difference on the accuracy of classification. Therefore, the value of $ts$ should be set as a number greater than or equal 50\%.
 
+It is also shown in Table \ref{tab:ts} that the global cost decreases progressively overall with $ts$ increasing. Because the continuously increased $ts$ leads to the deducted cost sensitivity of CSS-LGC
+Algorithm, which diminishes the attention to high-cost class samples and deducts the global cost of classifiers. At the same time, from this table we can see when $ts$ grows up to 50\%, the global cost begins to be stable. 
+
+Through a comprehensively analysis of the impact of the negative classification accuracy, global classification accuracy and global cost of CSS-LGC Algorithm with $ts$, we consider 50\% as a reasonable value of $ts$ in our experiments.
 % From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
 % \ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
 
