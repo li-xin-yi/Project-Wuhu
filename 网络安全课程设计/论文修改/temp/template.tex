@@ -357,7 +357,7 @@ From Table \ref{tab:ts} we can see that the negative classification accuracy and
 It is also shown in Table \ref{tab:ts} that the global cost decreases progressively overall with $ts$ increasing. Because the continuously increased $ts$ leads to the deducted cost sensitivity of CSS-LGC
 Algorithm, which diminishes the attention to high-cost class samples and deducts the global cost of classifiers. At the same time, from this table we can see when $ts$ grows up to 50\%, the global cost begins to be stable. 
 
-Through a comprehensively analysis of the impact of the negative classification accuracy, global classification accuracy and global cost of CSS-LGC Algorithm with $ts$, we consider 50\% as a reasonable value of $ts$ in our experiments.
+Through a comprehensively analysis of the impact on the negative classification accuracy, global classification accuracy and global cost of CSS-LGC Algorithm with $ts$, we consider 50\% as a suitable value of $ts$ in our experiments.
 % From Table. \ref{tab:ts} we can see when $ts$ grows up to 50\%, the global cost begins to be stable. In
 % \ref{subsec:exp1} and \ref{subsec:exp2} of this paper, we set $ts=50\%$.
 
@@ -393,6 +393,8 @@ Through a comprehensively analysis of the impact of the negative classification 
 \end{table}%
 
 \subsubsection{$threshold$}
+To observe the impact that $threshold$ has on the results of classifiers, we create a change curve graph to describe the 
+
 In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
 precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
 

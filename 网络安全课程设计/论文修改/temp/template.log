@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  11 OCT 2015 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  12 OCT 2015 21:33
 entering extended mode
 **template
 (template.tex
@@ -632,17 +632,21 @@ Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
 [8] [9] [10]
-Overfull \hbox (7.59644pt too wide) in paragraph at lines 402--418
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 404--420
  [][] 
  []
 
-[11] <plot/fig7.pdf, id=49, 578.16pt x 397.485pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+<plot/fig7.pdf, id=49, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 557.
+Package pdftex.def Info: plot/fig7.pdf used on input line 559.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Underfull \hbox (badness 2073) in paragraph at lines 558--558
+Underfull \hbox (badness 2073) in paragraph at lines 560--560
 []\OT1/ppl/b/n/8 Fig. 2|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
  of
  []
@@ -650,17 +654,17 @@ Underfull \hbox (badness 2073) in paragraph at lines 558--558
 <plot/fig8.pdf, id=50, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 561.
+Package pdftex.def Info: plot/fig8.pdf used on input line 563.
 (pdftex.def)             Requested size: 173.5pt x 119.27673pt.
 
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 556--564
+Overfull \hbox (1.52002pt too wide) in paragraph at lines 558--566
 [][] [] 
  []
 
 <plot/fig9.pdf, id=51, 578.16pt x 397.485pt>
 File: plot/fig9.pdf Graphic file (type pdf)
  <use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 569.
+Package pdftex.def Info: plot/fig9.pdf used on input line 571.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 
@@ -684,7 +688,7 @@ blic/amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
 athpazo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CT
 EX/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/p
 alatino/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (14 pages, 170312 bytes).
+Output written on template.pdf (14 pages, 170337 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
