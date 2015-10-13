@@ -260,7 +260,7 @@ In summary, the process of CS-LGC method is shown in Algorithm \ref{algo:cs-lgc}
 Cost matrix will be updated every time after classifiers finishing training, which increases the corresponding cost information of incorrect classifications and that of correct classifications, forcing classifiers to pay more attention to the classification accuracy of high-cost samples.
  %According to the updated cost matrix, $Q$ data need selecting from the labeled data to join the negative class. However, it turns out that the number of the unlabeled data is smaller than $Q$  after calculating the average similarly. The average similarity is more close to either positive class or negative class. That is the problem we often encounter with unbalanced data sets, at this time this situation may come: classification precision appears fluctuant, leading to unstable performance. In response to this problem of unbalanced data sets, we introduce in SMOTE algorithm, i.e. using the method of synthetic artificial virtual data to solve the serious problem of unbalanced data sets, so as to solve the problem of unstable performance of the classifier.
 
-\subsection{CSS-LGC Algorithm Process}
+\subsection{CSS-LGC Algorithm Process}\label{subsec:css-lgc-pro}
  SMOTE algorithm generates virtual data through a synthetic way. For each minority category sample, the method looks for its $k$ samples with the highest similarity. Then Upward sampling method is applied. If the amount of upward sampling samples is set as $N$, it randomly selects $N$ samples from all $k$ samples, which can be represented as ${x_i}\left( {i = 1,2, \ldots ,N} \right)$, then conducts the linear interpolation between minority class $x$ and $x_i$. Next, it constructs new minority samples ${p_1},{p_2},...,{p_N}$ and 
  \begin{equation}\label{formula:init}
   {p_i} = x + rand(0,1)*({x_i} - x), \quad i = 1,2,\ldots,N
@@ -309,7 +309,7 @@ the number that this class need to be marked, and when the number the number is 
 
 \end{enumerate}
 
-In the process of above, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before  to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to choose $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples. The Fig \ref{fig:flowchart} demonstrates the process of updating label matrix using the combination of Rescale method and SMOTE method in detail.
+In the process of above, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before  to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to select $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples. The Fig \ref{fig:flowchart} demonstrates the process of updating label matrix using the combination of Rescale method and SMOTE method in detail.
 
 Through improving Rescale process of the CS-LGC algorithm, we solve the defection of classification errors, which may accumulate in the unbalanced dataset and enhance the stability of classifiers' performance.
 \begin{figure}[ht]
@@ -323,7 +323,7 @@ The increased time complexity by introducing cost sensitive feature to semi-supe
 The aim of updating the cost matrix is to update the labeled data set, including adding new labeled data and deleting existing labeled data. The adding operation has a relatively higher time complexity, which reaches $O(l \cdot n\lg n) < O({n^2}) $, where $l$ is the number of labeled data. Besides, choosing the unlabeled data with high similarity, which can be seen as a sorting, has the time complexity of $O(n\lg n)$. The time complexity of boosting process is $O(M \cdot {n^3})$ ,  the time complexity of base-classifier LGC algorithm reaching $O({n^3})$ included and $M$ represents the number of base-classifiers. The time complexity of CS-LGC algorithm depends on the number of base-classifiers denoted as $M$. From the following experiments, we can know, in the problem of bank loan, disease diagnosis etc., the number of convergences in CS-LGC is not sufficient to make the classifier time complexity increased by one order of magnitude.
 
 \section{Experimental Results and Analysis}
-\subsection{Data Introduction and Preprocessing}
+\subsection{Data Introduction and Preprocessing}\label{sec:preexp}
 We choose bank loans and disease diagnosis, whose misclassification costs are inconsistent, from professional database UCI\cite{Lichman:2013}, to
 test our CS-LGC and CSS-LGC algorithm. Since the fact that CS-LGC is the improvement of LGC, we will verify whether CS-LGC’s global cost will be reduced and whether its accuracy will be lowered compared with LGC. In addition, CS-LGC is a cost-sensitive classification method, so we will compare it with a traditional cost-sensitive algorithm, AdaCost algorithm, to see the performance difference between two algorithms.
 
@@ -350,7 +350,7 @@ $threshold$ is set as 10\% of the initial global cost. We verify the selection o
 
 \subsubsection{$ts$}
 
-According to Fig. \ref{fig7}, Fig. \ref{fig8} and Fig. \ref{fig9}, we choose 50\% data from this data set as labeled data for that when the percentage of labeled data reaches 50\%, the global classification accuracy and global cost can hardly change, which is benefit to analyzing the choice of threshold $ts$.
+According to Fig. \ref{fig7}, Fig. \ref{fig8} and Fig. \ref{fig9}, we select 50\% data from this data set as labeled data for that when the percentage of labeled data reaches 50\%, the global classification accuracy and global cost can hardly change, which is benefit to analyzing the choice of threshold $ts$.
 
 From Table \ref{tab:ts} we can see that the negative classification accuracy and the global classification accuracy both continuously increase when $ts$ increases. Because with the percentage of labeled data fixed and $ts$ set as a little number, i.e. the cost of the sample data decreases just a little, the sample gets rid of from labeled data, which reduces the amount of labeled data, the negative classification accuracy and the global classification. When $ts$ grows over 50\%, the negative classification accuracy and the global classification accuracy of CSS-LGC show little change and almost stable. It means that samples with over 50\% range of take up just a little portion in the data set, where the choice of $ts$ make little difference on the accuracy of classification. Therefore, the value of $ts$ should be set as a number greater than or equal 50\%.
 
@@ -393,11 +393,14 @@ Through a comprehensively analysis of the impact on the negative classification 
 \end{table}%
 
 \subsubsection{$threshold$}
-To observe the impact that $threshold$ has on the results of classifiers, we create a change curve graph to describe the 
+To observe the impact that $threshold$ has on the results of classifiers, we create a change curve graph to describe the tendency of negative class classification accuracy, global classification accuracy and global cost(average cost) in CSS-LGC Algorithm when $threshold$ increases from 0\% to 100\%. We still select Matlab R2010a as experimental platform and 50\% data as labeled.
 
-In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
-precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
+% In the above paper, $threshold$ is 10. Two reasons support the setting: on the one hand, when it is 10,
+% precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower.
 
+As it shown in Table \ref{tab:threshold}, when $threshold$ changes from 6 to 15, as the iteration end condition of classifiers-the difference of global costs between the last two iterations is littler than 6\% to 10\% of the global cost at the initial time, the negative class classification accuracy of CSS-LGC appears continuously declining with a small range. The global classification accuracy of CSS-LGC continues to shrink with the change curve of $threshold$, mainly because with the increase of $threshold$, the iteration end condition become looser gradually, which may contributes to the fewer training times of base-classifiers and the lower accuracy of classifiers further. When $threshold$ grows form 6 to 10, where changes appear slow and the global cost turns relatively little. While $threshold$ changes from 11 to 15, $PEC$ changes a little more steeply, meanwhile, the $PEC$ at that time has a significant growth compared to that when $threshold$ set as 6 to 9.
+
+We set the value of $threshold$ as 10 in experiments. Two reasons support the setting: on the one hand, when it is 10, precision and the global cost are still within an acceptable range; On the other hand, although the corresponding results of threshold set as 6,7,8,9 are better than 10, they take much more time and converges slower. To sum up, we consider 10 an optimal value for $threshold$.
 
 \begin{table}[htbp]
   \centering
@@ -421,8 +424,8 @@ precision and the global cost are still within an acceptable range; On the other
   \label{tab:threshold}
 \end{table}
 
-\subsection{Experimental Setting}
-The labeled data in this experiment are randomly selected from the data set. In order to observe the influence of the number of labeled data on classification results, We choose $10\%, 20\% \ldots 90\%$ ( increased by 10\% at one time) data from the whole data set as the labeled. Then we design and run the experiments on Matlab R2010a. When updating the labeled data set following Rescale method, the cost of samples decrease by more than 50\%, those samples will be removed from the labeled data set, that is to say, we set $ts = 50\% $. The termination criterion for the iteration of CS-LGC method is that the difference of global costs between the latest two iteration, which is the value of $threshold$, reaches 10\% or less. The experimental settings of LGC method, Adacost algorithm and CS-LGC algorithm are the same as the CSS-LGC method. All the experimental data shown following are the average results of 50 times repeated experiments.
+% \subsection{Experimental Setting}
+% The labeled data in this experiment are randomly selected from the data set. In order to observe the influence of the number of labeled data on classification results, We choose $10\%, 20\% \ldots 90\%$ ( increased by 10\% at one time) data from the whole data set as the labeled. Then we design and run the experiments on Matlab R2010a. When updating the labeled data set following Rescale method, the cost of samples decrease by more than 50\%, those samples will be removed from the labeled data set, that is to say, we set $ts = 50\% $. The termination criterion for the iteration of CS-LGC method is that the difference of global costs between the latest two iteration, which is the value of $threshold$, reaches 10\% or less. The experimental settings of LGC method, Adacost algorithm and CS-LGC algorithm are the same as the CSS-LGC method. All the experimental data shown following are the average results of 50 times repeated experiments.
 
 % \subsection{Threshold Discussion}
 % These two thresholds need to be set in CS-LGC and CSS-LGC algorithm: The first one is $ts$, the decent degree threshold of sample data $x_i$'s cost. When the cost of $x_i$ decreases more than $ts$, it will be deleted from the labeled data set. Another is $threshold$, the global cost difference threshold of classifier between two iterations, that is to say, When the global cost difference between two consecutive iterations is less than the $threshold$ value, the classifier will stop iteration. Here, we only discuss about the $threshold$ of CSS-LGC algorithm.
@@ -495,6 +498,16 @@ The labeled data in this experiment are randomly selected from the data set. In 
 %\subsection{German Credit Data Set}\label{subsec:exp1}
 
 \subsection{Experiment Results and Analysis}
+
+The data set mentioned in \ref{sec:preexp} will contribute to the problems of CS-LGC Algorithm in our experiments, which relates to the ratio of samples in the data set to misclassification cost. CSS-LGC Algorithm is an improvement of CS-LGC Algorithm by solving the problems of error accumulation on unbalanced data set and unstable performance in CS-LGC Algorithm. To verify the superiority of CSS-LGC Algorithm to CS-LGC Algorithm on cost-sensitive learning, three experiments are set on the data set:
+% Cost-sensitive learning focuses more on sample data of high cost, so in this paper, we implement three experiments to verity the properties of CS-LGC and CSS-LGC:
+\begin{inparaenum}[(1)]
+  \item the classification accuracy of high cost category changes with the labeled data;
+  \item the global classification accuracy changes with the labeled data;
+  \item the global cost changes with labeled data.
+\end{inparaenum}
+
+As it mentioned in \ref{subsec:css-lgc-pro}, when synthesizing artificially data by using SMOTE algorithm for each minority class that need unlabeled data, instead of applying the method of upward sampling, our solution is to determine the number of unlabeled data to select according to the cost ratio of before to after updating. For instance, when the cost ratio is $r$($r>1$), then the number of unlabeled data to select is $r-1$. At this time, we need to select $r-1$ samples from the $k$ unlabeled samples with the highest similarity and do linear interpolation with minority class samples.
 % In the loan application problem, approving the applicants that should not have been approved will result in higher cost, so we set those who cannot get approved as high-cost class (negative class). Fig. \ref{fig1} to Fig. \ref{fig3} show the high-cost class classification accuracy, global classification accuracy and global cost variation curves of the three algorithms (LGC, CS-LGC and AdaCost algorithms) when the data scale increase from only 10\% to 90\% of the total data volume respectively.
 % \begin{figure}[H]
 % \begin{minipage}[t]{.5\textwidth}
@@ -557,7 +570,7 @@ The labeled data in this experiment are randomly selected from the data set. In 
 \begin{figure}[H]
 \begin{minipage}[t]{0.5\linewidth}
 \includegraphics[width=\textwidth]{plot/fig7.pdf}
-\caption{Changes in Classification Accuracy of Negative Class with Labeled Data Scale} \label{fig7}
+\caption{Changes in Classification Accuracy of High-cost Class with Labeled Data Scale} \label{fig7}
 \end{minipage}
 \begin{minipage}[t]{0.5\linewidth}
 \includegraphics[width=\textwidth]{plot/fig8.pdf}
@@ -565,7 +578,11 @@ The labeled data in this experiment are randomly selected from the data set. In 
 \end{minipage}
 \end{figure}
 
-Fig. \ref{fig7} and Fig. \ref{fig8} show the four algorithms - LGC, CS-LGC, AdaCost and CSS-LGC algorithm's high-cost class classification accuracy and global classification accuracy, while Fig. \ref{fig9} describes global cost variation curve, when the labeled data scale increases from only 10\% to 90\% of the total data volume respectively.
+% Fig. \ref{fig7} and Fig. \ref{fig8} show the four algorithms - LGC, CS-LGC, AdaCost and CSS-LGC algorithm's high-cost class classification accuracy and global classification accuracy, while Fig. \ref{fig9} describes global cost variation curve, when the labeled data scale increases from only 10\% to 90\% of the total data volume respectively.
+
+Fig. \ref{fig7} describes the changes in classification accuracy of high-cost class. we can see that the classification accuracies of CS-LGC Algorithm and AdaCost Algorithm always stay at a high level, while the high-cost class classification accuracy of LGC Algorithm is lower than that of CSS-LGC Algorithm and AdaCost Algorithm, because CSS-LGC Algorithm and AdaCost Algorithm pay more attention to samples with high cost than LGC Algorithm, which shows their property of cost-sensitive. CSS-LGC Algorithm has a relatively stable performance and little fluctuation on classification accuracy. Besides, the high-cost class classification accuracy of CSS-LGC Algorithm is always higher than other three algorithms, due to the introduced conception of average similarity in the process of updating label matrix. In CSS-LGC Algorithm, we calculate the average similarities of unlabeled data with all data labeled as either positive or negative class respectively before selecting unlabeled data, and determine whether unlabeled data meet the two conditions to select by comparing the average similarities with both two classes, in case of misclassification and error accumulation in later classification processes. Furthermore, SMOTE Method is introduced in CSS-LGC Algorithm to solve the problem of local convergence caused by unbalanced data. Therefore, CSS-LGC Algorithm has the best overall performance among all four algorithms.
+
+Fig. \ref{fig8} shows the curve of global classification accuracy with labeled data scale increasing. Similar to above, the average classification accuracy of LGC Algorithm is about 90\%, 10\% higher than that of CS-LGC and AdaCost, and 8\% higher than that of CSS-LGC. It indicates that cost-sensitive classification algorithms such as CS-LGC, CSS-LGC and AdaCost pay more attention on high-cost class samples. Because the number of low-cost class samples is larger, the global classification accuracies of those three algorithms are lower than that of LGC. But the classification accuracy can still stay at an acceptable range, and with the increase of labeled data, the global classification accuracy goes up obviously.  When the percentage of the labeled data is up to a certain constant, the global classification accuracy of all four algorithms reach a higher level. %It is shown in the curve that the global classification accuracy of CS-LGC is higher than AdaCost algorithm by about 2\% on average.
 
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{plot/fig9.pdf}
