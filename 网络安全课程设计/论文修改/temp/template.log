@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  13 OCT 2015 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  14 OCT 2015 21:49
 entering extended mode
 **template
 (template.tex
@@ -643,59 +643,48 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <plot/fig7.pdf, id=49, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 572.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-Underfull \hbox (badness 2073) in paragraph at lines 573--573
-[]\OT1/ppl/b/n/8 Fig. 2|\OT1/ppl/m/n/8 Changes in Clas-si-fi-ca-tion Ac-cu-racy
- of
- []
+Package pdftex.def Info: plot/fig7.pdf used on input line 582.
+(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 <plot/fig8.pdf, id=50, 578.16pt x 397.485pt>
 File: plot/fig8.pdf Graphic file (type pdf)
  <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 576.
-(pdftex.def)             Requested size: 173.5pt x 119.27673pt.
-
-Overfull \hbox (1.52002pt too wide) in paragraph at lines 571--579
-[][] [] 
- []
-
+Package pdftex.def Info: plot/fig8.pdf used on input line 591.
+(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./plot/fig7.pdf> <./plot/fig8.pdf>] <plot/fig9.pdf, id=58, 578.16pt x 397
-.485pt>
-File: plot/fig9.pdf Graphic file (type pdf)
-
-<use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 588.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
+ [12]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] (template.bbl [14 <./plot/fig9.pdf>]) [15] (template.aux) ) 
+<plot/fig9.pdf, id=54, 578.16pt x 397.485pt>
+File: plot/fig9.pdf Graphic file (type pdf)
+ <use plot/fig9.pdf>
+Package pdftex.def Info: plot/fig9.pdf used on input line 598.
+(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
+ [13 <./plot/fig7.pdf>] (template.bbl [14 <./plot/fig8.pdf>] [15 <./plot/fig9.p
+df>]) [16]
+(template.aux) ) 
 Here is how much of TeX's memory you used:
- 14174 strings out of 493673
- 279283 string characters out of 3149326
+ 14173 strings out of 493673
+ 279273 string characters out of 3149326
  317414 words of memory out of 3000000
- 17205 multiletter control sequences out of 15000+200000
+ 17204 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,56p,1806b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTeX
-/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTEX
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><D:/CTEX/MiKTeX/fo
-nts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/u
-plb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/CTEX/MiKTeX/f
-onts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (15 pages, 173808 bytes).
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpa
+zo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/Mi
+KTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palati
+no/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (16 pages, 174476 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 107 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
