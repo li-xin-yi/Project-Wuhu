@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  23 OCT 2015 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  24 OCT 2015 21:12
 entering extended mode
 **template
 (template.tex
@@ -622,69 +622,68 @@ Missing character: There is no ¡ in font pplr7t!
  [5]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 195.
- [6] [7] (pic.tikz)
-Overfull \hbox (12.50366pt too wide) in paragraph at lines 320--321
+
+Overfull \hbox (10.22319pt too wide) in paragraph at lines 265--266
+[]\OT1/ppl/m/n/9.5 Calculate the av-er-age sim-i-lar-i-ties of all un-la-beled 
+data with all sam-ples marked
+ []
+
+[6] [7] [8] (pic.tikz)
+Overfull \hbox (12.50366pt too wide) in paragraph at lines 334--335
 \OT1/ppl/m/n/9.5 The in-creased time com-plex-ity by in-tro-duc-ing cost sen-si
 -tive fea-ture to semi-supervised
  []
 
+[9]
 Missing character: There is no â in font pplr7t!
 Missing character: There is no € in font pplr7t!
 Missing character: There is no ™ in font pplr7t!
-[8]
-Underfull \vbox (badness 2961) has occurred while \output is active []
-
- [9]
-[10] [11]
-Overfull \hbox (7.59644pt too wide) in paragraph at lines 406--422
+ [10] [11]
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 420--436
  [][] 
  []
 
-<plot/fig7.pdf, id=49, 578.16pt x 397.485pt>
+[12] <plot/fig7.pdf, id=52, 578.16pt x 397.485pt>
 File: plot/fig7.pdf Graphic file (type pdf)
  <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 581.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [12]
-<plot/fig8.pdf, id=53, 578.16pt x 397.485pt>
-File: plot/fig8.pdf Graphic file (type pdf)
- <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 590.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./plot/fig7.pdf>] <plot/fig9.pdf, id=60, 578.16pt x 397.485pt>
-File: plot/fig9.pdf Graphic file (type pdf)
-
-<use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 597.
+Package pdftex.def Info: plot/fig7.pdf used on input line 595.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./plot/fig8.pdf>] [15 <./plot/fig9.pdf>] (template.bbl) [16] (template.au
-x) ) 
+ [13 <./plot/fig7.pdf>] <plot/fig8.pdf, id=59, 578.16pt x 397.485pt>
+File: plot/fig8.pdf Graphic file (type pdf)
+ <use plot/fig8.pdf>
+Package pdftex.def Info: plot/fig8.pdf used on input line 604.
+(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
+
+[14 <./plot/fig8.pdf>] <plot/fig9.pdf, id=65, 578.16pt x 397.485pt>
+File: plot/fig9.pdf Graphic file (type pdf)
+
+<use plot/fig9.pdf>
+Package pdftex.def Info: plot/fig9.pdf used on input line 611.
+(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
+ [15 <./plot/fig9.pdf>] (template.bbl [16]) [17]
+(template.aux) ) 
 Here is how much of TeX's memory you used:
  14173 strings out of 493673
- 279273 string characters out of 3149326
- 316414 words of memory out of 3000000
+ 279274 string characters out of 3149326
+ 317413 words of memory out of 3000000
  17204 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,56p,1806b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb
-><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/MiKTeX/fonts/t
-ype1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pf
-b><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (16 pages, 176448 bytes).
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpa
+zo/fplmr.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/Mi
+KTeX/fonts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palati
+no/uplr8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (17 pages, 178744 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
