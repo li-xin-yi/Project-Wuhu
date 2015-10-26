@@ -330,7 +330,10 @@ Through improving Rescale process of the CS-LGC algorithm, we solve the defectio
 \input{pic.tikz}
 \caption{The flowchart of updating label matrix using Rescale method in CSS-LGC algorithm}\label{fig:flowchart1}
 \end{figure}
+
 \subsection{Performance Analysis of CSS-LGC Algorithm}
+Generally speaking, CSS-LGC Algorithm is an improvement based on CS-LGC Algorithm, and its core is still CS-LGC Algorithm yet, except some methods for unlabeled data. CSS-LGC Algorithm has almost the same convergence and time complexity with LGC Algorithm.
+
 The increased time complexity by introducing cost sensitive feature to semi-supervised classification algorithm based on graph is mainly reflected in the process of boosting and updating cost matrix.
 
 The aim of updating the cost matrix is to update the labeled data set, including adding new labeled data and deleting existing labeled data. The adding operation has a relatively higher time complexity, which reaches $O(l \cdot n\lg n) < O({n^2}) $, where $l$ is the number of labeled data. Besides, choosing the unlabeled data with high similarity, which can be seen as a sorting, has the time complexity of $O(n\lg n)$. The time complexity of boosting process is $O(M \cdot {n^3})$ ,  the time complexity of base-classifier LGC algorithm reaching $O({n^3})$ included and $M$ represents the number of base-classifiers. The time complexity of CS-LGC algorithm depends on the number of base-classifiers denoted as $M$. From the following experiments, we can know, in the problem of bank loan, disease diagnosis etc., the number of convergences in CS-LGC is not sufficient to make the classifier time complexity increased by one order of magnitude.
