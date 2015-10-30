@@ -115,14 +115,14 @@ Cost-sensitive learning method is an effective way to solve the problem of the i
 
 AdaBoost algorithm was proposed in\cite{jin2010multi} which offers the possibility for multiple weak classifiers aggregating into a global strong classifier. AdaCost method\cite{fan1999adacost} was proposed as a cost-sensitive classification algorithm based on AdaBoost. AdaCost is based on the Reweight at the same time, and introduces cost performance function for classifiers by heuristic strategy. AdaCost forces classifier to pay more attention to costly samples, hence it shows some advantages in cost-sensitive classification problems. However, cost performance function introduced in the theoretical analysis have not been verified and damages the most important characteristics of Boosting,  which makes the algorithm not converge to the Bayesian decision. Qin etc. in \cite{qin2008cost} did try to combine semi-supervised classification algorithms with cost-sensitive learning methods, and improved classical EM algorithm by introducing misclassification cost in the process of probability assessment.
 
-In this paper, we introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm and propose a cost-sensitive LGC method (CS-LGC)
 
-%In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC method, CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
+In this paper, advantages of many unlabeled data are fully taken. We use the method of Rescale to describe cost inconsistency and introduce cost-sensitive nature for LGC algorithm classic semi-supervised classification algorithm. We propose a cost-sensitive LGC method, CS-LGC algorithm. At the same time, we take the impact caused by unbalanced data into account for CS-LGC algorithm, improve the CS-LGC algorithm by proposing the average similarity concept and introduce SMOTE algorithm. The main contribution of this paper is as follows:
 \begin{enumerate}[(1)]
 %  \item Introduce cost-sensitive nature for LGC algorithm, and propose cost-sensitive LGC algorithm;
-  \item Advantages of many unlabeled data are fully taken
-  \item Propose CSS-LGC algorithm. We take the impact caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithmâ€”CSS-LGC algorithm.
-  \item Analyze the experimental threshold, and verify the rationality of the threshold. 
+  \item Advantages of mass unlabeled data are fully taken in CS-LGC algorithm to improve the classification accuracy and deduce the global cost. 
+  \item CS-LGC algorithm, which is based on AdaBoost method, aggregates weaker classifiers as a strong classifier and prevents AdaBoost method from destroying the nature of Boosting.
+  \item Propose CSS-LGC algorithm. We take the impact of unstable classification accuracy caused by unbalanced data into account for CS-LGC algorithm, and we propose optimized CS-LGC algorithm based on CSS-LGC algorithm.
+  \item  verify the rationality of the threshold. 
   \item Demonstrate the effectiveness of the algorithm by experiment on German Credit Data Set and Breast Cancer Data Set.
 \end{enumerate}
 
