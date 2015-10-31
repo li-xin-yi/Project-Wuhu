@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{zhu2009introduction}
+X.~Zhu and A.~B. Goldberg, ``Introduction to semi-supervised learning,'' {\em
+  Synthesis lectures on artificial intelligence and machine learning}, vol.~3,
+  no.~1, pp.~1--130, 2009.
+
 \bibitem{gao2011active}
 Y.~Gao and J.~Wang, ``Active learning method of bayesian networks classifier
   based on cost-sensitive sampling,'' in {\em Computer Science and Automation
