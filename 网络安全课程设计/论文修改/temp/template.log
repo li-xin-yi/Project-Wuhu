@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  31 OCT 2015 23:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  1 NOV 2015 18:39
 entering extended mode
 **template
 (template.tex
@@ -587,12 +587,7 @@ Overfull \hbox (3.6401pt too wide) in paragraph at lines 89--90
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-
-LaTeX Warning: Citation `9dbeb174-0e9b-4063-a60f-00d96e76db04' on page 2 undefi
-ned on input line 112.
-
-[2]
+ [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
@@ -647,28 +642,25 @@ File: plot/fig9.pdf Graphic file (type pdf)
 <use plot/fig9.pdf>
 Package pdftex.def Info: plot/fig9.pdf used on input line 623.
 (pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [15 <./plot/fig8.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./plot/fig9.pdf>] (template.bbl [17]) [18] (template.aux) ) 
+ [15 <./plot/fig8.pdf>] [16 <./plot/fig9.pdf>] (template.bbl [17]) [18] (templa
+te.aux) ) 
 Here is how much of TeX's memory you used:
- 14176 strings out of 493673
- 279343 string characters out of 3149326
- 316427 words of memory out of 3000000
- 17207 multiletter control sequences out of 15000+200000
+ 14177 strings out of 493673
+ 279338 string characters out of 3149326
+ 316435 words of memory out of 3000000
+ 17208 multiletter control sequences out of 15000+200000
  42517 words of font info for 120 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  55i,12n,56p,1808b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTe
-X/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/CTE
-X/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/CTEX/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb><D:/CTEX/MiKTeX/f
-onts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/
-uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><D:/CTEX/MiKTeX/
-fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (18 pages, 183468 bytes).
+{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/C
+TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplm
+r.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/MiKTeX/fo
+nts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr
+8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on template.pdf (18 pages, 183263 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

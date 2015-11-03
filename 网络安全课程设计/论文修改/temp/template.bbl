@@ -38,6 +38,11 @@ R.~Urner, S.~Shalev-Shwartz, and S.~Ben-David, ``Access to unlabeled data can
 Z.-H. Zhou and M.~Li, ``Semi-supervised learning by disagreement,'' {\em
   Knowledge and Information Systems}, vol.~24, no.~3, pp.~415--439, 2010.
 
+\bibitem{swarn2011cluster}
+l.~b. swarnajyoti patra, ``A fast cluster-assumption based active-learning
+  technique for classification of remote sensing images,'' {\em Geoscience and
+  Remote Sensing Ieee Transactions on}, vol.~49, no.~5, pp.~1617--1626, 2011.
+
 \bibitem{budvytis2010label}
 I.~Budvytis, V.~Badrinarayanan, and R.~Cipolla, ``Label propagation in complex
   video sequences using semi-supervised learning.,'' in {\em BMVC}, vol.~2257,
@@ -86,5 +91,9 @@ M.~Lichman, ``{UCI} machine learning repository,'' 2013.
 
 \bibitem{germandata}
 H.~Hofmann, ``German credit data,'' 2000.
+
+\bibitem{Mangasarian90}
+O.~L. Mangasarian and W.~H. Wolberg, ``Cancer diagnosis via linear
+  programming,'' {\em SIAM News}, vol.~23, pp.~1--18, sep 1990.
 
 \end{thebibliography}
