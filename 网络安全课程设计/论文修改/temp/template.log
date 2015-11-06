@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.20)  1 NOV 2015 18:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2015.9.20)  6 NOV 2015 19:16
 entering extended mode
-**template
+**template.tex
 (template.tex
 LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 69 languages loaded.
@@ -20,6 +20,7 @@ Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo)
 File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
 
 SVJour Class option: svglov3.clo for standardised journals
+Requested font "cmr9" at 9.5pt
 )
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
@@ -37,46 +38,46 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
 \betweenumberspace=\dimen104
 \aftertext=\dimen105
 \headlineindent=\dimen106
-\c@inst=\count79
-\c@auth=\count80
+\c@inst=\count80
+\c@auth=\count81
 \instindent=\dimen107
 \authrun=\box26
 \authorrunning=\toks14
 \titrun=\box27
 \titlerunning=\toks15
 \combirun=\box28
-\c@lastpage=\count81
+\c@lastpage=\count82
 \rubricwidth=\dimen108
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
 \spthmsep=\dimen109
-\c@theorem=\count87
-\c@case=\count88
-\c@conjecture=\count89
-\c@corollary=\count90
-\c@definition=\count91
-\c@example=\count92
-\c@exercise=\count93
-\c@lemma=\count94
-\c@note=\count95
-\c@problem=\count96
-\c@property=\count97
-\c@proposition=\count98
-\c@question=\count99
-\c@solution=\count100
-\c@remark=\count101
-\c@figure=\count102
-\c@table=\count103
+\c@theorem=\count88
+\c@case=\count89
+\c@conjecture=\count90
+\c@corollary=\count91
+\c@definition=\count92
+\c@example=\count93
+\c@exercise=\count94
+\c@lemma=\count95
+\c@note=\count96
+\c@problem=\count97
+\c@property=\count98
+\c@proposition=\count99
+\c@question=\count100
+\c@solution=\count101
+\c@remark=\count102
+\c@figure=\count103
+\c@table=\count104
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \figcapgap=\dimen110
 \tabcapgap=\dimen111
 \figgap=\dimen112
 \bibindent=\dimen113
-\@tempcntc=\count104
+\@tempcntc=\count105
 ) (D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -93,18 +94,11 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (D:\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 94.
+Package graphics Info: Driver file: xetex.def on input line 94.
 
-(D:\CTEX\MiKTeX\tex\latex\pdftex-def\pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(D:\CTEX\MiKTeX\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count105
+(D:\CTEX\MiKTeX\tex\xelatex\xetex-def\xetex.def
+File: xetex.def 2015/03/25 v4.04 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
 ))
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
@@ -217,6 +211,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
@@ -227,6 +222,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \c@algorithm=\count123
 )
 (D:\CTEX\MiKTeX\tex\latex\algorithms\algorithmic.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 \c@ALC@unique=\count124
 \c@ALC@line=\count125
@@ -288,18 +284,23 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
-(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-xetex.def
+File: pgfsys-xetex.def 2014/07/09  (rcs-revision 1.11)
+
+(D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2014/07/09  (rcs-revision 1.14)
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)
+\pgfsys@objnum=\count132
 )))
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count132
-\pgfsyssoftpath@bigbuffer@items=\count133
+\pgfsyssoftpath@smallbuffer@items=\count133
+\pgfsyssoftpath@bigbuffer@items=\count134
 )
 (D:\CTEX\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -310,9 +311,8 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (D:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -329,7 +329,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex)
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen148
-\pgfmath@count=\count134
+\pgfmath@count=\count135
 \pgfmath@box=\box34
 \pgfmath@toks=\toks34
 \pgfmath@stack@operand=\toks35
@@ -345,7 +345,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex)
 (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.t
 ex))) (D:\CTEX\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count135
+\c@pgfmathroundto@lastzeros=\count136
 ))
 (D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
@@ -379,7 +379,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box35
 \pgf@hbox=\box36
 \pgf@layerbox@main=\box37
-\pgf@picture@serial@count=\count136
+\pgf@picture@serial@count=\count137
 )
 (D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
@@ -407,7 +407,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen172
-\pgf@sys@shading@range@num=\count137
+\pgf@sys@shading@range@num=\count138
 )
 (D:\CTEX\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -459,7 +459,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count138
+\pgf@plot@mark@count=\count139
 \pgfplotmarksize=\dimen177
 )
 \tikz@lastx=\dimen178
@@ -472,18 +472,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box41
 \tikz@tempbox=\box42
 \tikz@tempbox@bg=\box43
-\tikztreelevel=\count139
-\tikznumberofchildren=\count140
-\tikznumberofcurrentchild=\count141
-\tikz@fig@count=\count142
+\tikztreelevel=\count140
+\tikznumberofchildren=\count141
+\tikznumberofcurrentchild=\count142
+\tikz@fig@count=\count143
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count143
-\pgfmatrixcurrentcolumn=\count144
-\pgf@matrix@numberofcolumns=\count145
+\pgfmatrixcurrentrow=\count144
+\pgfmatrixcurrentcolumn=\count145
+\pgf@matrix@numberofcolumns=\count146
 )
-\tikz@expandcount=\count146
+\tikz@expandcount=\count147
 
 (D:\CTEX\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths
 .code.tex
@@ -528,57 +528,96 @@ LaTeX Font Info:    Try loading font information for OT1+ppl on input line 56.
  (D:\CTEX\MiKTeX\tex\latex\psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
+Requested font "pplr7t" at 9.5pt
+
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
-(D:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count147
-\scratchdimen=\dimen185
-\scratchbox=\box44
-\nofMPsegments=\count148
-\nofMParguments=\count149
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count150
-\MPscratchDim=\dimen186
-\MPnumerator=\count151
-\makeMPintoPDFobject=\count152
-\everyMPtoPDFconversion=\toks40
-) ABD: EveryShipout initializing macros
+ABD: EveryShipout initializing macros
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.5> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
+Requested font "pplb7t" at 9.5pt
+Requested font "pplr7t" at 8.0pt
+Requested font "pplr7t" at 13.0pt
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <13> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 87.
+Requested font "pplb7t" at 13.0pt
 LaTeX Font Info:    Calculating math sizes for size <9.5> on input line 87.
+Requested font "pplb7t" at 7.21994pt
+Requested font "pplb7t" at 5.70006pt
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 87.
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
+Requested font "zplmb7m" at 9.5pt
+Requested font "zplmb7m" at 7.21994pt
+Requested font "zplmb7m" at 5.70006pt
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 87.
 
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
+Requested font "zplmb7y" at 9.5pt
+Requested font "zplmb7y" at 7.21994pt
+Requested font "zplmb7y" at 5.70006pt
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 87.
 
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
+Requested font "zplmr7v" at 9.5pt
+Requested font "zplmr7v" at 7.21994pt
+Requested font "zplmr7v" at 5.70006pt
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9.5> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+Requested font "lasy9" at 9.5pt
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7.21994> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+Requested font "lasy7" at 7.21994pt
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5.70006> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 87.
+Requested font "lasy5" at 5.70006pt
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 87.
 
 
 (D:\CTEX\MiKTeX\tex\latex\psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
+Requested font "zplmb7t" at 9.5pt
+Requested font "zplmb7t" at 7.21994pt
+Requested font "zplmb7t" at 5.70006pt
+Requested font "pplr7t" at 7.21994pt
+Requested font "pplr7t" at 5.70006pt
+Requested font "zplmr7m" at 9.5pt
+Requested font "zplmr7m" at 7.21994pt
+Requested font "zplmr7m" at 5.70006pt
+Requested font "zplmr7y" at 9.5pt
+Requested font "zplmr7y" at 7.21994pt
+Requested font "zplmr7y" at 5.70006pt
+Requested font "zplmr7t" at 9.5pt
+Requested font "zplmr7t" at 7.21994pt
+Requested font "zplmr7t" at 5.70006pt
+Requested font "pplr7t" at 6.0pt
+Requested font "pplr7t" at 5.0pt
+Requested font "zplmr7m" at 8.0pt
+Requested font "zplmr7m" at 6.0pt
+Requested font "zplmr7m" at 5.0pt
+Requested font "zplmr7y" at 8.0pt
+Requested font "zplmr7y" at 6.0pt
+Requested font "zplmr7y" at 5.0pt
+Requested font "zplmr7v" at 8.0pt
+Requested font "zplmr7v" at 6.0pt
+Requested font "zplmr7v" at 5.0pt
+Requested font "lasy8" at 8.0pt
+Requested font "lasy6" at 6.0pt
+Requested font "lasy5" at 5.0pt
+Requested font "zplmr7t" at 8.0pt
+Requested font "zplmr7t" at 6.0pt
+Requested font "zplmr7t" at 5.0pt
+
 Overfull \hbox (3.6401pt too wide) in paragraph at lines 89--90
 []\OT1/ppl/m/n/9.5 Assuming that mis-clas-si-fi-ca-tion costs among dif-fer-ent
  cat-e-gories are equal,
@@ -587,20 +626,19 @@ Overfull \hbox (3.6401pt too wide) in paragraph at lines 89--90
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2]
+ [1]
+[2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
 [4]
-Missing character: There is no Ã in font pplr7t!
-Missing character: There is no ­ in font pplr7t!
-Missing character: There is no Â in font pplr7t!
-Missing character: There is no ± in font pplr7t!
-Missing character: There is no Â in font pplr7t!
-Missing character: There is no ¡ in font pplr7t!
+Missing character: There is no Ã­ in font pplr7t!
+Missing character: There is no Â± in font pplr7t!
+Missing character: There is no Â¡ in font pplr7t!
  [5]
 LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ppl/b/n' tried instead on input line 194.
+Requested font "pplb7t" at 8.0pt
  [6]
 Overfull \hbox (10.22319pt too wide) in paragraph at lines 264--265
 []\OT1/ppl/m/n/9.5 Calculate the av-er-age sim-i-lar-i-ties of all un-la-beled 
@@ -613,56 +651,32 @@ Overfull \hbox (6.36719pt too wide) in paragraph at lines 347--349
 go-rithm based on graph is mainly
  []
 
-Missing character: There is no â in font pplr7t!
-Missing character: There is no € in font pplr7t!
-Missing character: There is no ™ in font pplr7t!
-[10] [11] [12]
+Missing character: There is no â€™ in font pplr7t!
+[10]
+Requested font "pplri7t" at 9.5pt
+ [11] [12]
 Overfull \hbox (7.59644pt too wide) in paragraph at lines 432--448
  [][] 
  []
 
-[13] <plot/fig7.pdf, id=56, 578.16pt x 397.485pt>
-File: plot/fig7.pdf Graphic file (type pdf)
- <use plot/fig7.pdf>
-Package pdftex.def Info: plot/fig7.pdf used on input line 607.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
-<plot/fig8.pdf, id=57, 578.16pt x 397.485pt>
-File: plot/fig8.pdf Graphic file (type pdf)
- <use plot/fig8.pdf>
-Package pdftex.def Info: plot/fig8.pdf used on input line 616.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
-
+[13]
+File: plot/fig7.pdf Graphic file (type QTm)
+ <use  "plot/fig7.pdf" >
+File: plot/fig8.pdf Graphic file (type QTm)
+ <use  "plot/fig8.pdf" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./plot/fig7.pdf>] <plot/fig9.pdf, id=63, 578.16pt x 397.485pt>
-File: plot/fig9.pdf Graphic file (type pdf)
-
-<use plot/fig9.pdf>
-Package pdftex.def Info: plot/fig9.pdf used on input line 623.
-(pdftex.def)             Requested size: 347.0pt x 238.55956pt.
- [15 <./plot/fig8.pdf>] [16 <./plot/fig9.pdf>] (template.bbl [17]) [18] (templa
-te.aux) ) 
+[14]
+File: plot/fig9.pdf Graphic file (type QTm)
+ <use  "plot/fig9.pdf" > [15] [16] (template.bbl [17]) [18] (template.aux) ) 
 Here is how much of TeX's memory you used:
- 14177 strings out of 493673
- 279338 string characters out of 3149326
- 316435 words of memory out of 3000000
- 17208 multiletter control sequences out of 15000+200000
- 42517 words of font info for 120 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 55i,12n,56p,1808b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/CTEX/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<D:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/CTEX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplm
-r.pfb><D:/CTEX/MiKTeX/fonts/type1/public/mathpazo/fplmri.pfb><D:/CTEX/MiKTeX/fo
-nts/type1/urw/palatino/uplb8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr
-8a.pfb><D:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on template.pdf (18 pages, 183263 bytes).
-PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13580 strings out of 428755
+ 267317 string characters out of 3166443
+ 309248 words of memory out of 3000000
+ 16683 multiletter control sequences out of 15000+200000
+ 22221 words of font info for 67 fonts, out of 3000000 for 9000
+ 1096 hyphenation exceptions out of 8191
+ 55i,12n,56p,1812b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on template.pdf (18 pages).
