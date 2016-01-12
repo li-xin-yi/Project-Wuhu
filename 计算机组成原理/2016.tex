@@ -1,0 +1,100 @@
+%!TEX program = xelatex
+\documentclass{exam}
+\usepackage{ctex}
+\usepackage{CJKnumb}
+\newif\ifprint
+%\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
+\printfalse
+\usepackage{ulem}
+\newcommand{\blank}[2][1cm]{\uline{\makebox[#1][c]{%
+			\ifprint
+			\phantom{#2}%
+			\else
+			#2%
+			\fi}}}
+\pagestyle{headandfoot}
+
+\begin{document}
+\section{选择题}
+\begin{questions}
+	\question 冯·诺依曼计算机中指令和数据均以二进制形式存放在存储器中，CPU区分它们的依据是\blank{}
+	\begin{choices}
+		\choice 指令操作码的译码结果
+		\choice 指令和数据的寻址方式
+		\choice 指令周期的不同阶段
+		\choice 指令和数据所在的存储单元
+	\end{choices}
+
+	\question 以下关于计算机历史发展的叙述，错误的是\blank{}
+	\begin{choices}
+		\choice 第一台电子计算机采用的是电子管技术
+		\choice 早期的电子计算机，主要用于个人业务处理
+		\choice 集成电路技术的发展，使电子计算机在体积和速度上有了很大改善
+		\choice 摩尔定律说明了半导体集成度发展的规律
+	\end{choices}
+
+	\question 以下哪一项，不属于CPU的组成部分\blank{}
+	\begin{choices}
+		\choice 运算器
+		\choice 控制器
+		\choice 寄存器
+		\choice I/O系统
+	\end{choices}
+
+	\question 下列关于总线仲裁方式的说法中，错误的为\blank{}
+	\begin{choices}
+		\choice 独立请求方式响应时间最快，是以增加处理机开销和增加控制线数为代价的
+		\choice 计数器定时查询方式下，有一根总线请求（BR）和一根设备地址线，计数器可以从0开始增加，或接上次计数增加
+		\choice 链式查询方式对电路故障最敏感
+		\choice 分布式仲裁控制逻辑分散在各总线各部件中，不需要中央仲裁器
+	\end{choices}
+
+	\question 冯·诺依曼机可以区分指令和数据的部件是\blank{}
+	\begin{choices}
+		\choice 总线
+		\choice 控制器
+		\choice 控制存储器
+		\choice 运算器
+	\end{choices}
+
+	\question 计算机的Cache——主存层次，主要是为了解决什么问题\blank{}
+	\begin{choices}
+		\choice 速度匹配问题
+		\choice 存储器容量问题
+		\choice 数据格式兼容问题
+		\choice 电平匹配问题
+	\end{choices}
+
+	\question 总线的特征不包括以下哪一项\blank{}
+	\begin{choices}
+		\choice 物理特征
+		\choice 功能特征
+		\choice 电气特征
+		\choice 时间特征
+	\end{choices}
+
+	\question 设CPU与I/O设备以中断方式进行数据传送，CPU响应中断时，该I/O设备接口控制器发送给CPU的指令中断向量表（中断向量表中放中断向量）的指针是\verb|0008H|。\verb|0008H|单元中的值是\verb|1200H|。则该I/O设备的中断服务程序在内存中的入口地址为\blank{}
+	\begin{choices}
+		\choice \verb|0008H|
+		\choice \verb|0009H|
+		\choice \verb|1200H|
+        \choice \verb|1201H|
+	\end{choices}
+    
+    \question DMA方式的接口电路中有程序中断部件，其作用为\blank{}
+    \begin{choices}
+    	\choice 进行预处理
+    	\choice 向CPU提出总线使用权
+    	\choice 向CPU提出传输结束
+        \choice 检查数据是否出错
+    \end{choices}
+
+    \question 设浮点数的基数为8，尾数用原码表示，则以下\blank{}是规格化小数
+    \begin{choices}
+    	\choice 1.000101
+    	\choice 0.000101
+    	\choice 1.011011
+    	\choice 0.000010
+    \end{choices}
+\end{questions}
+\end{document}
