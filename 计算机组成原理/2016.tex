@@ -1,5 +1,5 @@
 %!TEX program = xelatex
-\documentclass{exam}
+\documentclass[a4paper]{exam}
 \usepackage{ctex}
 \usepackage{CJKnumb}
 \newif\ifprint
@@ -17,7 +17,7 @@
 \begin{document}
 \section{选择题}
 \begin{questions}
-	\question 冯·诺依曼计算机中指令和数据均以二进制形式存放在存储器中，CPU区分它们的依据是\blank{}
+	\question 冯·诺依曼计算机中指令和数据均以二进制形式存放在存储器中，CPU区分它们的依据是\blank[0.5cm]{}
 	\begin{choices}
 		\choice 指令操作码的译码结果
 		\choice 指令和数据的寻址方式
@@ -96,5 +96,59 @@
     	\choice 1.011011
     	\choice 0.000010
     \end{choices}
+
+    \question 以下关于加法器的说法，正确的是\blank{}
+    \begin{choices}
+    	\choice 多个半加器串联可以实现两个多位二进制数的加法
+    	\choice 一位全加器有两个输入端，分别为被加数和加数
+    	\choice 全加器的输入端只要有1，和即为1
+    	\choice 超前进位加法器可以快速计算出各位计算所需要的进位
+    \end{choices}
+
+    \question 在微程序控制方式中，以下说法正确的是\blank{}
+    \begin{choices}
+    	\choice 采用微程序控制器的处理器称为微处理器
+    	\choice 每一条水平微指令发出一个或多个微操作指令
+    	\choice 在微指令编码中，执行效率最低的是直接编码方式
+    	\choice 垂直型微指令能充分利用数据通路的并行结构
+    \end{choices}
+
+    \question 下列关于RISC的叙述中，错误的是\blank{}
+    \begin{choices}
+    	\choice RISC普遍采用微程序控制器
+    	\choice RISC处理器的单挑指令执行速度较快
+    	\choice RISC的内部通用寄存器数量相对CISC多
+    	\choice RISC的指令数寻址方式和指令格式相对CISC少
+    \end{choices}
+
+    \question 某计算机的指令流水线由四个功能段组成，指令流经各功能段的时间（忽略各功能段之间的缓存时间）分别为90ns,80ns,70ns和60ns。则该计算机的CPU时钟周期至少是\blank{}
+    \begin{choices}
+    	\choice 70ns
+    	\choice 80ns
+    	\choice 90ns
+    	\choice 60ns
+    \end{choices}
+
+    \question 在一个时钟周期内将一个功能部件使用多次，这种技术称为\blank{}
+    \begin{choices}
+    	\choice 超标量技术
+    	\choice 超长指令技术
+    	\choice 超流水技术
+    	\choice 超数据流
+    \end{choices}
+\end{questions}
+
+\section{填空题}
+\begin{questions}
+	\question 在规格化浮点数中，如果阶码取5位，含一个符号位，尾数取6位。含一个符号位，试问其能表示的最小正数的规格化形式是\blank{}
+	\question 设有机器数10101111，此数如为整数的反码表现形式，包含一个符号位，请问其真值的十进制形式为\blank{}
+	\question 假设磁盘存储器共有6个盘片，最外侧两个记录用不使用，每面有204个磁道，没条磁道有12个扇区，每个扇区有512B容量，请问该磁盘存储器的总容量是\blank{}MB
+	\question 某机器指令长度为16位，其中操作码字段和地址码字段均为4位，假设其有15条3地址指令，15条2地址指令，15条1地址指令，那么还可以设计\blank{}条0地址指令
+	\question 符号相同的两个定点数相加，结果符号与原操作数的符号\blank{}则溢出
+	\question 一般来说，指令周期分为取指周期、间指周期、\blank{}和中断周期四个阶段
+	\question 某计算机系统中软盘驱动器以中断方式与处理机进行I/O通信，通信以16bit为传输单元，传输率为50kB/s，每次输送的开销（包括中断）为100个节拍，处理器的主频为50MHz,则磁盘使用时占用处理器时间的比例为\blank{}
+	\question 动态存储器的刷新方式包括\blank{}，分散刷新和异步刷新。
+	\question 假设某系统总线在一个总线周期中并行传输4B信息，一个总线周期占用2个时钟周期，总线时钟频率为10MHz，则总线带宽是\blank{}MB/s
+	\question 若数据在存储器中以小端方式存放，则十六进制数12345678H按字节地址从小到大依次为\blank{}
 \end{questions}
 \end{document}

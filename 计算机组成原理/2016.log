@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  12 JAN 2016 19:28
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  13 JAN 2016 19:22
 entering extended mode
 **F:/Project-Wuhu/计算机组成原理/2016.tex
 (F:/Project-Wuhu/计算机组成原理/2016.tex
@@ -1241,7 +1241,38 @@ File: ctex.cfg 2015/07/01 v2.2 Configuration file (CTEX)
 Package: CJKnumb 2015/04/18 4.8.4
 \CJK@q=\count169
 \CJK@r=\count170
-) (2016.aux)
+) (2016.aux
+
+LaTeX Warning: Label `question@1' multiply defined.
+
+
+LaTeX Warning: Label `question@2' multiply defined.
+
+
+LaTeX Warning: Label `question@3' multiply defined.
+
+
+LaTeX Warning: Label `question@4' multiply defined.
+
+
+LaTeX Warning: Label `question@5' multiply defined.
+
+
+LaTeX Warning: Label `question@6' multiply defined.
+
+
+LaTeX Warning: Label `question@7' multiply defined.
+
+
+LaTeX Warning: Label `question@8' multiply defined.
+
+
+LaTeX Warning: Label `question@9' multiply defined.
+
+
+LaTeX Warning: Label `question@10' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -1260,8 +1291,7 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 17.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 17.
-
-(E:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
+ (E:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 17.
@@ -1394,15 +1424,26 @@ Requested font "[lmmono10-regular]" at 10.53937pt
 . 
 .................................................
  [2]
-This exam contains 10 questions with 0 parts, 0 subparts, and 0 subsubparts.
-(2016.aux) ) 
+Overfull \hbox (0.65292pt too wide) in paragraph at lines 152--153
+[]\EU1/SimSun(0)/m/n/10.53937 若 数 据 在 存 储 器 中 以 小 端 方 式 存 放，|  则 十 六 进 制 数 \EU1
+/lmr/m/n/10.53937 12345678H \EU1/SimSun(0)/m/n/10.53937 按 字 节 地 址 从 小 到 大 依 次 为
+|   [] 
+ []
+
+[3]
+This exam contains 25 questions with 0 parts, 0 subparts, and 0 subsubparts.
+(2016.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 20885 strings out of 430386
- 432256 string characters out of 3190305
- 441869 words of memory out of 3000000
- 23976 multiletter control sequences out of 15000+200000
+ 20940 strings out of 430386
+ 433575 string characters out of 3190305
+ 444891 words of memory out of 3000000
+ 24031 multiletter control sequences out of 15000+200000
  3874 words of font info for 31 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,9n,78p,10454b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 2016.pdf (2 pages).
+Output written on 2016.pdf (3 pages).
