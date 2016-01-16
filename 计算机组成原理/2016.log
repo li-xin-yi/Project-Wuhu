@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  15 JAN 2016 23:20
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  16 JAN 2016 23:52
 entering extended mode
 **F:/Project-Wuhu/计算机组成原理/2016.tex
 (F:/Project-Wuhu/计算机组成原理/2016.tex
@@ -1278,6 +1278,9 @@ LaTeX Warning: Label `question@1' multiply defined.
 
 LaTeX Warning: Label `question@2' multiply defined.
 
+
+LaTeX Warning: Label `question@3' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -1453,7 +1456,7 @@ Requested font "cmr10" at 10.53937pt
 Requested font "FangSong/OT:script=hani;language=DFLT;" at 10.53937pt
  -> C:/Windows/Fonts/simfang.ttf
  [4]
-This exam contains 27 questions with 0 parts, 0 subparts, and 0 subsubparts.
+This exam contains 28 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (2016.aux)
 
 LaTeX Warning: There were multiply-defined labels.
