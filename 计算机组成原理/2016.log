@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  17 JAN 2016 22:44
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  18 JAN 2016 15:24
 entering extended mode
 **F:/Project-Wuhu/计算机组成原理/2016.tex
 (F:/Project-Wuhu/计算机组成原理/2016.tex
@@ -1284,6 +1284,9 @@ LaTeX Warning: Label `question@3' multiply defined.
 
 LaTeX Warning: Label `question@4' multiply defined.
 
+
+LaTeX Warning: Label `question@1' multiply defined.
+
 )
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -1458,20 +1461,20 @@ Requested font "cmr10" at 10.53937pt
 [3]
 Requested font "FangSong/OT:script=hani;language=DFLT;" at 10.53937pt
  -> C:/Windows/Fonts/simfang.ttf
- [4]
-This exam contains 29 questions with 0 parts, 0 subparts, and 0 subsubparts.
+ [4] [5]
+This exam contains 30 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (2016.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20967 strings out of 430386
- 434550 string characters out of 3190305
+ 20968 strings out of 430386
+ 434558 string characters out of 3190305
  445891 words of memory out of 3000000
- 24053 multiletter control sequences out of 15000+200000
+ 24054 multiletter control sequences out of 15000+200000
  4814 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,9n,78p,10454b,522s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on 2016.pdf (4 pages).
+Output written on 2016.pdf (5 pages).
