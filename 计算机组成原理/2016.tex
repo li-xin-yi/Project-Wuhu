@@ -2,6 +2,7 @@
 \documentclass[a4paper]{exam}
 \usepackage{ctex}
 \usepackage{CJKnumb}
+\usepackage{moreverb}
 \newif\ifprint
 %\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
 \printfalse
@@ -159,10 +160,17 @@
 	\vspace{2cm}
 	\question 下面是部分中断向量表和4号中断的中断服务程序，功能是保护现场和保存断点，并在中继服务程序执行完毕后通过间接寻址的跳转指令返回，假设将ENI指令（开中断）向上移动两行，分析此程序的执行流程可能会有何种变化。
 
-	\begin{verbatim}
-		地址	内容	说明
-		0       ******  中断向量表
-	\end{verbatim}
+	\begin{verbatimtab}
+	地址	内容	说明
+	0	******;	中断向量表
+	……	……	……
+	4	JMP SERVE4;	4号中断的中断向量
+	……	……	……
+	SERVE4	STA SAVE4;	将累加器内容发送到地址SAVE4处
+	……	……	……
+		LDA 0
+
+	\end{verbatimtab}
 
 	\vspace{3cm}
 
