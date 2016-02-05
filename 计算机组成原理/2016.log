@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  2 FEB 2016 22:09
+This is XeTeX, Version 3.14159265-2.6-0.99992 (MiKTeX 2.9) (preloaded format=xelatex 2016.1.12)  5 FEB 2016 17:18
 entering extended mode
 **F:/Project-Wuhu/计算机组成原理/2016.tex
 (F:/Project-Wuhu/计算机组成原理/2016.tex
@@ -1254,6 +1254,161 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \tab@position=\count171
 \tab@size=\count172
 \listing@line=\count173
+)
+(E:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(E:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `usenames' ignored on input line 216.
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+
+(E:\CTEX\MiKTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
+))
+(E:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(E:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+(E:\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: pdfTeX >= 1.30 not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(E:\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(E:\CTEX\MiKTeX\tex\latex\oberdiek\auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(E:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen175
+\Hy@linkcounter=\count174
+\Hy@pagecounter=\count175
+
+(E:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count176
+
+(E:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+
+(E:\CTEX\MiKTeX\tex\latex\hyperref\puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count177
+
+(E:\CTEX\MiKTeX\tex\latex\url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen176
+Requested font "pzdr" at 0.00002pt
+\Fld@menulength=\count178
+\Field@Width=\dimen177
+\Fld@charsize=\dimen178
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring ON on input line 6313.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count179
+\c@Item=\count180
+\c@Hfootnote=\count181
+)
+
+Package hyperref Message: Driver (autodetected): hxetex.
+
+(E:\CTEX\MiKTeX\tex\latex\hyperref\hxetex.def
+File: hxetex.def 2012/11/06 v6.83m Hyperref driver for XeTeX
+
+(E:\CTEX\MiKTeX\tex\generic\oberdiek\stringenc.sty
+Package: stringenc 2011/12/02 v1.10 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box54
+\c@Hy@AnnotLevel=\count182
+\HyField@AnnotCount=\count183
+\Fld@listcount=\count184
+\c@bookmark@seq@number=\count185
+
+(E:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package rerunfilecheck Info: Feature \pdfmdfivesum is not available
+(rerunfilecheck)             (e.g. pdfTeX or LuaTeX with package `pdftexcmds').
+
+(rerunfilecheck)             Therefore file contents cannot be checked efficien
+tly
+(rerunfilecheck)             and the loading of the package is aborted.
+)
+\Hy@SectionHShift=\skip84
 ) (2016.aux
 
 LaTeX Warning: Label `question@1' multiply defined.
@@ -1313,31 +1468,35 @@ LaTeX Warning: Label `question@4' multiply defined.
 LaTeX Warning: Label `question@1' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 25.
  (E:\CTEX\MiKTeX\tex\latex\tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 18.
+LaTeX Info: Redefining \selectfont on input line 25.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -1345,57 +1504,73 @@ LaTeX Info: Redefining \selectfont on input line 18.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 18.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 18.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 18.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 18.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 18.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 18.
-LaTeX Font Info:    Redeclaring math accent \check on input line 18.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 18.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 18.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 18.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 18.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 18.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 25.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 25.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 25.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 25.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 25.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 25.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 25.
+LaTeX Font Info:    Redeclaring math accent \check on input line 25.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 25.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 25.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 25.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 25.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 25.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 18.
+(Font)              `operators' in the math version `normal' on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 18.
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 18.
+(Font)              `operators' in the math version `bold' on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 18.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 18.
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 18.
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 18.
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 25.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 18.
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 18.
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 18.
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 25.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 18.
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 25.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring ON on input line 25.
+
+(E:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(E:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count186
+)
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
+ (2016.out) (2016.out)
+\@outlinefile=\write3
 Requested font "[lmroman17-regular]:mapping=tex-text" at 15.05624pt
  -> E:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman17-regular.otf
 Requested font "[lmroman12-bold]:mapping=tex-text" at 15.05624pt
@@ -1404,12 +1579,25 @@ Requested font "SimHei/OT:script=hani;language=DFLT;" at 15.05624pt
  -> C:/Windows/Fonts/simhei.ttf
 Requested font "SimSun/OT:script=hani;language=DFLT;" at 10.53937pt
  -> E:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf
- [1
+Requested font "[lmroman7-regular]:mapping=tex-text" at 7.0pt
+ -> E:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman7-regular.otf
+Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
+ -> E:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman5-regular.otf
+Requested font "cmmi10" at 10.53937pt
+Requested font "cmsy10" at 10.53937pt
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.53937> on input line 81.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 81.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 81.
+Requested font "cmr10" at 10.53937pt
+[1
 
 ]
 Requested font "FangSong/OT" at 10.53937pt
  -> C:/Windows/Fonts/simfang.ttf
-\g__fontspec_family_FangSong_int=\count174
+\g__fontspec_family_FangSong_int=\count187
 Requested font "FangSong/I/OT" at 10.53937pt
  -> C:/Windows/Fonts/simfang.ttf
 .................................................
@@ -1431,10 +1619,9 @@ Requested font "FangSong/I/OT" at 10.53937pt
 . 
 . Could not resolve font FangSong/I (it probably doesn't exist).
 .................................................
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 77.
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 84.
 
-
-(E:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
+ (E:\CTEX\MiKTeX\tex\latex\euenc\eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Requested font "[lmmono10-regular]" at 10.53937pt
@@ -1464,39 +1651,32 @@ Requested font "[lmmono10-regular]" at 10.53937pt
 . 
 .................................................
  [2]
-Overfull \hbox (0.65292pt too wide) in paragraph at lines 153--154
+Overfull \hbox (0.65292pt too wide) in paragraph at lines 160--161
 []\EU1/SimSun(0)/m/n/10.53937 若 数 据 在 存 储 器 中 以 小 端 方 式 存 放，|  则 十 六 进 制 数 \EU1
 /lmr/m/n/10.53937 12345678H \EU1/SimSun(0)/m/n/10.53937 按 字 节 地 址 从 小 到 大 依 次 为
 |   [] 
  []
 
-Requested font "[lmroman7-regular]:mapping=tex-text" at 7.0pt
- -> E:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman7-regular.otf
-Requested font "[lmroman5-regular]:mapping=tex-text" at 5.0pt
- -> E:/CTEX/MiKTeX/fonts/opentype/public/lm/lmroman5-regular.otf
-Requested font "cmmi10" at 10.53937pt
-Requested font "cmsy10" at 10.53937pt
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.53937> on input line 158.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 158.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 158.
-Requested font "cmr10" at 10.53937pt
 [3] [4] [5] [6]
 This exam contains 34 questions with 0 parts, 0 subparts, and 0 subsubparts.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
 (2016.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 219.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
  ) 
 Here is how much of TeX's memory you used:
- 21049 strings out of 430386
- 436432 string characters out of 3190305
- 445891 words of memory out of 3000000
- 24131 multiletter control sequences out of 15000+200000
- 4806 words of font info for 36 fonts, out of 3000000 for 9000
+ 27549 strings out of 430386
+ 529587 string characters out of 3190305
+ 564944 words of memory out of 3000000
+ 30574 multiletter control sequences out of 15000+200000
+ 5166 words of font info for 37 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 63i,9n,78p,10454b,515s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,10n,78p,10454b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on 2016.pdf (6 pages).

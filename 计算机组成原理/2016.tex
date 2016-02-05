@@ -3,6 +3,10 @@
 \usepackage{ctex}
 \usepackage{CJKnumb}
 \usepackage{moreverb}
+\usepackage[usenames,dvipsnames]{xcolor}
+%\definecolor{carolinablue}{rgb}{0.6, 0.73, 0.89}
+\definecolor{camouflagegreen}{rgb}{0.47, 0.53, 0.42}
+\usepackage[colorlinks,linkcolor=red,urlcolor=camouflagegreen]{hyperref}
 \newif\ifprint
 %\printtrue %选择题答案/printfalse时打印，/printtrue时隐藏
 \printfalse
@@ -14,6 +18,9 @@
 			#2%
 			\fi}}}
 \pagestyle{headandfoot}
+\cfoot{\thepage$/$\numpages} 
+\header{2016/2/5}{计算机组成原理2016}{\href{https://github.com/Lixinyi-DUT/Project-Wuhu}{芜湖计划}}
+\headrule
 
 \begin{document}
 \section{选择题}
